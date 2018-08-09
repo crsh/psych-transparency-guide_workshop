@@ -1,0 +1,82 @@
+---
+title   : "A practical primer on transparent research workflows"
+subtitle: "Workshop outline"
+author  : "Frederik Aust & Johannes Breuer"
+date    : "04.09.2018"
+
+abstract: |
+  Psychological science is facing a crisis of confidence fueled by concerns about replicability of empirical findings (e.g., Open Science Collaboration, 2015).
+  In response, psychologists have been reviewing how they do research and are leading many initiatives to improve replicability.
+  A fundamental element is greater transparency and intersubjective verifiability:
+  Researchers increasingly publish research materials, data and analysis scripts, publicly preregister their studies, and share and discuss preprints.
+  The evolving open science ecosystem provides a variety of tools and services to help researchers adopt transparent research practices.
+  However, setting up a transparent research workflow involves a plethora of decisions that can be off-putting.
+  Fortunately, transparent research practices can be adopted piecemeal---each incremental step adds positive value for individual researchers and the credibility of psychological research.
+  This active workshop will walk participants through the process of preparing and sharing their research products, including materials, data, analysis scripts, and study protocols.
+  It will address what, when, and how to share and help participants develop transparent, less error-prone, and more reproducible research workflows.
+
+output:
+  html_document:
+    theme         : "spacelab"
+    df_print      : "kable"
+    toc           : true
+    toc_float     : true
+---
+
+```{r setup, include = FALSE}
+library("rmarkdown")
+```
+
+---
+
+# Course outline
+
+The active three-hour workshop will cover the following issues.
+
+
+### Conceptual introduction
+
+- Why share? (brief, participants already signed up for the workshop)
+
+- What to share?
+    - Show some example data set documentation (maybe `codebook` package?, https://osf.io/rv7py/, https://osf.io/e4tqy/)
+    - Demonstrate dynamic documents
+
+- When to share?
+    - Set up Dropbox to collect born-open data
+    - Show some preregistration websites, show case good preregistrations (https://osf.io/h9k8n/)
+    - http://www.sherpa.ac.uk/romeo/search.php
+
+- How to share?
+    - Handout table that summarizes repositories
+      - Discuss some usecases (maybe suggested by participants)
+    - Browse example OSF repository
+    - Hand out DGPs model informed consent
+    - Citeable datasets
+
+- Why not to share?
+    - Brief discussion of DSGVO? (Anonymisation example?)
+
+- Incentivize sharing
+    - PRO initiative
+    - Commitment to Research Transparency and Open Science (http://www.researchtransparency.org/)
+
+---
+
+# Preparations
+
+- Set up OSF repository with project structure that participants can fork to create their own project
+- TIER template to clone: https://osf.io/ybzxe/
+- BIDS example on GitHub: https://github.com/INCF/BIDS-examples
+- Informed consent, Appendix B: https://www.dgps.de/fileadmin/documents/Empfehlungen/Data_Management_eng_9.11.16.pdf
+
+
+# Reading
+
+Klein, O., Hardwicke, T. E., Aust, F., Breuer, J., Danielsson, H., Mohr, A. H., … Frank, M. C. (2018). A Practical Guide for Transparency in Psychological Science. _Collabra: Psychology_, 4(1). doi: [10.1525/collabra.158](https://doi.org/10.1525/collabra.158)
+
+
+---
+Workshop outline for *`r metadata$title`*, ESCON 2018, Cologne, Germany, `r metadata$date`.
+
+Frederik Aust ([frederik.aust@uni-koeln.de](mailto:frederik.aust@uni-koeln.de), [\@frederikaust](http://twitter.com/frederikaust)); Johannes Breuer ([johannes.breuer@gesis.org](mailto:johannes.breuer@gesis.org))
