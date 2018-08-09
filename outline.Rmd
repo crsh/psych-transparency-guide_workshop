@@ -71,6 +71,8 @@ The active three-hour workshop will cover the following issues.
 - Informed consent, Appendix B: https://www.dgps.de/fileadmin/documents/Empfehlungen/Data_Management_eng_9.11.16.pdf
 
 
+- Check https://open-science-training-handbook.gitbook.io/book/examples-and-practical-guidance
+
 # Reading
 
 Klein, O., Hardwicke, T. E., Aust, F., Breuer, J., Danielsson, H., Mohr, A. H., … Frank, M. C. (2018). A Practical Guide for Transparency in Psychological Science. _Collabra: Psychology_, 4(1). doi: [10.1525/collabra.158](https://doi.org/10.1525/collabra.158)
