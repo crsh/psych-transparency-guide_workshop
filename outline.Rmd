@@ -56,10 +56,12 @@ The active three-hour workshop will cover the following issues.
 
 - Why not to share?
     - Brief discussion of DSGVO? (Anonymisation example?)
+    - Examples of sensitive data (from participants)
 
 - Incentivize sharing
     - PRO initiative
     - Commitment to Research Transparency and Open Science (http://www.researchtransparency.org/)
+    - practical advantages for researchers (find your own data, more citations...)
 
 ---
 
