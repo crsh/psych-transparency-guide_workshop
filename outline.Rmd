@@ -44,7 +44,7 @@ The active three-hour workshop will cover the following issues.
 
 - When to share?
     - Set up Dropbox to collect born-open data
-    - Show some preregistration websites, show case good preregistrations (https://osf.io/h9k8n/)
+    - Show some preregistration websites, showcase good preregistrations (https://osf.io/h9k8n/)
     - http://www.sherpa.ac.uk/romeo/search.php
 
 - How to share?
@@ -62,6 +62,11 @@ The active three-hour workshop will cover the following issues.
     - PRO initiative
     - Commitment to Research Transparency and Open Science (http://www.researchtransparency.org/)
     - practical advantages for researchers (find your own data, more citations...)
+
+- How can you promote research transparency?
+    - use templates for transparent & reproducible projects
+    - share materials with your collaborators
+    - teach your students
 
 ---
 
