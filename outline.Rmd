@@ -2,7 +2,9 @@
 title   : "A practical primer on transparent research workflows"
 subtitle: "Workshop outline"
 author  : "Frederik Aust & Johannes Breuer"
+
 date    : "04.09.2018"
+location: "ESCON 2018, Cologne, Germany"
 
 abstract: |
   Psychological science is facing a crisis of confidence fueled by concerns about replicability of empirical findings (e.g., Open Science Collaboration, 2015).
@@ -37,22 +39,47 @@ The active three-hour workshop will cover the following issues.
 ### Conceptual introduction
 
 - Why share? (brief, participants already signed up for the workshop)
+    - Good for others
+    - Good for you
+        - In lab transparency
+        - paul wilson quote
+
+- It's just documenting your work, making it easier to understand
+    - So that lab members can learn from each other
+    - So that you don't forget what you've done
+    - So that your colleagues can help your work flourish
+- Has the bonus of allowing you to share outside, if/when you want
+
 
 - What to share?
     - Show some example data set documentation (maybe `codebook` package?, https://osf.io/rv7py/, https://osf.io/e4tqy/)
     - Demonstrate dynamic documents
 
 - When to share?
-    - Set up Dropbox to collect born-open data
-    - Show some preregistration websites, showcase good preregistrations (https://osf.io/h9k8n/)
-    - http://www.sherpa.ac.uk/romeo/search.php
+    - data
+        - Set up Dropbox to collect born-open data
+    - papers
+        - preregistration
+            - Show some preregistration websites, showcase good preregistrations (https://osf.io/h9k8n/)
+        - upon submission (preprint)
+        - upon acceptance (postprint)
+            - http://www.sherpa.ac.uk/romeo/search.php
 
 - How to share?
-    - Handout table that summarizes repositories
-      - Discuss some usecases (maybe suggested by participants)
-    - Browse example OSF repository
-    - Hand out DGPs model informed consent
-    - Citeable datasets
+    - Data
+        - Handout table that summarizes repositories
+            - Discuss some usecases (maybe suggested by participants)
+        - Browse example OSF repository
+        - Hand out DGPs model informed consent
+        - Citeable datasets
+        - GDPR (see Arslan slides)
+    - papers
+        - Say something about PsyArXiv vs. BioArXiv vs. PeerJ vs. ...
+        - PsyArXiv: Official partner of APA (http://www.apa.org/pubs/authors/unauthorized-internet-posting.aspx)
+        
+        - https://en.wikipedia.org/wiki/List_of_academic_journals_by_preprint_policy (not an exhaustive list)
+Only two that explicitly rule out preprints
+            - NEJM [New England Journal of Medicine] and JCI [Journal of Clinical Investigation]
 
 - Why not to share?
     - Brief discussion of DSGVO? (Anonymisation example?)
@@ -66,7 +93,14 @@ The active three-hour workshop will cover the following issues.
 - How can you promote research transparency?
     - use templates for transparent & reproducible projects
     - share materials with your collaborators
-    - teach your students
+    - teach your students and colleagues
+        - What do we do here in Cologne?
+        - Example: Registered Report draft as non-empirical Bachelor's thesis
+    - vote with you feet
+        - Choose journals that value openness/robustness over falshy journals
+    - Incentives
+        - Take openess into account when particpating in commissions
+    - Give credit where credit is due (cite data, open source software developed by academics, etc.)
 
 ---
 
@@ -77,8 +111,14 @@ The active three-hour workshop will cover the following issues.
 - BIDS example on GitHub: https://github.com/INCF/BIDS-examples
 - Informed consent, Appendix B: https://www.dgps.de/fileadmin/documents/Empfehlungen/Data_Management_eng_9.11.16.pdf
 
+- Prepare OSF demo (see Candice Morey's slides)
 
 - Check https://open-science-training-handbook.gitbook.io/book/examples-and-practical-guidance
+
+re3data.org
+
+http://arx.deidentifier.org/
+
 
 # Reading
 
@@ -86,6 +126,6 @@ Klein, O., Hardwicke, T. E., Aust, F., Breuer, J., Danielsson, H., Mohr, A. H., 
 
 
 ---
-Workshop outline for *`r metadata$title`*, ESCON 2018, Cologne, Germany, `r metadata$date`.
+Workshop outline for *`r metadata$title`*, `r metadata$location`, `r metadata$date`.
 
-Frederik Aust ([frederik.aust@uni-koeln.de](mailto:frederik.aust@uni-koeln.de), [\@frederikaust](http://twitter.com/frederikaust)); Johannes Breuer ([johannes.breuer@gesis.org](mailto:johannes.breuer@gesis.org))
+Frederik Aust ([frederik.aust@uni-koeln.de](mailto:frederik.aust@uni-koeln.de), [\@frederikaust](http://twitter.com/frederikaust)); Dr. Johannes Breuer ([johannes.breuer@gesis.org](mailto:johannes.breuer@gesis.org))

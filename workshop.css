@@ -1,0 +1,157 @@
+.pull-right-25 {
+  float: right;
+  width: 25%;
+}
+
+.pull-right-40 {
+  float: right;
+  width: 40%;
+}
+
+.pull-right-50 {
+  float: right;
+  width: 50%;
+}
+
+.pull-right-55 {
+  float: right;
+  width: 55%;
+}
+
+.pull-right-60 {
+  float: right;
+  width: 60%;
+}
+
+.pull-right-99 {
+  float: right;
+  width: 99%;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+  margin-right: 25px;
+  width: auto;
+}
+
+.center-70 {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+li {
+  margin: 10px 0 10px 0;
+}
+
+ol {
+  font-size: 1.5em;
+  margin: 0 0 5px 0;
+}
+
+ul {
+  font-size: 1.5em;
+}
+
+ol ol, ol ul, ul ol, ul ul {
+  font-size: 0.9em;
+}
+
+.title-slide .remark-slide-number {
+  display: none;
+}
+
+.highlight {
+  background-color: #ffcc66;
+}
+
+div.my-footer {
+    background-color: #272822;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 20px;
+    width: 100%;
+    overflow: hidden;
+}
+
+div.my-footer span {
+    font-size: 9pt;
+    color: #F7F8FA;
+    position: relative;
+    padding-left: 12px;
+    padding-right: 12px;
+    bottom: 3px;
+}
+
+.remark-slide-number {
+  display: none;
+}
+
+.remark-code {
+  border-radius: 7px;
+}
+
+.remark-inline-code {
+  background-color: #e8e8e8;
+  border-radius: 7px;
+  font-size: 0.9em;
+  padding: 3px 6px 3px 6px;
+}
+
+blockquote.twitter-tweet {
+  display: inline-block;
+  padding: 16px;
+  margin: 5px 0;
+  max-width: 468px;
+  border: #ddd 1px solid;
+  border-top-color: #eee;
+  border-bottom-color: #bbb;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  font: bold 14px/18px Helvetica, Arial, sans-serif;
+  color: #000;
+  text-align: left;
+}
+
+blockquote.twitter-tweet p {
+  font: normal 18px/24px Georgia, "Times New Roman", Palatino, serif;
+  margin: 0 5px 10px 0;
+}
+
+blockquote.twitter-tweet a[href^="https://twitter.com"] {
+  font-weight: normal;
+  color: #666;
+  font-size: 12px;
+}
+
+.MathJax {
+  font-size: 100%;
+}
+
+kbd {
+  -moz-border-radius:3px;
+  -moz-box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+  -webkit-border-radius:3px;
+  -webkit-box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+  background-color:#f7f7f7;
+  border:1px solid #ccc;
+  border-radius:3px;
+  box-shadow:0 1px 0 rgba(0,0,0,0.2),0 0 0 2px #fff inset;
+  color:#333;
+  display:inline-block;
+  font-family:Arial,Helvetica,sans-serif;
+  font-size:18px;
+  line-height:1.4;
+  margin:0 .1em;
+  padding:.1em .6em;
+  text-shadow:0 1px 0 #fff;
+}

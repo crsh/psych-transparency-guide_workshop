@@ -1,0 +1,108 @@
+---
+title: "How to be open"
+subtitle: "A practical primer on transparent research workflows"
+author: "Frederik Aust<br />Dr. Johannes Breuer"
+
+date    : "04.09.2018"
+location: "ESCON 2018, Cologn, Germany"
+
+output:
+  xaringan::moon_reader:
+    css: ["default", "workshop.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+layout: true
+
+```{r setup, include = FALSE}
+library("knitr")
+library("rmarkdown")
+
+options(htmltools.dir.version = FALSE)
+
+opts_chunk$set(fig.align = "center")
+```
+
+<div class="my-footer">
+  <div style="float: left;"><span>Frederik Aust</span></div>
+  <div style="float: right;"><span>`r metadata$location`, `r metadata$date`</span></div>
+  <div style="text-align: center;"><span>`r metadata$title`: `r gsub("<br>", " ", metadata$subtitle)`</span></div>
+</div>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  "HTML-CSS": {
+    scale: 150,
+  }
+});
+</script>
+
+
+---
+# About us
+
+Frederik Aust ([frederik.aust@uni-koeln.de](mailto:frederik.aust@uni-koeln.de), [@frederikaust](http://twitter.com/frederikaust))
+
+- PhD at the University of Cologne (Prof. Dr. Christoph Stahl)
+- Founding memeber of [Cologne Open Science working group](https://www.hf.uni-koeln.de/39711)
+- Author and contributor to several R packages<br> (e.g., [`afex`](https://cran.r-project.org/web/packages/afex/index.html), [`citr`](https://cran.r-project.org/web/packages/citr/index.html), [`papaja`](https://github.com/crsh/papaja), [`prereg`](https://cran.r-project.org/web/packages/prereg/index.html))
+
+
+---
+# About us
+
+Dr. Johannes Breuer ([johannes.breuer@gesis.org](mailto:johannes.breuer@gesis.org))
+
+- ...
+
+
+---
+# Preliminaries
+
+- Ask questions (any time)
+- Learn by doing
+
+Slides and material are available at
+
+.center[`...`]
+
+
+---
+# Workshop outline
+
+...
+
+???
+- Questions?
+
+ 
+---
+class: inverse, middle
+
+> do not let the perfect be the enemy of the good. Share
+and document what you can, as it will provide a benefit
+compared with not sharing<br />(p. 4, Klein et al., 2018).
+
+
+---
+class: inverse, middle, center
+
+# Why to share
+
+
+---
+# Why to share
+
+<!-- TODO: Copy-paste from Candice Morey -->
+
+- It's just documenting your work, making it easier to understand
+    - So that lab members can learn from each other
+    - So that you don't forget what you've done
+    - So that your colleagues can help your work flourish
+- Has the bonus of allowing you to share outside, if/when you want
+
+

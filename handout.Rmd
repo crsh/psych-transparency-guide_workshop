@@ -1,0 +1,142 @@
+---
+title   : "A practical primer on transparent research workflows"
+subtitle: "Handout"
+author  : "Frederik Aust & Johannes Breuer"
+
+date    : "04.09.2018"
+location: "ESCON 2018, Cologne, Germany"
+
+output:
+  html_document:
+    theme         : "spacelab"
+    df_print      : "kable"
+    toc           : true
+    toc_float     : true
+---
+
+```{r setup, include = FALSE}
+library("rmarkdown")
+```
+
+---
+
+> do not let the perfect be the enemy of the good. Share
+and document what you can, as it will provide a benefit
+compared with not sharing (p. 4, Klein et al., 2018).
+
+---
+
+# General considerations
+
+- Make transparency a default: If possible, share all products of the research process for which there are no negative constraints
+    - If negative constraints prohibit transparency, explicitly declare and justify these decisions in the manuscript
+
+# What can you share?
+
+- Study protocol
+- Study material
+- Data & Metadata
+    - Show some example data set documentation
+        - **Demonstration**: Show examples (https://osf.io/rv7py/, https://osf.io/e4tqy/), show `codebook` package and [SPSS codebook function](https://libguides.library.kent.edu/SPSS/Codebooks) <!-- TODO: Johannes, hast du eine SPSS-Lizenz um Screenshots von sowas zu machen? -->
+- Analysis scripts
+- Reports
+
+
+- Why not to share?
+    - Brief discussion of DSGVO? (Anonymisation example?)
+    - Examples of sensitive data (from participants)
+
+
+# When can you share?
+
+- Study protocol
+- Study material
+- Data & Metadata
+    - Born-open data
+        - **Demonstration**: Set up Dropbox to collect born-open data <!-- TODO: Johannes, ist das eher when oder how? -->
+- Analysis scripts
+    - Demonstrate dynamic documents
+- Reports (https://nikokriegeskorte.org/2016/03/13/the-selfish-scientists-guide-to-preprint-posting/, https://archaeologicalnetworks.wordpress.com/2017/09/28/open-science-in-archaeology-publication-and-special-interest-group/)
+    - preregistration
+    - upon submission (preprint)
+    - upon acceptance (postprint)
+        - http://www.sherpa.ac.uk/romeo/search.php
+
+
+# How can you share?
+
+- Study protocol
+    - Preregistration
+        - **Demonstration**: Show some preregistration websites, showcase good preregistrations (https://osf.io/h9k8n/)
+    - Registered report
+- Study material
+- Data & Metadata
+    - Hand out DGPs model informed consent
+    - Handout table that summarizes repositories
+        - Discuss some usecases (maybe suggested by participants)
+    - Repository structure
+        - **Demonstration**: Browse example OSF repository
+    - Citeable datasets
+    - GDPR (see Arslan slides)
+        - Anonymisation (https://amnesia.openaire.eu/index.html, http://arx.deidentifier.org/)
+- Analysis scripts
+    - Briefly note some best practices
+    - **Demonstrate**: Dynamic documents (`papaja`)
+- Reports
+    - Say something about PsyArXiv vs. BioArXiv vs. PeerJ vs. ...
+    - PsyArXiv: Official partner of APA (http://www.apa.org/pubs/authors/unauthorized-internet-posting.aspx)
+    - https://en.wikipedia.org/wiki/List_of_academic_journals_by_preprint_policy (not an exhaustive list)
+Only two that explicitly rule out preprints
+        - NEJM [New England Journal of Medicine] and JCI [Journal of Clinical Investigation]
+- Licenses
+    - Overview of common licenses
+
+
+# How you can promote openness?
+
+- Incentivize sharing
+    - PRO initiative
+    - Commitment to Research Transparency and Open Science (http://www.researchtransparency.org/)
+    - practical advantages for researchers (find your own data, more citations...)
+
+- How can you promote research transparency?
+    - use templates for transparent & reproducible projects
+    - share materials with your collaborators
+    - teach your students and colleagues
+        - What do we do here in Cologne?
+        - Example: Registered Report draft as non-empirical Bachelor's thesis
+    - vote with you feet
+        - Choose journals that value openness/robustness over falshy journals
+    - Incentives
+        - Take openess into account when particpating in commissions
+    - Give credit where credit is due (cite data, open source software developed by academics, etc.)
+
+
+---
+
+# Additional preparations
+
+- Set up OSF repository with project structure that participants can fork to create their own project
+- TIER template to clone: https://osf.io/ybzxe/
+- BIDS example on GitHub: https://github.com/INCF/BIDS-examples
+- Informed consent, Appendix B: https://www.dgps.de/fileadmin/documents/Empfehlungen/Data_Management_eng_9.11.16.pdf
+
+- Prepare OSF demo (see Candice Morey's slides)
+
+- Check https://open-science-training-handbook.gitbook.io/book/examples-and-practical-guidance
+
+re3data.org
+
+
+
+---
+
+# Reading
+
+Klein, O., Hardwicke, T. E., Aust, F., Breuer, J., Danielsson, H., Mohr, A. H., … Frank, M. C. (2018). A Practical Guide for Transparency in Psychological Science. _Collabra: Psychology_, 4(1). doi: [10.1525/collabra.158](https://doi.org/10.1525/collabra.158) [Supplementary](material
+http://psych-transparency-guide.uni-koeln.de/)
+
+---
+Handout for *`r metadata$title`*, `r metadata$location`, `r metadata$date`.
+
+Frederik Aust ([frederik.aust@uni-koeln.de](mailto:frederik.aust@uni-koeln.de), [\@frederikaust](http://twitter.com/frederikaust)); Dr. Johannes Breuer ([johannes.breuer@gesis.org](mailto:johannes.breuer@gesis.org))
