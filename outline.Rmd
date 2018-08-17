@@ -44,7 +44,7 @@ The active three-hour workshop will cover the following issues.
         - In lab transparency
         - paul wilson quote
 
-- It's just documenting your work, making it easier to understand
+- It's just documenting your work, making it easier to understand (for yourself and others)
     - So that lab members can learn from each other
     - So that you don't forget what you've done
     - So that your colleagues can help your work flourish
@@ -99,8 +99,8 @@ Only two that explicitly rule out preprints
     - vote with you feet
         - Choose journals that value openness/robustness over falshy journals
     - Incentives
-        - Take openess into account when particpating in commissions
-    - Give credit where credit is due (cite data, open source software developed by academics, etc.)
+        - Take openness into account when particpating in commissions or writing job ads
+    - Give credit where credit is due (cite data, open source or free software developed by academics, etc.)
 
 ---
 
@@ -128,4 +128,4 @@ Klein, O., Hardwicke, T. E., Aust, F., Breuer, J., Danielsson, H., Mohr, A. H., 
 ---
 Workshop outline for *`r metadata$title`*, `r metadata$location`, `r metadata$date`.
 
-Frederik Aust ([frederik.aust@uni-koeln.de](mailto:frederik.aust@uni-koeln.de), [\@frederikaust](http://twitter.com/frederikaust)); Dr. Johannes Breuer ([johannes.breuer@gesis.org](mailto:johannes.breuer@gesis.org))
+Frederik Aust ([frederik.aust@uni-koeln.de](mailto:frederik.aust@uni-koeln.de), [\@frederikaust](http://twitter.com/frederikaust)); Johannes Breuer ([johannes.breuer@gesis.org](mailto:johannes.breuer@gesis.org), [\@MattEagle09](https://twitter.com/MattEagle09))

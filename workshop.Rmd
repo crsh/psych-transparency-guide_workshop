@@ -1,10 +1,10 @@
 ---
 title: "How to be open"
 subtitle: "A practical primer on transparent research workflows"
-author: "Frederik Aust<br />Dr. Johannes Breuer"
+author: "Frederik Aust<br />Johannes Breuer"
 
 date    : "04.09.2018"
-location: "ESCON 2018, Cologn, Germany"
+location: "ESCON 2018, Cologne, Germany"
 
 output:
   xaringan::moon_reader:
@@ -55,15 +55,16 @@ Frederik Aust ([frederik.aust@uni-koeln.de](mailto:frederik.aust@uni-koeln.de), 
 ---
 # About us
 
-Dr. Johannes Breuer ([johannes.breuer@gesis.org](mailto:johannes.breuer@gesis.org))
+Johannes Breuer ([johannes.breuer@gesis.org](mailto:johannes.breuer@gesis.org), [@MattEagle09](https://twitter.com/MattEagle09))
 
-- ...
+- PhD in psychology, University of Cologne (media psychology, Prof. Dr. Gary Bente)
+- senior researcher at GESIS - Leibniz Institute for the Social Sciences (Data Archive for the Social Sciences)
 
 
 ---
 # Preliminaries
 
-- Ask questions (any time)
+- Feel free to ask questions at any point
 - Learn by doing
 
 Slides and material are available at
