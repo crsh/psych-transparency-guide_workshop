@@ -76,7 +76,7 @@ compared with not sharing (p. 4, Klein et al., 2018).
         - Simple codebooks vs. standardized and machine-readable (services provided by repositories)
     - FAIR
     
-    - **Demonstration**: Show examples (https://osf.io/rv7py/, https://osf.io/e4tqy/), show `codebook` package and [SPSS codebook function](https://libguides.library.kent.edu/SPSS/Codebooks) <!-- TODO: Johannes, hast du eine SPSS-Lizenz um Screenshots von sowas zu machen? -->
+    - **Demonstration**: Show examples (https://osf.io/rv7py/, https://osf.io/e4tqy/), show `codebook` package and [SPSS codebook function](https://libguides.library.kent.edu/SPSS/Codebooks)
 
 - Standard operating procedures
     - Lab workflow: https://osf.io/mv8pj/wiki/
