@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>How to be open</title>
+    <title> How to do research openly</title>
     <meta charset="utf-8">
-    <meta name="author" content="Frederik Aust Johannes Breuer" />
+    <meta name="author" content="Frederik Aust Dr. Johannes Breuer" />
     <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
     <link rel="stylesheet" href="workshop.css" type="text/css" />
   </head>
   <body>
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# How to be open
+# <img src = 'images/open.png' style = 'margin-bottom: 45px;'/><br />How to do research openly
 ## A practical primer on transparent research workflows
-### Frederik Aust<br />Johannes Breuer
+### Frederik Aust<br />Dr. Johannes Breuer<br /><br /><a href = 'https://creativecommons.org/licenses/by/4.0/'><img src = 'images/by.png' style = 'width: 10%;' /></a>
 ### 04.09.2018
 
 ---
@@ -24,7 +25,7 @@ layout: true
 
 
 &lt;div class="my-footer"&gt;
-  &lt;div style="float: left;"&gt;&lt;span&gt;Frederik Aust&lt;/span&gt;&lt;/div&gt;
+  &lt;div style="float: left;"&gt;&lt;span&gt;Frederik Aust &amp; Johannes Breuer&lt;/span&gt;&lt;/div&gt;
   &lt;div style="float: right;"&gt;&lt;span&gt;ESCON 2018, Cologne, Germany, 04.09.2018&lt;/span&gt;&lt;/div&gt;
   &lt;div style="text-align: center;"&gt;&lt;span&gt;How to be open: A practical primer on transparent research workflows&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -37,14 +38,13 @@ MathJax.Hub.Config({
 });
 &lt;/script&gt;
 
-
 ---
 # About us
 
 Frederik Aust ([frederik.aust@uni-koeln.de](mailto:frederik.aust@uni-koeln.de), [@frederikaust](http://twitter.com/frederikaust))
 
-- PhD at the University of Cologne (Prof. Dr. Christoph Stahl)
-- Founding memeber of [Cologne Open Science working group](https://www.hf.uni-koeln.de/39711)
+- PhD student at the University of Cologne&lt;br /&gt;(Prof. Dr. Christoph Stahl)
+- Founding memeber of [Cologne Open Science&lt;br /&gt;working group](https://www.hf.uni-koeln.de/39711)
 - Author and contributor to several R packages&lt;br&gt; (e.g., [`afex`](https://cran.r-project.org/web/packages/afex/index.html), [`citr`](https://cran.r-project.org/web/packages/citr/index.html), [`papaja`](https://github.com/crsh/papaja), [`prereg`](https://cran.r-project.org/web/packages/prereg/index.html))
 
 
@@ -54,7 +54,7 @@ Frederik Aust ([frederik.aust@uni-koeln.de](mailto:frederik.aust@uni-koeln.de), 
 Johannes Breuer ([johannes.breuer@gesis.org](mailto:johannes.breuer@gesis.org), [@MattEagle09](https://twitter.com/MattEagle09))
 
 - PhD in psychology, University of Cologne (media psychology, Prof. Dr. Gary Bente)
-- senior researcher at GESIS - Leibniz Institute for the Social Sciences (Data Archive for the Social Sciences)
+- senior researcher at GESIS &amp;ndash; Leibniz Institute for the Social Sciences (Data Archive for the Social Sciences)
 
 
 ---
@@ -76,13 +76,28 @@ Slides and material are available at
 ???
 - Questions?
 
+
+---
+class: inverse, middle, center
+
+# How to be open
+
  
 ---
-class: inverse, middle
+class: middle
 
-&gt; do not let the perfect be the enemy of the good. Share
-and document what you can, as it will provide a benefit
-compared with not sharing&lt;br /&gt;(p. 4, Klein et al., 2018).
+# How to be open
+
+&gt; .highlight[do not let the perfect be the enemy of the good].
+Share and document what you can, as it will provide a benefit compared with not sharing (p. 4, Klein et al., 2018).
+
+
+---
+class: middle
+
+# How to be open
+
+&gt; being an open scientist means .highlight[adopting a few straightforward research management practices, which lead to less error-prone, reproducible research workflows] with each incremental step adding positive value&lt;br /&gt;(p. 11, Klein et al., 2018).
 
 
 ---
@@ -101,8 +116,52 @@ class: inverse, middle, center
     - So that you don't forget what you've done
     - So that your colleagues can help your work flourish
 - Has the bonus of allowing you to share outside, if/when you want
+
+
+---
+.pull-left[![:scale 70%](images/protocol.png)]
+
+# Study protocol
+
+&lt;img src="images/registered-reports.png" width="1067" style="display: block; margin: auto;" /&gt;
+
+
+---
+.pull-left[![:scale 70%](images/material.png)]
+
+# Materials
+
+
+---
+.pull-left[![:scale 70%](images/data.png)]
+
+# Data
+
+
+---
+.pull-left[![:scale 70%](images/analysis.png)]
+
+# Analyses
+
+
+
+---
+class: inverse, middle
+
+&gt; Open Science is just science done right&lt;br /&gt;&lt;br /&gt;&amp;mdash;Jon Tennant, Imperial College London
+
+
+
+
+---
+# Acknowledgments
+
+- Workshop material is based on&lt;br /&gt;Klein, O., Hardwicke, T. E., Aust, F., Breuer, J., Danielsson, H., Mohr, A. H., … Frank, M. C. (2018). A Practical Guide for Transparency in Psychological Science. Collabra: Psychology, 4(1). doi: [10.1525/collabra.158](https://doi.org/10.1525/collabra.158)  ([![:scale 7%](images/by.png)](https://creativecommons.org/licenses/by/4.0/))
+- Slides created in R with [`xaringan`](https://github.com/yihui/xaringan)
+- Icons by [Icons8](https://icons8.com) ([![:scale 7%](images/by-nd.png)](https://creativecommons.org/licenses/by-nd/3.0/))
     </textarea>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
 <script>var slideshow = remark.create({
 "highlightStyle": "github",
 "highlightLines": true,
@@ -118,23 +177,12 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   d.head.appendChild(s);
 })();</script>
 
-<script>
-(function() {
-  var i, text, code, codes = document.getElementsByTagName('code');
-  for (i = 0; i < codes.length;) {
-    code = codes[i];
-    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
-      text = code.textContent;
-      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
-          /^\$\$(.|\s)+\$\$$/.test(text) ||
-          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
-        code.outerHTML = code.innerHTML;  // remove <code></code>
-        continue;
-      }
-    }
-    i++;
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
   }
-})();
+});
 </script>
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

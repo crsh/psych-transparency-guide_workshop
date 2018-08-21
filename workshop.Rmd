@@ -1,19 +1,20 @@
 ---
-title: "How to be open"
+title: "<img src = 'images/open.png' style = 'margin-bottom: 45px;'/><br />How to do research openly"
 subtitle: "A practical primer on transparent research workflows"
-author: "Frederik Aust<br />Johannes Breuer"
+author: "Frederik Aust<br />Dr. Johannes Breuer<br /><br /><a href = 'https://creativecommons.org/licenses/by/4.0/'><img src = 'images/by.png' style = 'width: 10%;' /></a>"
 
 date    : "04.09.2018"
 location: "ESCON 2018, Cologne, Germany"
 
 output:
   xaringan::moon_reader:
-    css: ["default", "workshop.css"]
+    css: ["default", "default-fonts", "workshop.css"]
     lib_dir: libs
     nature:
-      highlightStyle: github
+      highlightStyle: "github"
       highlightLines: true
       countIncrementalSlides: false
+      beforeInit: "macros.js"
 ---
 
 layout: true
@@ -24,13 +25,13 @@ library("rmarkdown")
 
 options(htmltools.dir.version = FALSE)
 
-opts_chunk$set(fig.align = "center")
+opts_chunk$set(echo = FALSE, fig.align = "center")
 ```
 
 <div class="my-footer">
-  <div style="float: left;"><span>Frederik Aust</span></div>
+  <div style="float: left;"><span>`r gsub("<br />|<a.+$", " & ", metadata$author)`</span></div>
   <div style="float: right;"><span>`r metadata$location`, `r metadata$date`</span></div>
-  <div style="text-align: center;"><span>`r metadata$title`: `r gsub("<br>", " ", metadata$subtitle)`</span></div>
+  <div style="text-align: center;"><span>`r metadata$title`: `r gsub(".+<br />", " ", metadata$subtitle)`</span></div>
 </div>
 
 <script type="text/x-mathjax-config">
@@ -41,14 +42,13 @@ MathJax.Hub.Config({
 });
 </script>
 
-
 ---
 # About us
 
 Frederik Aust ([frederik.aust@uni-koeln.de](mailto:frederik.aust@uni-koeln.de), [@frederikaust](http://twitter.com/frederikaust))
 
-- PhD at the University of Cologne (Prof. Dr. Christoph Stahl)
-- Founding memeber of [Cologne Open Science working group](https://www.hf.uni-koeln.de/39711)
+- PhD student at the University of Cologne<br />(Prof. Dr. Christoph Stahl)
+- Founding memeber of [Cologne Open Science<br />working group](https://www.hf.uni-koeln.de/39711)
 - Author and contributor to several R packages<br> (e.g., [`afex`](https://cran.r-project.org/web/packages/afex/index.html), [`citr`](https://cran.r-project.org/web/packages/citr/index.html), [`papaja`](https://github.com/crsh/papaja), [`prereg`](https://cran.r-project.org/web/packages/prereg/index.html))
 
 
@@ -58,7 +58,7 @@ Frederik Aust ([frederik.aust@uni-koeln.de](mailto:frederik.aust@uni-koeln.de), 
 Johannes Breuer ([johannes.breuer@gesis.org](mailto:johannes.breuer@gesis.org), [@MattEagle09](https://twitter.com/MattEagle09))
 
 - PhD in psychology, University of Cologne (media psychology, Prof. Dr. Gary Bente)
-- senior researcher at GESIS - Leibniz Institute for the Social Sciences (Data Archive for the Social Sciences)
+- senior researcher at GESIS &ndash; Leibniz Institute for the Social Sciences (Data Archive for the Social Sciences)
 
 
 ---
@@ -80,13 +80,28 @@ Slides and material are available at
 ???
 - Questions?
 
+
+---
+class: inverse, middle, center
+
+# `r metadata$title`
+
  
 ---
-class: inverse, middle
+class: middle
 
-> do not let the perfect be the enemy of the good. Share
-and document what you can, as it will provide a benefit
-compared with not sharing<br />(p. 4, Klein et al., 2018).
+# `r metadata$title`
+
+> .highlight[do not let the perfect be the enemy of the good].
+Share and document what you can, as it will provide a benefit compared with not sharing (p. 4, Klein et al., 2018).
+
+
+---
+class: middle
+
+# `r metadata$title`
+
+> being an open scientist means .highlight[adopting a few straightforward research management practices, which lead to less error-prone, reproducible research workflows] with each incremental step adding positive value<br />(p. 11, Klein et al., 2018).
 
 
 ---
@@ -105,5 +120,51 @@ class: inverse, middle, center
     - So that you don't forget what you've done
     - So that your colleagues can help your work flourish
 - Has the bonus of allowing you to share outside, if/when you want
+
+
+---
+.pull-left[![:scale 70%](images/protocol.png)]
+
+# Study protocol
+
+```{r registered-reports-graphic}
+include_graphics("images/registered-reports.png")
+```
+
+
+---
+.pull-left[![:scale 70%](images/material.png)]
+
+# Materials
+
+
+---
+.pull-left[![:scale 70%](images/data.png)]
+
+# Data
+
+
+---
+.pull-left[![:scale 70%](images/analysis.png)]
+
+# Analyses
+
+
+
+---
+class: inverse, middle
+
+> Open Science is just science done right<br /><br />&mdash;Jon Tennant, Imperial College London
+
+
+
+
+---
+# Acknowledgments
+
+- Workshop material is based on<br />Klein, O., Hardwicke, T. E., Aust, F., Breuer, J., Danielsson, H., Mohr, A. H., … Frank, M. C. (2018). A Practical Guide for Transparency in Psychological Science. Collabra: Psychology, 4(1). doi: [10.1525/collabra.158](https://doi.org/10.1525/collabra.158)  ([![:scale 7%](images/by.png)](https://creativecommons.org/licenses/by/4.0/))
+- Slides created in R with [`xaringan`](https://github.com/yihui/xaringan)
+- Icons by [Icons8](https://icons8.com) ([![:scale 7%](images/by-nd.png)](https://creativecommons.org/licenses/by-nd/3.0/))
+
 
 
