@@ -44,7 +44,7 @@
 }
 
 p {
-  font-size: 1.5em;
+  font-size: 1.25em;
 }
 
 li {
@@ -153,4 +153,26 @@ kbd {
   margin:0 .1em;
   padding:.1em .6em;
   text-shadow:0 1px 0 #fff;
+}
+
+
+.reference {
+  font-size: 0.8em;
+  opacity: 0.5;
+  position: fixed;
+  display: block;
+  margin: 0 auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 75px;
+  width: 85%;
+}
+
+#likert {
+  text-align:center;
+}
+
+#likert td {
+  width: 70px;
 }

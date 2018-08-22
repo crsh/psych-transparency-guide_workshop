@@ -25,9 +25,9 @@ layout: true
 
 
 &lt;div class="my-footer"&gt;
-  &lt;div style="float: left;"&gt;&lt;span&gt;Frederik Aust &amp; Johannes Breuer&lt;/span&gt;&lt;/div&gt;
+  &lt;div style="float: left;"&gt;&lt;span&gt;Frederik Aust &amp; Dr. Johannes Breuer&lt;/span&gt;&lt;/div&gt;
   &lt;div style="float: right;"&gt;&lt;span&gt;ESCON 2018, Cologne, Germany, 04.09.2018&lt;/span&gt;&lt;/div&gt;
-  &lt;div style="text-align: center;"&gt;&lt;span&gt;How to be open: A practical primer on transparent research workflows&lt;/span&gt;&lt;/div&gt;
+  &lt;div style="text-align: center;"&gt;&lt;span&gt; How to do research openly: A practical primer on transparent research workflows&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;script type="text/x-mathjax-config"&gt;
@@ -80,13 +80,13 @@ Slides and material are available at
 ---
 class: inverse, middle, center
 
-# How to be open
+# &lt;img src = 'images/open.png' style = 'margin-bottom: 45px;'/&gt;&lt;br /&gt;How to do research openly
 
  
 ---
 class: middle
 
-# How to be open
+#  How to do research openly
 
 &gt; .highlight[do not let the perfect be the enemy of the good].
 Share and document what you can, as it will provide a benefit compared with not sharing (p. 4, Klein et al., 2018).
@@ -95,7 +95,7 @@ Share and document what you can, as it will provide a benefit compared with not 
 ---
 class: middle
 
-# How to be open
+#  How to do research openly
 
 &gt; being an open scientist means .highlight[adopting a few straightforward research management practices, which lead to less error-prone, reproducible research workflows] with each incremental step adding positive value&lt;br /&gt;(p. 11, Klein et al., 2018).
 
@@ -116,6 +116,142 @@ class: inverse, middle, center
     - So that you don't forget what you've done
     - So that your colleagues can help your work flourish
 - Has the bonus of allowing you to share outside, if/when you want
+
+
+---
+# Example project
+
+### Research question
+
+Can we accurately judge a person's IQ by looking at their face?
+
+### Material
+
+Photographs of students with known IQ scores
+
+
+
+
+&lt;div class="reference"&gt;Kleisner, K., Chvátalová, V., &amp; Flegr, J. (2014). Perceived Intelligence Is Associated with Measured Intelligence in Men but Not Women. &lt;i&gt;PLoS ONE&lt;/i&gt;, 9(3): e81237. doi: &lt;a href="https://doi.org/10.1371/journal.pone.0081237"&gt;10.1371/journal.pone.0081237&lt;/a&gt;&lt;/div&gt;
+
+???
+~50,000 students, 17 faculties = 3000 students per faculty
+
+
+---
+# Example project
+
+.center[![:scale 30%](images/male-high.png)]
+
+&lt;table id="likert"&gt;
+   &lt;tr&gt;
+       &lt;td&gt;&lt;input id="radGuiltyStart" type="radio" name="Guilty" value="7" /&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;input type="radio" name="Guilty" value="6" /&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;input type="radio" name="Guilty" value="5" /&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;input type="radio" name="Guilty" value="4" /&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;input type="radio" name="Guilty" value="3" /&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;input type="radio" name="Guilty" value="2" /&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;input id="radGuiltyEnd" type="radio" name="Guilty" value="1" /&gt;&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+       &lt;td&gt;&lt;small&gt;Low&lt;/small&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;small&gt;Intelligence&lt;/small&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;small&gt;High&lt;/small&gt;&lt;/td&gt;
+   &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;div class="reference"&gt;Kleisner, K., Chvátalová, V., &amp; Flegr, J. (2014). Perceived Intelligence Is Associated with Measured Intelligence in Men but Not Women. &lt;i&gt;PLoS ONE&lt;/i&gt;, 9(3): e81237. doi: &lt;a href="https://doi.org/10.1371/journal.pone.0081237"&gt;10.1371/journal.pone.0081237&lt;/a&gt;&lt;/div&gt;
+
+
+---
+# Example project
+
+.center[![:scale 30%](images/female-low.png)]
+
+&lt;table id="likert"&gt;
+   &lt;tr&gt;
+       &lt;td&gt;&lt;input id="radGuiltyStart" type="radio" name="Guilty" value="7" /&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;input type="radio" name="Guilty" value="6" /&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;input type="radio" name="Guilty" value="5" /&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;input type="radio" name="Guilty" value="4" /&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;input type="radio" name="Guilty" value="3" /&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;input type="radio" name="Guilty" value="2" /&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;input id="radGuiltyEnd" type="radio" name="Guilty" value="1" /&gt;&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+       &lt;td&gt;&lt;small&gt;Low&lt;/small&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;small&gt;Intelligence&lt;/small&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;small&gt;High&lt;/small&gt;&lt;/td&gt;
+   &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;div class="reference"&gt;Kleisner, K., Chvátalová, V., &amp; Flegr, J. (2014). Perceived Intelligence Is Associated with Measured Intelligence in Men but Not Women. &lt;i&gt;PLoS ONE&lt;/i&gt;, 9(3): e81237. doi: &lt;a href="https://doi.org/10.1371/journal.pone.0081237"&gt;10.1371/journal.pone.0081237&lt;/a&gt;&lt;/div&gt;
+
+
+---
+# Example project
+
+.center[![:scale 30%](images/female-high.png)]
+
+&lt;table id="likert"&gt;
+   &lt;tr&gt;
+       &lt;td&gt;&lt;input id="radGuiltyStart" type="radio" name="Guilty" value="7" /&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;input type="radio" name="Guilty" value="6" /&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;input type="radio" name="Guilty" value="5" /&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;input type="radio" name="Guilty" value="4" /&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;input type="radio" name="Guilty" value="3" /&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;input type="radio" name="Guilty" value="2" /&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;input id="radGuiltyEnd" type="radio" name="Guilty" value="1" /&gt;&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+       &lt;td&gt;&lt;small&gt;Low&lt;/small&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;small&gt;Intelligence&lt;/small&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;small&gt;High&lt;/small&gt;&lt;/td&gt;
+   &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;div class="reference"&gt;Kleisner, K., Chvátalová, V., &amp; Flegr, J. (2014). Perceived Intelligence Is Associated with Measured Intelligence in Men but Not Women. &lt;i&gt;PLoS ONE&lt;/i&gt;, 9(3): e81237. doi: &lt;a href="https://doi.org/10.1371/journal.pone.0081237"&gt;10.1371/journal.pone.0081237&lt;/a&gt;&lt;/div&gt;
+
+
+---
+# Example project
+
+.center[![:scale 30%](images/male-low.png)]
+
+&lt;table id="likert"&gt;
+   &lt;tr&gt;
+       &lt;td&gt;&lt;input id="radGuiltyStart" type="radio" name="Guilty" value="7" /&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;input type="radio" name="Guilty" value="6" /&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;input type="radio" name="Guilty" value="5" /&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;input type="radio" name="Guilty" value="4" /&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;input type="radio" name="Guilty" value="3" /&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;input type="radio" name="Guilty" value="2" /&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;input id="radGuiltyEnd" type="radio" name="Guilty" value="1" /&gt;&lt;/td&gt;
+   &lt;/tr&gt;
+   &lt;tr&gt;
+       &lt;td&gt;&lt;small&gt;Low&lt;/small&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;small&gt;Intelligence&lt;/small&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;/td&gt;
+       &lt;td&gt;&lt;small&gt;High&lt;/small&gt;&lt;/td&gt;
+   &lt;/tr&gt;
+&lt;/table&gt;
+
+&lt;div class="reference"&gt;Kleisner, K., Chvátalová, V., &amp; Flegr, J. (2014). Perceived Intelligence Is Associated with Measured Intelligence in Men but Not Women. &lt;i&gt;PLoS ONE&lt;/i&gt;, 9(3): e81237. doi: &lt;a href="https://doi.org/10.1371/journal.pone.0081237"&gt;10.1371/journal.pone.0081237&lt;/a&gt;&lt;/div&gt;
 
 
 ---

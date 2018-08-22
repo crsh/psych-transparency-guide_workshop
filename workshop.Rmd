@@ -29,9 +29,9 @@ opts_chunk$set(echo = FALSE, fig.align = "center")
 ```
 
 <div class="my-footer">
-  <div style="float: left;"><span>`r gsub("<br />|<a.+$", " & ", metadata$author)`</span></div>
+  <div style="float: left;"><span>`r gsub("<br />", " & ", gsub("<br /><br />|<a.+$", "", metadata$author))`</span></div>
   <div style="float: right;"><span>`r metadata$location`, `r metadata$date`</span></div>
-  <div style="text-align: center;"><span>`r metadata$title`: `r gsub(".+<br />", " ", metadata$subtitle)`</span></div>
+  <div style="text-align: center;"><span>`r gsub(".+<br />", " ", metadata$title)`: `r gsub(".+<br />", " ", metadata$subtitle)`</span></div>
 </div>
 
 <script type="text/x-mathjax-config">
@@ -90,7 +90,7 @@ class: inverse, middle, center
 ---
 class: middle
 
-# `r metadata$title`
+# `r gsub(".+<br />", " ", metadata$title)`
 
 > .highlight[do not let the perfect be the enemy of the good].
 Share and document what you can, as it will provide a benefit compared with not sharing (p. 4, Klein et al., 2018).
@@ -99,7 +99,7 @@ Share and document what you can, as it will provide a benefit compared with not 
 ---
 class: middle
 
-# `r metadata$title`
+# `r gsub(".+<br />", " ", metadata$title)`
 
 > being an open scientist means .highlight[adopting a few straightforward research management practices, which lead to less error-prone, reproducible research workflows] with each incremental step adding positive value<br />(p. 11, Klein et al., 2018).
 
@@ -120,6 +120,89 @@ class: inverse, middle, center
     - So that you don't forget what you've done
     - So that your colleagues can help your work flourish
 - Has the bonus of allowing you to share outside, if/when you want
+
+
+---
+# Example project
+
+### Research question
+
+Can we accurately judge a person's IQ by looking at their face?
+
+### Material
+
+Photographs of students with known IQ scores
+
+```{r example-elements}
+example_citation <- '<div class="reference">Kleisner, K., Chvátalová, V., & Flegr, J. (2014). Perceived Intelligence Is Associated with Measured Intelligence in Men but Not Women. <i>PLoS ONE</i>, 9(3): e81237. doi: <a href="https://doi.org/10.1371/journal.pone.0081237">10.1371/journal.pone.0081237</a></div>'
+
+example_likert_scale <- '<table id="likert">
+   <tr>
+       <td><input id="radGuiltyStart" type="radio" name="Guilty" value="7" /></td>
+       <td><input type="radio" name="Guilty" value="6" /></td>
+       <td><input type="radio" name="Guilty" value="5" /></td>
+       <td><input type="radio" name="Guilty" value="4" /></td>
+       <td><input type="radio" name="Guilty" value="3" /></td>
+       <td><input type="radio" name="Guilty" value="2" /></td>
+       <td><input id="radGuiltyEnd" type="radio" name="Guilty" value="1" /></td>
+   </tr>
+   <tr>
+       <td><small>Low</small></td>
+       <td></td>
+       <td></td>
+       <td><small>Intelligence</small></td>
+       <td></td>
+       <td></td>
+       <td><small>High</small></td>
+   </tr>
+</table>'
+```
+
+
+`r example_citation`
+
+???
+~50,000 students, 17 faculties = 3000 students per faculty
+
+
+---
+# Example project
+
+.center[![:scale 30%](images/male-high.png)]
+
+`r example_likert_scale`
+
+`r example_citation`
+
+
+---
+# Example project
+
+.center[![:scale 30%](images/female-low.png)]
+
+`r example_likert_scale`
+
+`r example_citation`
+
+
+---
+# Example project
+
+.center[![:scale 30%](images/female-high.png)]
+
+`r example_likert_scale`
+
+`r example_citation`
+
+
+---
+# Example project
+
+.center[![:scale 30%](images/male-low.png)]
+
+`r example_likert_scale`
+
+`r example_citation`
 
 
 ---
