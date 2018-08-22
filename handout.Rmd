@@ -37,8 +37,15 @@ compared with not sharing (p. 4, Klein et al., 2018).
     - If negative constraints prohibit transparency, explicitly declare and justify these decisions in the manuscript
     - Automate what can be automated
 
+- Making your workflow play well with the rest of the lab?
+    - Do not impose
+    - Compromise surely necessary
 
 # What can you share?
+
+- Amnesia test: Would I understand this tomorrow if I lost my memory?
+- Learn and improve system based on experience with previous projects
+
 
 - Study protocol
     - Recepie for replication
@@ -55,6 +62,9 @@ compared with not sharing (p. 4, Klein et al., 2018).
         - Stimuli
         - Computer code to present stimuli and collect responses
         - Procedures for an interaction with a confederate
+    - Video documentation of procedure
+        - OBS
+        - JoVE
     <!-- - Aids interpretation of results -->
     <!-- - Facilitates scientific progress (e.g., replication and extension) -->
 
@@ -64,9 +74,36 @@ compared with not sharing (p. 4, Klein et al., 2018).
     - Processed data
         - As used for analyses (e.g., coded, digitized, merged)
     - Protect privacy of participants (identifying and sensitive information)
-        - Anonymisation
-        - GDPR
+        - Directly identifying information (e.g., Full name, Address (post or email), Passport number, Face, fingerprints, or handwriting, Credit card numbers, Date of birth, Genetic information)
+        - Personal data: Anything that can be attributed to a specific person (even with help of additional data sets)
+
+> In the EU General Data Protection Regulation, this has been
+formalized in Article 4: a "data subject" is one "who can be
+identified, directly or indirectly, by means reasonably likely to be
+used by the controller or by any other natural or legal person".
+
+        - Anonymisation vs. Pseudonymisation
+            - Store demographic data used for sample description separately and in an unlinkable manner
+            - Binning
+            - Top and bottom coding
+            - Adding noise
+            - Remove free text entries
+            - Aggregation
+        - GDPR (https://iapp.org/news/a/how-gdpr-changes-the-rules-for-research/)
         - Informed consent
+        - Harm assessment?
+        - Risk of reidentification
+            - Small population
+            - Rare traits
+            - Couples, families, class mates, co-workers
+            - Genetic, brain, geographic data
+        - Who will the data be shared with?
+        - Are participants unique in the sample and population?
+        - Self-identification??? <!-- TODO: How is this a problem/How would it be possible to prevent this? -->
+        - Motivate intruder test?
+            - Jealous partner, nosy neighbor, co-worker, journalist, insurers, marketers, blackmailers
+        - Collect only data you really need
+        - Delete indentying information used for logistics
     - Use open and interoperable file formats (e.g., CSV)
     - Metadata
         - Dataset documentation
@@ -74,9 +111,14 @@ compared with not sharing (p. 4, Klein et al., 2018).
         - Number of observations
         - Variable and value labels
         - Simple codebooks vs. standardized and machine-readable (services provided by repositories)
+            <!-- This documentation should describe the variables in each data file in both human- and machine-readable formats (e.g., csv, rather than docx or pdf).4 Ideally, codebooks are organized in such a way that each line represents one variable and each information relative to a variable represents a column. -->
+            <!-- Codebooks should include the following information for each variable: the name, description of the variable, units of measurement, coding of values (e.g., “1 = Female”,”2 = Male”), possible options or range in which the data points can fall (e.g., “1 = not at all to 7 = Very much”), value(s) used for missing values, and information on whether and how the variable was derived from other variables in the dataset (e.g., “bmi was derived from body_weight m and body_height l as BMI = m/l^2 .”). Other relevant information in a codebook entry can include the source of a measure, instructions for a questionnaire item, information about translation, or scale that an item belongs to. -->
     - FAIR
+    - https://www.tandfonline.com/doi/abs/10.1080/00031305.2017.1375987
     
     - **Demonstration**: Show examples (https://osf.io/rv7py/, https://osf.io/e4tqy/), show `codebook` package and [SPSS codebook function](https://libguides.library.kent.edu/SPSS/Codebooks)
+        <!-- - Codebooks can be generated from the data set metadata in popular statistical software, including SPSS (http://libguides.library.kent.edu/SPSS/Codebooks), Stata (http://www.stata.com/manuals13/dcodebook.pdf), or R (http://www.martin-elff.net/knitr/memisc/codebook.html; https://cran.r-project.org/web/packages/codebook/index.html), or with data publishing tools (e.g., http://www.nesstar.com/software/publisher.html), also see https://datawiz.leibniz-psychology.org/
+. The author of the codebook (Arslan, 2018) package for R has also created a web app for creating codebooks for SPSS, Stata or RDS files: https://rubenarslan.ocpu.io/codebook/www/ -->
 
 - Standard operating procedures
     - Lab workflow: https://osf.io/mv8pj/wiki/
@@ -86,9 +128,20 @@ https://doi.org/10.1017/S1049096516000810)
 - Analysis scripts, software
     - Detailed documentation of how the analytic results were obtained
     - exact specification of how to move from raw data to reported results (including cleaning or transformation of data)
-        - Step-by-step description of analyses performed in non-scriptable software programs
-        - R scripts, SPSS syntax, custom software
+        - Automate or thoroughly document all analyses
+            - Step-by-step description of analyses performed in non-scriptable software programs
+            - R scripts, SPSS syntax, custom software
         - Documentation of computational environment
+            - Document hardware and software used for analyses
+        - Use UTF-8 character encoding
+        - Avoid "works on my machine" errors
+            - Relative file paths or load data from a permanent online source
+            - Avoide spaces and special characters
+            - Test on another computer
+            - Use cloud-based platforms ([Code Ocean](https://codeocean.com/), [RStudio cloud](https://rstudio.cloud/), [Colaboratory](https://colab.research.google.com/))
+        - Share intermediate results for complex analyses
+        - Set and record seeds for pseudorandom number generators
+        - Make your analysis documentation easy to understand
     - Use open source software (Huff, 2017; Morin et al., 2012)
 
 
@@ -125,6 +178,7 @@ is better than never  (p. 4, Klein et al., 2018).
         - Standard operating procedures
     - Formal time-stamped preregistration or not
     - [Registered reports](https://cos.io/rr/)
+    - how to pre-register via the OSF, see https://osf.io/2vu7m/
 
 - During data collection
     - Study protocol
@@ -167,6 +221,14 @@ include_graphics("images/klein-et-al-figure-2.png")
 # How can you share?
 
 - Project structure and naming scheme
+    - See example project
+        - Protocol/Preregistration
+        - Materials
+        - Raw data
+        - Processed data
+        - Analysis
+        - Researc report
+    - For better access control use components or encrypt (https://medium.com/@richarddmorey/hiding-in-plain-sight-16b275b91625)!
 
 
 
@@ -198,6 +260,7 @@ include_graphics("images/klein-et-al-figure-2.png")
             - Condition re-use only on attribution, CC-BY and ODC-BY
 
 <!-- TODO: Tabelle 1 hier unterbringen -->
+<!-- TODO: Johannes, sollten wir hier Informationen aus der Tabelle von Meyer, 2018 ergänzen oder ist das redundant? -->
 
 
     - Hand out DGPs model informed consent
@@ -206,8 +269,6 @@ include_graphics("images/klein-et-al-figure-2.png")
     - Repository structure
         - **Demonstration**: Browse example OSF repository
     - Citeable datasets
-    - GDPR (see Arslan slides)
-        - Anonymisation (https://amnesia.openaire.eu/index.html, http://arx.deidentifier.org/)
 
 - Analysis scripts
     - Briefly note some best practices
@@ -246,7 +307,7 @@ Only two that explicitly rule out preprints
     - vote with you feet
         - Choose journals that value openness/robustness over falshy journals
     - Incentives
-        - Take openess into account when particpating in commissions
+        - Take openess into account when particpating in commissions (https://osf.io/7jbnt/)
     - Give credit where credit is due (cite data, open source software developed by academics, etc.)
 
 
