@@ -71,6 +71,8 @@ Slides and material are available at
 
 .center[`...`]
 
+Workshop material is based on<br />Klein, O., Hardwicke, T. E., Aust, F., Breuer, J., Danielsson, H., Mohr, A. H., … Frank, M. C. (2018). A Practical Guide for Transparency in Psychological Science. Collabra: Psychology, 4(1). doi: [10.1525/collabra.158](https://doi.org/10.1525/collabra.158)  ([![:scale 7%](images/by.png)](https://creativecommons.org/licenses/by/4.0/))
+
 
 ---
 # Workshop outline
@@ -120,7 +122,7 @@ class: inverse, middle, center
     - So that you don't forget what you've done
     - So that your colleagues can help your work flourish
 - Has the bonus of allowing you to share outside, if/when you want
-
+ 
 
 ---
 # Example project
@@ -147,13 +149,13 @@ example_likert_scale <- '<table id="likert">
        <td><input id="radGuiltyEnd" type="radio" name="Guilty" value="1" /></td>
    </tr>
    <tr>
-       <td><small>Low</small></td>
-       <td></td>
-       <td></td>
-       <td><small>Intelligence</small></td>
-       <td></td>
-       <td></td>
-       <td><small>High</small></td>
+       <td style = "background-color: white;"><small>Low</small></td>
+       <td style = "background-color: white;"></td>
+       <td style = "background-color: white;"></td>
+       <td style = "background-color: white;"><small>Intelligence</small></td>
+       <td style = "background-color: white;"></td>
+       <td style = "background-color: white;"></td>
+       <td style = "background-color: white;"><small>High</small></td>
    </tr>
 </table>'
 ```

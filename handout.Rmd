@@ -21,142 +21,176 @@ library("rmarkdown")
 opts_chunk$set(echo = FALSE, fig.align = "center")
 ```
 
----
+# TODO
+
+- Set up OSF repository with project structure that participants can fork to create their own project
+- TIER template to clone: https://osf.io/ybzxe/
+- BIDS example on GitHub: https://github.com/INCF/BIDS-examples
+
+- Prepare OSF demo (see Candice Morey's slides)
+
+- Check https://open-science-training-handbook.gitbook.io/book/examples-and-practical-guidance
+
+- Mention re3data.org
+- Mention OpenSesame, Lab.js, jsPsych
+
+
+# General considerations
 
 > do not let the perfect be the enemy of the good. Share
 and document what you can, as it will provide a benefit
 compared with not sharing (p. 4, Klein et al., 2018).
 
----
-
-# General considerations
-
 - Make transparency a default
     - Make documentation and sharing a by-product of the lab workflow
-    - If possible, share all products of the research process
-    - If negative constraints prohibit transparency, explicitly declare and justify these decisions in the manuscript
+        - If possible, share all products of the research process
+        - If negative constraints prohibit transparency, explicitly declare and justify these decisions in the manuscript
     - Automate what can be automated
 
-- Making your workflow play well with the rest of the lab?
-    - Do not impose
-    - Compromise surely necessary
+<!-- - Making your workflow play well with the rest of the lab? -->
+<!--     - Do not impose -->
+<!--     - Compromise surely necessary -->
+
 
 # What can you share?
 
-- Amnesia test: Would I understand this tomorrow if I lost my memory?
 - Learn and improve system based on experience with previous projects
-
-
-- Study protocol
-    - Recepie for replication
-    - Collates, describes, and organises more specific research products, e.g.,
-        - Hypotheses
-        - Study materials
-        - Instructive video footage of procedure (https://www.jove.com/)
-    <!-- - May be more detailed than published description -->
-    <!-- - Facilitates scientific progress (e.g., replication and extension) -->
-
-- Study material
-    - Can be anything necessary to conduct the study, e.g.,
-        - Questionnaires
-        - Stimuli
-        - Computer code to present stimuli and collect responses
-        - Procedures for an interaction with a confederate
-    - Video documentation of procedure
-        - OBS
-        - JoVE
-    <!-- - Aids interpretation of results -->
-    <!-- - Facilitates scientific progress (e.g., replication and extension) -->
-
-- Data & Metadata
-    - Raw data
-        - As originally recoreded (e.g., paper-pencil-questionaires, CSV files, video recordings)
-    - Processed data
-        - As used for analyses (e.g., coded, digitized, merged)
-    - Protect privacy of participants (identifying and sensitive information)
-        - Directly identifying information (e.g., Full name, Address (post or email), Passport number, Face, fingerprints, or handwriting, Credit card numbers, Date of birth, Genetic information)
-        - Personal data: Anything that can be attributed to a specific person (even with help of additional data sets)
-
-> In the EU General Data Protection Regulation, this has been
-formalized in Article 4: a "data subject" is one "who can be
-identified, directly or indirectly, by means reasonably likely to be
-used by the controller or by any other natural or legal person".
-
-        - Anonymisation vs. Pseudonymisation
-            - Store demographic data used for sample description separately and in an unlinkable manner
-            - Binning
-            - Top and bottom coding
-            - Adding noise
-            - Remove free text entries
-            - Aggregation
-        - GDPR (https://iapp.org/news/a/how-gdpr-changes-the-rules-for-research/)
-        - Informed consent
-        - Harm assessment?
-        - Risk of reidentification
-            - Small population
-            - Rare traits
-            - Couples, families, class mates, co-workers
-            - Genetic, brain, geographic data
-        - Who will the data be shared with?
-        - Are participants unique in the sample and population?
-        - Self-identification??? <!-- TODO: How is this a problem/How would it be possible to prevent this? -->
-        - Motivate intruder test?
-            - Jealous partner, nosy neighbor, co-worker, journalist, insurers, marketers, blackmailers
-        - Collect only data you really need
-        - Delete indentying information used for logistics
-    - Use open and interoperable file formats (e.g., CSV)
-    - Metadata
-        - Dataset documentation
-        - Who collected the data how and when
-        - Number of observations
-        - Variable and value labels
-        - Simple codebooks vs. standardized and machine-readable (services provided by repositories)
-            <!-- This documentation should describe the variables in each data file in both human- and machine-readable formats (e.g., csv, rather than docx or pdf).4 Ideally, codebooks are organized in such a way that each line represents one variable and each information relative to a variable represents a column. -->
-            <!-- Codebooks should include the following information for each variable: the name, description of the variable, units of measurement, coding of values (e.g., “1 = Female”,”2 = Male”), possible options or range in which the data points can fall (e.g., “1 = not at all to 7 = Very much”), value(s) used for missing values, and information on whether and how the variable was derived from other variables in the dataset (e.g., “bmi was derived from body_weight m and body_height l as BMI = m/l^2 .”). Other relevant information in a codebook entry can include the source of a measure, instructions for a questionnaire item, information about translation, or scale that an item belongs to. -->
-    - FAIR
-    - https://www.tandfonline.com/doi/abs/10.1080/00031305.2017.1375987
-    
-    - **Demonstration**: Show examples (https://osf.io/rv7py/, https://osf.io/e4tqy/), show `codebook` package and [SPSS codebook function](https://libguides.library.kent.edu/SPSS/Codebooks)
-        <!-- - Codebooks can be generated from the data set metadata in popular statistical software, including SPSS (http://libguides.library.kent.edu/SPSS/Codebooks), Stata (http://www.stata.com/manuals13/dcodebook.pdf), or R (http://www.martin-elff.net/knitr/memisc/codebook.html; https://cran.r-project.org/web/packages/codebook/index.html), or with data publishing tools (e.g., http://www.nesstar.com/software/publisher.html), also see https://datawiz.leibniz-psychology.org/
-. The author of the codebook (Arslan, 2018) package for R has also created a web app for creating codebooks for SPSS, Stata or RDS files: https://rubenarslan.ocpu.io/codebook/www/ -->
-
-- Standard operating procedures
-    - Lab workflow: https://osf.io/mv8pj/wiki/
-    - Analytical procedures: https://github.com/acoppock/Green-Lab-SOP (
-https://doi.org/10.1017/S1049096516000810)
-
-- Analysis scripts, software
-    - Detailed documentation of how the analytic results were obtained
-    - exact specification of how to move from raw data to reported results (including cleaning or transformation of data)
-        - Automate or thoroughly document all analyses
-            - Step-by-step description of analyses performed in non-scriptable software programs
-            - R scripts, SPSS syntax, custom software
-        - Documentation of computational environment
-            - Document hardware and software used for analyses
-        - Use UTF-8 character encoding
-        - Avoid "works on my machine" errors
-            - Relative file paths or load data from a permanent online source
-            - Avoide spaces and special characters
-            - Test on another computer
-            - Use cloud-based platforms ([Code Ocean](https://codeocean.com/), [RStudio cloud](https://rstudio.cloud/), [Colaboratory](https://colab.research.google.com/))
-        - Share intermediate results for complex analyses
-        - Set and record seeds for pseudorandom number generators
-        - Make your analysis documentation easy to understand
-    - Use open source software (Huff, 2017; Morin et al., 2012)
-
-
-- Reports
-    - Open access ensures wide accessibility
-    - Green open access
-        - preprint repositories, like [PsyArXiv](https://psyarxiv.com/), [BioArXiv](https://www.biorxiv.org/)
-        - Usually not considered "prior publication" (Bourne, Polka, Vale, &
-Kiley, 2017)
-    - Gold open access
-        - Open publication by publisher
+- _Amnesia test_ (Could I still understand this if I lost my memory?)
 
 ```{r figure1, fig.cap = "Decision flowchart outlining important considerations when sharing research products."}
 include_graphics("images/klein-et-al-figure-1.png")
 ```
+
+
+## Study protocol
+
+- Recepie for replication
+- Collates, describes, and organises more specific research products
+    - Hypotheses
+    - Study materials
+    - Detailed description of procedure
+        - Instructive video documentation
+    
+<!-- - May be more detailed than published description -->
+<!-- - Facilitates scientific progress (e.g., replication and extension) -->
+
+
+## Study materials
+
+- Anything necessary to conduct the study, e.g.,
+    - Questionnaires
+    - Stimulus material
+    - Computer code to present stimuli and collect responses
+    - Procedures for an interaction with a confederate
+
+- Mind intellectual property rights
+
+    <!-- TODO: Anything else? -->
+    
+<!-- - Aids interpretation of results -->
+<!-- - Facilitates scientific progress (e.g., replication and extension) -->
+
+
+## Data
+
+- Include information about data sharing in informed consent
+- Use open and interoperable file formats (e.g., CSV, TSV, ODS)
+    - Use UTF-8 character encoding
+
+<!-- https://twitter.com/dutchscientist/status/898938100008845313 -->
+
+- Raw data
+    - As originally recoreded (e.g., paper-pencil-questionaires, CSV files, video recordings)
+
+- Processed data
+    - As used for analyses (e.g., coded, digitized, merged)
+    - Ideally "tidy" datasets
+        1. Each measured variable in one column.
+        2. Different observation of the variables in a different rows
+        3. Multiple tables should include a column that allows them to be linked
+    
+    <!-- https://www.tandfonline.com/doi/abs/10.1080/00031305.2017.1375987 -->
+
+<!-- - **Demonstration**: Show examples (https://osf.io/rv7py/, https://osf.io/e4tqy/), show `codebook` package and [SPSS codebook function](https://libguides.library.kent.edu/SPSS/Codebooks) -->
+<!-- The author of the codebook (Arslan, 2018) package for R has also created a web app for creating codebooks for SPSS, Stata or RDS files: https://rubenarslan.ocpu.io/codebook/www/ -->
+
+- Participant privacy
+    - EU GDPR: Data are personal if attributable to a specific person (using additional datasets if necessary)
+        - [IAPP: How GDPR changes the rules for research](https://iapp.org/news/a/how-gdpr-changes-the-rules-for-research/)
+    - Only share anonymized data publicly, e.g.
+        - Delete directly identifying information (e.g., full name, address, face, handwriting, date of birth, genetic information)
+        - Separate demographic used for sample description and study data
+        - Remove free text entries
+        - If necessary, transform data, e.g.
+            - Binning
+            - Top and bottom coding
+            - Add noise
+            - Aggregation
+    - Exert access control over pseudonomyzed data 
+    
+    <!-- - Harm assessment? -->
+    
+    - Assess risk of reidentification, e.g.
+        - Small population
+        - Rare traits
+        - Dyadic data
+        - Hierarchical data (e.g., small subsamples of students, co-workers)
+        - Self-identification??? <!-- TODO: How is this a problem/How would it be possible to prevent this? -->
+        - _Motivate intruder test_ (e.g., jealous partner, noisy neighbor, envious co-worker, insurers, blackmailers)
+    <!-- - Who will the data be shared with? -->
+    - Collect only data you need
+    - Delete indentying information used for logistics as soon as possible
+
+> To determine whether a natural person is identifiable, account should be taken of all the means reasonably likely to be used, such as singling out, either by the controller or by another person to identify the natural person directly or indirectly.
+<br /><br />
+To ascertain whether means are reasonably likely to be used to identify the natural person, account should be taken of all objective factors, such as the costs of and the amount of time required for identification, taking into consideration the available technology at the time of the processing and technological developments. (Recital 26 EU GDPR)
+
+
+## Metadata
+
+- Sampling procedure (Who collected the data how, when, and where)
+- Dataset, e.g.
+    - Number of observations
+    - Name and description of variables (incl. source of a measure, information about translation)
+    - Units of measurement, coding of values (e.g., “1 = Female”,”2 = Male”), possible options or range in which the data points can fall (e.g., “1 = not at all to 7 = Very much”)
+    - Value(s) used for missing data
+    - If necessary, how a variable was derived from other variables (e.g., "`bmi` was derived from body weight `m` and height `l` as $\mathrm{BMI} = m/l^2$.")
+- Automate codebook generation
+    - Analysis software(e.g., [R `codebook` package](https://cran.r-project.org/web/packages/codebook/index.html), [SPSS codebook function](https://libguides.library.kent.edu/SPSS/Codebooks), or [Stata codebook function](http://www.stata.com/manuals13/dcodebook.pdf))
+    - Specialized software (e.g., [Nesstar](http://www.nesstar.com/software/publisher.html), [DataWiz](https://datawiz.leibniz-psychology.org/DataWiz/?datawiz_locale=en))
+- If data are complex and have potentially high reuse value, consider using a standardized and machine-readable format
+    - Implementation is a service provided by some repositories
+    <!-- This documentation should describe the variables in each data file in both human- and machine-readable formats (e.g., csv, rather than docx or pdf).4 Ideally, codebooks are organized in such a way that each line represents one variable and each information relative to a variable represents a column. -->
+
+## Standard operating procedures
+
+- Describe a group's default practices in data analysis (e.g., [SOP for Green lab at Columbia](http://alexandercoppock.com/Green-Lab-SOP/Green_Lab_SOP.pdf))
+- Simplifies authoring of preregistrations
+
+<!-- https://doi.org/10.1017/S1049096516000810) -->
+
+
+## Documentation of analyses
+
+- Exact specification of how to move from raw data to reported results (including cleaning or transformation of data)
+    - Step-by-step description of analyses performed in non-scriptable software programs
+    - Analysis software syntax
+- Documentation of computational environment (hardware and software used for analyses)
+- Avoid "works on my machine" errors
+    - Relative file paths or load data from a permanent online source
+    - Avoid spaces and special characters
+    - Test on another computer
+    - Use cloud-based platforms (e.g., [Code Ocean](https://codeocean.com/), [RStudio cloud](https://rstudio.cloud/), [Colaboratory](https://colab.research.google.com/))
+- Share intermediate results for complex analyses
+- Set and record seeds for pseudorandom number generators
+- Use open source software
+
+
+## Research reports
+
+- If published behind paywall, preprint or postprint (see journal policy, e.g., [SHERPA/RoMEO](http://www.sherpa.ac.uk/romeo/search.php))
+- If gold open access, final version of manuscript
+
 
 
 # When can you share?
@@ -164,46 +198,52 @@ include_graphics("images/klein-et-al-figure-1.png")
 > When it comes to the question of when to share, any time
 is better than never  (p. 4, Klein et al., 2018).
 
-- Planning to share
-    - Have a basic data management plan ([Jones, 2011](http://www.dcc.ac.uk/resources/how-guides), https://www.icpsr.umich.edu/icpsrweb/content/datamanagement/dmp/framework.html, http://www.dcc.ac.uk/sites/default/files/documents/resource/DMP/DMP-checklist-flyer.pdf) <!-- TODO: Can we give a simple example here? Provide additional guidance? -->
-        - Examples: https://dmponline.dcc.ac.uk/public_plans
-        - Project structure
-    - Simplifies addressing legal and ethical issues
-    - Reduces extra effort associated with sharing
 
-- Before data collection
-    - Study protocol
-    - Study material
-    - Analysis scripts
-        - Standard operating procedures
-    - Formal time-stamped preregistration or not
-    - [Registered reports](https://cos.io/rr/)
-    - how to pre-register via the OSF, see https://osf.io/2vu7m/
+## Planning to share
 
-- During data collection
-    - Study protocol
-    - Study material
-    - Analysis scripts
-    - Raw data
-        - Born-open data
-            - Automatically uploaded to a public repository
-                - Reduces extra effort associated with sharing
-            - Offsite backup
-            - Protect participants' privacy!
-            - [Born-open data with cloud storage providers](http://psych-transparency-guide.uni-koeln.de/born-open-data.html)
+- Have a basic data management plan ([Jones, 2011](http://www.dcc.ac.uk/resources/how-guides), https://www.icpsr.umich.edu/icpsrweb/content/datamanagement/dmp/framework.html, http://www.dcc.ac.uk/sites/default/files/documents/resource/DMP/DMP-checklist-flyer.pdf) <!-- TODO: Can we give a simple example here? Provide additional guidance? -->
+    - Examples: https://dmponline.dcc.ac.uk/public_plans
+    - Project structure
+- Simplifies addressing legal and ethical issues
+- Reduces extra effort associated with sharing
 
-- Upon paper submission (or upon publication)
-    - Recommended (vs. paper publication)
-    - Allows thorough evaluation of research
-        - Possible errors can be spotted early on (no public correction)
-    - Demonstrates dedication to openness
-    - [OSF view-only links](http://help.osf.io/m/links_forks/l/524049-create-a-view-only-link-for-a-project)
+## Before data collection
+
+- Study protocol
+- Study material
+- Analysis scripts
+    - Standard operating procedures
+- Formal time-stamped preregistration or not
+- [Registered reports](https://cos.io/rr/)
+- how to pre-register via the OSF, see https://osf.io/2vu7m/
+
+## During data collection
+
+- Study protocol
+- Study material
+- Analysis scripts
+- Raw data
+    - Born-open data
+        - Automatically uploaded to a public repository
+            - Reduces extra effort associated with sharing
+        - Offsite backup
+        - Protect participants' privacy!
+        - [Born-open data with cloud storage providers](http://psych-transparency-guide.uni-koeln.de/born-open-data.html)
+
+## Upon paper submission (or upon publication)
+
+- Recommended (vs. paper publication)
+- Allows thorough evaluation of research
+    - Possible errors can be spotted early on (no public correction)
+- Demonstrates dedication to openness
+- [OSF view-only links](http://help.osf.io/m/links_forks/l/524049-create-a-view-only-link-for-a-project)
     
 
-- After an embargo
-    - Archive in public respository, but publish later
-    - Allows further analyses of dataset and investigation of research question
-    - Reduces extra effort associated with sharing
+## After an embargo
+
+- Archive in public respository, but publish later
+- Allows further analyses of dataset and investigation of research question
+- Reduces extra effort associated with sharing
 
 - Study protocol
 - Study material
@@ -220,48 +260,59 @@ include_graphics("images/klein-et-al-figure-2.png")
 
 # How can you share?
 
-- Project structure and naming scheme
-    - See example project
-        - Protocol/Preregistration
-        - Materials
-        - Raw data
-        - Processed data
-        - Analysis
-        - Researc report
-    - For better access control use components or encrypt (https://medium.com/@richarddmorey/hiding-in-plain-sight-16b275b91625)!
+## Project structure and naming scheme
+
+- See example project
+    - Protocol/Preregistration
+    - Materials
+    - Raw data
+    - Processed data
+    - Analysis
+    - Research report
+
+- For better access control use components or encrypt (https://medium.com/@richarddmorey/hiding-in-plain-sight-16b275b91625)!
+
+- Exert access control over pseudonomyzed data 
+    - Share in access restricted repository
+    - Publicly share encrypted data
 
 
+## Study protocol
 
-- Study protocol
-    - Preregistration
-        - **Demonstration**: Show some preregistration websites, showcase good preregistrations (https://osf.io/h9k8n/)
-    - Registered report
+- Preregistration
+    - **Demonstration**: Show some preregistration websites, showcase good preregistrations (https://osf.io/h9k8n/)
+    
+- Registered report
 
-- Study material, data & metadata
-    - Choose a suitable public repository
-        1. Uses persistent and unique identifiers for products (such as DOIs).
-        2. Accommodates structured metadata to maximize discoverability and reuse.
-        3. Tracks data re-use (e.g., citations, download counts).
-        4. Accommodates licensing (e.g., provides the ability to place legal restrictions on data reuse or signal there are no restrictions).
-        5. Features access controls (e.g., allows restriction of access to a particular set of users).
-        6. Has some persistence guarantees for long-term access.
-        7. Stores data in accordance with local legislation (e.g., the new General Data Protection Regulation for the EU, http://www.eugdpr.org/).
-    - Data & meta data
-        - Protect participant privacy!
-    - Public != free to use
-    - Adhere to copyright and licensing regulations
-    - Explicitly apply permissive license
-        - Use easy-to-understand standard licenses
-            - [Creative Commons](https://creativecommons.org/licenses/)
-            - [Open data commons](https://opendatacommons.org/licenses/)
-            - Simply include a license statement in a text file ("All files in this repository are licensed under a Creative Commons Zero License (CC0 1.0)")
-        - Recommendations
-            - Public domain, CC0 and ODC-PDDL
-            - Condition re-use only on attribution, CC-BY and ODC-BY
+- Instructive video footage of procedure
+    - Screencapturing computer experiments (e.g., [OBS](https://obsproject.com/))
+    - [JoVE Behavior](https://www.jove.com/journal/behavior)
+
+
+## Study material, data & metadata
+
+- Choose a suitable public repository
+    1. Uses persistent and unique identifiers for products (such as DOIs).
+    2. Accommodates structured metadata to maximize discoverability and reuse.
+    3. Tracks data re-use (e.g., citations, download counts).
+    4. Accommodates licensing (e.g., provides the ability to place legal restrictions on data reuse or signal there are no restrictions).
+    5. Features access controls (e.g., allows restriction of access to a particular set of users).
+    6. Has some persistence guarantees for long-term access.
+    7. Stores data in accordance with local legislation (e.g., the new General Data Protection Regulation for the EU, http://www.eugdpr.org/).
+- Data & meta data
+    - Protect participant privacy!
+- Public != free to use
+- Explicitly apply permissive license
+    - Use easy-to-understand standard licenses
+        - [Creative Commons](https://creativecommons.org/licenses/)
+        - [Open data commons](https://opendatacommons.org/licenses/)
+        - Simply include a license statement in a text file ("All files in this repository are licensed under a Creative Commons Zero License (CC0 1.0)")
+    - Recommendations
+        - Public domain, CC0 and ODC-PDDL
+        - Condition re-use only on attribution, CC-BY and ODC-BY
 
 <!-- TODO: Tabelle 1 hier unterbringen -->
 <!-- TODO: Johannes, sollten wir hier Informationen aus der Tabelle von Meyer, 2018 ergänzen oder ist das redundant? -->
-
 
     - Hand out DGPs model informed consent
     - Handout table that summarizes repositories
@@ -269,89 +320,87 @@ include_graphics("images/klein-et-al-figure-2.png")
     - Repository structure
         - **Demonstration**: Browse example OSF repository
     - Citeable datasets
+    - FAIR
 
-- Analysis scripts
-    - Briefly note some best practices
-    - **Demonstrate**: Dynamic documents (`papaja`)
 
-- Reports
-    - Say something about PsyArXiv vs. BioArXiv vs. PeerJ vs. ...
-    - PsyArXiv: Official partner of APA (http://www.apa.org/pubs/authors/unauthorized-internet-posting.aspx)
-    - https://en.wikipedia.org/wiki/List_of_academic_journals_by_preprint_policy (not an exhaustive list)
+## Analysis scripts
+
+- Briefly note some best practices
+- **Demonstrate**: Dynamic documents (`papaja`)
+
+
+## Reports
+
+- Say something about PsyArXiv vs. BioArXiv vs. PeerJ vs. ...
+- PsyArXiv: Official partner of APA (http://www.apa.org/pubs/authors/unauthorized-internet-posting.aspx)
+- https://en.wikipedia.org/wiki/List_of_academic_journals_by_preprint_policy (not an exhaustive list)
 Only two that explicitly rule out preprints
-        - NEJM [New England Journal of Medicine] and JCI [Journal of Clinical Investigation]
-- Licenses
-    - Overview of common licenses
+    - NEJM [New England Journal of Medicine] and JCI [Journal of Clinical Investigation]
 
-
-- Reports (https://nikokriegeskorte.org/2016/03/13/the-selfish-scientists-guide-to-preprint-posting/, https://archaeologicalnetworks.wordpress.com/2017/09/28/open-science-in-archaeology-publication-and-special-interest-group/)
-    - preregistration
+(https://nikokriegeskorte.org/2016/03/13/the-selfish-scientists-guide-to-preprint-posting/, https://archaeologicalnetworks.wordpress.com/2017/09/28/open-science-in-archaeology-publication-and-special-interest-group/)
     - upon submission (preprint)
     - upon acceptance (postprint)
         - http://www.sherpa.ac.uk/romeo/search.php
 
+- Green open access
+    - preprint repositories, like [PsyArXiv](https://psyarxiv.com/), [BioArXiv](https://www.biorxiv.org/)
+    - Usually not considered "prior publication" (Bourne, Polka, Vale, &
+Kiley, 2017)
+- Gold open access
+    - Open publication by publisher
+
+
+## Licenses
+
+<!-- TODO: Overview of common licenses -->
+
 
 # How you can promote openness?
 
-- Incentivize sharing
-    - PRO initiative
-    - Commitment to Research Transparency and Open Science (http://www.researchtransparency.org/)
-    - practical advantages for researchers (find your own data, more citations...)
+## Incentivize sharing
 
-- How can you promote research transparency?
-    - use templates for transparent & reproducible projects
-    - share materials with your collaborators
-    - teach your students and colleagues
-        - What do we do here in Cologne?
-        - Example: Registered Report draft as non-empirical Bachelor's thesis
-    - vote with you feet
-        - Choose journals that value openness/robustness over falshy journals
-    - Incentives
-        - Take openess into account when particpating in commissions (https://osf.io/7jbnt/)
-    - Give credit where credit is due (cite data, open source software developed by academics, etc.)
+- [PRO initiative](https://opennessinitiative.org/)
+- [Commitment to Research Transparency and Open Science](http://www.researchtransparency.org/)
+- Practical advantages for researchers (find your own data, more citations...)
 
 
-- Why not to share?
-    - Brief discussion of DSGVO? (Anonymisation example?)
-    - Examples of sensitive data (from participants)
-    - Scooping
-        - Usually an unwarranted fear
-        - Publish upon acceptance or with an embargo
-    - I could be wrong
-        - Errors are inevitable
-        - Promotes scientific self-correction
-        - Errors will become a normal part of science
-        - Constructive self-correction will improve scholars' standing (Fetterman & Sassenberg, 2015)
-    - Time-consuming
-        - Take one step at a time ("baby steps")
-        - Open science == good research management practices
-            - Increases efficency in the long-run
-        - Increases exposure and citations
-        - Helps to avoid fruitless avenues for future studies
+## How can you promote research transparency?
+
+- use templates for transparent & reproducible projects
+- share materials with your collaborators
+- teach your students and colleagues
+    - What do we do here in Cologne?
+    - Example: Registered Report draft as non-empirical Bachelor's thesis
+- vote with you feet
+    - Choose journals that value openness/robustness over falshy journals
+- Incentives
+    - Take openess into account when particpating in commissions (https://osf.io/7jbnt/)
+- Give credit where credit is due (cite data, open source software developed by academics, etc.)
+
+
+## Why not to share?
+
+- Brief discussion of DSGVO? (Anonymisation example?)
+- Examples of sensitive data (from participants)
+- Scooping
+    - Usually an unwarranted fear
+    - Publish upon acceptance or with an embargo
+- I could be wrong
+    - Errors are inevitable
+    - Promotes scientific self-correction
+    - Errors will become a normal part of science
+    - Constructive self-correction will improve scholars' standing (Fetterman & Sassenberg, 2015)
+- Time-consuming
+    - Take one step at a time ("baby steps")
+    - Open science == good research management practices
+        - Increases efficency in the long-run
+    - Increases exposure and citations
+    - Helps to avoid fruitless avenues for future studies
 
 
 ---
 
 > Open Science is just science done right<br /><br />&mdash;Jon Tennant, Imperial College London
-
----
-
-# Additional preparations
-
-- Set up OSF repository with project structure that participants can fork to create their own project
-- TIER template to clone: https://osf.io/ybzxe/
-- BIDS example on GitHub: https://github.com/INCF/BIDS-examples
-- Informed consent, Appendix B: https://www.dgps.de/fileadmin/documents/Empfehlungen/Data_Management_eng_9.11.16.pdf
-
-- Prepare OSF demo (see Candice Morey's slides)
-
-- Check https://open-science-training-handbook.gitbook.io/book/examples-and-practical-guidance
-
-re3data.org
-
-Open Broadcaster Software
-
-OpenSesame, Lab.js, jsPsych
 
 ---
 
