@@ -3,7 +3,7 @@
   <head>
     <title> How to do research openly</title>
     <meta charset="utf-8">
-    <meta name="author" content="Frederik Aust Dr. Johannes Breuer" />
+    <meta name="author" content="Frederik Aust Johannes Breuer" />
     <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
     <link rel="stylesheet" href="workshop.css" type="text/css" />
@@ -14,7 +14,7 @@ class: center, middle, inverse, title-slide
 
 # <img src = 'images/open.png' style = 'margin-bottom: 45px;'/><br />How to do research openly
 ## A practical primer on transparent research workflows
-### Frederik Aust<br />Dr. Johannes Breuer<br /><br /><a href = 'https://creativecommons.org/licenses/by/4.0/'><img src = 'images/by.png' style = 'width: 10%;' /></a>
+### Frederik Aust<br />Johannes Breuer<br /><br /><a href = 'https://creativecommons.org/licenses/by/4.0/'><img src = 'images/by.png' style = 'width: 10%;' /></a>
 ### 04.09.2018
 
 ---
@@ -25,7 +25,7 @@ layout: true
 
 
 &lt;div class="my-footer"&gt;
-  &lt;div style="float: left;"&gt;&lt;span&gt;Frederik Aust &amp; Dr. Johannes Breuer&lt;/span&gt;&lt;/div&gt;
+  &lt;div style="float: left;"&gt;&lt;span&gt;Frederik Aust &amp; Johannes Breuer&lt;/span&gt;&lt;/div&gt;
   &lt;div style="float: right;"&gt;&lt;span&gt;ESCON 2018, Cologne, Germany, 04.09.2018&lt;/span&gt;&lt;/div&gt;
   &lt;div style="text-align: center;"&gt;&lt;span&gt; How to do research openly: A practical primer on transparent research workflows&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
@@ -105,11 +105,11 @@ class: middle
 ---
 class: inverse, middle, center
 
-# Why to share
+# Why share?
 
 
 ---
-# Why to share
+# Why share?
 
 &lt;!-- TODO: Copy-paste from Candice Morey --&gt;
 
@@ -315,12 +315,23 @@ if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   d.head.appendChild(s);
 })();</script>
 
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+<script>
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
   }
-});
+})();
 </script>
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

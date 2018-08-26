@@ -41,7 +41,7 @@ The active three-hour workshop will cover the following issues.
 - Why share? (brief, participants already signed up for the workshop)
     - Good for others
     - Good for you
-        - In lab transparency
+        - In-lab transparency
         - paul wilson quote
 
 - It's just documenting your work, making it easier to understand (for yourself and others)
@@ -57,7 +57,10 @@ The active three-hour workshop will cover the following issues.
 
 - When to share?
     - data
-        - Set up Dropbox to collect born-open data
+        - during data collection: Set up Dropbox to collect born-open data
+        - before/together with submission: e.g., institutional or public repository
+        - after publication: repository, personal or journal website
+        - after end of project: same options as after publication
     - papers
         - preregistration
             - Show some preregistration websites, showcase good preregistrations (https://osf.io/h9k8n/)
@@ -68,7 +71,7 @@ The active three-hour workshop will cover the following issues.
 - How to share?
     - Data
         - Handout table that summarizes repositories
-            - Discuss some usecases (maybe suggested by participants)
+            - Discuss some use cases (maybe suggested by participants)
         - Browse example OSF repository
         - Hand out DGPs model informed consent
         - Citeable datasets

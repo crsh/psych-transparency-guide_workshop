@@ -30,8 +30,8 @@ opts_chunk$set(echo = FALSE, fig.align = "center")
 - Prepare OSF demo (see Candice Morey's slides)
 
 - Check https://open-science-training-handbook.gitbook.io/book/examples-and-practical-guidance
+- additional resource to mention: [Open Science Knowledge Base](https://how-to-open.science/) by Felix Henninger (et al.)
 
-- Mention re3data.org
 - Mention OpenSesame, Lab.js, jsPsych
 
 
@@ -64,7 +64,7 @@ include_graphics("images/klein-et-al-figure-1.png")
 
 ## Study protocol
 
-- Recepie for replication
+- Recipe for replication
 - Collates, describes, and organises more specific research products
     - Hypotheses
     - Study materials
@@ -81,7 +81,8 @@ include_graphics("images/klein-et-al-figure-1.png")
     - Questionnaires
     - Stimulus material
     - Computer code to present stimuli and collect responses
-    - Procedures for an interaction with a confederate
+    - Instructions for interaction with participants
+    - potentially also scripts/instructions for confederates
 
 - Mind intellectual property rights
 
@@ -93,7 +94,7 @@ include_graphics("images/klein-et-al-figure-1.png")
 
 ## Data
 
-- Include information about data sharing in informed consent
+- Include information about data sharing in informed consent (for examples, see [A practical guide for transparency in psychological science](http://psych-transparency-guide.uni-koeln.de//informed-consent.html))
 - Use open and interoperable file formats (e.g., CSV, TSV, ODS)
     - Use UTF-8 character encoding
 
@@ -104,7 +105,7 @@ include_graphics("images/klein-et-al-figure-1.png")
 
 - Processed data
     - As used for analyses (e.g., coded, digitized, merged)
-    - Ideally "tidy" datasets
+    - Ideally ["Tidy Data"](https://www.jstatsoft.org/index.php/jss/article/view/v059i10/v59i10.pdf)
         1. Each measured variable in one column.
         2. Different observation of the variables in a different rows
         3. Multiple tables should include a column that allows them to be linked
@@ -118,14 +119,16 @@ include_graphics("images/klein-et-al-figure-1.png")
     - EU GDPR: Data are personal if attributable to a specific person (using additional datasets if necessary)
         - [IAPP: How GDPR changes the rules for research](https://iapp.org/news/a/how-gdpr-changes-the-rules-for-research/)
     - Only share anonymized data publicly, e.g.
-        - Delete directly identifying information (e.g., full name, address, face, handwriting, date of birth, genetic information)
-        - Separate demographic used for sample description and study data
-        - Remove free text entries
+        - Delete directly identifying information (e.g., full name, address, images of the face, handwriting, genetic information)
+        - note that combinations of simple indirect identifiers (e.g., ZIP code + gender + DOB, see [Sweeney, 2000](https://dataprivacylab.org/projects/identifiability/paper1.pdf)) can also be problematic
+        - Separate demographic data used for sample description and study data
+        - Remove free text entries and potentially also alter them when citing in publications
         - If necessary, transform data, e.g.
             - Binning
             - Top and bottom coding
             - Add noise
             - Aggregation
+        - for a more sophisticated approach you can also use anonymization tools, such as [Amnesia](https://amnesia.openaire.eu/index.html)
     - Exert access control over pseudonomyzed data 
     
     <!-- - Harm assessment? -->
@@ -136,10 +139,10 @@ include_graphics("images/klein-et-al-figure-1.png")
         - Dyadic data
         - Hierarchical data (e.g., small subsamples of students, co-workers)
         - Self-identification??? <!-- TODO: How is this a problem/How would it be possible to prevent this? -->
-        - _Motivate intruder test_ (e.g., jealous partner, noisy neighbor, envious co-worker, insurers, blackmailers)
+        - _Motivated intruder test_ (e.g., jealous partner, nosy neighbor, envious co-worker, insurers, criminals)
     <!-- - Who will the data be shared with? -->
     - Collect only data you need
-    - Delete indentying information used for logistics as soon as possible
+    - Delete indentying information used for logistics as soon as possible (e.g., e-mail addresses)
 
 > To determine whether a natural person is identifiable, account should be taken of all the means reasonably likely to be used, such as singling out, either by the controller or by another person to identify the natural person directly or indirectly.
 <br /><br />
@@ -157,6 +160,9 @@ To ascertain whether means are reasonably likely to be used to identify the natu
     - If necessary, how a variable was derived from other variables (e.g., "`bmi` was derived from body weight `m` and height `l` as $\mathrm{BMI} = m/l^2$.")
 - Automate codebook generation
     - Analysis software(e.g., [R `codebook` package](https://cran.r-project.org/web/packages/codebook/index.html), [SPSS codebook function](https://libguides.library.kent.edu/SPSS/Codebooks), or [Stata codebook function](http://www.stata.com/manuals13/dcodebook.pdf))
+    
+    <!-- TODO: add screenshots for SPSS codebook functions -->
+    
     - Specialized software (e.g., [Nesstar](http://www.nesstar.com/software/publisher.html), [DataWiz](https://datawiz.leibniz-psychology.org/DataWiz/?datawiz_locale=en))
 - If data are complex and have potentially high reuse value, consider using a standardized and machine-readable format
     - Implementation is a service provided by some repositories
@@ -164,7 +170,7 @@ To ascertain whether means are reasonably likely to be used to identify the natu
 
 ## Standard operating procedures
 
-- Describe a group's default practices in data analysis (e.g., [SOP for Green lab at Columbia](http://alexandercoppock.com/Green-Lab-SOP/Green_Lab_SOP.pdf))
+- Describe the default practices of a group in data analysis (e.g., [SOP for Green lab at Columbia](http://alexandercoppock.com/Green-Lab-SOP/Green_Lab_SOP.pdf))
 - Simplifies authoring of preregistrations
 
 <!-- https://doi.org/10.1017/S1049096516000810) -->
@@ -201,9 +207,11 @@ is better than never  (p. 4, Klein et al., 2018).
 
 ## Planning to share
 
-- Have a basic data management plan ([Jones, 2011](http://www.dcc.ac.uk/resources/how-guides), https://www.icpsr.umich.edu/icpsrweb/content/datamanagement/dmp/framework.html, http://www.dcc.ac.uk/sites/default/files/documents/resource/DMP/DMP-checklist-flyer.pdf) <!-- TODO: Can we give a simple example here? Provide additional guidance? -->
+- Have a basic data management plan, ideally at the start of your project/study ([Jones, 2011](http://www.dcc.ac.uk/resources/how-guides), https://www.icpsr.umich.edu/icpsrweb/content/datamanagement/dmp/framework.html, http://www.dcc.ac.uk/sites/default/files/documents/resource/DMP/DMP-checklist-flyer.pdf) <!-- TODO: Can we give a simple example here? Provide additional guidance? -->
     - Examples: https://dmponline.dcc.ac.uk/public_plans
     - Project structure
+        - not necessary to create completely new DMP for every study/project (esp. if they are similar): create & use basic template
+    - ZPID (Leibniz Psychology) data management tool [DataWiz](https://datawiz.leibniz-psychology.org/DataWiz/?datawiz_locale=en)
 - Simplifies addressing legal and ethical issues
 - Reduces extra effort associated with sharing
 
@@ -237,7 +245,23 @@ is better than never  (p. 4, Klein et al., 2018).
     - Possible errors can be spotted early on (no public correction)
 - Demonstrates dedication to openness
 - [OSF view-only links](http://help.osf.io/m/links_forks/l/524049-create-a-view-only-link-for-a-project)
-    
+
+```{r sharing option ratings, echo = F}
+
+Sharing_option <- c("On request", "Personal website", "Journal website", "Institutional repository", "Public repository")
+Findability <- c("--", "-", "+", "+", "++")
+Sustainability <- c("--", "-", "0", "++", "++")
+Access_control <- c("++", "0", "0", "+", "+")
+sharing_options <- data.frame(Sharing_option, Findability, Sustainability, Access_control, stringsAsFactors = F)
+print(sharing_options)
+
+
+```
+
+- bonus: institutional and public repositories (and in many cases also journal websites) make data citeable (usually via DOIs)
+
+<!-- or add "Citeability" to the above table? Citeability <- c("-", "--", "0", "++", "++") -->
+<!-- maybe make a prety table instead of just printing the dataframe? -->
 
 ## After an embargo
 
@@ -249,7 +273,7 @@ is better than never  (p. 4, Klein et al., 2018).
 - Study material
 - Data & Metadata
     - Born-open data
-        - **Demonstration**: Set up Dropbox to collect born-open data <!-- TODO: Johannes, ist das eher when oder how? -->
+        - **Demonstration**: Set up Dropbox to collect born-open data <!-- TODO: Johannes, ist das eher when oder how? Johannes: eher when, wuerde ich sagen -->
 - Analysis scripts
     - Demonstrate dynamic documents
 
@@ -299,7 +323,8 @@ include_graphics("images/klein-et-al-figure-2.png")
     5. Features access controls (e.g., allows restriction of access to a particular set of users).
     6. Has some persistence guarantees for long-term access.
     7. Stores data in accordance with local legislation (e.g., the new General Data Protection Regulation for the EU, http://www.eugdpr.org/).
-- Data & meta data
+    
+- Data & metadata
     - Protect participant privacy!
 - Public != free to use
 - Explicitly apply permissive license
@@ -307,12 +332,30 @@ include_graphics("images/klein-et-al-figure-2.png")
         - [Creative Commons](https://creativecommons.org/licenses/)
         - [Open data commons](https://opendatacommons.org/licenses/)
         - Simply include a license statement in a text file ("All files in this repository are licensed under a Creative Commons Zero License (CC0 1.0)")
+    - some repositories provide custom licenses for research data
+        - [GESIS](https://dbk.gesis.org/DBKSearch/LegendAC.htm)
+            - Category 0: Data and documents are released for everybody.
+            - Category A: Data and documents are released for academic research and teaching.
+            - Category B: Data and documents are released for academic research and teaching, if the results will not be published.
+              If any publications or any further work on the results is planned, permission must be obtained by the Data Archive.
+            - Category C: Data and documents are only released for academic research and teaching with written authorization of the data                     depositor. For this purpose the Data Archive obtains a written permission with specification of the user and the analysis                      intention.
     - Recommendations
-        - Public domain, CC0 and ODC-PDDL
+        - Most permissive license possible: e.g., Public domain, CC0 and ODC-PDDL
         - Condition re-use only on attribution, CC-BY and ODC-BY
 
+- for sensitive data, some archives offer special solutions for controlled access (e.g., [GESIS secure data center](https://www.gesis.org/en/services/data-analysis/more-data-to-analyze/secure-data-center-sdc/))
+- useful [decision tree](https://www.ands.org.au/__data/assets/pdf_file/0010/385309/sensitive-decision-tree.pdf) from the Australian National Data Service on sharing sensitive data
+
+- Questions for participants: 
+    - Which features of a repository would you consider important (for your data)?
+    - How would you search for a suitable repository?
+
 <!-- TODO: Tabelle 1 hier unterbringen -->
-<!-- TODO: Johannes, sollten wir hier Informationen aus der Tabelle von Meyer, 2018 ergänzen oder ist das redundant? -->
+<!-- TODO: Johannes, sollten wir hier Informationen aus der Tabelle von Meyer, 2018 ergänzen oder ist das redundant? Johannes: da es sonst eher zu viel wird, wuerde ich auf Meyer (2018) eher nur verweisen + re3data database -->
+
+- differences in degree of curation: e.g., OSF (not curated, self-deposit) vs. GESIS DBK (curated, service)
+- more detailed description of some social science repositories with a focus on governance attributes can be found in [Meyer, 2018](http://journals.sagepub.com/doi/abs/10.1177/2515245917747656?journalCode=ampa)
+- comprehensive database of repositories: [re3data - Registry of Research Data Repositories](https://www.re3data.org/)
 
     - Hand out DGPs model informed consent
     - Handout table that summarizes repositories
@@ -321,6 +364,10 @@ include_graphics("images/klein-et-al-figure-2.png")
         - **Demonstration**: Browse example OSF repository
     - Citeable datasets
     - FAIR
+      - Findable: e.g., public repository > personal website
+      - Accessible: only use access restrictions/controls when necessary
+      - Interoperable: Use open, lightweight, and interoperable file formats (e.g., CSV, TSV, TXT, ODS)
+      - Reusable: Proper documentation
 
 
 ## Analysis scripts
@@ -353,7 +400,33 @@ Kiley, 2017)
 ## Licenses
 
 <!-- TODO: Overview of common licenses -->
+<!-- Maybe move (some) material from ## Study material, data & metadata section here -->
 
+- licenses define conditions of access and reuse
+
+### Creative Commons Licenses
+
+- Attribution (by): copy, distribute, display, perform and derivate 
+work as long as the author or licensor is cited in the manner 
+specified
+- Non-commercial (nc): copy, distribute, display, perform and 
+derivate work as long as the work is used only for non-
+commercial purposes
+- No Derivative Works (nd): copy, distribute, display, perform but 
+no derivative works based on it
+- Share-alike (sa): copy, distribute, display, perform and derivate 
+work as long as the derivative works is licensed identical to the 
+license that governs the original work
+
+- exceptions are possible for all categories if author/licensor gives explicit permission
+
+- examples for potential problems with CC license types for research:
+    - ND: researchers add data: cases (e.g., replication study) or variables (e.g., from administrative data)
+    - NC: is a publication in a journal or book (that is not open access) commercial? what about research used to develop or improve commercial     products (e.g., in medical research)?
+    - SA: what if a researcher adds data and does not want the combined dataset to be used for commercial purposes or if datasets with             different licenses are combined (e.g., CC-BY-SA + CC-BY-NC)?
+- hence, you should apply the most permissive license that is possible
+
+<!-- Maybe add images/logos for the categories from https://creativecommons.org/share-your-work/licensing-types-examples/ to the individual bullet points? -->
 
 # How you can promote openness?
 
@@ -412,4 +485,4 @@ http://psych-transparency-guide.uni-koeln.de/)
 ---
 Handout for *`r metadata$title`*, `r metadata$location`, `r metadata$date`.
 
-Frederik Aust ([frederik.aust@uni-koeln.de](mailto:frederik.aust@uni-koeln.de), [\@frederikaust](http://twitter.com/frederikaust)); Dr. Johannes Breuer ([johannes.breuer@gesis.org](mailto:johannes.breuer@gesis.org))
+Frederik Aust ([frederik.aust@uni-koeln.de](mailto:frederik.aust@uni-koeln.de), [\@frederikaust](http://twitter.com/frederikaust)); Johannes Breuer ([johannes.breuer@gesis.org](mailto:johannes.breuer@gesis.org)), [\@MattEagle09](https://twitter.com/MattEagle09))
