@@ -31,7 +31,7 @@ opts_chunk$set(echo = FALSE, fig.align = "center")
 <div class="my-footer">
   <div style="float: left;"><span>`r gsub("<br />", " & ", gsub("<br /><br />|<a.+$", "", metadata$author))`</span></div>
   <div style="float: right;"><span>`r metadata$location`, `r metadata$date`</span></div>
-  <div style="text-align: center;"><span>`r gsub(".+<br />", " ", metadata$title)`: `r gsub(".+<br />", " ", metadata$subtitle)`</span></div>
+  <div style="text-align: center;"><span>`r gsub(".+<br />", "", metadata$title)`: `r gsub(".+<br />", " ", metadata$subtitle)`</span></div>
 </div>
 
 <script type="text/x-mathjax-config">
@@ -247,7 +247,7 @@ class: inverse, middle
 ---
 # Acknowledgments
 
-- Workshop material is based on<br />Klein, O., Hardwicke, T. E., Aust, F., Breuer, J., Danielsson, H., Mohr, A. H., … Frank, M. C. (2018). A Practical Guide for Transparency in Psychological Science. Collabra: Psychology, 4(1). doi: [10.1525/collabra.158](https://doi.org/10.1525/collabra.158)  ([![:scale 7%](images/by.png)](https://creativecommons.org/licenses/by/4.0/))
+- Workshop material is based on<br />Klein, O., Hardwicke, T. E., Aust, F., Breuer, J., Danielsson, H., Hofelich Mohr, A., … Frank, M. C. (2018). A Practical Guide for Transparency in Psychological Science. Collabra: Psychology, 4(1). doi: [10.1525/collabra.158](https://doi.org/10.1525/collabra.158)  ([![:scale 7%](images/by.png)](https://creativecommons.org/licenses/by/4.0/))
 - Slides created in R with [`xaringan`](https://github.com/yihui/xaringan)
 - Icons by [Icons8](https://icons8.com) ([![:scale 7%](images/by-nd.png)](https://creativecommons.org/licenses/by-nd/3.0/))
 

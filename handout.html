@@ -237,6 +237,8 @@ div.tocify {
 <li>Check <a href="https://open-science-training-handbook.gitbook.io/book/examples-and-practical-guidance" class="uri">https://open-science-training-handbook.gitbook.io/book/examples-and-practical-guidance</a></li>
 <li><p>additional resource to mention: <a href="https://how-to-open.science/">Open Science Knowledge Base</a> by Felix Henninger (et al.)</p></li>
 <li><p>Mention OpenSesame, Lab.js, jsPsych</p></li>
+<li><p>Worksheet to assamble workflow</p></li>
+<li><p>Recommendation symbol</p></li>
 </ul>
 </div>
 <div id="general-considerations" class="section level1">
@@ -281,8 +283,9 @@ Figure 3.1: Decision flowchart outlining important considerations when sharing r
 <li>Study materials</li>
 <li>Detailed description of procedure
 <ul>
-<li>Instructive video documentation</li>
-</ul></li>
+<li>Instructive video documentation (e.g., <a href="https://obsproject.com/">OBS</a> for computer-based studies)</li>
+</ul>
+<!-- - __Demonstration:__ OBS --></li>
 </ul></li>
 </ul>
 <!-- - May be more detailed than published description -->
@@ -308,7 +311,7 @@ Figure 3.1: Decision flowchart outlining important considerations when sharing r
 <div id="data" class="section level2">
 <h2><span class="header-section-number">3.3</span> Data</h2>
 <ul>
-<li>Include information about data sharing in informed consent (for examples, see <a href="http://psych-transparency-guide.uni-koeln.de//informed-consent.html">A practical guide for transparency in psychological science</a>)</li>
+<li>Include information about data sharing in informed consent (see <a href="http://psych-transparency-guide.uni-koeln.de//informed-consent.html">our informed consent templates</a>)</li>
 <li>Use open and interoperable file formats (e.g., CSV, TSV, ODS)
 <ul>
 <li>Use UTF-8 character encoding</li>
@@ -323,7 +326,7 @@ Figure 3.1: Decision flowchart outlining important considerations when sharing r
 <li>Processed data
 <ul>
 <li>As used for analyses (e.g., coded, digitized, merged)</li>
-<li>Ideally <a href="https://www.jstatsoft.org/index.php/jss/article/view/v059i10/v59i10.pdf">“Tidy Data”</a>
+<li>Ideally “Tidy Data” (<a href="https://www.jstatsoft.org/index.php/jss/article/view/v059i10/v59i10.pdf">Wickham, 2014</a>)
 <ol style="list-style-type: decimal">
 <li>Each measured variable in one column.</li>
 <li>Different observation of the variables in a different rows</li>
@@ -331,46 +334,43 @@ Figure 3.1: Decision flowchart outlining important considerations when sharing r
 </ol></li>
 </ul>
 <!-- https://www.tandfonline.com/doi/abs/10.1080/00031305.2017.1375987 --></li>
-</ul>
-<!-- - **Demonstration**: Show examples (https://osf.io/rv7py/, https://osf.io/e4tqy/), show `codebook` package and [SPSS codebook function](https://libguides.library.kent.edu/SPSS/Codebooks) -->
-<!-- The author of the codebook (Arslan, 2018) package for R has also created a web app for creating codebooks for SPSS, Stata or RDS files: https://rubenarslan.ocpu.io/codebook/www/ -->
-<ul>
 <li>Participant privacy
 <ul>
 <li>EU GDPR: Data are personal if attributable to a specific person (using additional datasets if necessary)
 <ul>
 <li><a href="https://iapp.org/news/a/how-gdpr-changes-the-rules-for-research/">IAPP: How GDPR changes the rules for research</a></li>
 </ul></li>
-<li>Only share anonymized data publicly, e.g.
+<li>Collect only data you need</li>
+<li>Delete indentying information used for logistics as soon as possible</li>
+<li>Only share anonymized data publicly, e.g.,
 <ul>
-<li>Delete directly identifying information (e.g., full name, address, images of the face, handwriting, genetic information)</li>
-<li>note that combinations of simple indirect identifiers (e.g., ZIP code + gender + DOB, see <a href="https://dataprivacylab.org/projects/identifiability/paper1.pdf">Sweeney, 2000</a>) can also be problematic</li>
-<li>Separate demographic data used for sample description and study data</li>
+<li>Delete directly identifying information (e.g., full name, address, face, handwriting, date of birth, genetic information)
+<ul>
+<li>Mind combinations of indirect identifiers (e.g., ZIP code, gender, and date of birth, <a href="https://dataprivacylab.org/projects/identifiability/paper1.pdf">Sweeney, 2000</a>)</li>
+</ul></li>
+<li>Separate demographics used for sample description and study data</li>
 <li>Remove free text entries and potentially also alter them when citing in publications</li>
-<li>If necessary, transform data, e.g.
+<li>If necessary, transform data, e.g.,
 <ul>
 <li>Binning</li>
 <li>Top and bottom coding</li>
 <li>Add noise</li>
 <li>Aggregation</li>
 </ul></li>
-<li>for a more sophisticated approach you can also use anonymization tools, such as <a href="https://amnesia.openaire.eu/index.html">Amnesia</a></li>
+<li>Use anonymization tools, such as <a href="https://amnesia.openaire.eu/index.html">Amnesia</a></li>
 </ul></li>
-<li>Exert access control over pseudonomyzed data</li>
+<li>Control access to pseudonomyzed data</li>
 </ul>
 <!-- - Harm assessment? -->
 <ul>
-<li>Assess risk of reidentification, e.g.
+<li>Assess risk of reidentification, e.g.,
 <ul>
-<li>Small population</li>
-<li>Rare traits</li>
+<li>Small population and rare traits</li>
 <li>Dyadic data</li>
 <li>Hierarchical data (e.g., small subsamples of students, co-workers)</li>
 <li>Self-identification??? <!-- TODO: How is this a problem/How would it be possible to prevent this? --></li>
 <li><em>Motivated intruder test</em> (e.g., jealous partner, nosy neighbor, envious co-worker, insurers, criminals) <!-- - Who will the data be shared with? --></li>
 </ul></li>
-<li>Collect only data you need</li>
-<li>Delete indentying information used for logistics as soon as possible (e.g., e-mail addresses)</li>
 </ul></li>
 </ul>
 <blockquote>
@@ -380,163 +380,166 @@ Figure 3.1: Decision flowchart outlining important considerations when sharing r
 <div id="metadata" class="section level2">
 <h2><span class="header-section-number">3.4</span> Metadata</h2>
 <ul>
-<li>Sampling procedure (Who collected the data how, when, and where)</li>
-<li>Dataset, e.g.
+<li>Sampling procedure (who collected the data how, when, and where)</li>
+<li>Dataset, e.g.,
 <ul>
 <li>Number of observations</li>
-<li>Name and description of variables (incl. source of a measure, information about translation)</li>
-<li>Units of measurement, coding of values (e.g., “1 = Female”,”2 = Male”), possible options or range in which the data points can fall (e.g., “1 = not at all to 7 = Very much”)</li>
+<li>Name and description of variables (including for example source of a measure, information about translation)</li>
+<li>Units of measurement, coding of values (e.g., “1 = Female”,“2 = Male”), possible options or range in which the data points can fall (e.g., “1 = not at all to 7 = Very much”)</li>
 <li>Value(s) used for missing data</li>
-<li>If necessary, how a variable was derived from other variables (e.g., “<code>bmi</code> was derived from body weight <code>m</code> and height <code>l</code> as <span class="math inline">\(\mathrm{BMI} = m/l^2\)</span>.”)</li>
+<li>If necessary, how a variable was derived from other variables (e.g., “<code>bmi</code> was derived from body weight <code>m</code> and height <code>l</code> as <span class="math inline">\(\mathrm{BMI} = \frac{m}{l^2}\)</span>.”)</li>
 </ul></li>
 <li>Automate codebook generation
 <ul>
-<li>Analysis software(e.g., <a href="https://cran.r-project.org/web/packages/codebook/index.html">R <code>codebook</code> package</a>, <a href="https://libguides.library.kent.edu/SPSS/Codebooks">SPSS codebook function</a>, or <a href="http://www.stata.com/manuals13/dcodebook.pdf">Stata codebook function</a>)</li>
-</ul>
-<!-- TODO: add screenshots for SPSS codebook functions -->
-<ul>
+<li>Analysis software (e.g., <a href="https://cran.r-project.org/web/packages/codebook/index.html">R <code>codebook</code> package</a>, <a href="https://libguides.library.kent.edu/SPSS/Codebooks">SPSS codebook function</a>, or <a href="http://www.stata.com/manuals13/dcodebook.pdf">Stata codebook function</a>)</li>
 <li>Specialized software (e.g., <a href="http://www.nesstar.com/software/publisher.html">Nesstar</a>, <a href="https://datawiz.leibniz-psychology.org/DataWiz/?datawiz_locale=en">DataWiz</a>)</li>
 </ul></li>
 <li>If data are complex and have potentially high reuse value, consider using a standardized and machine-readable format
 <ul>
 <li>Implementation is a service provided by some repositories <!-- This documentation should describe the variables in each data file in both human- and machine-readable formats (e.g., csv, rather than docx or pdf).4 Ideally, codebooks are organized in such a way that each line represents one variable and each information relative to a variable represents a column. --></li>
 </ul></li>
+<li>Can almost always be shared, even if raw or processed data cannot</li>
 </ul>
 </div>
 <div id="standard-operating-procedures" class="section level2">
 <h2><span class="header-section-number">3.5</span> Standard operating procedures</h2>
 <ul>
-<li>Describe the default practices of a group in data analysis (e.g., <a href="http://alexandercoppock.com/Green-Lab-SOP/Green_Lab_SOP.pdf">SOP for Green lab at Columbia</a>)</li>
-<li>Simplifies authoring of preregistrations</li>
+<li>Describe default practices (<a href="https://doi.org/10.1017/S1049096516000810">Lin &amp; Green, 2016</a>)</li>
+<li>Planning studies, e.g.,
+<ul>
+<li>Sample size determination</li>
+</ul></li>
+<li>Data analysis, e.g.,
+<ul>
+<li>Statistical models
+<ul>
+<li>Assumption tests</li>
+<li>Follow-up tests</li>
+</ul></li>
+<li>Exclusion criteria</li>
+<li>Outlier and dropout treatment</li>
+<li>Treatment of missing values</li>
+<li>Use of covariates</li>
+<li>Correction for multiple comparisons</li>
+</ul></li>
+<li>Example: <a href="http://alexandercoppock.com/Green-Lab-SOP/Green_Lab_SOP.pdf">SOP for Green lab at Columbia</a></li>
 </ul>
+<!-- - Simplifies authoring of preregistrations -->
 <!-- https://doi.org/10.1017/S1049096516000810) -->
+<!-- - **Demonstration**: Show examples (https://osf.io/rv7py/, https://osf.io/e4tqy/), show `codebook` package and [SPSS codebook function](https://libguides.library.kent.edu/SPSS/Codebooks) -->
+<!-- The author of the codebook (Arslan, 2018) package for R has also created a web app for creating codebooks for SPSS, Stata or RDS files: https://rubenarslan.ocpu.io/codebook/www/ -->
 </div>
 <div id="documentation-of-analyses" class="section level2">
 <h2><span class="header-section-number">3.6</span> Documentation of analyses</h2>
 <ul>
-<li>Exact specification of how to move from raw data to reported results (including cleaning or transformation of data)
+<li>Exact specification of how to move from raw data to reported results (incl. data cleaning and transformation)
 <ul>
 <li>Step-by-step description of analyses performed in non-scriptable software programs</li>
-<li>Analysis software syntax</li>
-</ul></li>
-<li>Documentation of computational environment (hardware and software used for analyses)</li>
+<li>Analysis syntax
+<ul>
 <li>Avoid “works on my machine” errors
 <ul>
 <li>Relative file paths or load data from a permanent online source</li>
 <li>Avoid spaces and special characters</li>
 <li>Test on another computer</li>
-<li>Use cloud-based platforms (e.g., <a href="https://codeocean.com/">Code Ocean</a>, <a href="https://rstudio.cloud/">RStudio cloud</a>, <a href="https://colab.research.google.com/">Colaboratory</a>)</li>
+</ul></li>
+</ul></li>
+<li>Set and record seeds for pseudorandom number generators</li>
+</ul></li>
+<li>Documentation of computational environment
+<ul>
+<li>Hardware</li>
+<li>Software version incl. extensions (e.g., R packages)</li>
+<li>Cloud-based platforms (e.g., <a href="https://codeocean.com/">Code Ocean</a>, <a href="https://rstudio.cloud/">RStudio cloud</a>, <a href="https://colab.research.google.com/">Colaboratory</a>)</li>
+<li>Containers and virutal machines (e.g., <a href="https://www.docker.com/">Docker</a>, <a href="https://www.vagrantup.com/">Vagrant</a>)</li>
 </ul></li>
 <li>Share intermediate results for complex analyses</li>
-<li>Set and record seeds for pseudorandom number generators</li>
-<li>Use open source software</li>
 </ul>
 </div>
 <div id="research-reports" class="section level2">
 <h2><span class="header-section-number">3.7</span> Research reports</h2>
 <ul>
-<li>If published behind paywall, preprint or postprint (see journal policy, e.g., <a href="http://www.sherpa.ac.uk/romeo/search.php">SHERPA/RoMEO</a>)</li>
-<li>If gold open access, final version of manuscript</li>
+<li>Paywalled publications (green open access)
+<ul>
+<li>Preprint</li>
+<li>Postprint</li>
+<li>Mind journal policy (e.g., <a href="http://www.sherpa.ac.uk/romeo/search.php">SHERPA/RoMEO</a>)</li>
+</ul></li>
+<li>Gold open access
+<ul>
+<li>Published article</li>
+</ul></li>
 </ul>
 </div>
 </div>
 <div id="when-can-you-share" class="section level1">
 <h1><span class="header-section-number">4</span> When can you share?</h1>
 <blockquote>
-<p>When it comes to the question of when to share, any time is better than never (p. 4, Klein et al., 2018).</p>
+<p>any time is better than never (p. 4, Klein et al., 2018).</p>
 </blockquote>
 <div id="planning-to-share" class="section level2">
 <h2><span class="header-section-number">4.1</span> Planning to share</h2>
 <ul>
-<li>Have a basic data management plan, ideally at the start of your project/study (<a href="http://www.dcc.ac.uk/resources/how-guides">Jones, 2011</a>, <a href="https://www.icpsr.umich.edu/icpsrweb/content/datamanagement/dmp/framework.html" class="uri">https://www.icpsr.umich.edu/icpsrweb/content/datamanagement/dmp/framework.html</a>, <a href="http://www.dcc.ac.uk/sites/default/files/documents/resource/DMP/DMP-checklist-flyer.pdf" class="uri">http://www.dcc.ac.uk/sites/default/files/documents/resource/DMP/DMP-checklist-flyer.pdf</a>) <!-- TODO: Can we give a simple example here? Provide additional guidance? -->
+<li>Develop a default project file structure</li>
+<li>Have a <em>basic</em> data management plan, ideally before starting a project
 <ul>
-<li>Examples: <a href="https://dmponline.dcc.ac.uk/public_plans" class="uri">https://dmponline.dcc.ac.uk/public_plans</a></li>
-<li>Project structure
+<li>Create basic reusable templates
 <ul>
-<li>not necessary to create completely new DMP for every study/project (esp. if they are similar): create &amp; use basic template</li>
+<li><a href="https://www.icpsr.umich.edu/icpsrweb/content/datamanagement/dmp/framework.html">ICPSR Framework for Creating a Data Management Plan</a></li>
+<li><a href="http://www.dcc.ac.uk/resources/how-guides/develop-data-plan">DDC: How to Develop a Data Management and Sharing Plan</a></li>
 </ul></li>
-<li>ZPID (Leibniz Psychology) data management tool <a href="https://datawiz.leibniz-psychology.org/DataWiz/?datawiz_locale=en">DataWiz</a></li>
-</ul></li>
+<li>Use wizards to get started (e.g., <a href="https://datawiz.leibniz-psychology.org/DataWiz/?datawiz_locale=en">ZPID DataWiz</a>, <a href="https://dmponline.dcc.ac.uk/">DMPonline</a>)</li>
 <li>Simplifies addressing legal and ethical issues</li>
-<li>Reduces extra effort associated with sharing</li>
+<li>Examples: <a href="https://dmponline.dcc.ac.uk/public_plans">Public DMPs</a></li>
+</ul></li>
+<li>Reduces extra sharing efforts</li>
 </ul>
 </div>
 <div id="before-data-collection" class="section level2">
 <h2><span class="header-section-number">4.2</span> Before data collection</h2>
 <ul>
-<li>Study protocol</li>
-<li>Study material</li>
-<li>Analysis scripts
+<li>Timely archiving
 <ul>
+<li>Study protocol and materials</li>
 <li>Standard operating procedures</li>
+<li>Analysis plan and scripts</li>
 </ul></li>
-<li>Formal time-stamped preregistration or not</li>
-<li><a href="https://cos.io/rr/">Registered reports</a></li>
-<li>how to pre-register via the OSF, see <a href="https://osf.io/2vu7m/" class="uri">https://osf.io/2vu7m/</a></li>
+<li>Preregistration</li>
 </ul>
 </div>
 <div id="during-data-collection" class="section level2">
 <h2><span class="header-section-number">4.3</span> During data collection</h2>
 <ul>
-<li>Study protocol</li>
-<li>Study material</li>
-<li>Analysis scripts</li>
-<li>Raw data
-<ul>
-<li>Born-open data
+<li>Born-open data (<a href="https://doi.org/10.3758/s13428-015-0630-z">Rouder, 2016</a>)
 <ul>
 <li>Automatically uploaded to a public repository
 <ul>
-<li>Reduces extra effort associated with sharing</li>
-</ul></li>
 <li>Offsite backup</li>
-<li>Protect participants’ privacy!</li>
-<li><a href="http://psych-transparency-guide.uni-koeln.de/born-open-data.html">Born-open data with cloud storage providers</a></li>
+<li>Reduces extra sharing efforts</li>
 </ul></li>
+<li>Protect participants’ privacy!</li>
+<li>Tutorial: <a href="http://psych-transparency-guide.uni-koeln.de/born-open-data.html">Born-open data with cloud storage providers</a></li>
 </ul></li>
 </ul>
+<!-- - **Demonstration**: Set up Dropbox to collect born-open data -->
 </div>
-<div id="upon-paper-submission-or-upon-publication" class="section level2">
-<h2><span class="header-section-number">4.4</span> Upon paper submission (or upon publication)</h2>
+<div id="upon-submission" class="section level2">
+<h2><span class="header-section-number">4.4</span> Upon submission</h2>
 <ul>
-<li>Recommended (vs. paper publication)</li>
-<li>Allows thorough evaluation of research
+<li>Allows thorough peer-review
 <ul>
-<li>Possible errors can be spotted early on (no public correction)</li>
+<li>Errors can be spotted early on (no public correction)</li>
+<li>Possibly limit access to reviewers prior to publications (e.g., <a href="http://help.osf.io/m/links_forks/l/524049-create-a-view-only-link-for-a-project">OSF view-only links</a>)</li>
 </ul></li>
 <li>Demonstrates dedication to openness</li>
-<li><a href="http://help.osf.io/m/links_forks/l/524049-create-a-view-only-link-for-a-project">OSF view-only links</a></li>
 </ul>
-<pre><code>##             Sharing_option Findability Sustainability Access_control
-## 1               On request          --             --             ++
-## 2         Personal website           -              -              0
-## 3          Journal website           +              0              0
-## 4 Institutional repository           +             ++              +
-## 5        Public repository          ++             ++              +</code></pre>
-<ul>
-<li>bonus: institutional and public repositories (and in many cases also journal websites) make data citeable (usually via DOIs)</li>
-</ul>
-<!-- or add "Citeability" to the above table? Citeability <- c("-", "--", "0", "++", "++") -->
-<!-- maybe make a prety table instead of just printing the dataframe? -->
 </div>
-<div id="after-an-embargo" class="section level2">
-<h2><span class="header-section-number">4.5</span> After an embargo</h2>
+<div id="upon-publication-or-after-an-embargo" class="section level2">
+<h2><span class="header-section-number">4.5</span> Upon publication or after an embargo</h2>
 <ul>
-<li>Archive in public respository, but publish later</li>
-<li>Allows further analyses of dataset and investigation of research question</li>
-<li><p>Reduces extra effort associated with sharing</p></li>
-<li>Study protocol</li>
-<li>Study material</li>
-<li>Data &amp; Metadata
+<li>Archive in public respository, publish later
 <ul>
-<li>Born-open data
-<ul>
-<li><strong>Demonstration</strong>: Set up Dropbox to collect born-open data <!-- TODO: Johannes, ist das eher when oder how? Johannes: eher when, wuerde ich sagen --></li>
-</ul></li>
-</ul></li>
-<li>Analysis scripts
-<ul>
-<li>Demonstrate dynamic documents</li>
+<li>Reduces extra sharing efforts</li>
 </ul></li>
 </ul>
 <div class="figure" style="text-align: center"><span id="fig:figure2"></span>
@@ -581,6 +584,10 @@ Figure 4.1: Typical workflow indicating when to share research products at diffe
 <ul>
 <li>Screencapturing computer experiments (e.g., <a href="https://obsproject.com/">OBS</a>)</li>
 <li><a href="https://www.jove.com/journal/behavior">JoVE Behavior</a></li>
+</ul></li>
+<li>Time-stamped preregistration (<a href="https://osf.io/2vu7m/">How to preregister via the OSF</a>)
+<ul>
+<li><a href="https://cos.io/rr/">Registered reports</a></li>
 </ul></li>
 </ul>
 </div>
@@ -658,12 +665,59 @@ Figure 4.1: Typical workflow indicating when to share research products at diffe
 <li>Reusable: Proper documentation</li>
 </ul></li>
 </ul>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Sharing option</th>
+<th align="center">Discoverability</th>
+<th align="center">Sustainability</th>
+<th align="center">Access control</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">On request</td>
+<td align="center">–</td>
+<td align="center">–</td>
+<td align="center">++</td>
+</tr>
+<tr class="even">
+<td align="left">Personal website</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">0</td>
+</tr>
+<tr class="odd">
+<td align="left">Journal website</td>
+<td align="center">+</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr class="even">
+<td align="left">Institutional repository</td>
+<td align="center">+</td>
+<td align="center">++</td>
+<td align="center">+</td>
+</tr>
+<tr class="odd">
+<td align="left">Public repository</td>
+<td align="center">++</td>
+<td align="center">++</td>
+<td align="center">+</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>bonus: institutional and public repositories (and in many cases also journal websites) make data citeable (usually via DOIs)</li>
+</ul>
+<!-- or add "Citeability" to the above table? Citeability <- c("-", "--", "0", "++", "++") -->
 </div>
 <div id="analysis-scripts" class="section level2">
 <h2><span class="header-section-number">5.4</span> Analysis scripts</h2>
 <ul>
 <li>Briefly note some best practices</li>
-<li><strong>Demonstrate</strong>: Dynamic documents (<code>papaja</code>)</li>
+<li><p><strong>Demonstrate</strong>: Dynamic documents (<code>papaja</code>)</p></li>
+<li><p>Use open source software</p></li>
 </ul>
 </div>
 <div id="reports" class="section level2">
@@ -784,10 +838,10 @@ Figure 4.1: Typical workflow indicating when to share research products at diffe
 </div>
 <div id="reading" class="section level1">
 <h1><span class="header-section-number">7</span> Reading</h1>
-<p>Klein, O., Hardwicke, T. E., Aust, F., Breuer, J., Danielsson, H., Mohr, A. H., … Frank, M. C. (2018). A Practical Guide for Transparency in Psychological Science. <em>Collabra: Psychology</em>, 4(1). doi: <a href="https://doi.org/10.1525/collabra.158">10.1525/collabra.158</a> <a href="material%20http://psych-transparency-guide.uni-koeln.de/">Supplementary</a></p>
+<p>Klein, O., Hardwicke, T. E., Aust, F., Breuer, J., Danielsson, H., Hofelich Mohr, A., … Frank, M. C. (2018). A Practical Guide for Transparency in Psychological Science. <em>Collabra: Psychology</em>, 4(1). doi: <a href="https://doi.org/10.1525/collabra.158">10.1525/collabra.158</a> (<a href="http://psych-transparency-guide.uni-koeln.de/">Supplementary material</a>)</p>
 <hr />
-<p>Handout for <em>A practical primer on transparent research workflows</em>, ESCON 2018, Cologne, Germany, 04.09.2018.</p>
-<p>Frederik Aust (<a href="mailto:frederik.aust@uni-koeln.de">frederik.aust@uni-koeln.de</a>, <a href="http://twitter.com/frederikaust">@frederikaust</a>); Johannes Breuer (<a href="mailto:johannes.breuer@gesis.org">johannes.breuer@gesis.org</a>), <a href="https://twitter.com/MattEagle09">@MattEagle09</a>)</p>
+<p>Handout for <em>How to do research openly: A practical primer on transparent research workflows</em>, ESCON 2018, Cologne, Germany, 04.09.2018.</p>
+<p>Frederik Aust (<a href="mailto:frederik.aust@uni-koeln.de">frederik.aust@uni-koeln.de</a>, <a href="http://twitter.com/frederikaust">@frederikaust</a>); Dr. Johannes Breuer (<a href="mailto:johannes.breuer@gesis.org">johannes.breuer@gesis.org</a>, <a href="https://twitter.com/MattEagle09">@MattEagle09</a>)</p>
 </div>
 
 

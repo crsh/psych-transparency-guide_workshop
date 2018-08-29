@@ -129,6 +129,6 @@ Klein, O., Hardwicke, T. E., Aust, F., Breuer, J., Danielsson, H., Mohr, A. H., 
 
 
 ---
-Workshop outline for *`r metadata$title`*, `r metadata$location`, `r metadata$date`.
+Workshop outline for *`r gsub(".+<br />", "", metadata$title)`: `r gsub(".+<br />", " ", metadata$subtitle)`*, `r metadata$location`, `r metadata$date`.
 
 Frederik Aust ([frederik.aust@uni-koeln.de](mailto:frederik.aust@uni-koeln.de), [\@frederikaust](http://twitter.com/frederikaust)); Johannes Breuer ([johannes.breuer@gesis.org](mailto:johannes.breuer@gesis.org), [\@MattEagle09](https://twitter.com/MattEagle09))

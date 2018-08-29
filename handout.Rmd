@@ -34,6 +34,10 @@ opts_chunk$set(echo = FALSE, fig.align = "center")
 
 - Mention OpenSesame, Lab.js, jsPsych
 
+- Worksheet to assamble workflow
+
+- Recommendation symbol
+
 
 # General considerations
 
@@ -69,7 +73,9 @@ include_graphics("images/klein-et-al-figure-1.png")
     - Hypotheses
     - Study materials
     - Detailed description of procedure
-        - Instructive video documentation
+        - Instructive video documentation (e.g., [OBS](https://obsproject.com/) for computer-based studies)
+
+        <!-- - __Demonstration:__ OBS -->
     
 <!-- - May be more detailed than published description -->
 <!-- - Facilitates scientific progress (e.g., replication and extension) -->
@@ -94,7 +100,7 @@ include_graphics("images/klein-et-al-figure-1.png")
 
 ## Data
 
-- Include information about data sharing in informed consent (for examples, see [A practical guide for transparency in psychological science](http://psych-transparency-guide.uni-koeln.de//informed-consent.html))
+- Include information about data sharing in informed consent (see [our informed consent templates](http://psych-transparency-guide.uni-koeln.de//informed-consent.html))
 - Use open and interoperable file formats (e.g., CSV, TSV, ODS)
     - Use UTF-8 character encoding
 
@@ -105,44 +111,40 @@ include_graphics("images/klein-et-al-figure-1.png")
 
 - Processed data
     - As used for analyses (e.g., coded, digitized, merged)
-    - Ideally ["Tidy Data"](https://www.jstatsoft.org/index.php/jss/article/view/v059i10/v59i10.pdf)
+    - Ideally "Tidy Data" ([Wickham, 2014 ](https://www.jstatsoft.org/index.php/jss/article/view/v059i10/v59i10.pdf))
         1. Each measured variable in one column.
         2. Different observation of the variables in a different rows
         3. Multiple tables should include a column that allows them to be linked
     
     <!-- https://www.tandfonline.com/doi/abs/10.1080/00031305.2017.1375987 -->
 
-<!-- - **Demonstration**: Show examples (https://osf.io/rv7py/, https://osf.io/e4tqy/), show `codebook` package and [SPSS codebook function](https://libguides.library.kent.edu/SPSS/Codebooks) -->
-<!-- The author of the codebook (Arslan, 2018) package for R has also created a web app for creating codebooks for SPSS, Stata or RDS files: https://rubenarslan.ocpu.io/codebook/www/ -->
-
 - Participant privacy
     - EU GDPR: Data are personal if attributable to a specific person (using additional datasets if necessary)
         - [IAPP: How GDPR changes the rules for research](https://iapp.org/news/a/how-gdpr-changes-the-rules-for-research/)
-    - Only share anonymized data publicly, e.g.
-        - Delete directly identifying information (e.g., full name, address, images of the face, handwriting, genetic information)
-        - note that combinations of simple indirect identifiers (e.g., ZIP code + gender + DOB, see [Sweeney, 2000](https://dataprivacylab.org/projects/identifiability/paper1.pdf)) can also be problematic
-        - Separate demographic data used for sample description and study data
+    - Collect only data you need
+    - Delete indentying information used for logistics as soon as possible
+    - Only share anonymized data publicly, e.g.,
+        - Delete directly identifying information (e.g., full name, address, face, handwriting, date of birth, genetic information)
+            - Mind combinations of indirect identifiers (e.g., ZIP code, gender, and date of birth, [Sweeney, 2000](https://dataprivacylab.org/projects/identifiability/paper1.pdf))
+        - Separate demographics used for sample description and study data
         - Remove free text entries and potentially also alter them when citing in publications
-        - If necessary, transform data, e.g.
+        - If necessary, transform data, e.g.,
             - Binning
             - Top and bottom coding
             - Add noise
             - Aggregation
-        - for a more sophisticated approach you can also use anonymization tools, such as [Amnesia](https://amnesia.openaire.eu/index.html)
-    - Exert access control over pseudonomyzed data 
+        - Use anonymization tools, such as [Amnesia](https://amnesia.openaire.eu/index.html)
+    - Control access to pseudonomyzed data 
     
     <!-- - Harm assessment? -->
     
-    - Assess risk of reidentification, e.g.
-        - Small population
-        - Rare traits
+    - Assess risk of reidentification, e.g.,
+        - Small population and rare traits
         - Dyadic data
         - Hierarchical data (e.g., small subsamples of students, co-workers)
         - Self-identification??? <!-- TODO: How is this a problem/How would it be possible to prevent this? -->
         - _Motivated intruder test_ (e.g., jealous partner, nosy neighbor, envious co-worker, insurers, criminals)
     <!-- - Who will the data be shared with? -->
-    - Collect only data you need
-    - Delete indentying information used for logistics as soon as possible (e.g., e-mail addresses)
 
 > To determine whether a natural person is identifiable, account should be taken of all the means reasonably likely to be used, such as singling out, either by the controller or by another person to identify the natural person directly or indirectly.
 <br /><br />
@@ -151,131 +153,126 @@ To ascertain whether means are reasonably likely to be used to identify the natu
 
 ## Metadata
 
-- Sampling procedure (Who collected the data how, when, and where)
-- Dataset, e.g.
+- Sampling procedure (who collected the data how, when, and where)
+- Dataset, e.g.,
     - Number of observations
-    - Name and description of variables (incl. source of a measure, information about translation)
-    - Units of measurement, coding of values (e.g., “1 = Female”,”2 = Male”), possible options or range in which the data points can fall (e.g., “1 = not at all to 7 = Very much”)
+    - Name and description of variables (including for example source of a measure, information about translation)
+    - Units of measurement, coding of values (e.g., "1 = Female","2 = Male"), possible options or range in which the data points can fall (e.g., “1 = not at all to 7 = Very much”)
     - Value(s) used for missing data
-    - If necessary, how a variable was derived from other variables (e.g., "`bmi` was derived from body weight `m` and height `l` as $\mathrm{BMI} = m/l^2$.")
+    - If necessary, how a variable was derived from other variables (e.g., "`bmi` was derived from body weight `m` and height `l` as $\mathrm{BMI} = \frac{m}{l^2}$.")
 - Automate codebook generation
-    - Analysis software(e.g., [R `codebook` package](https://cran.r-project.org/web/packages/codebook/index.html), [SPSS codebook function](https://libguides.library.kent.edu/SPSS/Codebooks), or [Stata codebook function](http://www.stata.com/manuals13/dcodebook.pdf))
-    
-    <!-- TODO: add screenshots for SPSS codebook functions -->
-    
+    - Analysis software (e.g., [R `codebook` package](https://cran.r-project.org/web/packages/codebook/index.html), [SPSS codebook function](https://libguides.library.kent.edu/SPSS/Codebooks), or [Stata codebook function](http://www.stata.com/manuals13/dcodebook.pdf))
     - Specialized software (e.g., [Nesstar](http://www.nesstar.com/software/publisher.html), [DataWiz](https://datawiz.leibniz-psychology.org/DataWiz/?datawiz_locale=en))
 - If data are complex and have potentially high reuse value, consider using a standardized and machine-readable format
     - Implementation is a service provided by some repositories
     <!-- This documentation should describe the variables in each data file in both human- and machine-readable formats (e.g., csv, rather than docx or pdf).4 Ideally, codebooks are organized in such a way that each line represents one variable and each information relative to a variable represents a column. -->
+- Can almost always be shared, even if raw or processed data cannot
+
 
 ## Standard operating procedures
 
-- Describe the default practices of a group in data analysis (e.g., [SOP for Green lab at Columbia](http://alexandercoppock.com/Green-Lab-SOP/Green_Lab_SOP.pdf))
-- Simplifies authoring of preregistrations
+- Describe default practices ([Lin & Green, 2016](
+https://doi.org/10.1017/S1049096516000810))
+- Planning studies, e.g.,
+    - Sample size determination
+- Data analysis, e.g.,
+    - Statistical models
+        - Assumption tests
+        - Follow-up tests
+    - Exclusion criteria
+    - Outlier and dropout treatment
+    - Treatment of missing values
+    - Use of covariates
+    - Correction for multiple comparisons
+- Example: [SOP for Green lab at Columbia](http://alexandercoppock.com/Green-Lab-SOP/Green_Lab_SOP.pdf)
+
+<!-- - Simplifies authoring of preregistrations -->
 
 <!-- https://doi.org/10.1017/S1049096516000810) -->
+
+<!-- - **Demonstration**: Show examples (https://osf.io/rv7py/, https://osf.io/e4tqy/), show `codebook` package and [SPSS codebook function](https://libguides.library.kent.edu/SPSS/Codebooks) -->
+<!-- The author of the codebook (Arslan, 2018) package for R has also created a web app for creating codebooks for SPSS, Stata or RDS files: https://rubenarslan.ocpu.io/codebook/www/ -->
 
 
 ## Documentation of analyses
 
-- Exact specification of how to move from raw data to reported results (including cleaning or transformation of data)
+- Exact specification of how to move from raw data to reported results (incl. data cleaning and transformation)
     - Step-by-step description of analyses performed in non-scriptable software programs
-    - Analysis software syntax
-- Documentation of computational environment (hardware and software used for analyses)
-- Avoid "works on my machine" errors
-    - Relative file paths or load data from a permanent online source
-    - Avoid spaces and special characters
-    - Test on another computer
-    - Use cloud-based platforms (e.g., [Code Ocean](https://codeocean.com/), [RStudio cloud](https://rstudio.cloud/), [Colaboratory](https://colab.research.google.com/))
+    - Analysis syntax
+        - Avoid "works on my machine" errors
+            - Relative file paths or load data from a permanent online source
+            - Avoid spaces and special characters
+            - Test on another computer
+    - Set and record seeds for pseudorandom number generators
+- Documentation of computational environment 
+    - Hardware
+    - Software version incl. extensions (e.g., R packages)
+    - Cloud-based platforms (e.g., [Code Ocean](https://codeocean.com/), [RStudio cloud](https://rstudio.cloud/), [Colaboratory](https://colab.research.google.com/))
+    - Containers and virutal machines (e.g., [Docker](https://www.docker.com/), [Vagrant](https://www.vagrantup.com/))
 - Share intermediate results for complex analyses
-- Set and record seeds for pseudorandom number generators
-- Use open source software
 
 
 ## Research reports
 
-- If published behind paywall, preprint or postprint (see journal policy, e.g., [SHERPA/RoMEO](http://www.sherpa.ac.uk/romeo/search.php))
-- If gold open access, final version of manuscript
+- Paywalled publications (green open access)
+    - Preprint
+    - Postprint
+    - Mind journal policy (e.g., [SHERPA/RoMEO](http://www.sherpa.ac.uk/romeo/search.php))
+- Gold open access
+    - Published article
 
 
 
 # When can you share?
 
-> When it comes to the question of when to share, any time
-is better than never  (p. 4, Klein et al., 2018).
+> any time is better than never  (p. 4, Klein et al., 2018).
 
 
 ## Planning to share
 
-- Have a basic data management plan, ideally at the start of your project/study ([Jones, 2011](http://www.dcc.ac.uk/resources/how-guides), https://www.icpsr.umich.edu/icpsrweb/content/datamanagement/dmp/framework.html, http://www.dcc.ac.uk/sites/default/files/documents/resource/DMP/DMP-checklist-flyer.pdf) <!-- TODO: Can we give a simple example here? Provide additional guidance? -->
-    - Examples: https://dmponline.dcc.ac.uk/public_plans
-    - Project structure
-        - not necessary to create completely new DMP for every study/project (esp. if they are similar): create & use basic template
-    - ZPID (Leibniz Psychology) data management tool [DataWiz](https://datawiz.leibniz-psychology.org/DataWiz/?datawiz_locale=en)
-- Simplifies addressing legal and ethical issues
-- Reduces extra effort associated with sharing
+- Develop a default project file structure
+- Have a _basic_ data management plan, ideally before starting a project
+    - Create basic reusable templates
+        - [ICPSR Framework for Creating a Data Management Plan](https://www.icpsr.umich.edu/icpsrweb/content/datamanagement/dmp/framework.html)
+        - [DDC: How to Develop a Data Management and Sharing Plan](http://www.dcc.ac.uk/resources/how-guides/develop-data-plan)
+    - Use wizards to get started (e.g., [ZPID DataWiz](https://datawiz.leibniz-psychology.org/DataWiz/?datawiz_locale=en), [DMPonline](https://dmponline.dcc.ac.uk/))
+    - Simplifies addressing legal and ethical issues
+    - Examples: [Public DMPs](https://dmponline.dcc.ac.uk/public_plans)
+- Reduces extra sharing efforts
 
 ## Before data collection
 
-- Study protocol
-- Study material
-- Analysis scripts
+- Timely archiving
+    - Study protocol and materials
     - Standard operating procedures
-- Formal time-stamped preregistration or not
-- [Registered reports](https://cos.io/rr/)
-- how to pre-register via the OSF, see https://osf.io/2vu7m/
+    - Analysis plan and scripts
+- Preregistration
+
 
 ## During data collection
 
-- Study protocol
-- Study material
-- Analysis scripts
-- Raw data
-    - Born-open data
-        - Automatically uploaded to a public repository
-            - Reduces extra effort associated with sharing
+- Born-open data ([Rouder, 2016](https://doi.org/10.3758/s13428-015-0630-z))
+    - Automatically uploaded to a public repository
         - Offsite backup
-        - Protect participants' privacy!
-        - [Born-open data with cloud storage providers](http://psych-transparency-guide.uni-koeln.de/born-open-data.html)
+        - Reduces extra sharing efforts
+    - Protect participants' privacy!
+    - Tutorial: [Born-open data with cloud storage providers](http://psych-transparency-guide.uni-koeln.de/born-open-data.html)
 
-## Upon paper submission (or upon publication)
+<!-- - **Demonstration**: Set up Dropbox to collect born-open data -->
 
-- Recommended (vs. paper publication)
-- Allows thorough evaluation of research
-    - Possible errors can be spotted early on (no public correction)
+
+## Upon submission
+
+- Allows thorough peer-review
+    - Errors can be spotted early on (no public correction)
+    - Possibly limit access to reviewers prior to publications (e.g., [OSF view-only links](http://help.osf.io/m/links_forks/l/524049-create-a-view-only-link-for-a-project))
 - Demonstrates dedication to openness
-- [OSF view-only links](http://help.osf.io/m/links_forks/l/524049-create-a-view-only-link-for-a-project)
-
-```{r sharing option ratings, echo = F}
-
-Sharing_option <- c("On request", "Personal website", "Journal website", "Institutional repository", "Public repository")
-Findability <- c("--", "-", "+", "+", "++")
-Sustainability <- c("--", "-", "0", "++", "++")
-Access_control <- c("++", "0", "0", "+", "+")
-sharing_options <- data.frame(Sharing_option, Findability, Sustainability, Access_control, stringsAsFactors = F)
-print(sharing_options)
 
 
-```
+## Upon publication or after an embargo
 
-- bonus: institutional and public repositories (and in many cases also journal websites) make data citeable (usually via DOIs)
-
-<!-- or add "Citeability" to the above table? Citeability <- c("-", "--", "0", "++", "++") -->
-<!-- maybe make a prety table instead of just printing the dataframe? -->
-
-## After an embargo
-
-- Archive in public respository, but publish later
-- Allows further analyses of dataset and investigation of research question
-- Reduces extra effort associated with sharing
-
-- Study protocol
-- Study material
-- Data & Metadata
-    - Born-open data
-        - **Demonstration**: Set up Dropbox to collect born-open data <!-- TODO: Johannes, ist das eher when oder how? Johannes: eher when, wuerde ich sagen -->
-- Analysis scripts
-    - Demonstrate dynamic documents
+- Archive in public respository, publish later
+    - Reduces extra sharing efforts
 
 ```{r figure2, fig.cap = "Typical workflow indicating when to share research products at different stages of the research process."}
 include_graphics("images/klein-et-al-figure-2.png")
@@ -311,6 +308,9 @@ include_graphics("images/klein-et-al-figure-2.png")
 - Instructive video footage of procedure
     - Screencapturing computer experiments (e.g., [OBS](https://obsproject.com/))
     - [JoVE Behavior](https://www.jove.com/journal/behavior)
+
+- Time-stamped preregistration ([How to preregister via the OSF](https://osf.io/2vu7m/))
+    - [Registered reports](https://cos.io/rr/)
 
 
 ## Study material, data & metadata
@@ -370,11 +370,31 @@ include_graphics("images/klein-et-al-figure-2.png")
       - Reusable: Proper documentation
 
 
+```{r sharing-option-ratings, echo = FALSE}
+sharing_options <- data.frame(
+  "Sharing option" = c("On request", "Personal website", "Journal website", "Institutional repository", "Public repository")
+  , "Discoverability" = c("--", "-", "+", "+", "++")
+  , "Sustainability" = c("--", "-", "0", "++", "++")
+  , "Access control" = c("++", "0", "0", "+", "+")
+  , stringsAsFactors = F
+  , check.names = FALSE
+)
+
+kable(sharing_options, format = "pandoc", align = "lccc")
+```
+
+- bonus: institutional and public repositories (and in many cases also journal websites) make data citeable (usually via DOIs)
+
+<!-- or add "Citeability" to the above table? Citeability <- c("-", "--", "0", "++", "++") -->
+
+
 ## Analysis scripts
 
 - Briefly note some best practices
 - **Demonstrate**: Dynamic documents (`papaja`)
 
+
+- Use open source software
 
 ## Reports
 
@@ -479,10 +499,10 @@ license that governs the original work
 
 # Reading
 
-Klein, O., Hardwicke, T. E., Aust, F., Breuer, J., Danielsson, H., Mohr, A. H., … Frank, M. C. (2018). A Practical Guide for Transparency in Psychological Science. _Collabra: Psychology_, 4(1). doi: [10.1525/collabra.158](https://doi.org/10.1525/collabra.158) [Supplementary](material
-http://psych-transparency-guide.uni-koeln.de/)
+Klein, O., Hardwicke, T. E., Aust, F., Breuer, J., Danielsson, H., Hofelich Mohr, A., … Frank, M. C. (2018). A Practical Guide for Transparency in Psychological Science. _Collabra: Psychology_, 4(1). doi: [10.1525/collabra.158](https://doi.org/10.1525/collabra.158) ([Supplementary material](
+http://psych-transparency-guide.uni-koeln.de/))
 
 ---
-Handout for *`r metadata$title`*, `r metadata$location`, `r metadata$date`.
+Handout for *`r gsub(".+<br />", "", metadata$title)`: `r gsub(".+<br />", " ", metadata$subtitle)`*, `r metadata$location`, `r metadata$date`.
 
-Frederik Aust ([frederik.aust@uni-koeln.de](mailto:frederik.aust@uni-koeln.de), [\@frederikaust](http://twitter.com/frederikaust)); Johannes Breuer ([johannes.breuer@gesis.org](mailto:johannes.breuer@gesis.org)), [\@MattEagle09](https://twitter.com/MattEagle09))
+Frederik Aust ([frederik.aust@uni-koeln.de](mailto:frederik.aust@uni-koeln.de), [\@frederikaust](http://twitter.com/frederikaust)); Dr. Johannes Breuer ([johannes.breuer@gesis.org](mailto:johannes.breuer@gesis.org), [\@MattEagle09](https://twitter.com/MattEagle09))
