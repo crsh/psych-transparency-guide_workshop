@@ -124,6 +124,11 @@ class: inverse, middle, center
 
 <!-- TODO: Look at paper -->
 
+<!-- - Good for others -->
+<!--     - Good for you -->
+<!--         - In-lab transparency -->
+<!--         - Paul Wilson quote -->
+
 ---
 # Example project
 

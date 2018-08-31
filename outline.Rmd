@@ -40,7 +40,6 @@ license <- "[![](images/by-badge.png)](https://creativecommons.org/licenses/by/4
 
 The active three-hour workshop will cover the following issues.
 
-
 1. General considerations
 
 2. What can you share?
