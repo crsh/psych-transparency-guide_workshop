@@ -21,20 +21,26 @@ library("rmarkdown")
 opts_chunk$set(echo = FALSE, fig.align = "center")
 
 recommendation <- "<img style='width: auto; height: 22px;', src='images/recommendation.png' />"
+
+license <- "[![](images/by-badge.png)](https://creativecommons.org/licenses/by/4.0/) Please link to [workshop GitHub repository](https://github.com/crsh/psych-transparency-guide_workshop/) and cite [Klein et al. (2018)](https://doi.org/10.1525/collabra.158)."
 ```
+
+`r license`
+
 
 # TODO
 
-- Set up OSF repository with project structure that participants can fork to create their own project
-- TIER template to clone: https://osf.io/ybzxe/
-- BIDS example on GitHub: https://github.com/INCF/BIDS-examples
+- Send material to Hans by Wednesday!
+
+- Link to project templates
+    - Our template: https://osf.io/ep26s/
+    - TIER template to clone: https://osf.io/ybzxe/
+    - BIDS example on GitHub: https://github.com/INCF/BIDS-examples
 
 - Prepare OSF demo (see Candice Morey's slides)
 
 - Check https://open-science-training-handbook.gitbook.io/book/examples-and-practical-guidance
 - additional resource to mention: [Open Science Knowledge Base](https://how-to-open.science/) by Felix Henninger (et al.)
-
-- Mention OpenSesame, Lab.js, jsPsych
 
 - Worksheet to assamble workflow
 
@@ -139,7 +145,7 @@ include_graphics("images/klein-et-al-figure-1.png")
             - Top and bottom coding
             - Add noise
             - Aggregation
-        - Use anonymization tools, such as [Amnesia](https://amnesia.openaire.eu/index.html)
+        - Use anonymization tools (e.g., [ARX](http://arx.deidentifier.org/), [Amnesia](https://amnesia.openaire.eu/index.html))
     - Control access to pseudonomyzed data 
     
     <!-- - Harm assessment? -->
@@ -214,7 +220,7 @@ https://doi.org/10.1017/S1049096516000810))
     - Hardware
     - Software version incl. extensions (e.g., R packages)
     - Cloud-based platforms (e.g., [Code Ocean](https://codeocean.com/), [RStudio cloud](https://rstudio.cloud/), [Colaboratory](https://colab.research.google.com/))
-    - Containers and virutal machines (e.g., [Docker](https://www.docker.com/), [Vagrant](https://www.vagrantup.com/))
+    - Containers and virutal machines (e.g., [Docker](https://www.docker.com/), [Vagrant](https://www.vagrantup.com/), [Singularity](https://www.sylabs.io/singularity/))
 - Share intermediate results for complex analyses
 
 
@@ -302,7 +308,7 @@ include_graphics("images/klein-et-al-figure-2.png")
         - Materials
         - Raw data
         - Processed data
-        - Analysis
+        - Analyses
         - Research report
 
 - If necessary, restrict repository access (e.g., [OSF components](http://help.osf.io/m/projects/l/481998-create-components))
@@ -534,6 +540,10 @@ Klein, O., Hardwicke, T. E., Aust, F., Breuer, J., Danielsson, H., Hofelich Mohr
 http://psych-transparency-guide.uni-koeln.de/))
 
 ---
-Handout for *`r gsub(".+<br />", "", metadata$title)`: `r gsub(".+<br />", " ", metadata$subtitle)`*, `r metadata$location`, `r metadata$date`. Icons by [Icons8](https://icons8.com).
+Handout for *`r gsub(".+<br />", "", metadata$title)`: `r gsub(".+<br />", " ", metadata$subtitle)`*, `r metadata$location`, `r metadata$date`.
 
 Frederik Aust ([frederik.aust@uni-koeln.de](mailto:frederik.aust@uni-koeln.de), [\@frederikaust](http://twitter.com/frederikaust)); Dr. Johannes Breuer ([johannes.breuer@gesis.org](mailto:johannes.breuer@gesis.org), [\@MattEagle09](https://twitter.com/MattEagle09))
+
+`r license`
+
+Icons by [Icons8](https://icons8.com), [CC-BY-ND 3.0](https://creativecommons.org/licenses/by-nd/3.0/).
