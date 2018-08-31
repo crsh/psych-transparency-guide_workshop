@@ -42,7 +42,7 @@ The active three-hour workshop will cover the following issues.
     - Good for others
     - Good for you
         - In-lab transparency
-        - paul wilson quote
+        - Paul Wilson quote
 
 - It's just documenting your work, making it easier to understand (for yourself and others)
     - So that lab members can learn from each other

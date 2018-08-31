@@ -49,9 +49,10 @@ compared with not sharing (p. 4, Klein et al., 2018).
 
 - Make transparency a default
     - Make documentation and sharing a by-product of the lab workflow
-        - If possible, share all products of the research process
-        - If negative constraints prohibit transparency, explicitly declare and justify these decisions in the manuscript
+        - If possible, share all products of the research process (as early as possible)
+        - If negative constraints prohibit transparency, explicitly declare and justify these decisions (in publications)
 - Automate what can be automated
+- Create and use templates
 
     
 <!-- - Reduces extra sharing efforts -->
@@ -63,7 +64,7 @@ compared with not sharing (p. 4, Klein et al., 2018).
 
 # What can you share?
 
-- Learn and improve system based on experience with previous projects
+- Improve your workflow based on experience with previous projects
 - _Amnesia test_ (Could I still understand this if I lost my memory?)
 
 ```{r figure1, fig.cap = "Decision flowchart outlining important considerations when sharing research products (reprinted from [Klein et al., 2018](http://doi.org/10.1525/collabra.158), [CC-BY Attribution 4.0](https://creativecommons.org/licenses/by/4.0/))."}
@@ -95,7 +96,7 @@ include_graphics("images/klein-et-al-figure-1.png")
     - Instructions for interaction with participants
     - potentially also scripts/instructions for confederates
 
-- Mind intellectual property rights
+- Mind intellectual property rights!
 
     <!-- TODO: Anything else? -->
     
@@ -112,7 +113,7 @@ include_graphics("images/klein-et-al-figure-1.png")
 <!-- https://twitter.com/dutchscientist/status/898938100008845313 -->
 
 - Raw data
-    - As originally recoreded (e.g., paper-pencil-questionaires, CSV files, video recordings)
+    - As originally recorded (e.g., paper-pencil-questionaires, CSV files, video recordings)
 
 - Processed data
     - As used for analyses (e.g., coded, digitized, merged)
@@ -127,8 +128,8 @@ include_graphics("images/klein-et-al-figure-1.png")
     - [EU GDPR](http://www.eugdpr.org/): Data are personal if attributable to a specific person (using additional datasets if necessary)
         - [IAPP: How GDPR changes the rules for research](https://iapp.org/news/a/how-gdpr-changes-the-rules-for-research/)
         - Australian National Data Service: [Decision tree for sharing sensitive data](https://www.ands.org.au/__data/assets/pdf_file/0010/385309/sensitive-decision-tree.pdf)
-    - Collect only data you need
-    - Delete indentying information used for logistics as soon as possible
+    - Only collect the data you really need
+    - Delete indentying information used for logistics as soon as possible (e.g., e-mail addresses)
     - Only share anonymized data publicly, e.g.,
         - Delete directly identifying information (e.g., full name, address, face, handwriting, date of birth, genetic information)
             - Mind combinations of indirect identifiers (e.g., ZIP code, gender, and date of birth, [Sweeney, 2000](https://dataprivacylab.org/projects/identifiability/paper1.pdf))
@@ -140,7 +141,7 @@ include_graphics("images/klein-et-al-figure-1.png")
             - Add noise
             - Aggregation
         - Use anonymization tools, such as [Amnesia](https://amnesia.openaire.eu/index.html)
-    - Control access to pseudonomyzed data 
+    - Control access to pseudonymized data 
     
     <!-- - Harm assessment? -->
     
@@ -171,7 +172,7 @@ To ascertain whether means are reasonably likely to be used to identify the natu
     - Specialized software (e.g., [Nesstar](http://www.nesstar.com/software/publisher.html), [DataWiz](https://datawiz.leibniz-psychology.org/DataWiz/?datawiz_locale=en))
 - If data are complex and have potentially high reuse value, consider using a standardized and machine-readable format
     - Implementation is a service provided by some repositories
-    <!-- This documentation should describe the variables in each data file in both human- and machine-readable formats (e.g., csv, rather than docx or pdf).4 Ideally, codebooks are organized in such a way that each line represents one variable and each information relative to a variable represents a column. -->
+    <!-- This documentation should describe the variables in each data file in both human- and machine-readable formats (e.g., csv, rather than docx or pdf).Ideally, codebooks are organized in such a way that each line represents one variable and each information relative to a variable represents a column. -->
 - Can almost always be shared, even if raw or processed data cannot
 
 
@@ -179,7 +180,7 @@ To ascertain whether means are reasonably likely to be used to identify the natu
 
 - Describe default practices ([Lin & Green, 2016](
 https://doi.org/10.1017/S1049096516000810))
-- Planning studies, e.g.,
+- Study planning, e.g.,
     - Sample size determination
 - Data analysis, e.g.,
     - Statistical models
@@ -187,9 +188,9 @@ https://doi.org/10.1017/S1049096516000810))
         - Follow-up tests
     - Exclusion criteria
     - Outlier and dropout treatment
-    - Treatment of missing values
+    - Handling of missing values
     - Use of covariates
-    - Correction for multiple comparisons
+    - Corrections for multiple comparisons
 - Example: [SOP for Green lab at Columbia](http://alexandercoppock.com/Green-Lab-SOP/Green_Lab_SOP.pdf)
 
 <!-- - Simplifies authoring of preregistrations -->
@@ -203,9 +204,9 @@ https://doi.org/10.1017/S1049096516000810))
 ## Documentation of analyses
 
 - Exact specification of how to move from raw data to reported results (incl. data cleaning and transformation)
-    - Step-by-step description of analyses performed in non-scriptable software programs
+    - Step-by-step documentation of analyses performed in non-scriptable software programs
     - Analysis syntax
-        - Avoid "works on my machine" errors
+        - Avoid "works on my machine" errors (WOMME)
             - Relative file paths or load data from a permanent online source
             - Avoid spaces and special characters
             - Test on another computer
@@ -222,7 +223,7 @@ https://doi.org/10.1017/S1049096516000810))
 
 - Paywalled publications (green open access, see Figure\ \@ref(fig:pre-post-print))
     - Preprint (initially submitted manuscript)
-    - Postprint (author's accepted manuscript)
+    - Postprint (accepted manuscript)
     - Mind journal policy (e.g., [SHERPA/RoMEO](http://www.sherpa.ac.uk/romeo/search.php), [Wikipedia list of journals by preprint policy](https://en.wikipedia.org/wiki/List_of_academic_journals_by_preprint_policy))
 - Gold open access
     - Published article
@@ -243,11 +244,11 @@ include_graphics("images/klein-et-al-figure-2.png")
 
 ## Planning a study
 
-- Have a _basic_ data management plan, ideally before starting a project
-    - Create basic reusable templates
+- Have a _basic_ data management plan (DMP), ideally before starting a project
+    - Create basic reusable DMP templates
         - [ICPSR Framework for Creating a Data Management Plan](https://www.icpsr.umich.edu/icpsrweb/content/datamanagement/dmp/framework.html)
         - [DDC: How to Develop a Data Management and Sharing Plan](http://www.dcc.ac.uk/resources/how-guides/develop-data-plan)
-    - Use wizards to get started (e.g., [ZPID DataWiz](https://datawiz.leibniz-psychology.org/DataWiz/?datawiz_locale=en), [DMPonline](https://dmponline.dcc.ac.uk/))
+    - Use online tools to get started (e.g., [ZPID DataWiz](https://datawiz.leibniz-psychology.org/DataWiz/?datawiz_locale=en), [DMPonline](https://dmponline.dcc.ac.uk/))
     - Simplifies addressing legal and ethical issues
     - Examples: [Public DMPs](https://dmponline.dcc.ac.uk/public_plans)
 
@@ -267,7 +268,7 @@ include_graphics("images/klein-et-al-figure-2.png")
     - Automatically uploaded to a public repository
         - Offsite backup
         - Reduces extra sharing efforts
-    - Protect participants' privacy!
+    - But: Protect participants' privacy!
     - Tutorial: [Born-open data with cloud storage providers](http://psych-transparency-guide.uni-koeln.de/born-open-data.html)
 
 <!-- - **Demonstration**: Set up Dropbox to collect born-open data -->
@@ -280,7 +281,7 @@ include_graphics("images/klein-et-al-figure-2.png")
     - Errors can be spotted early on (no public correction)
     - Possibly limit access to reviewers prior to publications (e.g., [OSF view-only links](http://help.osf.io/m/links_forks/l/524049-create-a-view-only-link-for-a-project))
 - Research report (see Figure\ \@ref(fig:pre-post-print))
-    - Fast dissemination of results (citation advantage)
+    - Fast dissemination of results (citation advantage, see [Piwowar & Vision, 2013](https://peerj.com/articles/175/))
     - Public peer review
     - Establishes precedents
     - Not typically considered a "prior publication" ([Bourne, Polka, Vale, & Kiley, 2017](https://doi.org/10.1371/journal.pcbi.1005473))
@@ -289,7 +290,7 @@ include_graphics("images/klein-et-al-figure-2.png")
 
 ## After publication
 
-- Archive in public respository, publish later
+- Archive in public (or institutional) respository, publish later
     - Automate by use of embargoes
     - Reduces extra sharing efforts
 
@@ -317,11 +318,12 @@ include_graphics("images/klein-et-al-figure-2.png")
     <!-- - **Demonstration**: Show some preregistration websites, showcase good preregistrations (https://osf.io/h9k8n/) -->
 - [Registered reports](https://cos.io/rr/)
 - Video methods journal [JoVE Behavior](https://www.jove.com/)
+    - however: relatively high publication costs (1200 - 4200 USD)
 
 
-## Study material, data & metadata
+## Study material, data, & metadata
 
-- Choose a suitable public repository (e.g., [Registry of Research Data Repositories](https://www.re3data.org/), [Meyer, 2018](http://journals.sagepub.com/doi/abs/10.1177/2515245917747656?journalCode=ampa), also see Table\ \@ref(tab:sharing-option-ratings))
+- Choose a suitable public repository (e.g., [Registry of Research Data Repositories](https://www.re3data.org/), [Meyer, 2018](http://journals.sagepub.com/doi/abs/10.1177/2515245917747656?journalCode=ampa), for a more technical comparison of a selection of data repositories also see the table at the end of this [Dataverse blog post](https://dataverse.org/blog/comparative-review-various-data-repositories)
     1. Stores data in accordance with local legislation (e.g., [EU GDPR](http://www.eugdpr.org/))
     2. Persistence guarantees for long-term access
     3. Persistent and unique identifiers (e.g., DOIs)
@@ -336,7 +338,8 @@ include_graphics("images/klein-et-al-figure-2.png")
 <!--     - How would you search for a suitable repository? -->
 
 <!-- TODO: Tabelle 1 hier unterbringen -->
-<!-- TODO: Johannes, hast du noch den Link zu dem umfassenden Google Sheet? -->
+<!-- TODO: Johannes, hast du noch den Link zu dem umfassenden Google Sheet? 
+  Johannes: Done: s.o. -->
 
 - [FAIR Data Principles](https://www.force11.org/group/fairgroup/fairprinciples) ([Wilkinson et al., 2016](https://dx.doi.org/10.1038/sdata.2016.18))
       1. _Findable_: Persistent identifiers; metadata; indexed
@@ -349,6 +352,7 @@ include_graphics("images/klein-et-al-figure-2.png")
     <!--     - Discuss some usecases (maybe suggested by participants) -->
     <!-- - Repository structure -->
     <!--     - **Demonstration**: Browse example OSF repository -->
+    <!--  Maybe also show GESIS DBK and/or datorium -->
 
 
 ```{r sharing-option-ratings, echo = FALSE}
@@ -370,7 +374,8 @@ kable(
 )
 ```
 
-<!-- TODO: Johannes, sollten wir hier die Bewertungsdimensionen an FAIR anpassen? -->
+<!-- TODO: Johannes, sollten wir hier die Bewertungsdimensionen an FAIR anpassen? 
+  Johannes: Da hatte ich auch drueber nachgedacht (wir hatten ja eine aehnliche Diskussion beim Schreiben des Papers), habe mich aber dagegen entschieden, weil sich FAIR ja auf Eigenschaften der Daten bezieht. Zu bewerten, ob ein Repository "Interoperable" ist, finde ich z.B. schwierig (same for "reusable"). Discoverability ist eigentlich synonym mit Findability (ich hatte mich aber bewusst fuer den anderen Begriff entschieden, damit nicht der Eindruck entsteht, dass die Kriterien hier analog zu den FAIR Princinples sind) und access control ist ein wenig so wie die Kehrseite von Accessibility.  -->
 
 <!-- - bonus: institutional and public repositories (and in many cases also journal websites) make data citeable (usually via DOIs) -->
 
@@ -379,7 +384,7 @@ kable(
 
 ## Analysis scripts and software
 
-- Hosted Version Control Systems (e.g., [GitHub](https://github.com/))
+- Hosted Version Control Systems (e.g., [GitHub](https://github.com/) or [GitLab](https://about.gitlab.com/))
 - Specialized repositories
     - Cloud-based analysis platforms (e.g., [Code Ocean](https://codeocean.com/), [RStudio cloud](https://rstudio.cloud/), [Colaboratory](https://colab.research.google.com/))
     - Cloud-based experiment platforms (e.g., [Pavlovia](https://pavlovia.org/explore) for [PsychoPy](http://www.psychopy.org/), [jspsych](https://www.jspsych.org/), and [lab.js](https://lab.js.org/))
@@ -401,6 +406,9 @@ kable(
 - Factual information (e.g., response times, mortality rates, currency values, the number of Twitter followers someone has) are usually *not* protected by copyright
     - Database structures and compilations of data may be copyrightable
     <!-- - Applying a license to noncopyrightable work does little harm -->
+    
+> The selection, coordination, and arrangement of the database is subject to copyright if it is sufficiently original. [...] The data or other contents contained in the database are subject to copyright if they are sufficiently creative. Original poems contained in a database would be protected by copyright, but purely factual data (such as gene names or city populations) would not. Facts are not subject to copyright, nor are the ideas underlying copyrighted content ([Creative Commons, 2018](https://wiki.creativecommons.org/wiki/Data)).
+
 - Public availability does not authorize to reuse
     - Always explicitly apply licenses
 - Use easy-to-understand standard licenses (e.g., [Creative Commons](https://creativecommons.org/licenses/), [Open data commons](https://opendatacommons.org/licenses/))
@@ -410,11 +418,9 @@ kable(
         <!-- - Category A: Released for academic research and teaching -->
         <!-- - Category B: Released for academic research and teaching, if the results will not be published, otherwise permission required -->
         <!-- - Category C: Released for academic research and teaching, written authorization of user and reuse intention required -->
-- Use most permissive license possible (e.g., CC0 and ODC-PDDL)
-    - Condition reuse only on attribution (e.g., CC-BY and ODC-BY)
-
-> The selection, coordination, and arrangement of the database is subject to copyright if it is sufficiently original. [...] The data or other contents contained in the database are subject to copyright if they are sufficiently creative. Original poems contained in a database would be protected by copyright, but purely factual data (such as gene names or city populations) would not. Facts are not subject to copyright, nor are the ideas underlying copyrighted content ([Creative Commons, 2018](https://wiki.creativecommons.org/wiki/Data)).
-
+- Use most permissive license possible
+    - Ideally, reuse should only be conditioned on attribution (e.g., CC-BY)
+    
 
 ### Creative Commons Licenses
 
@@ -496,7 +502,7 @@ include_graphics("images/cc-license-spectrum.png")
     - What do we do here in Cologne?
     - Example: Registered Report draft as non-empirical Bachelor's thesis
 - vote with you feet
-    - Choose journals that value openness/robustness over falshy journals
+    - Choose journals that value openness/robustness
 - Incentives
     - Take openess into account when particpating in commissions (https://osf.io/7jbnt/)
 - Give credit where credit is due (cite data, open source software developed by academics, etc.)
@@ -504,8 +510,10 @@ include_graphics("images/cc-license-spectrum.png")
 
 ## Why not to share?
 
-- Brief discussion of DSGVO? (Anonymisation example?)
-- Examples of sensitive data (from participants)
+- Privacy/Sensitive data
+    - Get informed consent from participants
+    - Properly anonymize/pseudonymize data
+    - Employ access control
 - Scooping
     - Usually an unwarranted fear
     - Publish upon acceptance or with an embargo
@@ -520,7 +528,17 @@ include_graphics("images/cc-license-spectrum.png")
         - Increases efficency in the long-run
     - Increases exposure and citations
     - Helps to avoid fruitless avenues for future studies
+    - Use (or create) templates & available tools
 
+> … until recently I was an open-data hypocrite. Although I was committed to open data, I was not implementing it in practice. … Some of it was a lack of effort. It was a pain to document the data; it was a pain to format the data; it was a pain to contact the library personnel; it was a pain to figure out which data were indeed published as part of which experiments. Some of it was forgetfulness. I had neither a routine nor any daily incentive to archive data [Rouder, 2016, p. 1063](https://link.springer.com/article/10.3758%2Fs13428-015-0630-z)
+
+## Where/how can you learn more about open science practices?
+
+- [Open Science Knowledge Base](https://how-to-open.science/)
+- [FOSTER Open Science Courses](https://www.fosteropenscience.eu/courses)
+- [Center for Open Science Webinars](https://osf.io/qpxv2/)
+- Open Science Short Course at the [GESIS Summer School](https://training.gesis.org/?site=pDetails&child=full&pID=0xB455C10E4BA7451CBC729596CA4A2F4C)
+- other workshops/courses (e.g. by the [Leibniz Institute for Psychology Information](https://leibniz-psychology.org/en/))
 
 ---
 
