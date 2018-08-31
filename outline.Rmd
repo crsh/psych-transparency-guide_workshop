@@ -18,16 +18,21 @@ abstract: |
   It will address what, when, and how to share and help participants develop transparent, less error-prone, and more reproducible research workflows.
 
 output:
-  html_document:
-    theme         : "spacelab"
-    df_print      : "kable"
-    toc           : true
-    toc_float     : true
+  bookdown::html_document2:
+    theme           : "spacelab"
+    df_print        : "kable"
+    toc             : true
+    toc_float       : true
+    number_sections : no
 ---
 
 ```{r setup, include = FALSE}
 library("rmarkdown")
+
+license <- "[![](images/by-badge.png)](https://creativecommons.org/licenses/by/4.0/) Please link to [workshop GitHub repository](https://github.com/crsh/psych-transparency-guide_workshop/) and cite [Klein et al. (2018)](https://doi.org/10.1525/collabra.158)."
 ```
+
+`r license`
 
 ---
 
@@ -36,99 +41,54 @@ library("rmarkdown")
 The active three-hour workshop will cover the following issues.
 
 
-### Conceptual introduction
+1. General considerations
 
-- Why share? (brief, participants already signed up for the workshop)
-    - Good for others
-    - Good for you
-        - In-lab transparency
-        - paul wilson quote
-
-- It's just documenting your work, making it easier to understand (for yourself and others)
-    - So that lab members can learn from each other
-    - So that you don't forget what you've done
-    - So that your colleagues can help your work flourish
-- Has the bonus of allowing you to share outside, if/when you want
-
-
-- What to share?
-    - Show some example data set documentation (maybe `codebook` package?, https://osf.io/rv7py/, https://osf.io/e4tqy/)
-    - Demonstrate dynamic documents
-
-- When to share?
-    - data
-        - during data collection: Set up Dropbox to collect born-open data
-        - before/together with submission: e.g., institutional or public repository
-        - after publication: repository, personal or journal website
-        - after end of project: same options as after publication
-    - papers
-        - preregistration
-            - Show some preregistration websites, showcase good preregistrations (https://osf.io/h9k8n/)
-        - upon submission (preprint)
-        - upon acceptance (postprint)
-            - http://www.sherpa.ac.uk/romeo/search.php
-
-- How to share?
+2. What can you share?
+    - Study protocol
+    - Study materials
     - Data
-        - Handout table that summarizes repositories
-            - Discuss some use cases (maybe suggested by participants)
-        - Browse example OSF repository
-        - Hand out DGPs model informed consent
-        - Citeable datasets
-        - GDPR (see Arslan slides)
-    - papers
-        - Say something about PsyArXiv vs. BioArXiv vs. PeerJ vs. ...
-        - PsyArXiv: Official partner of APA (http://www.apa.org/pubs/authors/unauthorized-internet-posting.aspx)
-        
-        - https://en.wikipedia.org/wiki/List_of_academic_journals_by_preprint_policy (not an exhaustive list)
-Only two that explicitly rule out preprints
-            - NEJM [New England Journal of Medicine] and JCI [Journal of Clinical Investigation]
+        - Raw data
+        - Processed data
+        - Participant privacy
+    - Metadata
+    - Standard operating procedures
+    - Documentation of analyses
+    - Research reports
 
-- Why not to share?
-    - Brief discussion of DSGVO? (Anonymisation example?)
-    - Examples of sensitive data (from participants)
+3. When can you share?
+    - Planning a study
+    - Before data collection
+    - During data collection
+    - Upon submission
+    - After publication
 
-- Incentivize sharing
-    - PRO initiative
-    - Commitment to Research Transparency and Open Science (http://www.researchtransparency.org/)
-    - practical advantages for researchers (find your own data, more citations...)
+4. How can you share?
+    - Study protocol
+    - Study material, data & metadata
+    - Analysis scripts and software
+    - Reports
+    - Licenses
 
-- How can you promote research transparency?
-    - use templates for transparent & reproducible projects
-    - share materials with your collaborators
-    - teach your students and colleagues
-        - What do we do here in Cologne?
-        - Example: Registered Report draft as non-empirical Bachelor's thesis
-    - vote with you feet
-        - Choose journals that value openness/robustness over falshy journals
-    - Incentives
-        - Take openness into account when particpating in commissions or writing job ads
-    - Give credit where credit is due (cite data, open source or free software developed by academics, etc.)
+
+5. How you can promote openness?
+    - Incentivize sharing
+    - How can you promote research transparency?
+    - Why not to share?
+
+
+# Course materials
+
+Outline, slides, and handout are available from the [workshop GitHub repository](https://github.com/crsh/psych-transparency-guide_workshop/).
 
 ---
-
-# Preparations
-
-- Set up OSF repository with project structure that participants can fork to create their own project
-- TIER template to clone: https://osf.io/ybzxe/
-- BIDS example on GitHub: https://github.com/INCF/BIDS-examples
-- Informed consent, Appendix B: https://www.dgps.de/fileadmin/documents/Empfehlungen/Data_Management_eng_9.11.16.pdf
-
-- Prepare OSF demo (see Candice Morey's slides)
-
-- Check https://open-science-training-handbook.gitbook.io/book/examples-and-practical-guidance
-
-re3data.org
-
-http://arx.deidentifier.org/
-
 
 # Reading
 
 Klein, O., Hardwicke, T. E., Aust, F., Breuer, J., Danielsson, H., Mohr, A. H., … Frank, M. C. (2018). A Practical Guide for Transparency in Psychological Science. _Collabra: Psychology_, 4(1). doi: [10.1525/collabra.158](https://doi.org/10.1525/collabra.158)
 
-
 ---
 Workshop outline for *`r gsub(".+<br />", "", metadata$title)`: `r gsub(".+<br />", " ", metadata$subtitle)`*, `r metadata$location`, `r metadata$date`.
 
 Frederik Aust ([frederik.aust@uni-koeln.de](mailto:frederik.aust@uni-koeln.de), [\@frederikaust](http://twitter.com/frederikaust)); Johannes Breuer ([johannes.breuer@gesis.org](mailto:johannes.breuer@gesis.org), [\@MattEagle09](https://twitter.com/MattEagle09))
+
+`r license`
