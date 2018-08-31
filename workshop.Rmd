@@ -45,33 +45,38 @@ MathJax.Hub.Config({
 ---
 # About us
 
-Frederik Aust ([frederik.aust@uni-koeln.de](mailto:frederik.aust@uni-koeln.de), [@frederikaust](http://twitter.com/frederikaust))
+## Frederik Aust
 
 - PhD student at the University of Cologne<br />(Prof. Dr. Christoph Stahl)
 - Founding memeber of [Cologne Open Science<br />working group](https://www.hf.uni-koeln.de/39711)
 - Author and contributor to several R packages<br> (e.g., [`afex`](https://cran.r-project.org/web/packages/afex/index.html), [`citr`](https://cran.r-project.org/web/packages/citr/index.html), [`papaja`](https://github.com/crsh/papaja), [`prereg`](https://cran.r-project.org/web/packages/prereg/index.html))
 
+<div class="reference"><a href="mailto:frederik.aust@uni-koeln.de">frederik.aust@uni-koeln.de</a>, <a href="https://twitter.com/frederikaust">@frederikaust</a></div>
 
 ---
 # About us
 
-Johannes Breuer ([johannes.breuer@gesis.org](mailto:johannes.breuer@gesis.org), [@MattEagle09](https://twitter.com/MattEagle09))
+## Johannes Breuer
 
 - PhD in psychology, University of Cologne (media psychology, Prof. Dr. Gary Bente)
-- senior researcher at GESIS &ndash; Leibniz Institute for the Social Sciences (Data Archive for the Social Sciences)
+- Senior researcher at GESIS &ndash; Leibniz Institute for the Social Sciences (Data Archive for the Social Sciences)
 
+<div class="reference"><a href="mailto:johannes.breuer@gesis.org">johannes.breuer@gesis.org</a>, <a href="https://twitter.com/MattEagle09">@MattEagle09</a></div>
 
 ---
 # Preliminaries
 
-- Feel free to ask questions at any point
-- Learn by doing
+- Feel free to ask questions at any time
+- Attempt to make this an active workshop
+- Slides and material are available at
 
-Slides and material are available at
+.center[`https://tinyurl.com/y8dbs2fu`]
 
-.center[`...`]
+<br /><br />
 
-Workshop material is based on<br />Klein, O., Hardwicke, T. E., Aust, F., Breuer, J., Danielsson, H., Mohr, A. H., … Frank, M. C. (2018). A Practical Guide for Transparency in Psychological Science. Collabra: Psychology, 4(1). doi: [10.1525/collabra.158](https://doi.org/10.1525/collabra.158)  ([![:scale 7%](images/by.png)](https://creativecommons.org/licenses/by/4.0/))
+Workshop material is based on
+
+Klein, O., Hardwicke, T. E., Aust, F., Breuer, J., Danielsson, H., Hofelich Mohr, A., … Frank, M. C. (2018). A Practical Guide for Transparency in Psychological Science. Collabra: Psychology, 4(1). doi: [10.1525/collabra.158](https://doi.org/10.1525/collabra.158)
 
 
 ---
@@ -90,20 +95,16 @@ class: inverse, middle, center
 
  
 ---
-class: middle
-
 # `r gsub(".+<br />", " ", metadata$title)`
 
 > .highlight[do not let the perfect be the enemy of the good].
 Share and document what you can, as it will provide a benefit compared with not sharing (p. 4, Klein et al., 2018).
 
+&nbsp;
 
----
-class: middle
+--
 
-# `r gsub(".+<br />", " ", metadata$title)`
-
-> being an open scientist means .highlight[adopting a few straightforward research management practices, which lead to less error-prone, reproducible research workflows] with each incremental step adding positive value<br />(p. 11, Klein et al., 2018).
+> being an open scientist means .highlight[adopting a few straightforward research management practices, which lead to less error-prone, reproducible research workflows] with each incremental step adding positive value (p. 11, Klein et al., 2018).
 
 
 ---
@@ -115,14 +116,13 @@ class: inverse, middle, center
 ---
 # Why share?
 
-<!-- TODO: Copy-paste from Candice Morey -->
+- You probably drank the Kool-Aid
+- It's documenting your work
+    - Remember what you've done
+    - Lab members can learn from each other
+    - Colleagues can build on your work
 
-- It's just documenting your work, making it easier to understand
-    - So that lab members can learn from each other
-    - So that you don't forget what you've done
-    - So that your colleagues can help your work flourish
-- Has the bonus of allowing you to share outside, if/when you want
- 
+<!-- TODO: Look at paper -->
 
 ---
 # Example project
@@ -131,12 +131,15 @@ class: inverse, middle, center
 
 Can we accurately judge a person's IQ by looking at their face?
 
-### Material
+### Study design
 
-Photographs of students with known IQ scores
+- Photographs of students with known IQ scores
+- Ratings of IQ
+- Likert-scale ratings of attractiveness
 
 ```{r example-elements}
 example_citation <- '<div class="reference">Kleisner, K., Chvátalová, V., & Flegr, J. (2014). Perceived Intelligence Is Associated with Measured Intelligence in Men but Not Women. <i>PLoS ONE</i>, 9(3): e81237. doi: <a href="https://doi.org/10.1371/journal.pone.0081237">10.1371/journal.pone.0081237</a></div>'
+example_citation <- '<div class="reference">Stimulus images courtesy of Michael J. Tarr, Center for the Neural Basis of Cognition and Department of Psychology, Carnegie Mellon University, http://www.tarrlab.org/. Funding provided by NSF award 0339122. <a href = "https://creativecommons.org/licenses/by-nc-sa/3.0/">CC-BY-NC-SA 3.0</a></div>'
 
 example_likert_scale <- '<table id="likert">
    <tr>
@@ -158,53 +161,76 @@ example_likert_scale <- '<table id="likert">
        <td style = "background-color: white;"><small>High</small></td>
    </tr>
 </table>'
+example_likert_scale <- '<center>
+    <fieldset style = "width: 600px;">
+        <legend style = "padding: 6px;">What is this person\'s IQ?</legend>
+    
+        70 <input type="range" id="start" name="volume" min="70" max="130" step = "1" style = "width: 500px;"/> 130
+    </fieldset>
+    <br />
+    <fieldset style = "width: 600px;">
+        <legend style = "padding: 6px;">How attractive is this person?</legend>
+    
+        <table style = "width: 600px; border: none;">
+           <tr>
+               <td><small>Very unattractive</small></td>
+               <td><input type="radio" name="Guilty" value="6" /></td>
+               <td><input type="radio" name="Guilty" value="6" /></td>
+               <td><input type="radio" name="Guilty" value="5" /></td>
+               <td><input type="radio" name="Guilty" value="4" /></td>
+               <td><input type="radio" name="Guilty" value="3" /></td>
+               <td><input type="radio" name="Guilty" value="2" /></td>
+               <td><input id="radGuiltyEnd" type="radio" name="Guilty" value="1" /></td>
+               <td style = "text-align: right;"><small>Very attractive</small></td>
+           </tr>
+        </table>
+    </fieldset>
+</center>'
 ```
 
 
-`r example_citation`
+---
+# Example project
 
-???
-~50,000 students, 17 faculties = 3000 students per faculty
+.center[![](material/example-project/stimuli/CF0007_1100_NE.jpg)]
+
+`r example_likert_scale`
 
 
 ---
 # Example project
 
-.center[![:scale 30%](images/male-high.png)]
+.center[![](material/example-project/stimuli/CM0027_1101_NE.jpg)]
 
 `r example_likert_scale`
-
-`r example_citation`
 
 
 ---
 # Example project
 
-.center[![:scale 30%](images/female-low.png)]
+.center[![](material/example-project/stimuli/CM0046_1100_NE.jpg)]
 
 `r example_likert_scale`
-
-`r example_citation`
 
 
 ---
 # Example project
 
-.center[![:scale 30%](images/female-high.png)]
+.center[![](material/example-project/stimuli/CF0030_1100_NE.jpg)]
 
 `r example_likert_scale`
-
-`r example_citation`
 
 
 ---
 # Example project
 
-.center[![:scale 30%](images/male-low.png)]
-
-`r example_likert_scale`
-
-`r example_citation`
+```{r exmaple-dataset}
+DT::datatable(
+  read.csv("material/example-project/raw_data/perceived_iq_01.csv")
+  , width = "700px"
+  , rownames = FALSE
+)
+```
 
 
 ---
