@@ -505,19 +505,7 @@ include_graphics("images/cc-license-spectrum.png")
 <!-- https://wiki.creativecommons.org/wiki/Data#Frequently_asked_questions_about_data_and_CC_licenses -->
 
 
-# How you can promote openness?
-
-## Incentivize sharing
-
-- Cite colleagues when reusing their shared resources, e.g.,
-    - Open data and materials
-    - Open source software (developed by academics)
-    - Open course materials
-- Promote openness during peer review (e.g., [PRO initiative](https://opennessinitiative.org/))
-- Value openness in hiring committees (e.g., [job offers that mentioned open science](https://osf.io/7jbnt/))
-
-
-## How can you promote research transparency?
+# How can you promote research transparency?
 
 - Lead by example
     - Promote selfish reasons for transparency, e.g.,
@@ -538,6 +526,14 @@ include_graphics("images/cc-license-spectrum.png")
     - Teach workshops
 - Advocate for registered reports at journals (e.g., [Registered Reports Now!](https://osf.io/3wct2/))
 - Be forgiving of your own and other researchers' honest mistakes!
+
+- Incentivize sharing
+    - Cite colleagues when reusing their shared resources, e.g.,
+      - Open data and materials
+      - Open source software (developed by academics)
+      - Open course materials
+    - Promote openness during peer review (e.g., [PRO initiative](https://opennessinitiative.org/))
+    - Value openness in hiring committees (e.g., [job offers that mentioned open science](https://osf.io/7jbnt/))
 
 
 # Learn more about transparent research practices
