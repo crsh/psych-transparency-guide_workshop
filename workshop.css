@@ -38,6 +38,15 @@
   width: 47%;
 }
 
+.title-image {
+  float: left;
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+  text-align: center;
+  margin: 10px 5px 0 0;
+}
+
 .center-70 {
   display: block;
   margin: 0 auto;

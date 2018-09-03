@@ -41,7 +41,7 @@ license <- "[![](images/by-badge.png)](https://creativecommons.org/licenses/by/4
 
 - Fear of being scooped
     - Usually an unwarranted fear
-    - Publish upon acceptance or with an embargo
+    - Share upon publication or with an embargo
 - Fear of being corrected
     - Errors are inevitable and a normal part of science
     - Necessary for scientific self-correction
@@ -64,14 +64,15 @@ license <- "[![](images/by-badge.png)](https://creativecommons.org/licenses/by/4
 ## General recommendations
 
 - Make transparency your default
+    - Share all research products (as early as possible)
+    - Declare and justify constraints on transparency
 - Make transparency a by-product of your workflow
-    - If possible, share all products of the research process (as early as possible)
-    - If negative constraints prohibit transparency, explicitly declare and justify these decisions
-- _Amnesia test_ (Would I still understand this after losing my memory?)
-        <!-- - Ask a colleague who was not involved with the project -->
-- Iteratively improve your workflow
     - Create and use templates
     - Automate what can be automated
+- Iteratively improve your workflow
+- Routinely perform _Amnesia test_
+    - Would I still understand this after losing my memory?
+        <!-- - Ask a colleague who was not involved with the project -->
 
 > do not let the perfect be the enemy of the good. Share and document what you can, as it will provide a benefit compared with not sharing (p. 4, [Klein et al., 2018](http://doi.org/10.1525/collabra.158)).
 
