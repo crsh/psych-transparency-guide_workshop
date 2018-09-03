@@ -30,11 +30,12 @@
 
 .pull-right {
   float: right;
+  width: 47%;
 }
 
 .pull-left {
   float: left;
-  width: auto;
+  width: 47%;
 }
 
 .center-70 {

@@ -28,14 +28,6 @@ license <- "[![](images/by-badge.png)](https://creativecommons.org/licenses/by/4
 `r license`
 
 
-<!-- # TODO -->
-
-<!-- - Send material to Hans by Wednesday! -->
-
-<!-- - Check https://open-science-training-handbook.gitbook.io/book/examples-and-practical-guidance -->
-
-<!-- - Worksheet to assemble workflow -->
-
 <!-- Frederik -->
 
 # General considerations
@@ -526,16 +518,6 @@ include_graphics("images/cc-license-spectrum.png")
     - Share materials with your collaborators
     - Publish in journals that value openness
     - [Commit to Research Transparency and Open Science](http://www.researchtransparency.org/)
-- Teach your students and colleagues
-    - [Cologne Open Science working group](https://www.hf.uni-koeln.de/39711)
-        - Transparent research practices in theses (BSc, MSc, PhD)
-            - "Safe" transparency for experimental tutorials (OSF group)
-            - Stage-1 registered report as non-empirical Bachelor's thesis
-    - Collate and share materials on transparent research practices
-    - Teach workshops
-- Advocate for registered reports at journals (e.g., [Registered Reports Now!](https://osf.io/3wct2/))
-- Be forgiving of your own and other researchers' honest mistakes!
-
 - Incentivize sharing
     - Cite colleagues when reusing their shared resources, e.g.,
       - Open data and materials
@@ -543,6 +525,17 @@ include_graphics("images/cc-license-spectrum.png")
       - Open course materials
     - Promote openness during peer review (e.g., [PRO initiative](https://opennessinitiative.org/))
     - Value openness in hiring committees (e.g., [job offers that mentioned open science](https://osf.io/7jbnt/))
+- Teach your students and colleagues
+    - [Cologne Open Science working group](https://www.hf.uni-koeln.de/39711)
+        - Transparent research practices in theses (BSc, MSc, PhD)
+            - "Safe" transparency for experimental tutorials (OSF group)
+            - Stage-1 registered report as non-empirical Bachelor's thesis
+    - Collate and share materials on transparent research practices
+    - Teach workshops
+- Lobby for transparent research practices in your field, e.g.,
+    - Advocate for registered reports at journals (e.g., [Registered Reports Now!](https://osf.io/3wct2/))
+- Be forgiving of your own and other researchers' honest mistakes!
+
 
 
 <!-- Johannes -->

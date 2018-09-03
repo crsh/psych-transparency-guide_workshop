@@ -45,11 +45,7 @@ The active three-hour workshop will cover the following issues.
 2. What can you share?
     - Study protocol
     - Study materials
-    - Data
-        - Raw data
-        - Processed data
-        - Participant privacy
-    - Metadata
+    - Data and metadata
     - Standard operating procedures
     - Documentation of analyses
     - Research reports
@@ -68,9 +64,6 @@ The active three-hour workshop will cover the following issues.
     - Licenses
 
 5. How you can promote openness?
-    - Incentivizing sharing
-    - Possible reasons against sharing
-    - Further resources
 
 
 # Course materials
