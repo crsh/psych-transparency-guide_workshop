@@ -1,6 +1,6 @@
 # Workshop "A practical primer on transparent research workflows"
 
-Frederik Aust ([frederik.aust@uni-koeln.de](mailto:frederik.aust@uni-koeln.de), [\@frederikaust](http://twitter.com/frederikaust)); Dr. Johannes Breuer ([johannes.breuer@gesis.org](mailto:johannes.breuer@gesis.org), [\@MattEagle09](https://twitter.com/MattEagle09))
+Frederik Aust ([frederik.aust@uni-koeln.de](mailto:frederik.aust@uni-koeln.de), [\@frederikaust](http://twitter.com/frederikaust)); Johannes Breuer ([johannes.breuer@gesis.org](mailto:johannes.breuer@gesis.org), [\@MattEagle09](https://twitter.com/MattEagle09))
 
 [![](https://licensebuttons.net/l/by/3.0/80x15.png)](https://creativecommons.org/licenses/by/4.0/) Please link to [workshop GitHub repository](https://github.com/crsh/psych-transparency-guide_workshop/) and cite [Klein et al. (2018)](https://doi.org/10.1525/collabra.158).
 

@@ -27,21 +27,25 @@ license <- "[![](images/by-badge.png)](https://creativecommons.org/licenses/by/4
 
 `r license`
 
+---
+
 
 <!-- Frederik -->
 
 # General considerations
 
-> … until recently I was an open-data hypocrite. Although I was committed to open data, I was not implementing it in practice. … Some of it was a lack of effort. It was a pain to document the data; it was a pain to format the data; it was a pain to contact the library personnel; it was a pain to figure out which data were indeed published as part of which experiments. Some of it was forgetfulness. I had neither a routine nor any daily incentive to archive data (p. 1063, [Rouder, 2016](https://doi.org/10.3758/s13428-015-0630-z))
+> Open Science is just science done right <br /><br />&mdash;Jon Tennant, Imperial College London
 
-## Reasons why people might be hesitant:
+
+## Why would you _not_ share?
+
 - Fear of being scooped
     - Usually an unwarranted fear
     - Publish upon acceptance or with an embargo
 - Fear of being corrected
     - Errors are inevitable and a normal part of science
-    - Promotes scientific self-correction
-    - Constructive self-correction can improve a researcher's standing ([Fetterman & Sassenberg, 2015](https://doi.org/10.1371/journal.pone.0143723))
+    - Necessary for scientific self-correction
+    - Constructive self-correction can enhance researchers' standing ([Fetterman & Sassenberg, 2015](https://doi.org/10.1371/journal.pone.0143723))
 - Personal data
     - Get informed consent
     - Pseudonymize data
@@ -53,6 +57,8 @@ license <- "[![](images/by-badge.png)](https://creativecommons.org/licenses/by/4
     - Increases exposure and citations
     <!-- - Helps to avoid fruitless avenues for future studies -->
     <!-- - Use (or create) templates & available tools -->
+
+> … until recently I was an open-data hypocrite. Although I was committed to open data, I was not implementing it in practice. … Some of it was a lack of effort. It was a pain to document the data; it was a pain to format the data; it was a pain to contact the library personnel; it was a pain to figure out which data were indeed published as part of which experiments. Some of it was forgetfulness. I had neither a routine nor any daily incentive to archive data (p. 1063, [Rouder, 2016](https://doi.org/10.3758/s13428-015-0630-z))
 
 
 ## General recommendations
@@ -67,9 +73,7 @@ license <- "[![](images/by-badge.png)](https://creativecommons.org/licenses/by/4
     - Create and use templates
     - Automate what can be automated
 
-> do not let the perfect be the enemy of the good. Share
-and document what you can, as it will provide a benefit
-compared with not sharing (p. 4, [Klein et al., 2018](http://doi.org/10.1525/collabra.158)).
+> do not let the perfect be the enemy of the good. Share and document what you can, as it will provide a benefit compared with not sharing (p. 4, [Klein et al., 2018](http://doi.org/10.1525/collabra.158)).
 
 <!-- - Reduces extra sharing efforts -->
 
@@ -163,7 +167,7 @@ include_graphics("images/klein-et-al-figure-1.png")
         - Small population and rare traits
         - Dyadic data
         - Hierarchical data (e.g., small subsamples of students, co-workers)
-        - Self-identification??? <!-- TODO: How is this a problem/How would it be possible to prevent this? -->
+        - <!-- Self-identification??? TODO: How is this a problem/How would it be possible to prevent this? -->
         - _Motivated intruder test_ (e.g., jealous partner, nosy neighbor, envious co-worker, insurers, criminals)
     <!-- - Who will the data be shared with? -->
 
@@ -315,6 +319,8 @@ include_graphics("images/klein-et-al-figure-2.png")
 
 # How can you share?
 
+## Compilation of research products
+
 - Develop a default project file structure
     - Klein et al. (2018) [example project](https://osf.io/rpydu/) and [ready-to-fork OSF template](https://osf.io/ep26s/)
         - Study protocol
@@ -325,26 +331,17 @@ include_graphics("images/klein-et-al-figure-2.png")
         - Research report
     - [TIER OSF template](https://osf.io/ybzxe/)
     - [BIDS example](https://github.com/INCF/BIDS-examples)
-
 - If necessary, restrict repository access (e.g., [OSF components](http://help.osf.io/m/projects/l/481998-create-components))
     <!-- - Publicly share [encrypted files](https://medium.com/@richarddmorey/hiding-in-plain-sight-16b275b91625) -->
-- Explicitly license shared products
+<!-- - Explicitly license shared products -->
 
+<!-- - Repository structure -->
+    <!--     - **Demonstration**: Browse example OSF repository -->
 
-## Study protocol
-
-- (Embargoed) Public preregistration
-    - [Supplementary material](http://psych-transparency-guide.uni-koeln.de/preregistration.html) of Klein et al. (2018)
-    - COS: [How to preregister via the OSF](https://osf.io/2vu7m/)
-    - [Example preregistrations](https://osf.io/h9k8n/))
-    <!-- - **Demonstration**: Show some preregistration websites, showcase good preregistrations (https://osf.io/h9k8n/) -->
-- [Registered reports](https://cos.io/rr/) `r recommendation`
-- Video methods journal [JoVE Behavior](https://www.jove.com/)
-    <!-- - however: relatively high publication costs (1200 - 4200 USD) -->
 
 <!-- Johannes -->
 
-## Study material, data, & metadata
+## Choose a repository
 
 - Choose a suitable publicly accessible repository (Table\ \@ref(tab:sharing-option-ratings))
     1. Stores data in accordance with local legislation (e.g., [EU GDPR](http://www.eugdpr.org/))
@@ -358,8 +355,6 @@ include_graphics("images/klein-et-al-figure-2.png")
 <!-- - Questions for participants:  -->
 <!--     - Which features of a repository would you consider important (for your data)? -->
 <!--     - How would you search for a suitable repository? -->
-
-<!-- TODO: Tabelle 1 hier unterbringen -->
 
 - [FAIR Data Principles](https://www.force11.org/group/fairgroup/fairprinciples) ([Wilkinson et al., 2016](https://dx.doi.org/10.1038/sdata.2016.18))
       1. _Findable_: Persistent identifiers; metadata; indexed
@@ -375,11 +370,8 @@ include_graphics("images/klein-et-al-figure-2.png")
     - Table 1 in [Meyer, 2018](http://journals.sagepub.com/doi/abs/10.1177/2515245917747656)
 
 
-    <!-- - Hand out DGPs model informed consent -->
     <!-- - Hand out table that summarizes repositories -->
     <!--     - Discuss some usecases (maybe suggested by participants) -->
-    <!-- - Repository structure -->
-    <!--     - **Demonstration**: Browse example OSF repository -->
     <!--  Maybe also show GESIS DBK and/or datorium -->
 
 
@@ -406,25 +398,39 @@ kable(
 
 <!-- or add "Citeability" to the above table? Citeability <- c("-", "--", "0", "++", "++") -->
 
+
 <!-- Frederik -->
 
-## Analysis scripts and software
+## Specialized approaches
+
+### Study protocol
+
+- (Embargoed) Public preregistration
+    - [Supplementary material](http://psych-transparency-guide.uni-koeln.de/preregistration.html) of Klein et al. (2018)
+    - COS: [How to preregister via the OSF](https://osf.io/2vu7m/)
+    - [Example preregistrations](https://osf.io/h9k8n/))
+    <!-- - **Demonstration**: Show some preregistration websites, showcase good preregistrations (https://osf.io/h9k8n/) -->
+- [Registered reports](https://cos.io/rr/) `r recommendation`
+- Video methods journal [JoVE Behavior](https://www.jove.com/)
+    <!-- - however: relatively high publication costs (1200 - 4200 USD) -->
+
+### Analysis scripts and software
 
 - Hosted Version Control Systems (e.g., [GitHub](https://github.com/), [GitLab](https://about.gitlab.com/))
-- Specialized repositories
-    - Cloud-based analysis platforms (e.g., [Code Ocean](https://codeocean.com/), [RStudio cloud](https://rstudio.cloud/), [Colaboratory](https://colab.research.google.com/))
-    - Cloud-based experiment platforms (e.g., [Pavlovia](https://pavlovia.org/explore) for [PsychoPy](http://www.psychopy.org/), [jspsych](https://www.jspsych.org/), and [lab.js](https://lab.js.org/))
-    - Container-based experiment platforms (e.g., [The Experiment Factory](https://expfactory.github.io/))
+- Cloud-based analysis platforms (e.g., [Code Ocean](https://codeocean.com/), [RStudio cloud](https://rstudio.cloud/), [Colaboratory](https://colab.research.google.com/))
+- Cloud-based experiment platforms (e.g., [Pavlovia](https://pavlovia.org/explore) for [PsychoPy](http://www.psychopy.org/), [jspsych](https://www.jspsych.org/), and [lab.js](https://lab.js.org/))
+- Container-based experiment platforms (e.g., [The Experiment Factory](https://expfactory.github.io/))
 - Usually no guarantee of long-term access
     - Archive in public repository (e.g., [archive GitHub repository with Zenodo](https://guides.github.com/activities/citable-code/)) `r recommendation`
 
 
-## Reports
+### Reports
 
 - Preprint repositories (e.g., [PsyArXiv](https://psyarxiv.com/), [BioRxiv](https://www.biorxiv.org/), [PeerJ](https://peerj.com/preprints-search/)) `r recommendation`
 - Institutional repositories (less discoverable)
 
 <!-- https://nikokriegeskorte.org/2016/03/13/the-selfish-scientists-guide-to-preprint-posting/ -->
+
 
 <!-- Johannes -->
 
@@ -509,6 +515,7 @@ include_graphics("images/cc-license-spectrum.png")
 
 <!-- https://wiki.creativecommons.org/wiki/Data#Frequently_asked_questions_about_data_and_CC_licenses -->
 
+
 <!-- Frederik -->
 
 # How can you promote research transparency?
@@ -542,7 +549,6 @@ include_graphics("images/cc-license-spectrum.png")
 - Be forgiving of your own and other researchers' honest mistakes!
 
 
-
 <!-- Johannes -->
 
 # Learn more about transparent research practices
@@ -553,11 +559,6 @@ include_graphics("images/cc-license-spectrum.png")
 - Open Science Short Course at the [GESIS Summer School](https://training.gesis.org/?site=pDetails&child=full&pID=0xB455C10E4BA7451CBC729596CA4A2F4C)
 <!-- - other workshops/courses (e.g. by the [Leibniz Institute for Psychology Information](https://leibniz-psychology.org/en/)) -->
 
----
-
-> Open Science is just science done right
-
-> &mdash;Jon Tennant, Imperial College London
 
 ---
 

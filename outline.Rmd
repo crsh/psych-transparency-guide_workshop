@@ -58,9 +58,9 @@ The active three-hour workshop will cover the following issues.
     - After publication
 
 4. How can you share?
-    - Project file structure
-    - Sharing options
+    - Compilation of research products
     - Choosing a repository
+    - Specialized approaches
     - Licenses
 
 5. How you can promote openness?
