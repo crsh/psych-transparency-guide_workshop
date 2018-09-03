@@ -28,39 +28,51 @@ license <- "[![](images/by-badge.png)](https://creativecommons.org/licenses/by/4
 `r license`
 
 
-# TODO
+<!-- # TODO -->
 
-- Send material to Hans by Wednesday!
+<!-- - Send material to Hans by Wednesday! -->
 
-- Link to project templates
-    - Our template: https://osf.io/ep26s/
-    - TIER template to clone: https://osf.io/ybzxe/
-    - BIDS example on GitHub: https://github.com/INCF/BIDS-examples
+<!-- - Check https://open-science-training-handbook.gitbook.io/book/examples-and-practical-guidance -->
 
-- Prepare OSF demo (see Candice Morey's slides)
-
-- Check https://open-science-training-handbook.gitbook.io/book/examples-and-practical-guidance
-- additional resource to mention: [Open Science Knowledge Base](https://how-to-open.science/) by Felix Henninger (et al.)
-
-- Worksheet to assamble workflow
-
-- Recommendation symbol
+<!-- - Worksheet to assemble workflow -->
 
 
 # General considerations
 
-> do not let the perfect be the enemy of the good. Share
-and document what you can, as it will provide a benefit
-compared with not sharing (p. 4, Klein et al., 2018).
+> … until recently I was an open-data hypocrite. Although I was committed to open data, I was not implementing it in practice. … Some of it was a lack of effort. It was a pain to document the data; it was a pain to format the data; it was a pain to contact the library personnel; it was a pain to figure out which data were indeed published as part of which experiments. Some of it was forgetfulness. I had neither a routine nor any daily incentive to archive data (p. 1063, [Rouder, 2016](https://doi.org/10.3758/s13428-015-0630-z))
 
 - Make transparency a default
-    - Make documentation and sharing a by-product of the lab workflow
-        - If possible, share all products of the research process (as early as possible)
-        - If negative constraints prohibit transparency, explicitly declare and justify these decisions
-- Create and use templates
-- Automate what can be automated
+    - Fear of being scooped
+        - Usually an unwarranted fear
+        - Publish upon acceptance or with an embargo
+    - Fear of being corrected
+        - Errors are inevitable and a normal part of science
+        - Promotes scientific self-correction
+        - Constructive self-correction can improve a researcher's standing ([Fetterman & Sassenberg, 2015](https://doi.org/10.1371/journal.pone.0143723))
+    - Personal data
+        - Get informed consent
+        - Pseudonymize data
+        - Employ access controls
+    - Time-consuming
+        - Take one step at a time ("baby steps")
+            - Iteratively improve your workflow
+        - Increases efficiency in the long-run
+        - Increases exposure and citations
+        <!-- - Helps to avoid fruitless avenues for future studies -->
+        <!-- - Use (or create) templates & available tools -->
+- Make transparency a by-product of your workflow
+    - If possible, share all products of the research process (as early as possible)
+    - If negative constraints prohibit transparency, explicitly declare and justify these decisions
+- _Amnesia test_ (Would I still understand this after losing my memory?)
+        <!-- - Ask a colleague who was not involved with the project -->
+- Iteratively improve your workflow
+    - Create and use templates
+    - Automate what can be automated
 
-    
+> do not let the perfect be the enemy of the good. Share
+and document what you can, as it will provide a benefit
+compared with not sharing (p. 4, [Klein et al., 2018](http://doi.org/10.1525/collabra.158)).
+
 <!-- - Reduces extra sharing efforts -->
 
 <!-- - Making your workflow play well with the rest of the lab? -->
@@ -70,9 +82,6 @@ compared with not sharing (p. 4, Klein et al., 2018).
 
 # What can you share?
 
-- Improve your workflow based on experience with previous projects
-- _Amnesia test_ (Could I still understand this if I lost my memory?)
-
 ```{r figure1, fig.cap = "Decision flowchart outlining important considerations when sharing research products (reprinted from [Klein et al., 2018](http://doi.org/10.1525/collabra.158), [CC-BY Attribution 4.0](https://creativecommons.org/licenses/by/4.0/))."}
 include_graphics("images/klein-et-al-figure-1.png")
 ```
@@ -80,14 +89,14 @@ include_graphics("images/klein-et-al-figure-1.png")
 
 ## Study protocol
 
-- Recipe for replication
-- Collates, describes, and organises more specific research products
+- "Recipe for replication"
+- Collates, describes, and organizes more specific research products
     - Hypotheses
     - Study materials
     - Detailed description of procedure
-        - Instructive video documentation (e.g., [OBS](https://obsproject.com/) for computer-based studies)
+        - Instructive video documentation (e.g., [OBS](https://obsproject.com/) for computer-based studies) `r recommendation`
 
-        <!-- - __Demonstration:__ OBS -->
+        <!-- - __Demonstration:__ OBS https://osf.io/eyfxs/ -->
     
 <!-- - May be more detailed than published description -->
 <!-- - Facilitates scientific progress (e.g., replication and extension) -->
@@ -112,18 +121,18 @@ include_graphics("images/klein-et-al-figure-1.png")
 
 ## Data
 
-- Include information about data sharing in informed consent (see [our informed consent templates](http://psych-transparency-guide.uni-koeln.de//informed-consent.html))
+- Include information about data sharing in informed consent (see [informed consent templates](http://psych-transparency-guide.uni-koeln.de//informed-consent.html) by Klein et al., 2018)
 - Use open and interoperable file formats (e.g., CSV, TSV, JSON, ODS)
     - Use UTF-8 character encoding
 
 <!-- https://twitter.com/dutchscientist/status/898938100008845313 -->
 
 - Raw data
-    - As originally recorded (e.g., paper-pencil-questionaires, CSV files, video recordings)
+    - As originally recorded (e.g., paper-pencil-questionnaires, CSV files, video recordings)
 
 - Processed data
     - As used for analyses (e.g., coded, digitized, merged)
-    - Ideally "Tidy Data" ([Wickham, 2014 ](https://www.jstatsoft.org/index.php/jss/article/view/v059i10/v59i10.pdf))
+    - Ideally "Tidy Data" ([Wickham, 2014 ](https://www.jstatsoft.org/index.php/jss/article/view/v059i10/v59i10.pdf)) `r recommendation`
         1. Each measured variable in one column.
         2. Different observation of the variables in a different rows
         3. Multiple tables should include a column that allows them to be linked
@@ -135,7 +144,7 @@ include_graphics("images/klein-et-al-figure-1.png")
         - [IAPP: How GDPR changes the rules for research](https://iapp.org/news/a/how-gdpr-changes-the-rules-for-research/)
         - Australian National Data Service: [Decision tree for sharing sensitive data](https://www.ands.org.au/__data/assets/pdf_file/0010/385309/sensitive-decision-tree.pdf)
     - Only collect the data you really need
-    - Delete indentying information used for logistics as soon as possible (e.g., e-mail addresses)
+    - Delete identifying information used for logistics as soon as possible (e.g., e-mail addresses)
     - Only share anonymized data publicly, e.g.,
         - Delete directly identifying information (e.g., full name, address, face, handwriting, date of birth, genetic information)
             - Mind combinations of indirect identifiers (e.g., ZIP code, gender, and date of birth, [Sweeney, 2000](https://dataprivacylab.org/projects/identifiability/paper1.pdf))
@@ -169,14 +178,14 @@ To ascertain whether means are reasonably likely to be used to identify the natu
 - Sampling procedure (who collected the data how, when, and where)
 - Dataset, e.g.,
     - Number of observations
-    - Name and description of variables (including for example source of a measure, information about translation)
+    - Name and description of variables (incl. source of a measure, information about translation)
     - Units of measurement, coding of values (e.g., "1 = Female","2 = Male"), possible options or range in which the data points can fall (e.g., “1 = not at all to 7 = Very much”)
     - Value(s) used for missing data
     - If necessary, how a variable was derived from other variables (e.g., "`bmi` was derived from body weight `m` and height `l` as $\mathrm{BMI} = \frac{m}{l^2}$.")
 - Automate codebook generation
     - Analysis software (e.g., [R `codebook` package](https://cran.r-project.org/web/packages/codebook/index.html), [SPSS codebook function](https://libguides.library.kent.edu/SPSS/Codebooks), or [Stata codebook function](http://www.stata.com/manuals13/dcodebook.pdf))
     - Specialized software (e.g., [Nesstar](http://www.nesstar.com/software/publisher.html), [DataWiz](https://datawiz.leibniz-psychology.org/DataWiz/?datawiz_locale=en))
-- If data are complex and have potentially high reuse value, consider using a standardized and machine-readable format
+- For data with high reuse value, consider using a standardized and machine-readable format (e.g., [DDI](https://www.ddialliance.org/))
     - Implementation is a service provided by some repositories
     <!-- This documentation should describe the variables in each data file in both human- and machine-readable formats (e.g., csv, rather than docx or pdf).Ideally, codebooks are organized in such a way that each line represents one variable and each information relative to a variable represents a column. -->
 - Can almost always be shared, even if raw or processed data cannot
@@ -184,7 +193,7 @@ To ascertain whether means are reasonably likely to be used to identify the natu
 
 ## Standard operating procedures
 
-- Describe default practices ([Lin & Green, 2016](
+- Define default practices ([Lin & Green, 2016](
 https://doi.org/10.1017/S1049096516000810))
 - Study planning, e.g.,
     - Sample size determination
@@ -209,19 +218,20 @@ https://doi.org/10.1017/S1049096516000810))
 
 ## Documentation of analyses
 
-- Exact specification of how to move from raw data to reported results (incl. data cleaning and transformation)
-    - Step-by-step documentation of analyses performed in non-scriptable software programs
+- Exact specification of how to move from raw data to reported results (incl. data cleaning and transformation; see [supplementary material](http://psych-transparency-guide.uni-koeln.de/analytic-reproducibility.html#set-and-record-seeds-for-pseudorandom-number-generators) of Klein et al., 2018)
+    - Step-by-step documentation for non-scriptable software programs
     - Analysis syntax
         - Avoid "works on my machine" errors (WOMME)
-            - Relative file paths or load data from a permanent online source
+            - Relative file paths or permanent online sources
             - Avoid spaces and special characters
             - Test on another computer
-    - Set and record seeds for pseudorandom number generators
+        - Write reports as dynamic documents (e.g., R package [`papaja`](https://github.com/crsh/papaja)) `r recommendation`
+    - Set and record seeds for pseudo-random number generators
 - Documentation of computational environment 
     - Hardware
-    - Software version incl. extensions (e.g., R packages)
+    - Software version incl. extensions
     - Cloud-based platforms (e.g., [Code Ocean](https://codeocean.com/), [RStudio cloud](https://rstudio.cloud/), [Colaboratory](https://colab.research.google.com/))
-    - Containers and virutal machines (e.g., [Docker](https://www.docker.com/), [Vagrant](https://www.vagrantup.com/), [Singularity](https://www.sylabs.io/singularity/))
+    - Containers and virtual machines (e.g., [Docker](https://www.docker.com/), [Vagrant](https://www.vagrantup.com/), [Singularity](https://www.sylabs.io/singularity/))
 - Share intermediate results for complex analyses
 
 
@@ -229,7 +239,7 @@ https://doi.org/10.1017/S1049096516000810))
 
 - Paywalled publications (green open access, see Figure\ \@ref(fig:pre-post-print))
     - Preprint (initially submitted manuscript)
-    - Postprint (accepted manuscript)
+    - Postprint (accepted manuscript) `r recommendation`
     - Mind journal policy (e.g., [SHERPA/RoMEO](http://www.sherpa.ac.uk/romeo/search.php), [Wikipedia list of journals by preprint policy](https://en.wikipedia.org/wiki/List_of_academic_journals_by_preprint_policy))
 - Gold open access
     - Published article
@@ -242,7 +252,7 @@ include_graphics("images/pre-post-print.png")
 
 # When can you share?
 
-> any time is better than never  (p. 4, Klein et al., 2018).
+> any time is better than never  (p. 4, [Klein et al., 2018](http://doi.org/10.1525/collabra.158)).
 
 ```{r figure2, fig.cap = "Typical workflow indicating when to share research products at different stages of the research process (reprinted from [Klein et al., 2018](http://doi.org/10.1525/collabra.158), [CC-BY Attribution 4.0](https://creativecommons.org/licenses/by/4.0/))."}
 include_graphics("images/klein-et-al-figure-2.png")
@@ -259,7 +269,7 @@ include_graphics("images/klein-et-al-figure-2.png")
     - Examples: [Public DMPs](https://dmponline.dcc.ac.uk/public_plans)
 
 
-## Before data collection
+## Before data collection `r recommendation`
 
 - Timely archiving
     - Study protocol and materials
@@ -272,15 +282,15 @@ include_graphics("images/klein-et-al-figure-2.png")
 
 - Born-open data ([Rouder, 2016](https://doi.org/10.3758/s13428-015-0630-z))
     - Automatically uploaded to a public repository
-        - Offsite backup
-        - Reduces extra sharing efforts
+    - Offsite backup
+        <!-- - Reduces extra sharing efforts -->
     - But: Protect participants' privacy!
     - Tutorial: [Born-open data with cloud storage providers](http://psych-transparency-guide.uni-koeln.de/born-open-data.html)
 
 <!-- - **Demonstration**: Set up Dropbox to collect born-open data -->
 
 
-## Upon submission
+## Upon submission `r recommendation`
 
 - Data, materials, and analysis scripts
     - Facilitates thorough peer-review
@@ -296,21 +306,23 @@ include_graphics("images/klein-et-al-figure-2.png")
 
 ## After publication
 
-- Archive in online respository, publish later
-    - Automate by use of embargoes
-    - Reduces extra sharing efforts
+- Archive in online repository, publish later
+- Automate by use of embargoes
+    <!-- - Reduces extra sharing efforts -->
 
 
 # How can you share?
 
 - Develop a default project file structure
-    - See example project
+    - Klein et al. (2018) [example project](https://osf.io/rpydu/) and [ready-to-fork OSF template](https://osf.io/ep26s/)
         - Study protocol
         - Materials
         - Raw data
         - Processed data
         - Analyses
         - Research report
+    - [TIER OSF template](https://osf.io/ybzxe/)
+    - [BIDS example](https://github.com/INCF/BIDS-examples)
 
 - If necessary, restrict repository access (e.g., [OSF components](http://help.osf.io/m/projects/l/481998-create-components))
     <!-- - Publicly share [encrypted files](https://medium.com/@richarddmorey/hiding-in-plain-sight-16b275b91625) -->
@@ -320,9 +332,11 @@ include_graphics("images/klein-et-al-figure-2.png")
 ## Study protocol
 
 - (Embargoed) Public preregistration
-    - [How to preregister via the OSF](https://osf.io/2vu7m/)
+    - [Supplementary material](http://psych-transparency-guide.uni-koeln.de/preregistration.html) of Klein et al. (2018)
+    - COS: [How to preregister via the OSF](https://osf.io/2vu7m/)
+    - [Example preregistrations](https://osf.io/h9k8n/))
     <!-- - **Demonstration**: Show some preregistration websites, showcase good preregistrations (https://osf.io/h9k8n/) -->
-- [Registered reports](https://cos.io/rr/)
+- [Registered reports](https://cos.io/rr/) `r recommendation`
 - Video methods journal [JoVE Behavior](https://www.jove.com/)
     <!-- - however: relatively high publication costs (1200 - 4200 USD) -->
 
@@ -332,7 +346,7 @@ include_graphics("images/klein-et-al-figure-2.png")
 - Choose a suitable publicly accessible repository (Table\ \@ref(tab:sharing-option-ratings))
     1. Stores data in accordance with local legislation (e.g., [EU GDPR](http://www.eugdpr.org/))
     2. Persistence guarantees for long-term access
-    3. Persistent and unique identifiers (e.g., DOIs)
+    3. Persistent and unique identifiers (e.g., DOI)
     5. Features access controls (e.g., limit access to a select users; [GESIS secure data center](https://www.gesis.org/en/services/data-analysis/more-data-to-analyze/secure-data-center-sdc/))
     4. Supports systematic licensing (e.g., declare (no) legal restrictions on reuse)
     6. Supports structured metadata <!-- to maximize discoverability and reuse. -->
@@ -346,12 +360,12 @@ include_graphics("images/klein-et-al-figure-2.png")
 
 - [FAIR Data Principles](https://www.force11.org/group/fairgroup/fairprinciples) ([Wilkinson et al., 2016](https://dx.doi.org/10.1038/sdata.2016.18))
       1. _Findable_: Persistent identifiers; metadata; indexed
-      2. _Accessible_: Retrievable by identfier; controlled access where necessary
+      2. _Accessible_: Retrievable by identifier; controlled access where necessary
       3. _Interoperable_: Standardized metadata; open, lightweight, and interoperable file formats (e.g., CSV, TSV, JSON, ODS)
       4. _Reusable_: Documented; clear usage license
 
 - Self-deposit (e.g., [OSF](https://osf.io/)) vs. curated repositories (e.g., [GESIS DBK](https://dbk.gesis.org/dbksearch/home.asp?db=e))
-- Resources
+- Resources comparing repositories
     - Table 1 in [Klein et al. (2018)](https://doi.org/10.1525/collabra.158)
     - [Registry of Research Data Repositories](https://www.re3data.org/)
     - Dataverse blog: [Comparative review of various data repositories](https://dataverse.org/blog/comparative-review-various-data-repositories)
@@ -398,11 +412,12 @@ kable(
     - Cloud-based experiment platforms (e.g., [Pavlovia](https://pavlovia.org/explore) for [PsychoPy](http://www.psychopy.org/), [jspsych](https://www.jspsych.org/), and [lab.js](https://lab.js.org/))
     - Container-based experiment platforms (e.g., [The Experiment Factory](https://expfactory.github.io/))
 - Usually no guarantee of long-term access
+    - Archive in public repository (e.g., [archive GitHub repository with Zenodo](https://guides.github.com/activities/citable-code/)) `r recommendation`
 
 
 ## Reports
 
-- Prerpint repositories (e.g., [PsyArXiv](https://psyarxiv.com/), [BioRxiv](https://www.biorxiv.org/), [PeerJ](https://peerj.com/preprints-search/))  `r recommendation`
+- Preprint repositories (e.g., [PsyArXiv](https://psyarxiv.com/), [BioRxiv](https://www.biorxiv.org/), [PeerJ](https://peerj.com/preprints-search/)) `r recommendation`
 - Institutional repositories (less discoverable)
 
 <!-- https://nikokriegeskorte.org/2016/03/13/the-selfish-scientists-guide-to-preprint-posting/ -->
@@ -419,7 +434,7 @@ kable(
 
 - Public availability does not authorize to reuse
     - Always explicitly apply licenses
-- Use easy-to-understand standard licenses (e.g., [Creative Commons](https://creativecommons.org/licenses/), [Open data commons](https://opendatacommons.org/licenses/))
+- Use easy-to-understand standard licenses (e.g., [Creative Commons](https://creativecommons.org/licenses/) `r recommendation`, [Open data commons](https://opendatacommons.org/licenses/))
     - For example, include a license statement in a text file ("All files in this repository are licensed under a Creative Commons Zero License (CC0 1.0)")
 - Repositories may provide specialized licenses (e.g., [GESIS DBK licenses](https://dbk.gesis.org/DBKSearch/LegendAC.htm))
         <!-- - Category 0: Released for everybody -->
@@ -494,50 +509,35 @@ include_graphics("images/cc-license-spectrum.png")
 
 ## Incentivize sharing
 
-- Lead by example
-    - Promote practical advantages for researchers (find your own data, more citations...)
-    - [Commitment to Research Transparency and Open Science](http://www.researchtransparency.org/)
-- Emphasize openness during peer review
-    - [PRO initiative](https://opennessinitiative.org/)
+- Cite colleagues when reusing their shared resources, e.g.,
+    - Open data and materials
+    - Open source software (developed by academics)
+    - Open course materials
+- Promote openness during peer review (e.g., [PRO initiative](https://opennessinitiative.org/))
+- Value openness in hiring committees (e.g., [job offers that mentioned open science](https://osf.io/7jbnt/))
 
 
 ## How can you promote research transparency?
 
-- use templates for transparent & reproducible projects
-- share materials with your collaborators
-- teach your students and colleagues
-    - What do we do here in Cologne?
-    - Example: Registered Report draft as non-empirical Bachelor's thesis
-- vote with you feet
-    - Choose journals that value openness
-- Incentives
-    - Take openess into account when particpating in commissions (https://osf.io/7jbnt/)
-- Give credit where credit is due (cite data, open source software developed by academics, etc.)
-
-
-## Why not to share?
-
-- Personal data
-    - Get informed consent
-    - Pseudonymize data
-    - Employ access control
-- Scooping
-    - Usually an unwarranted fear
-    - Publish upon acceptance or with an embargo
-- I could be wrong
-    - Errors are inevitable
-    - Promotes scientific self-correction
-    - Errors will become a normal part of science
-    - Constructive self-correction will improve scholars' standing (Fetterman & Sassenberg, 2015)
-- Time-consuming
-    - Take one step at a time ("baby steps")
-    - Open science == good research management practices
-        - Increases efficency in the long-run
-    - Increases exposure and citations
-    - Helps to avoid fruitless avenues for future studies
-    - Use (or create) templates & available tools
-
-> … until recently I was an open-data hypocrite. Although I was committed to open data, I was not implementing it in practice. … Some of it was a lack of effort. It was a pain to document the data; it was a pain to format the data; it was a pain to contact the library personnel; it was a pain to figure out which data were indeed published as part of which experiments. Some of it was forgetfulness. I had neither a routine nor any daily incentive to archive data [Rouder, 2016, p. 1063](https://link.springer.com/article/10.3758%2Fs13428-015-0630-z)
+- Lead by example
+    - Promote selfish reasons for transparency, e.g.,
+        - Remember what you've done
+        - Easily find your own data and materials
+        - More citations
+        - Opportunities for collaboration
+        - Confidence in your own findings
+    - Share materials with your collaborators
+    - Publish in journals that value openness
+    - [Commit to Research Transparency and Open Science](http://www.researchtransparency.org/)
+- Teach your students and colleagues
+    - [Cologne Open Science working group](https://www.hf.uni-koeln.de/39711)
+        - Transparent research practices in theses (BSc, MSc, PhD)
+            - "Safe" transparency for experimental tutorials (OSF group)
+            - Stage-1 registered report as non-empirical Bachelor's thesis
+    - Collate and share materials on transparent research practices
+    - Teach workshops
+- Advocate for registered reports at journals (e.g., [Registered Reports Now!](https://osf.io/3wct2/))
+- Be forgiving of your own and other researchers' honest mistakes!
 
 
 # Learn more about transparent research practices
