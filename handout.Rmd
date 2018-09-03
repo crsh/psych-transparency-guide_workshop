@@ -444,10 +444,11 @@ kable(
 > The selection, coordination, and arrangement of the database is subject to copyright if it is sufficiently original. [...] The data or other contents contained in the database are subject to copyright if they are sufficiently creative. Original poems contained in a database would be protected by copyright, but purely factual data (such as gene names or city populations) would not. Facts are not subject to copyright, nor are the ideas underlying copyrighted content ([Creative Commons, 2018](https://wiki.creativecommons.org/wiki/Data)).
 
 - Public availability does not authorize to reuse
+    - Access categories vs. licenses
     - Always explicitly apply licenses
 - Use easy-to-understand standard licenses (e.g., [Creative Commons](https://creativecommons.org/licenses/) `r recommendation`, [Open data commons](https://opendatacommons.org/licenses/))
     - For example, include a license statement in a text file ("All files in this repository are licensed under a Creative Commons Zero License (CC0 1.0)")
-- Repositories may provide specialized licenses (e.g., [GESIS DBK licenses](https://dbk.gesis.org/DBKSearch/LegendAC.htm))
+- Repositories typically have different access categories (e.g., [GESIS DBK access categories](https://dbk.gesis.org/DBKSearch/LegendAC.htm))
         <!-- - Category 0: Released for everybody -->
         <!-- - Category A: Released for academic research and teaching -->
         <!-- - Category B: Released for academic research and teaching, if the results will not be published, otherwise permission required -->

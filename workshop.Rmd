@@ -115,7 +115,7 @@ Klein, O., Hardwicke, T. E., Aust, F., Breuer, J., Danielsson, H., Hofelich Mohr
     - Specialized approaches
     - Licenses
 --
-- How you can promote openness?
+- How can you promote openness?
 
 
 ???
@@ -145,11 +145,11 @@ Share and document what you can, as it will provide a benefit compared with not 
 ---
 class: inverse, middle, center
 
-# Why you should share?
+# Why you should share
 
 
 ---
-# Why you should share?
+# Why you should share
 
 - It's just documenting your work
     - Remember what you've done
@@ -167,7 +167,7 @@ Make transparency a default!
 
 
 ---
-# Why you should share?
+# Why you should share
 
 --
 > Open Science is just science done right
@@ -177,18 +177,6 @@ Make transparency a default!
 
 ???
 You probably already drank the Kool-Aid
-
-
----
-# Why you should share?
-
-> Open Science is just science done right
-
-> &mdash;Jon Tennant, Imperial College London
-
-<br /><br />
-
-# Why would you _not_ share?
 
 
 ---
@@ -207,6 +195,10 @@ You probably already drank the Kool-Aid
     - Errors are inevitable and a normal part of science
     - Promotes scientific self-correction
     - Constructive self-correction can enhance researchers' standing ([Fetterman & Sassenberg, 2015](https://doi.org/10.1371/journal.pone.0143723))
+
+---
+# Why would you _not_ share?
+
 - Personal data
     - Get informed consent
     - Pseudonymize data
@@ -219,15 +211,19 @@ You probably already drank the Kool-Aid
     <!-- - Helps to avoid fruitless avenues for future studies -->
     <!-- - Use (or create) templates & available tools -->
 
+---
+# General recommendations
 
 - Make transparency a by-product of your workflow
     - If possible, share all products of the research process (as early as possible)
     - If negative constraints prohibit transparency, explicitly declare and justify these decisions
 - _Amnesia test_ (Would I still understand this after losing my memory?)
-        <!-- - Ask a colleague who was not involved with the project -->
 - Iteratively improve your workflow
     - Create and use templates
     - Automate what can be automated
+
+---
+# General recommendations
 
 > do not let the perfect be the enemy of the good. Share
 and document what you can, as it will provide a benefit
@@ -364,8 +360,8 @@ DT::datatable(
 include_graphics("images/klein-et-al-figure-1.png")
 ```
 
-
-## Study protocol
+---
+# Study protocol
 
 - "Recipe for replication"
 - Collates, describes, and organizes more specific research products
@@ -379,8 +375,8 @@ include_graphics("images/klein-et-al-figure-1.png")
 <!-- - May be more detailed than published description -->
 <!-- - Facilitates scientific progress (e.g., replication and extension) -->
 
-
-## Study materials
+---
+# Study materials
 
 - Anything necessary to conduct the study, e.g.,
     - Questionnaires
@@ -397,8 +393,8 @@ include_graphics("images/klein-et-al-figure-1.png")
 <!-- - Facilitates scientific progress (e.g., replication and extension) -->
 
 <!-- Johannes -->
-
-## Data
+---
+# Data
 
 - Include information about data sharing in informed consent (see [informed consent templates](http://psych-transparency-guide.uni-koeln.de//informed-consent.html) by Klein et al., 2018)
 - Use open and interoperable file formats (e.g., CSV, TSV, JSON, ODS) `r recommendation`
@@ -406,36 +402,56 @@ include_graphics("images/klein-et-al-figure-1.png")
 
 <!-- https://twitter.com/dutchscientist/status/898938100008845313 -->
 
-- Raw data
-    - As originally recorded (e.g., paper-pencil-questionnaires, CSV files, video recordings)
+---
+# Data
 
+- Raw data
+  - As originally recorded (e.g., paper-pencil-questionnaires, CSV files, video recordings)
 - Processed data
-    - As used for analyses (e.g., coded, digitized, merged)
-    - Ideally "Tidy Data" ([Wickham, 2014 ](https://www.jstatsoft.org/index.php/jss/article/view/v059i10/v59i10.pdf)) `r recommendation`
-        1. Each measured variable in one column
-        2. Different observation of the variables in different rows
-        3. Multiple tables should include a column that allows them to be linked
+  - As used for analyses (e.g., coded, digitized, merged)
+  - Ideally "Tidy Data" ([Wickham, 2014 ](https://www.jstatsoft.org/index.php/jss/article/view/v059i10/v59i10.pdf)) `r recommendation`
+      1. Each measured variable in one column
+      2. Different observation of the variables in different rows
+      3. Multiple tables should include a column that allows them to be linked
     
     <!-- https://www.tandfonline.com/doi/abs/10.1080/00031305.2017.1375987 -->
 
-- Participant privacy
-    - [EU GDPR](http://www.eugdpr.org/): Data are personal if attributable to a specific person (using additional datasets if necessary)
-        - [IAPP: How GDPR changes the rules for research](https://iapp.org/news/a/how-gdpr-changes-the-rules-for-research/)
-        - Australian National Data Service: [Decision tree for sharing sensitive data](https://www.ands.org.au/__data/assets/pdf_file/0010/385309/sensitive-decision-tree.pdf)
-    - Only collect the data you really need
-    - Delete identifying information used for logistics as soon as possible (e.g., e-mail addresses)
-    - Only share anonymized data publicly, e.g., `r recommendation`
-        - Delete directly identifying information (e.g., full name, address, face, handwriting, date of birth, genetic information)
-            - Mind combinations of indirect identifiers (e.g., ZIP code, gender, and date of birth, [Sweeney, 2000](https://dataprivacylab.org/projects/identifiability/paper1.pdf))
-        - Separate demographics used for sample description and study data
-        - Remove free text entries and potentially also alter them when citing in publications
-        - If necessary, transform data, e.g.,
-            - Binning
-            - Top and bottom coding
-            - Add noise
-            - Aggregation
-        - Use anonymization tools (e.g., [ARX](http://arx.deidentifier.org/), [Amnesia](https://amnesia.openaire.eu/index.html))
-    - Control access to pseudonymized data
+---
+# Participant privacy
+
+- [EU GDPR](http://www.eugdpr.org/): Data are personal if attributable to a specific person (using additional datasets if necessary)
+- [IAPP: How GDPR changes the rules for research](https://iapp.org/news/a/how-gdpr-changes-the-rules-for-research/)
+
+---
+# Participant privacy
+
+> To determine whether a natural person is identifiable, account should be taken of all the means reasonably likely to be used, such as singling out, either by the controller or by another person to identify the natural person directly or indirectly.
+<br /><br />
+To ascertain whether means are reasonably likely to be used to identify the natural person, account should be taken of all objective factors, such as the costs of and the amount of time required for identification, taking into consideration the available technology at the time of the processing and technological developments. (Recital 26 EU GDPR)
+
+---
+# Participant privacy
+
+  - Australian National Data Service: [Decision tree for sharing sensitive data](https://www.ands.org.au/__data/assets/pdf_file/0010/385309/sensitive-decision-tree.pdf)
+  - Only collect the data you really need
+  - Delete identifying information used for logistics as soon as possible (e.g., e-mail addresses)
+  - Only share anonymized data publicly, e.g., `r recommendation`
+      - Delete directly identifying information (e.g., full name, address, face, handwriting, date of birth)
+      - Control access to pseudonymized data
+
+---
+# Participant privacy
+
+- Mind combinations of indirect identifiers (e.g., ZIP code, gender, DOB, [Sweeney, 2000](https://dataprivacylab.org/projects/identifiability/paper1.pdf))
+- Separate demographics used for sample description and study data
+- Remove free text entries and potentially also alter them when citing in publications
+- If necessary, transform data, e.g.,
+    - Binning
+    - Top and bottom coding
+    - Add noise
+    - Aggregation
+- Use anonymization tools (e.g., [ARX](http://arx.deidentifier.org/), [Amnesia](https://amnesia.openaire.eu/index.html))
+
     
     <!-- - Harm assessment? -->
     
@@ -447,12 +463,8 @@ include_graphics("images/klein-et-al-figure-1.png")
         - _Motivated intruder test_ (e.g., jealous partner, nosy neighbor, envious co-worker, insurers, criminals)
     <!-- - Who will the data be shared with? -->
 
-> To determine whether a natural person is identifiable, account should be taken of all the means reasonably likely to be used, such as singling out, either by the controller or by another person to identify the natural person directly or indirectly.
-<br /><br />
-To ascertain whether means are reasonably likely to be used to identify the natural person, account should be taken of all objective factors, such as the costs of and the amount of time required for identification, taking into consideration the available technology at the time of the processing and technological developments. (Recital 26 EU GDPR)
-
-
-## Metadata
+---
+# Metadata
 
 - Sampling procedure (who collected the data how, when, and where)
 - Dataset, e.g.,
@@ -460,7 +472,11 @@ To ascertain whether means are reasonably likely to be used to identify the natu
     - Name and description of variables (incl. source of a measure, information about translation)
     - Units of measurement, coding of values (e.g., "1 = Female","2 = Male"), possible options or range in which the data points can fall (e.g., “1 = not at all to 7 = Very much”)
     - Value(s) used for missing data
-    - If necessary, how a variable was derived from other variables (e.g., "`bmi` was derived from body weight `m` and height `l` as $\mathrm{BMI} = \frac{m}{l^2}$.")
+    - How a variable was derived from other variables (e.g., "`bmi` was derived from body weight `m` and height `l` as $\mathrm{BMI} = \frac{m}{l^2}$.")
+    
+---
+# Metadata
+
 - Automate codebook generation
     - Analysis software (e.g., [R `codebook` package](https://cran.r-project.org/web/packages/codebook/index.html), [SPSS codebook function](https://libguides.library.kent.edu/SPSS/Codebooks), or [Stata codebook function](http://www.stata.com/manuals13/dcodebook.pdf))
     - Specialized software (e.g., [Nesstar](http://www.nesstar.com/software/publisher.html), [DataWiz](https://datawiz.leibniz-psychology.org/DataWiz/?datawiz_locale=en))
@@ -469,8 +485,8 @@ To ascertain whether means are reasonably likely to be used to identify the natu
     <!-- This documentation should describe the variables in each data file in both human- and machine-readable formats (e.g., csv, rather than docx or pdf).Ideally, codebooks are organized in such a way that each line represents one variable and each information relative to a variable represents a column. -->
 - Can almost always be shared, even if raw or processed data cannot
 
-
-## Standard operating procedures
+---
+# Standard operating procedures
 
 - Define default practices ([Lin & Green, 2016](
 https://doi.org/10.1017/S1049096516000810))
@@ -532,7 +548,7 @@ include_graphics("images/pre-post-print.png")
 <!-- Johannes -->
 
 ---
-# When can you share
+# When can you share?
 
 > any time is better than never  (p. 4, [Klein et al., 2018](http://doi.org/10.1525/collabra.158)).
 
@@ -540,7 +556,8 @@ include_graphics("images/pre-post-print.png")
 include_graphics("images/klein-et-al-figure-2.png")
 ```
 
-## Planning a study
+---
+# Planning a study
 
 - Have a _basic_ data management plan (DMP), ideally before starting a project
     - Create basic reusable DMP templates
@@ -550,8 +567,8 @@ include_graphics("images/klein-et-al-figure-2.png")
     - Simplifies addressing legal and ethical issues
     - Examples: [Public DMPs](https://dmponline.dcc.ac.uk/public_plans)
 
-
-## Before data collection `r recommendation`
+---
+# Before data collection `r recommendation`
 
 - Timely archiving
     - Study protocol and materials
@@ -562,7 +579,8 @@ include_graphics("images/klein-et-al-figure-2.png")
 
 <!-- Frederik -->
 
-## During data collection
+---
+# During data collection
 
 - Born-open data ([Rouder, 2016](https://doi.org/10.3758/s13428-015-0630-z))
     - Automatically uploaded to a public repository
@@ -573,8 +591,8 @@ include_graphics("images/klein-et-al-figure-2.png")
 
 <!-- - **Demonstration**: Set up Dropbox to collect born-open data -->
 
-
-## Upon submission `r recommendation`
+---
+# Upon submission `r recommendation`
 
 - Data, materials, and analysis scripts
     - Facilitates thorough peer-review
@@ -587,8 +605,8 @@ include_graphics("images/klein-et-al-figure-2.png")
     - Not typically considered a "prior publication" ([Bourne, Polka, Vale, & Kiley, 2017](https://doi.org/10.1371/journal.pcbi.1005473))
         - Exceptions: For example, _New England Journal of Medicine_ and _Journal of Clinical Investigation_
 
-
-## After publication
+---
+# After publication
 
 - Archive in online repository, publish later
 - Automate by use of embargoes
@@ -620,40 +638,8 @@ include_graphics("images/klein-et-al-figure-2.png")
 
 
 <!-- Johannes -->
-
-## Choose a repository
-
-- Choose a suitable publicly accessible repository (Table\ \@ref(tab:sharing-option-ratings))
-    1. Stores data in accordance with local legislation (e.g., [EU GDPR](http://www.eugdpr.org/))
-    2. Persistence guarantees for long-term access
-    3. Persistent and unique identifiers (e.g., DOI)
-    5. Features access controls (e.g., limit access to a select users; [GESIS secure data center](https://www.gesis.org/en/services/data-analysis/more-data-to-analyze/secure-data-center-sdc/))
-    4. Supports systematic licensing (e.g., declare (no) legal restrictions on reuse)
-    6. Supports structured metadata <!-- to maximize discoverability and reuse. -->
-    7. Tracks reuse of shared products (e.g., citations, downloads)
-
-<!-- - Questions for participants:  -->
-<!--     - Which features of a repository would you consider important (for your data)? -->
-<!--     - How would you search for a suitable repository? -->
-
-- [FAIR Data Principles](https://www.force11.org/group/fairgroup/fairprinciples) ([Wilkinson et al., 2016](https://dx.doi.org/10.1038/sdata.2016.18))
-      1. _Findable_: Persistent identifiers; metadata; indexed
-      2. _Accessible_: Retrievable by identifier; controlled access where necessary
-      3. _Interoperable_: Standardized metadata; open, lightweight, and interoperable file formats (e.g., CSV, TSV, JSON, ODS)
-      4. _Reusable_: Documented; clear usage license
-
-- Self-deposit (e.g., [OSF](https://osf.io/)) vs. curated repositories (e.g., [GESIS DBK](https://dbk.gesis.org/dbksearch/home.asp?db=e))
-- Resources comparing repositories
-    - Table 1 in [Klein et al. (2018)](https://doi.org/10.1525/collabra.158)
-    - [Registry of Research Data Repositories](https://www.re3data.org/)
-    - Dataverse blog: [Comparative review of various data repositories](https://dataverse.org/blog/comparative-review-various-data-repositories)
-    - Table 1 in [Meyer, 2018](http://journals.sagepub.com/doi/abs/10.1177/2515245917747656)
-
-
-    <!-- - Hand out table that summarizes repositories -->
-    <!--     - Discuss some usecases (maybe suggested by participants) -->
-    <!--  Maybe also show GESIS DBK and/or datorium -->
-
+---
+# Sharing options
 
 ```{r sharing-option-ratings, echo = FALSE}
 sharing_options <- data.frame(
@@ -678,6 +664,45 @@ kable(
 
 <!-- or add "Citeability" to the above table? Citeability <- c("-", "--", "0", "++", "++") -->
 
+---
+# FAIR data
+
+- [FAIR Data Principles](https://www.force11.org/group/fairgroup/fairprinciples) ([Wilkinson et al., 2016](https://dx.doi.org/10.1038/sdata.2016.18))
+      1. _Findable_: Persistent identifiers; metadata; indexed
+      2. _Accessible_: Retrievable by identifier; controlled access where necessary
+      3. _Interoperable_: Standardized metadata; open, lightweight, and interoperable file formats (e.g., CSV, TSV, JSON, ODS)
+      4. _Reusable_: Documented; clear usage license
+
+---
+# Criteria for choosing a repository
+
+- Choose a suitable publicly accessible repository (Table\ \@ref(tab:sharing-option-ratings))
+    1. Stores data in accordance with local legislation (e.g., [EU GDPR](http://www.eugdpr.org/))
+    2. Persistence guarantees for long-term access
+    3. Persistent and unique identifiers (e.g., DOI)
+    5. Features access controls (e.g., limit access to a select users; [GESIS secure data center](https://www.gesis.org/en/services/data-analysis/more-data-to-analyze/secure-data-center-sdc/))
+    4. Supports systematic licensing (e.g., declare (no) legal restrictions on reuse)
+    6. Supports structured metadata <!-- to maximize discoverability and reuse. -->
+    7. Tracks reuse of shared products (e.g., citations, downloads)
+
+<!-- - Questions for participants:  -->
+<!--     - Which features of a repository would you consider important (for your data)? -->
+<!--     - How would you search for a suitable repository? -->
+
+
+---
+# Choosing a repository
+
+- Self-deposit (e.g., [OSF](https://osf.io/)) vs. curated repositories (e.g., [GESIS DBK](https://dbk.gesis.org/dbksearch/home.asp?db=e))
+- Resources for choosing a repository
+    - Table 1 in [Klein et al. (2018)](https://doi.org/10.1525/collabra.158)
+    - [Registry of Research Data Repositories](https://www.re3data.org/)
+    - Dataverse blog: [Comparative review of various data repositories](https://dataverse.org/blog/comparative-review-various-data-repositories)
+    - Table 1 in [Meyer, 2018](http://journals.sagepub.com/doi/abs/10.1177/2515245917747656)
+
+??? 
+- Hand out table that summarizes repositories
+- Discuss some usecases (maybe suggested by participants)
 
 <!-- Frederik -->
 
@@ -714,28 +739,32 @@ kable(
 
 <!-- Johannes -->
 
-## Licenses
+---
+# Licenses
 
 - Licenses define conditions of access and reuse
 - Factual information (e.g., response times, mortality rates, currency values, the number of Twitter followers someone has) are usually *not* protected by copyright
     - Database structures and compilations of data may be copyrightable
     <!-- - Applying a license to noncopyrightable work does little harm -->
-    
+
+---
+# Licenses
+
 > The selection, coordination, and arrangement of the database is subject to copyright if it is sufficiently original. [...] The data or other contents contained in the database are subject to copyright if they are sufficiently creative. Original poems contained in a database would be protected by copyright, but purely factual data (such as gene names or city populations) would not. Facts are not subject to copyright, nor are the ideas underlying copyrighted content ([Creative Commons, 2018](https://wiki.creativecommons.org/wiki/Data)).
 
+---
+# Licenses
+
 - Public availability does not authorize to reuse
+    - Access categories vs. licenses
     - Always explicitly apply licenses
+- Repositories typically have different access categories (e.g., [GESIS DBK access categories](https://dbk.gesis.org/DBKSearch/LegendAC.htm))
 - Use easy-to-understand standard licenses (e.g., [Creative Commons](https://creativecommons.org/licenses/) `r recommendation`, [Open data commons](https://opendatacommons.org/licenses/))
     - For example, include a license statement in a text file ("All files in this repository are licensed under a Creative Commons Zero License (CC0 1.0)")
-- Repositories may provide specialized licenses (e.g., [GESIS DBK licenses](https://dbk.gesis.org/DBKSearch/LegendAC.htm))
-        <!-- - Category 0: Released for everybody -->
-        <!-- - Category A: Released for academic research and teaching -->
-        <!-- - Category B: Released for academic research and teaching, if the results will not be published, otherwise permission required -->
-        <!-- - Category C: Released for academic research and teaching, written authorization of user and reuse intention required -->
 - Use most permissive license possible (e.g., CC0, CC-BY)
 
-
-### Creative Commons Licenses
+---
+# Creative Commons Licenses
 
 - Modular license "building set" (see Table\ \@ref(tab:cc-license-modules))
     - In practice, seven combinations are supported (see Figure\ \@ref(fig:cc-licenses))
