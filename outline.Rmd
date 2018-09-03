@@ -62,17 +62,15 @@ The active three-hour workshop will cover the following issues.
     - After publication
 
 4. How can you share?
-    - Study protocol
-    - Study material, data & metadata
-    - Analysis scripts and software
-    - Reports
+    - Project file structure
+    - Sharing options
+    - Choosing a repository
     - Licenses
 
-
 5. How you can promote openness?
-    - Incentivize sharing
-    - How can you promote research transparency?
-    - Why not to share?
+    - Incentivizing sharing
+    - Possible reasons against sharing
+    - Further resources
 
 
 # Course materials
