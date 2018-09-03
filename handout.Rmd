@@ -1,7 +1,7 @@
 ---
 title   : "A practical primer on transparent research workflows"
 subtitle: "Handout"
-author  : "Frederik Aust & Dr. Johannes Breuer"
+author  : "Frederik Aust & Johannes Breuer"
 
 date    : "04.09.2018"
 location: "ESCON 2018, Cologne, Germany"
@@ -34,25 +34,30 @@ license <- "[![](images/by-badge.png)](https://creativecommons.org/licenses/by/4
 
 > … until recently I was an open-data hypocrite. Although I was committed to open data, I was not implementing it in practice. … Some of it was a lack of effort. It was a pain to document the data; it was a pain to format the data; it was a pain to contact the library personnel; it was a pain to figure out which data were indeed published as part of which experiments. Some of it was forgetfulness. I had neither a routine nor any daily incentive to archive data (p. 1063, [Rouder, 2016](https://doi.org/10.3758/s13428-015-0630-z))
 
-- Make transparency a default
-    - Fear of being scooped
-        - Usually an unwarranted fear
-        - Publish upon acceptance or with an embargo
-    - Fear of being corrected
-        - Errors are inevitable and a normal part of science
-        - Promotes scientific self-correction
-        - Constructive self-correction can improve a researcher's standing ([Fetterman & Sassenberg, 2015](https://doi.org/10.1371/journal.pone.0143723))
-    - Personal data
-        - Get informed consent
-        - Pseudonymize data
-        - Employ access controls
-    - Time-consuming
-        - Take one step at a time ("baby steps")
-            - Iteratively improve your workflow
-        - Increases efficiency in the long-run
-        - Increases exposure and citations
-        <!-- - Helps to avoid fruitless avenues for future studies -->
-        <!-- - Use (or create) templates & available tools -->
+## Reasons why people might be hesitant:
+- Fear of being scooped
+    - Usually an unwarranted fear
+    - Publish upon acceptance or with an embargo
+- Fear of being corrected
+    - Errors are inevitable and a normal part of science
+    - Promotes scientific self-correction
+    - Constructive self-correction can improve a researcher's standing ([Fetterman & Sassenberg, 2015](https://doi.org/10.1371/journal.pone.0143723))
+- Personal data
+    - Get informed consent
+    - Pseudonymize data
+    - Employ access controls
+- Time-consuming
+    - Take one step at a time ("baby steps")
+    - Iteratively improve your workflow
+    - Increases efficiency in the long-run
+    - Increases exposure and citations
+    <!-- - Helps to avoid fruitless avenues for future studies -->
+    <!-- - Use (or create) templates & available tools -->
+
+
+## General recommendations
+
+- Make transparency your default
 - Make transparency a by-product of your workflow
     - If possible, share all products of the research process (as early as possible)
     - If negative constraints prohibit transparency, explicitly declare and justify these decisions
@@ -87,7 +92,7 @@ include_graphics("images/klein-et-al-figure-1.png")
     - Hypotheses
     - Study materials
     - Detailed description of procedure
-        - Instructive video documentation (e.g., [OBS](https://obsproject.com/) for computer-based studies) `r recommendation`
+        - Instructive video documentation (e.g., [OBS](https://obsproject.com/) for computer-based studies)
 
         <!-- - __Demonstration:__ OBS https://osf.io/eyfxs/ -->
     
@@ -116,7 +121,7 @@ include_graphics("images/klein-et-al-figure-1.png")
 ## Data
 
 - Include information about data sharing in informed consent (see [informed consent templates](http://psych-transparency-guide.uni-koeln.de//informed-consent.html) by Klein et al., 2018)
-- Use open and interoperable file formats (e.g., CSV, TSV, JSON, ODS)
+- Use open and interoperable file formats (e.g., CSV, TSV, JSON, ODS) `r recommendation`
     - Use UTF-8 character encoding
 
 <!-- https://twitter.com/dutchscientist/status/898938100008845313 -->
@@ -127,8 +132,8 @@ include_graphics("images/klein-et-al-figure-1.png")
 - Processed data
     - As used for analyses (e.g., coded, digitized, merged)
     - Ideally "Tidy Data" ([Wickham, 2014 ](https://www.jstatsoft.org/index.php/jss/article/view/v059i10/v59i10.pdf)) `r recommendation`
-        1. Each measured variable in one column.
-        2. Different observation of the variables in a different rows
+        1. Each measured variable in one column
+        2. Different observation of the variables in different rows
         3. Multiple tables should include a column that allows them to be linked
     
     <!-- https://www.tandfonline.com/doi/abs/10.1080/00031305.2017.1375987 -->
@@ -139,7 +144,7 @@ include_graphics("images/klein-et-al-figure-1.png")
         - Australian National Data Service: [Decision tree for sharing sensitive data](https://www.ands.org.au/__data/assets/pdf_file/0010/385309/sensitive-decision-tree.pdf)
     - Only collect the data you really need
     - Delete identifying information used for logistics as soon as possible (e.g., e-mail addresses)
-    - Only share anonymized data publicly, e.g.,
+    - Only share anonymized data publicly, e.g., `r recommendation`
         - Delete directly identifying information (e.g., full name, address, face, handwriting, date of birth, genetic information)
             - Mind combinations of indirect identifiers (e.g., ZIP code, gender, and date of birth, [Sweeney, 2000](https://dataprivacylab.org/projects/identifiability/paper1.pdf))
         - Separate demographics used for sample description and study data
@@ -179,9 +184,9 @@ To ascertain whether means are reasonably likely to be used to identify the natu
 - Automate codebook generation
     - Analysis software (e.g., [R `codebook` package](https://cran.r-project.org/web/packages/codebook/index.html), [SPSS codebook function](https://libguides.library.kent.edu/SPSS/Codebooks), or [Stata codebook function](http://www.stata.com/manuals13/dcodebook.pdf))
     - Specialized software (e.g., [Nesstar](http://www.nesstar.com/software/publisher.html), [DataWiz](https://datawiz.leibniz-psychology.org/DataWiz/?datawiz_locale=en))
-- For data with high reuse value, consider using a standardized and machine-readable format (e.g., [DDI](https://www.ddialliance.org/))
+- For data with high reuse value, consider using a standardized and machine-readable metadata format (e.g., [DDI](https://www.ddialliance.org/)) `r recommendation`
     - Implementation is a service provided by some repositories
-    <!-- This documentation should describe the variables in each data file in both human- and machine-readable formats (e.g., csv, rather than docx or pdf).Ideally, codebooks are organized in such a way that each line represents one variable and each information relative to a variable represents a column. -->
+    <!-- This documentation should describe the variables in each data file in both human- and machine-readable formats (e.g., csv, rather than docx or pdf). Ideally, codebooks are organized in such a way that each line represents one variable and each information relative to a variable represents a column. -->
 - Can almost always be shared, even if raw or processed data cannot
 
 
@@ -562,7 +567,7 @@ http://psych-transparency-guide.uni-koeln.de/))
 ---
 Handout for *`r gsub(".+<br />", "", metadata$title)`: `r gsub(".+<br />", " ", metadata$subtitle)`*, `r metadata$location`, `r metadata$date`.
 
-Frederik Aust ([frederik.aust@uni-koeln.de](mailto:frederik.aust@uni-koeln.de), [\@frederikaust](http://twitter.com/frederikaust)); Dr. Johannes Breuer ([johannes.breuer@gesis.org](mailto:johannes.breuer@gesis.org), [\@MattEagle09](https://twitter.com/MattEagle09))
+Frederik Aust ([frederik.aust@uni-koeln.de](mailto:frederik.aust@uni-koeln.de), [\@frederikaust](http://twitter.com/frederikaust)); Johannes Breuer ([johannes.breuer@gesis.org](mailto:johannes.breuer@gesis.org), [\@MattEagle09](https://twitter.com/MattEagle09))
 
 `r license`
 
