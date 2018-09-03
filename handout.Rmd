@@ -555,7 +555,9 @@ include_graphics("images/cc-license-spectrum.png")
 
 ---
 
-> Open Science is just science done right<br /><br />&mdash;Jon Tennant, Imperial College London
+> Open Science is just science done right
+
+> &mdash;Jon Tennant, Imperial College London
 
 ---
 
