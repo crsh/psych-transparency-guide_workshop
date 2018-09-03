@@ -17,6 +17,10 @@ output:
       beforeInit: "macros.js"
 ---
 
+<!-- TODO -->
+<!-- How to introduce new workflow in lab? -->
+
+
 layout: true
 
 ```{r setup, include = FALSE}
@@ -26,12 +30,14 @@ library("rmarkdown")
 options(htmltools.dir.version = FALSE)
 
 opts_chunk$set(echo = FALSE, fig.align = "center")
+
+recommendation <- "<img style='width: auto; height: 22px;', src='images/recommendation.png' />"
 ```
 
 <div class="my-footer">
   <div style="float: left;"><span>`r gsub("<br />", " & ", gsub("<br /><br />|<a.+$", "", metadata$author))`</span></div>
   <div style="float: right;"><span>`r metadata$location`, `r metadata$date`</span></div>
-  <div style="text-align: center;"><span>`r gsub(".+<br />", "", metadata$title)`: `r gsub(".+<br />", " ", metadata$subtitle)`</span></div>
+  <div style="text-align: center;"><span>`r gsub(".+<br />", " ", metadata$subtitle)`</span></div>
 </div>
 
 <script type="text/x-mathjax-config">
@@ -138,54 +144,87 @@ Share and document what you can, as it will provide a benefit compared with not 
 
 --
 
-> being an open scientist means .highlight[adopting a few straightforward research management practices, which lead to less error-prone, reproducible research workflows] with each incremental step adding positive value (p. 11, Klein et al., 2018).
+> being an open scientist means .highlight[adopting a few straightforward research management practices, which lead to less error-prone, reproducible research workflows] <!-- with each incremental step adding positive value --> (p. 11, Klein et al., 2018).
 
 
 ---
 class: inverse, middle, center
 
-# Why share?
+# Why you should share?
 
 
 ---
-# Why share?
+# Why you should share?
 
-- You probably already drank the Kool-Aid...
-- It's documenting your work
+- It's just documenting your work
     - Remember what you've done
     - Lab members can learn from each other
-    - Colleagues can build on your work
+    - Colleagues can scrutinize and build on your work
 
-<!-- TODO: Look at paper -->
+--
+> Your closest collaborator is you six months ago, but you don’t reply to emails.
 
-<!-- - Good for others -->
-<!--     - Good for you -->
-<!--         - In-lab transparency -->
-<!--         - Paul Wilson quote -->
+> &mdash; Paul Wilson, University of Wisconsin Madison
 
-<!-- How to introduce new workflow in lab? -->
+
+???
+Make transparency a default!
+
+
+---
+# Why you should share?
+
+--
+> Open Science is just science done right
+
+> &mdash;Jon Tennant, Imperial College London
+
+
+???
+You probably already drank the Kool-Aid
+
+
+---
+# Why you should share?
+
+> Open Science is just science done right
+
+> &mdash;Jon Tennant, Imperial College London
+
+<br /><br />
+
+# Why would you _not_ share?
+
+
+---
+# Why would you _not_ share?
 
 > … until recently I was an open-data hypocrite. Although I was committed to open data, I was not implementing it in practice. … Some of it was a lack of effort. It was a pain to document the data; it was a pain to format the data; it was a pain to contact the library personnel; it was a pain to figure out which data were indeed published as part of which experiments. Some of it was forgetfulness. I had neither a routine nor any daily incentive to archive data (p. 1063, [Rouder, 2016](https://doi.org/10.3758/s13428-015-0630-z))
 
-- Make transparency a default
-    - Fear of being scooped
-        - Usually an unwarranted fear
-        - Publish upon acceptance or with an embargo
-    - Fear of being corrected
-        - Errors are inevitable and a normal part of science
-        - Promotes scientific self-correction
-        - Constructive self-correction can improve a researcher's standing ([Fetterman & Sassenberg, 2015](https://doi.org/10.1371/journal.pone.0143723))
-    - Personal data
-        - Get informed consent
-        - Pseudonymize data
-        - Employ access controls
-    - Time-consuming
-        - Take one step at a time ("baby steps")
-            - Iteratively improve your workflow
-        - Increases efficiency in the long-run
-        - Increases exposure and citations
-        <!-- - Helps to avoid fruitless avenues for future studies -->
-        <!-- - Use (or create) templates & available tools -->
+
+---
+# Why would you _not_ share?
+
+- Fear of being scooped
+    - Usually an unwarranted fear
+    - Publish upon acceptance or with an embargo
+- Fear of being corrected
+    - Errors are inevitable and a normal part of science
+    - Promotes scientific self-correction
+    - Constructive self-correction can improve a researcher's standing ([Fetterman & Sassenberg, 2015](https://doi.org/10.1371/journal.pone.0143723))
+- Personal data
+    - Get informed consent
+    - Pseudonymize data
+    - Employ access controls
+- Time-consuming
+    - Take one step at a time ("baby steps")
+        - Iteratively improve your workflow
+    - Increases efficiency in the long-run
+    - Increases exposure and citations
+    <!-- - Helps to avoid fruitless avenues for future studies -->
+    <!-- - Use (or create) templates & available tools -->
+
+
 - Make transparency a by-product of your workflow
     - If possible, share all products of the research process (as early as possible)
     - If negative constraints prohibit transparency, explicitly declare and justify these decisions
