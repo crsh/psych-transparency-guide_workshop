@@ -143,29 +143,30 @@ Can we accurately judge a person's IQ by looking at their face?
 - Likert-scale ratings of attractiveness
 
 ```{r example-elements}
-example_citation <- '<div class="reference">Kleisner, K., Chvátalová, V., & Flegr, J. (2014). Perceived Intelligence Is Associated with Measured Intelligence in Men but Not Women. <i>PLoS ONE</i>, 9(3): e81237. doi: <a href="https://doi.org/10.1371/journal.pone.0081237">10.1371/journal.pone.0081237</a></div>'
+# example_citation <- '<div class="reference">Kleisner, K., Chvátalová, V., & Flegr, J. (2014). Perceived Intelligence Is Associated with Measured Intelligence in Men but Not Women. <i>PLoS ONE</i>, 9(3): e81237. doi: <a href="https://doi.org/10.1371/journal.pone.0081237">10.1371/journal.pone.0081237</a></div>'
 example_citation <- '<div class="reference">Stimulus images courtesy of Michael J. Tarr, Center for the Neural Basis of Cognition and Department of Psychology, Carnegie Mellon University, http://www.tarrlab.org/. Funding provided by NSF award 0339122. <a href = "https://creativecommons.org/licenses/by-nc-sa/3.0/">CC-BY-NC-SA 3.0</a></div>'
 
-example_likert_scale <- '<table id="likert">
-   <tr>
-       <td><input id="radGuiltyStart" type="radio" name="Guilty" value="7" /></td>
-       <td><input type="radio" name="Guilty" value="6" /></td>
-       <td><input type="radio" name="Guilty" value="5" /></td>
-       <td><input type="radio" name="Guilty" value="4" /></td>
-       <td><input type="radio" name="Guilty" value="3" /></td>
-       <td><input type="radio" name="Guilty" value="2" /></td>
-       <td><input id="radGuiltyEnd" type="radio" name="Guilty" value="1" /></td>
-   </tr>
-   <tr>
-       <td style = "background-color: white;"><small>Low</small></td>
-       <td style = "background-color: white;"></td>
-       <td style = "background-color: white;"></td>
-       <td style = "background-color: white;"><small>Intelligence</small></td>
-       <td style = "background-color: white;"></td>
-       <td style = "background-color: white;"></td>
-       <td style = "background-color: white;"><small>High</small></td>
-   </tr>
-</table>'
+# example_likert_scale <- '<table id="likert">
+#    <tr>
+#        <td><input id="radGuiltyStart" type="radio" name="Guilty" value="7" /></td>
+#        <td><input type="radio" name="Guilty" value="6" /></td>
+#        <td><input type="radio" name="Guilty" value="5" /></td>
+#        <td><input type="radio" name="Guilty" value="4" /></td>
+#        <td><input type="radio" name="Guilty" value="3" /></td>
+#        <td><input type="radio" name="Guilty" value="2" /></td>
+#        <td><input id="radGuiltyEnd" type="radio" name="Guilty" value="1" /></td>
+#    </tr>
+#    <tr>
+#        <td style = "background-color: white;"><small>Low</small></td>
+#        <td style = "background-color: white;"></td>
+#        <td style = "background-color: white;"></td>
+#        <td style = "background-color: white;"><small>Intelligence</small></td>
+#        <td style = "background-color: white;"></td>
+#        <td style = "background-color: white;"></td>
+#        <td style = "background-color: white;"><small>High</small></td>
+#    </tr>
+# </table>'
+
 example_likert_scale <- '<center>
     <fieldset style = "width: 600px;">
         <legend style = "padding: 6px;">What is this person\'s IQ?</legend>
@@ -227,15 +228,22 @@ example_likert_scale <- '<center>
 
 
 ---
-# Example project
+
+<div style="font-size: 14px;">
 
 ```{r exmaple-dataset}
 DT::datatable(
   read.csv("material/example-project/raw_data/perceived_iq_01.csv")
-  , width = "700px"
   , rownames = FALSE
+  , caption = "Raw data of participant 01"
+  , width = "700px"
+  , height = "500px"
+  , class = "compact hover order-column nowrap"
+  , options = list(pageLength = 20)
 )
 ```
+
+</div>
 
 
 ---
@@ -259,6 +267,9 @@ include_graphics("images/registered-reports.png")
 
 # Data
 
+???
+Search yandex.com for `https://github.com/crsh/psych-transparency-guide_workshop/blob/master/material/example-project/stimuli/CF0002_1100_NE.jpg?raw=true`
+
 
 ---
 .pull-left[![:scale 70%](images/analysis.png)]
@@ -278,9 +289,11 @@ class: inverse, middle
 ---
 # Acknowledgments
 
-- Workshop material is based on<br />Klein, O., Hardwicke, T. E., Aust, F., Breuer, J., Danielsson, H., Hofelich Mohr, A., … Frank, M. C. (2018). A Practical Guide for Transparency in Psychological Science. Collabra: Psychology, 4(1). doi: [10.1525/collabra.158](https://doi.org/10.1525/collabra.158)  ([![:scale 7%](images/by.png)](https://creativecommons.org/licenses/by/4.0/))
+<small>
+- Workshop material is based on<br />Klein, O., Hardwicke, T. E., Aust, F., Breuer, J., Danielsson, H., Hofelich Mohr, A., … Frank, M. C. (2018). A Practical Guide for Transparency in Psychological Science. Collabra: Psychology, 4(1). doi: [10.1525/collabra.158](https://doi.org/10.1525/collabra.158)  ([CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/))
+- Example project stimulus images courtesy of Michael J. Tarr, Center for the Neural Basis of Cognition and Department of Psychology, Carnegie Mellon University, http://www.tarrlab.org/. Funding provided by NSF award 0339122. [CC-BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/)
+- Icons by [Icons8](https://icons8.com, [CC-BY-ND 3.0](https://creativecommons.org/licenses/by-nd/3.0/)
 - Slides created in R with [`xaringan`](https://github.com/yihui/xaringan)
-- Icons by [Icons8](https://icons8.com) ([![:scale 7%](images/by-nd.png)](https://creativecommons.org/licenses/by-nd/3.0/))
-
+</small>
 
 

@@ -56,9 +56,9 @@ compared with not sharing (p. 4, Klein et al., 2018).
 - Make transparency a default
     - Make documentation and sharing a by-product of the lab workflow
         - If possible, share all products of the research process (as early as possible)
-        - If negative constraints prohibit transparency, explicitly declare and justify these decisions (in publications)
-- Automate what can be automated
+        - If negative constraints prohibit transparency, explicitly declare and justify these decisions
 - Create and use templates
+- Automate what can be automated
 
     
 <!-- - Reduces extra sharing efforts -->
@@ -287,7 +287,7 @@ include_graphics("images/klein-et-al-figure-2.png")
     - Errors can be spotted early on (no public correction)
     - Possibly limit access to reviewers prior to publications (e.g., [OSF view-only links](http://help.osf.io/m/links_forks/l/524049-create-a-view-only-link-for-a-project))
 - Research report (see Figure\ \@ref(fig:pre-post-print))
-    - Fast dissemination of results (citation advantage, see [Piwowar & Vision, 2013](https://peerj.com/articles/175/))
+    - Fast dissemination of results (citation advantage, e.g., [Piwowar & Vision, 2013](https://peerj.com/articles/175/))
     - Public peer review
     - Establishes precedents
     - Not typically considered a "prior publication" ([Bourne, Polka, Vale, & Kiley, 2017](https://doi.org/10.1371/journal.pcbi.1005473))
@@ -296,7 +296,7 @@ include_graphics("images/klein-et-al-figure-2.png")
 
 ## After publication
 
-- Archive in public (or institutional) respository, publish later
+- Archive in online respository, publish later
     - Automate by use of embargoes
     - Reduces extra sharing efforts
 
@@ -324,12 +324,12 @@ include_graphics("images/klein-et-al-figure-2.png")
     <!-- - **Demonstration**: Show some preregistration websites, showcase good preregistrations (https://osf.io/h9k8n/) -->
 - [Registered reports](https://cos.io/rr/)
 - Video methods journal [JoVE Behavior](https://www.jove.com/)
-    - however: relatively high publication costs (1200 - 4200 USD)
+    <!-- - however: relatively high publication costs (1200 - 4200 USD) -->
 
 
 ## Study material, data, & metadata
 
-- Choose a suitable public repository (e.g., [Registry of Research Data Repositories](https://www.re3data.org/), [Meyer, 2018](http://journals.sagepub.com/doi/abs/10.1177/2515245917747656?journalCode=ampa), for a more technical comparison of a selection of data repositories also see the table at the end of this [Dataverse blog post](https://dataverse.org/blog/comparative-review-various-data-repositories)
+- Choose a suitable publicly accessible repository (Table\ \@ref(tab:sharing-option-ratings))
     1. Stores data in accordance with local legislation (e.g., [EU GDPR](http://www.eugdpr.org/))
     2. Persistence guarantees for long-term access
     3. Persistent and unique identifiers (e.g., DOIs)
@@ -337,21 +337,26 @@ include_graphics("images/klein-et-al-figure-2.png")
     4. Supports systematic licensing (e.g., declare (no) legal restrictions on reuse)
     6. Supports structured metadata <!-- to maximize discoverability and reuse. -->
     7. Tracks reuse of shared products (e.g., citations, downloads)
-- Self-deposit (e.g., [OSF](https://osf.io/)) vs. curated repositories (e.g., [GESIS DBK](https://dbk.gesis.org/dbksearch/home.asp?db=e))
 
 <!-- - Questions for participants:  -->
 <!--     - Which features of a repository would you consider important (for your data)? -->
 <!--     - How would you search for a suitable repository? -->
 
 <!-- TODO: Tabelle 1 hier unterbringen -->
-<!-- TODO: Johannes, hast du noch den Link zu dem umfassenden Google Sheet? 
-  Johannes: Done: s.o. -->
 
 - [FAIR Data Principles](https://www.force11.org/group/fairgroup/fairprinciples) ([Wilkinson et al., 2016](https://dx.doi.org/10.1038/sdata.2016.18))
       1. _Findable_: Persistent identifiers; metadata; indexed
       2. _Accessible_: Retrievable by identfier; controlled access where necessary
       3. _Interoperable_: Standardized metadata; open, lightweight, and interoperable file formats (e.g., CSV, TSV, JSON, ODS)
       4. _Reusable_: Documented; clear usage license
+
+- Self-deposit (e.g., [OSF](https://osf.io/)) vs. curated repositories (e.g., [GESIS DBK](https://dbk.gesis.org/dbksearch/home.asp?db=e))
+- Resources
+    - Table 1 in [Klein et al. (2018)](https://doi.org/10.1525/collabra.158)
+    - [Registry of Research Data Repositories](https://www.re3data.org/)
+    - Dataverse blog: [Comparative review of various data repositories](https://dataverse.org/blog/comparative-review-various-data-repositories)
+    - Table 1 in [Meyer, 2018](http://journals.sagepub.com/doi/abs/10.1177/2515245917747656)
+
 
     <!-- - Hand out DGPs model informed consent -->
     <!-- - Hand out table that summarizes repositories -->
@@ -380,9 +385,6 @@ kable(
 )
 ```
 
-<!-- TODO: Johannes, sollten wir hier die Bewertungsdimensionen an FAIR anpassen? 
-  Johannes: Da hatte ich auch drueber nachgedacht (wir hatten ja eine aehnliche Diskussion beim Schreiben des Papers), habe mich aber dagegen entschieden, weil sich FAIR ja auf Eigenschaften der Daten bezieht. Zu bewerten, ob ein Repository "Interoperable" ist, finde ich z.B. schwierig (same for "reusable"). Discoverability ist eigentlich synonym mit Findability (ich hatte mich aber bewusst fuer den anderen Begriff entschieden, damit nicht der Eindruck entsteht, dass die Kriterien hier analog zu den FAIR Princinples sind) und access control ist ein wenig so wie die Kehrseite von Accessibility.  -->
-
 <!-- - bonus: institutional and public repositories (and in many cases also journal websites) make data citeable (usually via DOIs) -->
 
 <!-- or add "Citeability" to the above table? Citeability <- c("-", "--", "0", "++", "++") -->
@@ -390,7 +392,7 @@ kable(
 
 ## Analysis scripts and software
 
-- Hosted Version Control Systems (e.g., [GitHub](https://github.com/) or [GitLab](https://about.gitlab.com/))
+- Hosted Version Control Systems (e.g., [GitHub](https://github.com/), [GitLab](https://about.gitlab.com/))
 - Specialized repositories
     - Cloud-based analysis platforms (e.g., [Code Ocean](https://codeocean.com/), [RStudio cloud](https://rstudio.cloud/), [Colaboratory](https://colab.research.google.com/))
     - Cloud-based experiment platforms (e.g., [Pavlovia](https://pavlovia.org/explore) for [PsychoPy](http://www.psychopy.org/), [jspsych](https://www.jspsych.org/), and [lab.js](https://lab.js.org/))
@@ -424,9 +426,8 @@ kable(
         <!-- - Category A: Released for academic research and teaching -->
         <!-- - Category B: Released for academic research and teaching, if the results will not be published, otherwise permission required -->
         <!-- - Category C: Released for academic research and teaching, written authorization of user and reuse intention required -->
-- Use most permissive license possible
-    - Ideally, reuse should only be conditioned on attribution (e.g., CC-BY)
-    
+- Use most permissive license possible (e.g., CC0, CC-BY)
+
 
 ### Creative Commons Licenses
 
@@ -508,7 +509,7 @@ include_graphics("images/cc-license-spectrum.png")
     - What do we do here in Cologne?
     - Example: Registered Report draft as non-empirical Bachelor's thesis
 - vote with you feet
-    - Choose journals that value openness/robustness
+    - Choose journals that value openness
 - Incentives
     - Take openess into account when particpating in commissions (https://osf.io/7jbnt/)
 - Give credit where credit is due (cite data, open source software developed by academics, etc.)
@@ -516,9 +517,9 @@ include_graphics("images/cc-license-spectrum.png")
 
 ## Why not to share?
 
-- Privacy/Sensitive data
-    - Get informed consent from participants
-    - Properly anonymize/pseudonymize data
+- Personal data
+    - Get informed consent
+    - Pseudonymize data
     - Employ access control
 - Scooping
     - Usually an unwarranted fear
@@ -538,13 +539,14 @@ include_graphics("images/cc-license-spectrum.png")
 
 > … until recently I was an open-data hypocrite. Although I was committed to open data, I was not implementing it in practice. … Some of it was a lack of effort. It was a pain to document the data; it was a pain to format the data; it was a pain to contact the library personnel; it was a pain to figure out which data were indeed published as part of which experiments. Some of it was forgetfulness. I had neither a routine nor any daily incentive to archive data [Rouder, 2016, p. 1063](https://link.springer.com/article/10.3758%2Fs13428-015-0630-z)
 
-## Where/how can you learn more about open science practices?
+
+# Learn more about transparent research practices
 
 - [Open Science Knowledge Base](https://how-to-open.science/)
 - [FOSTER Open Science Courses](https://www.fosteropenscience.eu/courses)
 - [Center for Open Science Webinars](https://osf.io/qpxv2/)
 - Open Science Short Course at the [GESIS Summer School](https://training.gesis.org/?site=pDetails&child=full&pID=0xB455C10E4BA7451CBC729596CA4A2F4C)
-- other workshops/courses (e.g. by the [Leibniz Institute for Psychology Information](https://leibniz-psychology.org/en/))
+<!-- - other workshops/courses (e.g. by the [Leibniz Institute for Psychology Information](https://leibniz-psychology.org/en/)) -->
 
 ---
 

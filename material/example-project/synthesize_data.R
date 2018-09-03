@@ -19,9 +19,12 @@ for(i in ids) {
     , stimulus = factor(stimuli)
     , stimulus_gender = factor(if_else(grepl("CF", stimulus), "Female", "Male"))
     , iq = iq(length(stimuli))
-    , perceived_iq = iq + iq(length(stimuli), mean = 0, sd = 20) * sample(c(1, -1), length(stimuli), replace = TRUE)
-    , perceived_attractiveness = likert_7(length(stimuli), x = 1:7)
+    , perc_iq = iq + iq(length(stimuli), mean = 0, sd = 20) * sample(c(1, -1), length(stimuli), replace = TRUE)
+    , perc_attr = likert_7(length(stimuli), x = 1:7)
   )
+
+  i_data$perc_iq[i_data$perc_iq < 70] <- 70
+  i_data$perc_iq[i_data$perc_iq > 130] <- 130
 
   write.csv(i_data, file = file.path("raw_data", paste0("perceived_iq_", i, ".csv")), row.names = FALSE)
 }
