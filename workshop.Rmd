@@ -1,5 +1,5 @@
 ---
-title: "<img src = 'images/open.png' style = 'margin-bottom: 45px;'/><br />How to do research openly"
+title: "<img src = 'images/open.png' style = 'margin-bottom: 45px;'/><br />How to increase openness in psychological research"
 subtitle: "A practical primer on transparent research workflows"
 author: "Frederik Aust<br />Johannes Breuer<br /><br /><a href = 'https://creativecommons.org/licenses/by/4.0/'><img src = 'images/by.png' style = 'width: 10%;' /></a>"
 
@@ -58,8 +58,9 @@ MathJax.Hub.Config({
 
 ## Johannes Breuer
 
-- PhD in psychology, University of Cologne (media psychology, Prof. Dr. Gary Bente)
-- Senior researcher at GESIS &ndash; Leibniz Institute for the Social Sciences (Data Archive for the Social Sciences)
+- PhD in psychology, University of Cologne<br />(media psychology, Prof. Dr. Gary Bente)
+- Previously worked at different comm and psych departments
+- Now senior researcher at [GESIS &ndash; Leibniz Institute for the Social Sciences](https://www.gesis.org/en/home/) (Data Archive for the Social Sciences)
 
 <div class="reference"><a href="mailto:johannes.breuer@gesis.org">johannes.breuer@gesis.org</a>, <a href="https://twitter.com/MattEagle09">@MattEagle09</a></div>
 
@@ -67,7 +68,7 @@ MathJax.Hub.Config({
 # Preliminaries
 
 - Feel free to ask questions at any time
-- Attempt to make this an active workshop
+- We want to make this an (inter)active workshop
 - Slides and material are available at
 
 .center[`https://tinyurl.com/y8dbs2fu`]
@@ -116,7 +117,7 @@ class: inverse, middle, center
 ---
 # Why share?
 
-- You probably drank the Kool-Aid
+- You probably already drank the Kool-Aid...
 - It's documenting your work
     - Remember what you've done
     - Lab members can learn from each other
