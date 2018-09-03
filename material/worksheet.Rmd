@@ -15,7 +15,7 @@ output: pdf_document
 
 \lhead{\large \textbf{Draft of transparent lab workflow}}
 \lfoot{A practical primer on transparent research workflows, ESCON 2018, Cologne, Germany}
-\rfoot{Frederik Aust \& Dr. Johannes Breuer}
+\rfoot{Frederik Aust \& Johannes Breuer}
 
 
 
