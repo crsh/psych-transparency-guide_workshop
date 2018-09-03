@@ -1,0 +1,86 @@
+---
+header-includes:
+  - \geometry{landscape}
+  - \usepackage{booktabs}
+  - \usepackage{tabularx}
+  - \usepackage{fancyhdr}
+  - \renewcommand{\headrulewidth}{0pt}
+
+classoption: a4paper
+
+output: pdf_document
+---
+\pagestyle{fancy}
+\pagenumbering{gobble}
+
+\lhead{\large \textbf{Draft of transparent lab workflow}}
+\lfoot{A practical primer on transparent research workflows, ESCON 2018, Cologne, Germany}
+\rfoot{Frederik Aust \& Dr. Johannes Breuer}
+
+
+
+<!-- \begin{landscape} -->
+
+<!-- \paperwidth=\pdfpageheight -->
+<!-- \paperheight=\pdfpagewidth -->
+<!-- \pdfpageheight=\paperheight -->
+<!-- \pdfpagewidth=\paperwidth -->
+<!-- \headwidth=\textheight -->
+
+<!-- \begingroup  -->
+<!-- \vsize=\textwidth -->
+<!-- \hsize=\textheight -->
+
+\begin{table}
+\begin{tabularx}{\linewidth}{XXXXXX}
+\toprule
+ \textbf{What} & & \textbf{When} & \textbf{How} & & \textbf{License} \\
+\hline
+  & & & & & \\
+  & & & & & \\
+  & & & & & \\
+  & & & & & \\
+  & & & & & \\
+  \midrule
+  & & & & & \\
+  & & & & & \\
+  & & & & & \\
+  & & & & & \\
+  & & & & & \\
+  \midrule
+  & & & & & \\
+  & & & & & \\
+  & & & & & \\
+  & & & & & \\
+  & & & & & \\
+  \midrule
+  & & & & & \\
+  & & & & & \\
+  & & & & & \\
+  & & & & & \\
+  & & & & & \\
+  \midrule
+  & & & & & \\
+  & & & & & \\
+  & & & & & \\
+  & & & & & \\
+  & & & & & \\
+  \midrule
+  & & & & & \\
+  & & & & & \\
+  & & & & & \\
+  & & & & & \\
+  & & & & & \\
+  \midrule
+  & & & & & \\
+  & & & & & \\
+  & & & & & \\
+  & & & & & \\
+  & & & & & \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+<!-- \endgroup -->
+
+<!-- \end{landscape} -->
