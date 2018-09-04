@@ -451,7 +451,7 @@ More on intellectual property rights later
 - Include information about data sharing in informed consent <!-- (see [informed consent templates](http://psych-transparency-guide.uni-koeln.de//informed-consent.html) by Klein et al., 2018) -->
 --
 
-- Use open and interoperable file formats (e.g., CSV, TSV, JSON, ODS)
+- Use open and interoperable file formats (e.g., CSV, TSV, JSON, ODS) `r recommendation`
     - Use UTF-8 character encoding
 
 --
@@ -523,7 +523,7 @@ https://www.tandfonline.com/doi/abs/10.1080/00031305.2017.1375987
 
 --
 
-> .highlight[To ascertain whether means are reasonably likely to be used to identify the natural person, account should be taken of all objective factors, such as the costs of and the amount of time required for identification], taking into consideration the available technology at the time of the processing .highlight[and technological developments]. (Recital 26 EU GDPR)
+> .highlight[To ascertain whether means are reasonably likely to be used to identify the natural person, account should be taken of all objective factors, such as the costs of and the amount of time required for identification], taking into consideration the available technology at the time of the processing and technological developments. (Recital 26 EU GDPR)
 
 
 ---
@@ -584,7 +584,6 @@ Australian National Data Service: [Decision tree for sharing sensitive data](htt
 
 # Participant privacy
 
-- Mind combinations of indirect identifiers (e.g., ZIP code, gender, date of birth, [Sweeney, 2000](https://dataprivacylab.org/projects/identifiability/paper1.pdf))
 - Separate demographics used for sample description and study data
 --
 
@@ -597,7 +596,7 @@ Australian National Data Service: [Decision tree for sharing sensitive data](htt
     - Add noise
     - Aggregation
 --
-- Use anonymization tools (e.g., [ARX](http://arx.deidentifier.org/), [Amnesia](https://amnesia.openaire.eu/index.html))
+- For complex and high-risk data, use anonymization tools (e.g., [ARX](http://arx.deidentifier.org/), [Amnesia](https://amnesia.openaire.eu/index.html))
 
 
 ???
@@ -642,7 +641,7 @@ Show simple codebook from example project: https://osf.io/rv7py/
     - Analysis software (e.g., [R `codebook` package](https://cran.r-project.org/web/packages/codebook/index.html), [SPSS codebook function](https://libguides.library.kent.edu/SPSS/Codebooks), or [Stata codebook function](http://www.stata.com/manuals13/dcodebook.pdf))
     - Specialized software (e.g., [Nesstar](http://www.nesstar.com/software/publisher.html), [DataWiz](https://datawiz.leibniz-psychology.org/DataWiz/?datawiz_locale=en))
 --
-- For data with high reuse value, consider using a standardized and machine-readable format (e.g., [DDI](https://www.ddialliance.org/))
+- For data with high reuse value, consider using a standardized and machine-readable format (e.g., [DDI](https://www.ddialliance.org/)) `r recommendation`
     - Implementation is a service provided by some repositories
 
 ???
@@ -939,6 +938,12 @@ kable(
 # Choosing a repository
 
 - Self-deposit (e.g., [OSF](https://osf.io/)) vs. curated repositories (e.g., [GESIS DBK](https://dbk.gesis.org/dbksearch/home.asp?db=e))
+- Resources comparing repositories
+    - Table 1 in [Klein et al. (2018)](https://doi.org/10.1525/collabra.158)
+    - [Registry of Research Data Repositories](https://www.re3data.org/)
+    - Dataverse blog: [Comparative review of various data repositories](https://dataverse.org/blog/comparative-review-various-data-repositories)
+    - APS Observer article by [DeSoto, 2016](https://www.psychologicalscience.org/observer/finding-a-home-for-your-science)
+    - Table 1 in [Meyer, 2018](http://journals.sagepub.com/doi/abs/10.1177/2515245917747656)
 
 
 <!-- Frederik -->
@@ -1168,6 +1173,7 @@ class: inverse, middle, center
 # Learn more about transparent research practices
 
 - [Open Science Knowledge Base](https://how-to-open.science/)
+- [DataWiz Knowledge Base](https://datawizkb.leibniz-psychology.org/)
 - [FOSTER Open Science Courses](https://www.fosteropenscience.eu/courses)
 - [Center for Open Science Webinars](https://osf.io/qpxv2/)
 - Open Science Short Course at the [GESIS Summer School](https://training.gesis.org/?site=pDetails&child=full&pID=0xB455C10E4BA7451CBC729596CA4A2F4C)
