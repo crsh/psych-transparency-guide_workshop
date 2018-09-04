@@ -877,7 +877,7 @@ Exercise: Fork OSF repo and upload workshop files
 <!-- Johannes -->
 
 ---
-# Choose a repository
+# Sharing options
 
 ```{r sharing-option-ratings, echo = FALSE}
 sharing_options <- data.frame(
@@ -1109,7 +1109,6 @@ kable(
     - In practice, seven combinations are supported
 - Mind version numbers (e.g., CC-BY 4.0)
 - Copyright owner can always grant exceptions
-- Copyright to long verbatim interview responses may belong to participants
 
 
 <!-- Frederik -->
