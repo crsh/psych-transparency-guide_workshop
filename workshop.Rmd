@@ -115,8 +115,8 @@ Klein, O., Hardwicke, T. E., Aust, F., Breuer, J., Danielsson, H., Hofelich Mohr
 
 
 ???
-- We try to make it an active workshop
-- Questions?
+We try to make it an active workshop
+Questions?
 
 
 ---
@@ -457,9 +457,9 @@ include_graphics("images/klein-et-al-figure-1.png")
 ---
 # Participant privacy
 
-> To determine whether a natural person is identifiable, account should be taken of all the means reasonably likely to be used, such as singling out, either by the controller or by another person to identify the natural person directly or indirectly.
+> .highlight[To determine whether a natural person is identifiable, account should be taken of all the means reasonably likely to be used], such as singling out, either by the controller or by another person to identify the natural person directly or indirectly.
 <br /><br />
-To ascertain whether means are reasonably likely to be used to identify the natural person, account should be taken of all objective factors, such as the costs of and the amount of time required for identification, taking into consideration the available technology at the time of the processing and technological developments. (Recital 26 EU GDPR)
+.highlight[To ascertain whether means are reasonably likely to be used to identify the natural person, account should be taken of all objective factors, such as the costs of and the amount of time required for identification], taking into consideration the available technology at the time of the processing and technological developments. (Recital 26 EU GDPR)
 
 ---
 # Participant privacy
@@ -502,7 +502,7 @@ To ascertain whether means are reasonably likely to be used to identify the natu
 - Dataset, e.g.,
     - Number of observations
     - Name and description of variables (incl. source of a measure, information about translation)
-    - Units of measurement, coding of values (e.g., "1 = Female","2 = Male"), possible options or range in which the data points can fall (e.g., “1 = not at all to 7 = Very much”)
+    - Units of measurement, coding of values (e.g., "1 = Female","2 = Male"), possible options or range (e.g., “1 = not at all to 7 = Very much”)
     - Value(s) used for missing data
     - How a variable was derived from other variables (e.g., "`bmi` was derived from body weight `m` and height `l` as $\mathrm{BMI} = \frac{m}{l^2}$.")
     
@@ -712,7 +712,7 @@ kable(
     1. Stores data in accordance with local legislation (e.g., [EU GDPR](http://www.eugdpr.org/))
     2. Persistence guarantees for long-term access
     3. Persistent and unique identifiers (e.g., DOI)
-    5. Features access controls (e.g., limit access to a select users; [GESIS secure data center](https://www.gesis.org/en/services/data-analysis/more-data-to-analyze/secure-data-center-sdc/))
+    5. Features access controls (e.g., limit access to a specified set/type of users)
     4. Supports systematic licensing (e.g., declare (no) legal restrictions on reuse)
     6. Supports structured metadata <!-- to maximize discoverability and reuse. -->
     7. Tracks reuse of shared products (e.g., citations, downloads)
@@ -732,15 +732,12 @@ kable(
     - Dataverse blog: [Comparative review of various data repositories](https://dataverse.org/blog/comparative-review-various-data-repositories)
     - Table 1 in [Meyer, 2018](http://journals.sagepub.com/doi/abs/10.1177/2515245917747656)
 
-??? 
-- Hand out table that summarizes repositories
-- Discuss some usecases (maybe suggested by participants)
-
 <!-- Frederik -->
 
-## Specialized approaches
+---
+# Specialized approaches
 
-### Study protocol
+## Study protocol
 
 - (Embargoed) Public preregistration
     - [Supplementary material](http://psych-transparency-guide.uni-koeln.de/preregistration.html) of Klein et al. (2018)
@@ -751,7 +748,10 @@ kable(
 - Video methods journal [JoVE Behavior](https://www.jove.com/)
     <!-- - however: relatively high publication costs (1200 - 4200 USD) -->
 
-### Analysis scripts and software
+---
+# Specialized approaches
+
+## Analysis scripts and software
 
 - Hosted Version Control Systems (e.g., [GitHub](https://github.com/), [GitLab](https://about.gitlab.com/))
 - Cloud-based analysis platforms (e.g., [Code Ocean](https://codeocean.com/), [RStudio cloud](https://rstudio.cloud/), [Colaboratory](https://colab.research.google.com/))
@@ -760,8 +760,10 @@ kable(
 - Usually no guarantee of long-term access
     - Archive in public repository (e.g., [archive GitHub repository with Zenodo](https://guides.github.com/activities/citable-code/)) `r recommendation`
 
+---
+# Specialized approaches
 
-### Reports
+## Reports
 
 - Preprint repositories (e.g., [PsyArXiv](https://psyarxiv.com/), [BioRxiv](https://www.biorxiv.org/), [PeerJ](https://peerj.com/preprints-search/)) `r recommendation`
 - Institutional repositories (less discoverable)
@@ -782,7 +784,7 @@ kable(
 ---
 # Licenses
 
-> The selection, coordination, and arrangement of the database is subject to copyright if it is sufficiently original. [...] The data or other contents contained in the database are subject to copyright if they are sufficiently creative. Original poems contained in a database would be protected by copyright, but purely factual data (such as gene names or city populations) would not. Facts are not subject to copyright, nor are the ideas underlying copyrighted content ([Creative Commons, 2018](https://wiki.creativecommons.org/wiki/Data)).
+> .highlight[The selection, coordination, and arrangement of the database is subject to copyright if it is sufficiently original. [...] The data or other contents contained in the database are subject to copyright if they are sufficiently creative.] Original poems contained in a database would be protected by copyright, but purely factual data (such as gene names or city populations) would not. .highlight[Facts are not subject to copyright], nor are the ideas underlying copyrighted content ([Creative Commons, 2018](https://wiki.creativecommons.org/wiki/Data)).
 
 ---
 # Licenses
@@ -804,6 +806,7 @@ kable(
 - Copyright owner can always grant exceptions
 - Copyright to long verbatim interview responses may belong to participants
 
+---
 ```{r cc-license-modules, echo = FALSE}
 cc_licenses <- data.frame(
   "License module" = c(
