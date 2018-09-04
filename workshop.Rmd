@@ -599,16 +599,13 @@ Australian National Data Service: [Decision tree for sharing sensitive data](htt
 --
 - Use anonymization tools (e.g., [ARX](http://arx.deidentifier.org/), [Amnesia](https://amnesia.openaire.eu/index.html))
 
-    
-    <!-- - Harm assessment? -->
-    
-    - Assess risk of reidentification, e.g.,
-        - Small population and rare traits
-        - Dyadic data
-        - Hierarchical data (e.g., small subsamples of students, co-workers)
-        - <!-- Self-identification??? TODO: How is this a problem/How would it be possible to prevent this? -->
-        - _Motivated intruder test_ (e.g., jealous partner, nosy neighbor, envious co-worker, insurers, criminals)
-    <!-- - Who will the data be shared with? -->
+
+???
+- Assess risk of reidentification, e.g.,
+    - Small population and rare traits
+    - Dyadic data
+    - Hierarchical data (e.g., small subsamples of students, co-workers)
+    - _Motivated intruder test_ (e.g., jealous partner, nosy neighbor, envious co-worker, insurers, criminals)
 
 
 ---
@@ -703,6 +700,12 @@ Exercise: Let participants draft some SOP for data analysis
     - Set and record seeds for pseudo-random number generators
 
 
+???
+incl. data cleaning and transformation; see [supplementary material](http://psych-transparency-guide.uni-koeln.de/analytic-reproducibility.html#set-and-record-seeds-for-pseudorandom-number-generators) of Klein et al., 2018
+
+Demonstrate `papaja`!
+
+
 ---
 .title-image[![:scale 70%](images/analysis.png)]
 
@@ -720,10 +723,6 @@ Exercise: Let participants draft some SOP for data analysis
 
 
 ???
-incl. data cleaning and transformation; see [supplementary material](http://psych-transparency-guide.uni-koeln.de/analytic-reproducibility.html#set-and-record-seeds-for-pseudorandom-number-generators) of Klein et al., 2018
-
-Demonstrate `papaja`!
-
 Show CodeOcean example: https://codeocean.com/2018/06/13/contact-hypothesis-reevaluated/
 
 
@@ -811,6 +810,8 @@ Examples: https://dmponline.dcc.ac.uk/public_plans
 ???
 Tutorial: [Born-open data with cloud storage providers](http://psych-transparency-guide.uni-koeln.de/born-open-data.html)
 
+Show https://github.com/methexp/rawdata
+
 
 ---
 # Upon submission
@@ -870,7 +871,7 @@ class: inverse, middle, center
 - [TIER OSF template](https://osf.io/ybzxe/)
 - [BIDS example](https://github.com/INCF/BIDS-examples)
 
-Demonstration: Fork OSF repo and upload workshop files
+Exercise: Fork OSF repo and upload workshop files
 
 
 
@@ -952,10 +953,11 @@ kable(
     - [Registered reports](https://cos.io/rr/)
     - Video methods journal [JoVE Behavior](https://www.jove.com/)
     <!-- - however: relatively high publication costs (1200 - 4200 USD) -->
---
+
 
 ???
 Demonstration: showcase good preregistrations (https://osf.io/h9k8n/)
+
 Exercise: Write preregistration with https://aspredicted.org/ for example project
 
 
@@ -990,7 +992,10 @@ Demonstrate Pavlovia: https://pavlovia.org/explore
 
 
 ???
-PsyArXiv integrates with OSF
+PsyArXiv
+
+- integrates with OSF
+- prefered repository of APA
 
 
 <!-- Johannes -->
@@ -1016,6 +1021,7 @@ PsyArXiv integrates with OSF
 - Factual information are usually *not* protected by copyright
     - For example, response times, mortality rates, currency values, the number of Twitter followers someone has
     - Database structures and compilations of data may be copyrightable
+--
 - Copyright to long verbatim interview responses may belong to participants
 
 ???
