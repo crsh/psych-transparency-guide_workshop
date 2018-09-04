@@ -268,16 +268,29 @@ class: inverse, middle, center
 
 # Example project
 
+
 ---
 # Example project
 
 ### Research question
 
-Can we accurately judge a person's IQ by looking at their face?
+- Can we judge a person's IQ from their face?
+
+--
 
 ### Study design
 
 - Photographs of students with known IQ scores
+
+.center[
+![:scale 10%](material/example-project/stimuli/CF0014_1100_NE.jpg)
+![:scale 10%](material/example-project/stimuli/CF0025_1100_NE.jpg)
+![:scale 10%](material/example-project/stimuli/CF00018_1100_NE.jpg)
+![:scale 10%](material/example-project/stimuli/CM0029_1100_NE.jpg)
+![:scale 10%](material/example-project/stimuli/CM0009_1100_NE.jpg)
+![:scale 10%](material/example-project/stimuli/CM0039_1100_NE.jpg)
+]
+
 - Ratings of IQ
 - Likert-scale ratings of attractiveness
 
@@ -388,26 +401,38 @@ DT::datatable(
 ---
 # What can you share?
 
-```{r figure1, fig.cap = "Decision flowchart outlining important considerations when sharing research products (reprinted from [Klein et al., 2018](http://doi.org/10.1525/collabra.158), [CC-BY Attribution 4.0](https://creativecommons.org/licenses/by/4.0/))."}
-include_graphics("images/klein-et-al-figure-1.png")
-```
+.center[![:scale 70%](images/klein-et-al-figure-1.png)]
+
+<div class = "reference"><center>Reprinted from <a href = "http://doi.org/10.1525/collabra.158">Klein et al., 2018</a> (<a href="https://creativecommons.org/licenses/by/4.0/">CC-BY Attribution 4.0</a>)</center></div>
+
 
 ---
+.title-image[![:scale 70%](images/protocol.png)]
+
 # Study protocol
 
 - "Recipe for replication"
+--
+
 - Collates, describes, and organizes more specific research products
+--
+
     - Hypotheses
     - Study materials
     - Detailed description of procedure
+--
         - Instructive video documentation (e.g., [OBS](https://obsproject.com/) for computer-based studies)
 
-        <!-- - __Demonstration:__ OBS https://osf.io/eyfxs/ -->
-    
-<!-- - May be more detailed than published description -->
-<!-- - Facilitates scientific progress (e.g., replication and extension) -->
+
+???
+More detailed than published description
+
+https://osf.io/eyfxs/
+
 
 ---
+.title-image[![:scale 70%](images/material.png)]
+
 # Study materials
 
 - Anything necessary to conduct the study, e.g.,
@@ -415,14 +440,13 @@ include_graphics("images/klein-et-al-figure-1.png")
     - Stimulus material
     - Computer code to present stimuli and collect responses
     - Instructions for interaction with participants
-    - potentially also scripts/instructions for confederates
-
+    - Scripts and instructions for confederates
 - Mind intellectual property rights!
 
-    <!-- TODO: Anything else? -->
-    
-<!-- - Aids interpretation of results -->
-<!-- - Facilitates scientific progress (e.g., replication and extension) -->
+
+???
+More on intellectual property rights later
+
 
 <!-- Johannes -->
 ---

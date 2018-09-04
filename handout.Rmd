@@ -112,12 +112,9 @@ include_graphics("images/klein-et-al-figure-1.png")
     - Stimulus material
     - Computer code to present stimuli and collect responses
     - Instructions for interaction with participants
-    - potentially also scripts/instructions for confederates
-
+    - Scripts and instructions for confederates
 - Mind intellectual property rights!
 
-    <!-- TODO: Anything else? -->
-    
 <!-- - Aids interpretation of results -->
 <!-- - Facilitates scientific progress (e.g., replication and extension) -->
 
