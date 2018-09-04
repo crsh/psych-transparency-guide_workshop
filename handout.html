@@ -241,7 +241,7 @@ div.tocify {
 <li>Fear of being scooped
 <ul>
 <li>Usually an unwarranted fear</li>
-<li>Publish upon acceptance or with an embargo</li>
+<li>Share upon publication or with an embargo</li>
 </ul></li>
 <li>Fear of being corrected
 <ul>
@@ -254,6 +254,7 @@ div.tocify {
 <li>Get informed consent</li>
 <li>Pseudonymize data</li>
 <li>Employ access controls</li>
+<li>Share other research products</li>
 </ul></li>
 <li>Time-consuming
 <ul>
@@ -270,17 +271,20 @@ div.tocify {
 <div id="general-recommendations" class="section level2">
 <h2><span class="header-section-number">1.2</span> General recommendations</h2>
 <ul>
-<li>Make transparency your default</li>
-<li>Make transparency a by-product of your workflow
+<li>Make transparency your default
 <ul>
-<li>If possible, share all products of the research process (as early as possible)</li>
-<li>If negative constraints prohibit transparency, explicitly declare and justify these decisions</li>
+<li>Share all research products (as early as possible)</li>
+<li>Declare and justify constraints on transparency</li>
 </ul></li>
-<li><em>Amnesia test</em> (Would I still understand this after losing my memory?) <!-- - Ask a colleague who was not involved with the project --></li>
-<li>Iteratively improve your workflow
+<li>Make transparency a by-product of your workflow
 <ul>
 <li>Create and use templates</li>
 <li>Automate what can be automated</li>
+</ul></li>
+<li>Iteratively improve your workflow</li>
+<li>Routinely perform <em>Amnesia test</em>
+<ul>
+<li>Would I still understand this after losing my memory? <!-- - Ask a colleague who was not involved with the project --></li>
 </ul></li>
 </ul>
 <blockquote>
@@ -327,10 +331,9 @@ Figure 2.1: Decision flowchart outlining important considerations when sharing r
 <li>Stimulus material</li>
 <li>Computer code to present stimuli and collect responses</li>
 <li>Instructions for interaction with participants</li>
-<li>potentially also scripts/instructions for confederates</li>
+<li>Scripts and instructions for confederates</li>
 </ul></li>
-<li><p>Mind intellectual property rights!</p>
-<!-- TODO: Anything else? --></li>
+<li>Mind intellectual property rights!</li>
 </ul>
 <!-- - Aids interpretation of results -->
 <!-- - Facilitates scientific progress (e.g., replication and extension) -->
@@ -378,7 +381,7 @@ Figure 2.1: Decision flowchart outlining important considerations when sharing r
 <li>Mind combinations of indirect identifiers (e.g., ZIP code, gender, and date of birth, <a href="https://dataprivacylab.org/projects/identifiability/paper1.pdf">Sweeney, 2000</a>)</li>
 </ul></li>
 <li>Separate demographics used for sample description and study data</li>
-<li>Remove free text entries and potentially also alter them when citing in publications</li>
+<li>Remove free text entries and alter them when citing in publications</li>
 <li>If necessary, transform data, e.g.,
 <ul>
 <li>Binning</li>
@@ -418,6 +421,7 @@ Figure 2.1: Decision flowchart outlining important considerations when sharing r
 <li>Value(s) used for missing data</li>
 <li>If necessary, how a variable was derived from other variables (e.g., “<code>bmi</code> was derived from body weight <code>m</code> and height <code>l</code> as <span class="math inline">\(\mathrm{BMI} = \frac{m}{l^2}\)</span>.”)</li>
 </ul></li>
+<li>Can almost always be shared, even if raw or processed data cannot</li>
 <li>Automate codebook generation
 <ul>
 <li>Analysis software (e.g., <a href="https://cran.r-project.org/web/packages/codebook/index.html">R <code>codebook</code> package</a>, <a href="https://libguides.library.kent.edu/SPSS/Codebooks">SPSS codebook function</a>, or <a href="http://www.stata.com/manuals13/dcodebook.pdf">Stata codebook function</a>)</li>
@@ -427,7 +431,6 @@ Figure 2.1: Decision flowchart outlining important considerations when sharing r
 <ul>
 <li>Implementation is a service provided by some repositories <!-- This documentation should describe the variables in each data file in both human- and machine-readable formats (e.g., csv, rather than docx or pdf). Ideally, codebooks are organized in such a way that each line represents one variable and each information relative to a variable represents a column. --></li>
 </ul></li>
-<li>Can almost always be shared, even if raw or processed data cannot</li>
 </ul>
 </div>
 <div id="standard-operating-procedures" class="section level2">
@@ -476,6 +479,7 @@ Figure 2.1: Decision flowchart outlining important considerations when sharing r
 </ul></li>
 <li>Set and record seeds for pseudo-random number generators</li>
 </ul></li>
+<li>Share intermediate results for complex analyses</li>
 <li>Documentation of computational environment
 <ul>
 <li>Hardware</li>
@@ -483,7 +487,6 @@ Figure 2.1: Decision flowchart outlining important considerations when sharing r
 <li>Cloud-based platforms (e.g., <a href="https://codeocean.com/">Code Ocean</a>, <a href="https://rstudio.cloud/">RStudio cloud</a>, <a href="https://colab.research.google.com/">Colaboratory</a>)</li>
 <li>Containers and virtual machines (e.g., <a href="https://www.docker.com/">Docker</a>, <a href="https://www.vagrantup.com/">Vagrant</a>, <a href="https://www.sylabs.io/singularity/">Singularity</a>)</li>
 </ul></li>
-<li>Share intermediate results for complex analyses</li>
 </ul>
 </div>
 <div id="research-reports" class="section level2">
@@ -586,7 +589,7 @@ Figure 3.1: Typical workflow indicating when to share research products at diffe
 <div id="after-publication" class="section level2">
 <h2><span class="header-section-number">3.5</span> After publication</h2>
 <ul>
-<li>Archive in online repository, publish later</li>
+<li>Archive continuously in online repository, publish later</li>
 <li>Automate by use of embargoes <!-- - Reduces extra sharing efforts --></li>
 </ul>
 </div>
@@ -613,7 +616,6 @@ Figure 3.1: Typical workflow indicating when to share research products at diffe
 <li>If necessary, restrict repository access (e.g., <a href="http://help.osf.io/m/projects/l/481998-create-components">OSF components</a>) <!-- - Publicly share [encrypted files](https://medium.com/@richarddmorey/hiding-in-plain-sight-16b275b91625) --> <!-- - Explicitly license shared products --></li>
 </ul>
 <!-- - Repository structure -->
-<pre><code>&lt;!--     - **Demonstration**: Browse example OSF repository --&gt;</code></pre>
 <!-- Johannes -->
 </div>
 <div id="choose-a-repository" class="section level2">
@@ -647,6 +649,7 @@ Figure 3.1: Typical workflow indicating when to share research products at diffe
 <li>Table 1 in <a href="https://doi.org/10.1525/collabra.158">Klein et al. (2018)</a></li>
 <li><a href="https://www.re3data.org/">Registry of Research Data Repositories</a></li>
 <li>Dataverse blog: <a href="https://dataverse.org/blog/comparative-review-various-data-repositories">Comparative review of various data repositories</a></li>
+<li>APS Observer article by <a href="https://www.psychologicalscience.org/observer/finding-a-home-for-your-science">DeSoto, 2016</a></li>
 <li>Table 1 in <a href="http://journals.sagepub.com/doi/abs/10.1177/2515245917747656">Meyer, 2018</a></li>
 </ul>
 <!-- - Hand out table that summarizes repositories -->
@@ -748,10 +751,12 @@ Figure 3.1: Typical workflow indicating when to share research products at diffe
 <h2><span class="header-section-number">4.4</span> Licenses</h2>
 <ul>
 <li>Licenses define conditions of access and reuse</li>
-<li>Factual information (e.g., response times, mortality rates, currency values, the number of Twitter followers someone has) are usually <em>not</em> protected by copyright
+<li>Factual information are usually <em>not</em> protected by copyright
 <ul>
+<li>For example, response times, mortality rates, currency values, the number of Twitter followers someone has</li>
 <li>Database structures and compilations of data may be copyrightable <!-- - Applying a license to noncopyrightable work does little harm --></li>
 </ul></li>
+<li>Copyright to long verbatim interview responses may belong to participants</li>
 </ul>
 <blockquote>
 <p>The selection, coordination, and arrangement of the database is subject to copyright if it is sufficiently original. […] The data or other contents contained in the database are subject to copyright if they are sufficiently creative. Original poems contained in a database would be protected by copyright, but purely factual data (such as gene names or city populations) would not. Facts are not subject to copyright, nor are the ideas underlying copyrighted content (<a href="https://wiki.creativecommons.org/wiki/Data">Creative Commons, 2018</a>).</p>
@@ -778,7 +783,6 @@ Figure 3.1: Typical workflow indicating when to share research products at diffe
 </ul></li>
 <li>Mind version numbers (e.g., CC-BY 4.0)</li>
 <li>Copyright owner can always grant exceptions</li>
-<li>Copyright to long verbatim interview responses may belong to participants</li>
 </ul>
 <table>
 <caption><span id="tab:cc-license-modules">Table 4.2: </span>Overview of Create Commons (CC) modules</caption>
@@ -880,11 +884,11 @@ Figure 4.1: Creative commons license spectrum between public domain (top) and al
 <li>Collate and share materials on transparent research practices</li>
 <li>Teach workshops</li>
 </ul></li>
-<li>Lobby for transparent research practices in your field, e.g.,
+<li>Lobby for transparent research practices, e.g.,
 <ul>
 <li>Advocate for registered reports at journals (e.g., <a href="https://osf.io/3wct2/">Registered Reports Now!</a>)</li>
 </ul></li>
-<li>Be forgiving of your own and other researchers’ honest mistakes!</li>
+<li>Be forgiving of your own and other’s honest mistakes!</li>
 </ul>
 <!-- Johannes -->
 </div>
@@ -892,6 +896,7 @@ Figure 4.1: Creative commons license spectrum between public domain (top) and al
 <h1><span class="header-section-number">6</span> Learn more about transparent research practices</h1>
 <ul>
 <li><a href="https://how-to-open.science/">Open Science Knowledge Base</a></li>
+<li><a href="https://datawizkb.leibniz-psychology.org/">DataWiz Knowledge Base</a></li>
 <li><a href="https://www.fosteropenscience.eu/courses">FOSTER Open Science Courses</a></li>
 <li><a href="https://osf.io/qpxv2/">Center for Open Science Webinars</a></li>
 <li>Open Science Short Course at the <a href="https://training.gesis.org/?site=pDetails&amp;child=full&amp;pID=0xB455C10E4BA7451CBC729596CA4A2F4C">GESIS Summer School</a> <!-- - other workshops/courses (e.g. by the [Leibniz Institute for Psychology Information](https://leibniz-psychology.org/en/)) --></li>

@@ -335,7 +335,6 @@ include_graphics("images/klein-et-al-figure-2.png")
 <!-- - Explicitly license shared products -->
 
 <!-- - Repository structure -->
-    <!--     - **Demonstration**: Browse example OSF repository -->
 
 
 <!-- Johannes -->
@@ -366,6 +365,7 @@ include_graphics("images/klein-et-al-figure-2.png")
     - Table 1 in [Klein et al. (2018)](https://doi.org/10.1525/collabra.158)
     - [Registry of Research Data Repositories](https://www.re3data.org/)
     - Dataverse blog: [Comparative review of various data repositories](https://dataverse.org/blog/comparative-review-various-data-repositories)
+    - APS Observer article by [DeSoto, 2016](https://www.psychologicalscience.org/observer/finding-a-home-for-your-science)
     - Table 1 in [Meyer, 2018](http://journals.sagepub.com/doi/abs/10.1177/2515245917747656)
 
 
@@ -555,6 +555,7 @@ include_graphics("images/cc-license-spectrum.png")
 # Learn more about transparent research practices
 
 - [Open Science Knowledge Base](https://how-to-open.science/)
+- [DataWiz Knowledge Base](https://datawizkb.leibniz-psychology.org/)
 - [FOSTER Open Science Courses](https://www.fosteropenscience.eu/courses)
 - [Center for Open Science Webinars](https://osf.io/qpxv2/)
 - Open Science Short Course at the [GESIS Summer School](https://training.gesis.org/?site=pDetails&child=full&pID=0xB455C10E4BA7451CBC729596CA4A2F4C)
