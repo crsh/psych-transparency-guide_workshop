@@ -28,3 +28,11 @@ for(i in ids) {
 
   write.csv(i_data, file = file.path("raw_data", paste0("perceived_iq_", i, ".csv")), row.names = FALSE)
 }
+
+
+# Merged data
+
+source("https://gist.githubusercontent.com/crsh/357458c41fd3d554fb24/raw/f7725d5c4894a055a1b2e461dc5c39f3db23b2b8/batch_read.R")
+
+all_data <- batch_read(path = "raw_data/", pattern = "", read_fun = read.csv)
+saveRDS(all_data, file = "example_data.RDS")

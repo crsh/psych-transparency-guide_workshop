@@ -50,6 +50,7 @@ license <- "[![](images/by-badge.png)](https://creativecommons.org/licenses/by/4
     - Get informed consent
     - Pseudonymize data
     - Employ access controls
+    - Share other research products
 - Time-consuming
     - Take one step at a time ("baby steps")
     - Iteratively improve your workflow
@@ -150,7 +151,7 @@ include_graphics("images/klein-et-al-figure-1.png")
         - Delete directly identifying information (e.g., full name, address, face, handwriting, date of birth, genetic information)
             - Mind combinations of indirect identifiers (e.g., ZIP code, gender, and date of birth, [Sweeney, 2000](https://dataprivacylab.org/projects/identifiability/paper1.pdf))
         - Separate demographics used for sample description and study data
-        - Remove free text entries and potentially also alter them when citing in publications
+        - Remove free text entries and alter them when citing in publications
         - If necessary, transform data, e.g.,
             - Binning
             - Top and bottom coding
@@ -183,13 +184,13 @@ To ascertain whether means are reasonably likely to be used to identify the natu
     - Units of measurement, coding of values (e.g., "1 = Female","2 = Male"), possible options or range in which the data points can fall (e.g., “1 = not at all to 7 = Very much”)
     - Value(s) used for missing data
     - If necessary, how a variable was derived from other variables (e.g., "`bmi` was derived from body weight `m` and height `l` as $\mathrm{BMI} = \frac{m}{l^2}$.")
+- Can almost always be shared, even if raw or processed data cannot
 - Automate codebook generation
     - Analysis software (e.g., [R `codebook` package](https://cran.r-project.org/web/packages/codebook/index.html), [SPSS codebook function](https://libguides.library.kent.edu/SPSS/Codebooks), or [Stata codebook function](http://www.stata.com/manuals13/dcodebook.pdf))
     - Specialized software (e.g., [Nesstar](http://www.nesstar.com/software/publisher.html), [DataWiz](https://datawiz.leibniz-psychology.org/DataWiz/?datawiz_locale=en))
 - For data with high reuse value, consider using a standardized and machine-readable metadata format (e.g., [DDI](https://www.ddialliance.org/)) `r recommendation`
     - Implementation is a service provided by some repositories
     <!-- This documentation should describe the variables in each data file in both human- and machine-readable formats (e.g., csv, rather than docx or pdf). Ideally, codebooks are organized in such a way that each line represents one variable and each information relative to a variable represents a column. -->
-- Can almost always be shared, even if raw or processed data cannot
 
 
 ## Standard operating procedures
@@ -228,12 +229,12 @@ https://doi.org/10.1017/S1049096516000810))
             - Test on another computer
         - Write reports as dynamic documents (e.g., R package [`papaja`](https://github.com/crsh/papaja)) `r recommendation`
     - Set and record seeds for pseudo-random number generators
+- Share intermediate results for complex analyses
 - Documentation of computational environment 
     - Hardware
     - Software version incl. extensions
     - Cloud-based platforms (e.g., [Code Ocean](https://codeocean.com/), [RStudio cloud](https://rstudio.cloud/), [Colaboratory](https://colab.research.google.com/))
     - Containers and virtual machines (e.g., [Docker](https://www.docker.com/), [Vagrant](https://www.vagrantup.com/), [Singularity](https://www.sylabs.io/singularity/))
-- Share intermediate results for complex analyses
 
 
 ## Research reports
@@ -310,7 +311,7 @@ include_graphics("images/klein-et-al-figure-2.png")
 
 ## After publication
 
-- Archive in online repository, publish later
+- Archive continuously in online repository, publish later
 - Automate by use of embargoes
     <!-- - Reduces extra sharing efforts -->
 
@@ -435,9 +436,11 @@ kable(
 ## Licenses
 
 - Licenses define conditions of access and reuse
-- Factual information (e.g., response times, mortality rates, currency values, the number of Twitter followers someone has) are usually *not* protected by copyright
+- Factual information are usually *not* protected by copyright
+    - For example, response times, mortality rates, currency values, the number of Twitter followers someone has
     - Database structures and compilations of data may be copyrightable
     <!-- - Applying a license to noncopyrightable work does little harm -->
+- Copyright to long verbatim interview responses may belong to participants
     
 > The selection, coordination, and arrangement of the database is subject to copyright if it is sufficiently original. [...] The data or other contents contained in the database are subject to copyright if they are sufficiently creative. Original poems contained in a database would be protected by copyright, but purely factual data (such as gene names or city populations) would not. Facts are not subject to copyright, nor are the ideas underlying copyrighted content ([Creative Commons, 2018](https://wiki.creativecommons.org/wiki/Data)).
 
@@ -460,7 +463,6 @@ kable(
     - In practice, seven combinations are supported (see Figure\ \@ref(fig:cc-licenses))
 - Mind version numbers (e.g., CC-BY 4.0)
 - Copyright owner can always grant exceptions
-- Copyright to long verbatim interview responses may belong to participants
 
 ```{r cc-license-modules, echo = FALSE}
 cc_licenses <- data.frame(
@@ -543,9 +545,9 @@ include_graphics("images/cc-license-spectrum.png")
             - Stage-1 registered report as non-empirical Bachelor's thesis
     - Collate and share materials on transparent research practices
     - Teach workshops
-- Lobby for transparent research practices in your field, e.g.,
+- Lobby for transparent research practices, e.g.,
     - Advocate for registered reports at journals (e.g., [Registered Reports Now!](https://osf.io/3wct2/))
-- Be forgiving of your own and other researchers' honest mistakes!
+- Be forgiving of your own and other's honest mistakes!
 
 
 <!-- Johannes -->
