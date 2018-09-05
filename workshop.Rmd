@@ -3,8 +3,8 @@ title: "<img src = 'images/open.png' style = 'margin-bottom: 45px;'/><br />How t
 subtitle: "A practical primer on transparent research workflows"
 author: "Frederik Aust<br />Johannes Breuer<br /><br /><a href = 'https://creativecommons.org/licenses/by/4.0/'><img src = 'images/by.png' style = 'width: 10%;' /></a>"
 
-date    : "04.09.2018"
-location: "ESCON 2018, Cologne, Germany"
+date    : "07.09.2018"
+location: "EASP Solid Science Training Workshop"
 
 output:
   xaringan::moon_reader:
@@ -57,6 +57,8 @@ MathJax.Hub.Config({
 
 
 ---
+.pull-right-25[![:scale 80%](images/breuer.jpg)]
+
 # About us
 ## Johannes Breuer
 
@@ -72,8 +74,8 @@ MathJax.Hub.Config({
 ---
 # Preliminaries
 
-- Feel free to ask questions at any time
 - We want to make this an (inter)active workshop
+    - Feel free to ask questions at any time
 - Slides and material are available at
 
 .center[`https://tinyurl.com/y8dbs2fu`]
@@ -130,8 +132,6 @@ class: inverse, middle, center
 
 - It's just documenting your work
     - Remember what you've done
-    - Lab members can learn from each other
-    - Colleagues can scrutinize and build on your work
 
 --
 > Your closest collaborator is you six months ago, but you don’t reply to emails.
@@ -139,14 +139,18 @@ class: inverse, middle, center
 > &mdash; Paul Wilson, University of Wisconsin Madison
 
 
-???
-Make transparency a default!
+---
+# Why should you share?
+
+- It's just documenting your work
+    - Remember what you've done
+    - Lab members can learn from each other
+    - Colleagues can scrutinize and build on your work
 
 
 ---
 # Why should you share?
 
---
 > Open Science is just science done right
 
 > &mdash;Jon Tennant, Imperial College London
@@ -451,7 +455,7 @@ More on intellectual property rights later
 - Include information about data sharing in informed consent <!-- (see [informed consent templates](http://psych-transparency-guide.uni-koeln.de//informed-consent.html) by Klein et al., 2018) -->
 --
 
-- Use open and interoperable file formats (e.g., CSV, TSV, JSON, ODS) `r recommendation`
+- Use open and interoperable file formats (e.g., CSV, TSV, JSON, ODS)
     - Use UTF-8 character encoding
 
 --
@@ -492,7 +496,7 @@ Mention informed consent templates
     - As originally recorded (e.g., paper-pencil-questionnaires, CSV files, video recordings)
 - Processed data
     - As used for analyses (e.g., coded, digitized, merged)
-    - Ideally "Tidy Data" ([Wickham, 2014 ](https://www.jstatsoft.org/index.php/jss/article/view/v059i10/v59i10.pdf)) `r recommendation`
+    - Ideally "Tidy Data" ([Wickham, 2014 ](https://www.jstatsoft.org/index.php/jss/article/view/v059i10/v59i10.pdf))
         1. Each measured variable in one column
         2. Different observation of the variables in different rows
         3. Multiple tables should include a column that allows them to be linked
@@ -561,9 +565,12 @@ Search yandex.com for `https://github.com/crsh/psych-transparency-guide_workshop
 - Delete identifying information used for logistics as soon as possible (e.g., e-mail addresses)
 --
 
-- _Only share anonymized data publicly_, e.g.,
-    - Delete directly identifying information (e.g., full name, address, face, handwriting, date of birth)
-    - Control access to pseudonymized data
+- Assess risk of reidentification, e.g.,
+    - Small population and rare traits
+    - Dyadic data
+    - Hierarchical data (e.g., small subsamples of students, co-workers)
+    - _Motivated intruder test_ (e.g., jealous partner, nosy neighbor, envious co-worker, insurers, criminals)
+
 
 ???
 Australian National Data Service: [Decision tree for sharing sensitive data](https://www.ands.org.au/__data/assets/pdf_file/0010/385309/sensitive-decision-tree.pdf)
@@ -574,9 +581,15 @@ Australian National Data Service: [Decision tree for sharing sensitive data](htt
 
 # Participant privacy
 
-- Mind combinations of indirect identifiers (e.g., ZIP code, gender, date of birth, [Sweeney, 2000](https://dataprivacylab.org/projects/identifiability/paper1.pdf))
+- Control access to pseudonymized data
+--
 
-.center[![](images/sweeney.png)]
+- _Only share anonymized data publicly_, e.g.,
+    - Delete directly identifying information (e.g., full name, address, face, handwriting, date of birth)
+--
+    - Mind combinations of indirect identifiers (e.g., ZIP code, gender, date of birth, [Sweeney, 2000](https://dataprivacylab.org/projects/identifiability/paper1.pdf))
+
+.center[![:scale 35%](images/sweeney.png)]
 
 
 ---
@@ -587,7 +600,7 @@ Australian National Data Service: [Decision tree for sharing sensitive data](htt
 - Separate demographics used for sample description and study data
 --
 
-- Remove free text entries and alter them when citing in publications
+- Check or remove free text entries and alter them when citing in publications
 --
 
 - If necessary, transform data, e.g.,
@@ -597,14 +610,6 @@ Australian National Data Service: [Decision tree for sharing sensitive data](htt
     - Aggregation
 --
 - For complex and high-risk data, use anonymization tools (e.g., [ARX](http://arx.deidentifier.org/), [Amnesia](https://amnesia.openaire.eu/index.html))
-
-
-???
-- Assess risk of reidentification, e.g.,
-    - Small population and rare traits
-    - Dyadic data
-    - Hierarchical data (e.g., small subsamples of students, co-workers)
-    - _Motivated intruder test_ (e.g., jealous partner, nosy neighbor, envious co-worker, insurers, criminals)
 
 
 ---
@@ -641,8 +646,8 @@ Show simple codebook from example project: https://osf.io/rv7py/
     - Analysis software (e.g., [R `codebook` package](https://cran.r-project.org/web/packages/codebook/index.html), [SPSS codebook function](https://libguides.library.kent.edu/SPSS/Codebooks), or [Stata codebook function](http://www.stata.com/manuals13/dcodebook.pdf))
     - Specialized software (e.g., [Nesstar](http://www.nesstar.com/software/publisher.html), [DataWiz](https://datawiz.leibniz-psychology.org/DataWiz/?datawiz_locale=en))
 --
-- For data with high reuse value, consider using a standardized and machine-readable format (e.g., [DDI](https://www.ddialliance.org/)) `r recommendation`
-    - Implementation is a service provided by some repositories
+- If reuse value is high, consider standardized, machine-readable format (e.g., [DDI](https://www.ddialliance.org/))
+    - Some repositories provide implementation as a service
 
 ???
 Codebook app: https://opencpu2.psych.bio.uni-goettingen.de/ocpu/user/rarslan/library/codebook/www/
@@ -671,7 +676,6 @@ https://doi.org/10.1017/S1049096516000810))
     - Exclusion criteria
     - Outlier and dropout treatment
     - Handling of missing values
-    - Use of covariates
     - Corrections for multiple comparisons
 
 
@@ -717,12 +721,7 @@ Demonstrate `papaja`!
     - Hardware
     - Software version incl. extensions
 --
-    - Cloud-based platforms (e.g., [Code Ocean](https://codeocean.com/), [RStudio cloud](https://rstudio.cloud/), [Colaboratory](https://colab.research.google.com/))
     - Containers and virtual machines (e.g., [Docker](https://www.docker.com/), [Vagrant](https://www.vagrantup.com/), [Singularity](https://www.sylabs.io/singularity/))
-
-
-???
-Show CodeOcean example: https://codeocean.com/2018/06/13/contact-hypothesis-reevaluated/
 
 
 ---
@@ -860,8 +859,8 @@ class: inverse, middle, center
         - Processed data
         - Analyses
         - Research report
---
-- If necessary, restrict repository access (e.g., [OSF components](http://help.osf.io/m/projects/l/481998-create-components))
+<!-- -- -->
+<!-- - If necessary, control access (e.g., [OSF components](http://help.osf.io/m/projects/l/481998-create-components)) -->
     <!-- - Publicly share [encrypted files](https://medium.com/@richarddmorey/hiding-in-plain-sight-16b275b91625) -->
 <!-- - Explicitly license shared products -->
 
@@ -906,6 +905,7 @@ kable(
 ---
 # Choose a repository
 
+- Self-deposit vs. curated repositories
 - [FAIR Data Principles](https://www.force11.org/group/fairgroup/fairprinciples) ([Wilkinson et al., 2016](https://dx.doi.org/10.1038/sdata.2016.18))
       1. _Findable_: Persistent identifiers; metadata; indexed
       2. _Accessible_: Retrievable by identifier; controlled access where necessary
@@ -932,18 +932,6 @@ kable(
 ???
 - Which features of a repository would you consider important (for your data)?
 - How would you search for a suitable repository?
-
-
----
-# Choosing a repository
-
-- Self-deposit (e.g., [OSF](https://osf.io/)) vs. curated repositories (e.g., [GESIS DBK](https://dbk.gesis.org/dbksearch/home.asp?db=e))
-- Resources comparing repositories
-    - Table 1 in [Klein et al. (2018)](https://doi.org/10.1525/collabra.158)
-    - [Registry of Research Data Repositories](https://www.re3data.org/)
-    - Dataverse blog: [Comparative review of various data repositories](https://dataverse.org/blog/comparative-review-various-data-repositories)
-    - APS Observer article by [DeSoto, 2016](https://www.psychologicalscience.org/observer/finding-a-home-for-your-science)
-    - Table 1 in [Meyer, 2018](http://journals.sagepub.com/doi/abs/10.1177/2515245917747656)
 
 
 <!-- Frederik -->
@@ -973,7 +961,7 @@ Exercise: Write preregistration with https://aspredicted.org/ for example projec
 
 - Analysis scripts and software
     - Hosted Version Control Systems (e.g., [GitHub](https://github.com/))
-    - Cloud-based analysis platforms (e.g., [Code Ocean](https://codeocean.com/))
+    - Cloud-based analysis platforms (e.g., [Code Ocean](https://codeocean.com/), [RStudio cloud](https://rstudio.cloud/), [Colaboratory](https://colab.research.google.com/))
     - Cloud-based experiment platforms (e.g., [Pavlovia](https://pavlovia.org/explore)  for [PsychoPy](http://www.psychopy.org/), [jspsych](https://www.jspsych.org/), and [lab.js](https://lab.js.org/))
 --
     - Usually no guarantee of long-term access
@@ -981,6 +969,7 @@ Exercise: Write preregistration with https://aspredicted.org/ for example projec
 
 
 ???
+Demonstrate CodeOcean: https://codeocean.com/2018/06/13/contact-hypothesis-reevaluated/
 Demonstrate Pavlovia: https://pavlovia.org/explore
 
 
@@ -990,8 +979,8 @@ Demonstrate Pavlovia: https://pavlovia.org/explore
 # Specialized approaches
 
 - Research reports
+    - Institutional repositories
     - Preprint repositories (e.g., [PsyArXiv](https://psyarxiv.com/), [BioRxiv](https://www.biorxiv.org/), [PeerJ](https://peerj.com/preprints-search/))
-    - Institutional repositories (less discoverable)
 
 <!-- https://nikokriegeskorte.org/2016/03/13/the-selfish-scientists-guide-to-preprint-posting/ -->
 
@@ -1025,9 +1014,7 @@ PsyArXiv
 - Licenses define conditions of access and reuse
 - Factual information are usually *not* protected by copyright
     - For example, response times, mortality rates, currency values, the number of Twitter followers someone has
-    - Database structures and compilations of data may be copyrightable
---
-- Copyright to long verbatim interview responses may belong to participants
+    - Database structures and compilations of data can be copyrightable
 
 ???
 Applying a license to noncopyrightable work does little harm
@@ -1038,15 +1025,25 @@ Applying a license to noncopyrightable work does little harm
 
 # Licenses
 
-- Public availability does not authorize to reuse
-    - Access categories vs. licenses
-    - Always explicitly apply licenses
+- Copyright owners may assign licenses
+    - Standardized scales may be owned by publisher
+    - Copyright to long verbatim free text responses may belong to participants
 --
-- Repositories typically have different access categories (e.g., [GESIS DBK access categories](https://dbk.gesis.org/DBKSearch/LegendAC.htm))
---
+- Copyright owner can always grant exceptions
 
-- Use easy-to-understand standard licenses (e.g., [Creative Commons](https://creativecommons.org/licenses/) `r recommendation`, [Open data commons](https://opendatacommons.org/licenses/))
-    - For example, "All files in this repository are licensed under a Creative Commons Zero License (CC0 1.0)"
+
+---
+.title-image[![:scale 70%](images/licenses.png)]
+
+# Licenses
+
+- Public availability does not authorize to reuse
+    - Always explicitly apply licenses
+    - Access categories vs. licenses
+        - Repositories may have different access categories (e.g., [GESIS DBK access categories](https://dbk.gesis.org/DBKSearch/LegendAC.htm))
+--
+- Use easy-to-understand standard licenses (e.g., [Creative Commons](https://creativecommons.org/licenses/))
+    - README: "All files in this repository are licensed under a Creative Commons Zero License (CC0 1.0)"
 --
 - Use most permissive license possible (e.g., CC0, CC-BY)
 
@@ -1108,8 +1105,6 @@ kable(
 - Modular license "building set"
     - In practice, seven combinations are supported
 - Mind version numbers (e.g., CC-BY 4.0)
-- Copyright owner can always grant exceptions
-- Copyright to long verbatim interview responses may belong to participants
 
 
 <!-- Frederik -->
@@ -1130,8 +1125,11 @@ class: inverse, middle, center
         - More citations
         - Opportunities for collaboration
         - Confidence in your own findings
+--
     - Share materials with your collaborators
+--
     - Publish in journals that value openness
+--
     - [Commit to Research Transparency and Open Science](http://www.researchtransparency.org/)
 
 
@@ -1143,7 +1141,9 @@ class: inverse, middle, center
       - Open data and materials
       - Open source software (developed by academics)
       - Open course materials
+--
     - Promote openness during peer review (e.g., [PRO initiative](https://opennessinitiative.org/))
+--
     - Value openness in hiring committees (e.g., [job offers that mentioned open science](https://osf.io/7jbnt/))
 
 
@@ -1154,6 +1154,7 @@ class: inverse, middle, center
     - Transparent research practices in theses, e.g.,
         - "Safe" transparency for capstone project (OSF group)
         - Stage-1 registered report as non-empirical Bachelor's thesis
+--
     - Collate and share materials on transparent research practices
     - Teach workshops
 

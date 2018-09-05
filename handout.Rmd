@@ -147,6 +147,12 @@ include_graphics("images/klein-et-al-figure-1.png")
         - Australian National Data Service: [Decision tree for sharing sensitive data](https://www.ands.org.au/__data/assets/pdf_file/0010/385309/sensitive-decision-tree.pdf)
     - Only collect the data you really need
     - Delete identifying information used for logistics as soon as possible (e.g., e-mail addresses)
+    - Assess risk of reidentification, e.g.,
+        - Small population and rare traits
+        - Dyadic data
+        - Hierarchical data (e.g., small subsamples of students, co-workers)
+        - <!-- Self-identification??? TODO: How is this a problem/How would it be possible to prevent this? -->
+        - _Motivated intruder test_ (e.g., jealous partner, nosy neighbor, envious co-worker, insurers, criminals)
     - Only share anonymized data publicly, e.g., `r recommendation`
         - Delete directly identifying information (e.g., full name, address, face, handwriting, date of birth, genetic information)
             - Mind combinations of indirect identifiers (e.g., ZIP code, gender, and date of birth, [Sweeney, 2000](https://dataprivacylab.org/projects/identifiability/paper1.pdf))
@@ -162,13 +168,7 @@ include_graphics("images/klein-et-al-figure-1.png")
     
     <!-- - Harm assessment? -->
     
-    - Assess risk of reidentification, e.g.,
-        - Small population and rare traits
-        - Dyadic data
-        - Hierarchical data (e.g., small subsamples of students, co-workers)
-        - <!-- Self-identification??? TODO: How is this a problem/How would it be possible to prevent this? -->
-        - _Motivated intruder test_ (e.g., jealous partner, nosy neighbor, envious co-worker, insurers, criminals)
-    <!-- - Who will the data be shared with? -->
+    
 
 > To determine whether a natural person is identifiable, account should be taken of all the means reasonably likely to be used, such as singling out, either by the controller or by another person to identify the natural person directly or indirectly.
 <br /><br />
@@ -189,7 +189,7 @@ To ascertain whether means are reasonably likely to be used to identify the natu
     - Analysis software (e.g., [R `codebook` package](https://cran.r-project.org/web/packages/codebook/index.html), [SPSS codebook function](https://libguides.library.kent.edu/SPSS/Codebooks), or [Stata codebook function](http://www.stata.com/manuals13/dcodebook.pdf))
     - Specialized software (e.g., [Nesstar](http://www.nesstar.com/software/publisher.html), [DataWiz](https://datawiz.leibniz-psychology.org/DataWiz/?datawiz_locale=en))
 - For data with high reuse value, consider using a standardized and machine-readable metadata format (e.g., [DDI](https://www.ddialliance.org/)) `r recommendation`
-    - Implementation is a service provided by some repositories
+    - Some repositories provide implementation as a service
     <!-- This documentation should describe the variables in each data file in both human- and machine-readable formats (e.g., csv, rather than docx or pdf). Ideally, codebooks are organized in such a way that each line represents one variable and each information relative to a variable represents a column. -->
 
 
@@ -233,7 +233,6 @@ https://doi.org/10.1017/S1049096516000810))
 - Documentation of computational environment 
     - Hardware
     - Software version incl. extensions
-    - Cloud-based platforms (e.g., [Code Ocean](https://codeocean.com/), [RStudio cloud](https://rstudio.cloud/), [Colaboratory](https://colab.research.google.com/))
     - Containers and virtual machines (e.g., [Docker](https://www.docker.com/), [Vagrant](https://www.vagrantup.com/), [Singularity](https://www.sylabs.io/singularity/))
 
 
@@ -365,8 +364,8 @@ include_graphics("images/klein-et-al-figure-2.png")
     - Table 1 in [Klein et al. (2018)](https://doi.org/10.1525/collabra.158)
     - [Registry of Research Data Repositories](https://www.re3data.org/)
     - Dataverse blog: [Comparative review of various data repositories](https://dataverse.org/blog/comparative-review-various-data-repositories)
-    - APS Observer article by [DeSoto, 2016](https://www.psychologicalscience.org/observer/finding-a-home-for-your-science)
-    - Table 1 in [Meyer, 2018](http://journals.sagepub.com/doi/abs/10.1177/2515245917747656)
+    - APS Observer: [Finding a Home for Your Science](https://www.psychologicalscience.org/observer/finding-a-home-for-your-science)
+    - Table 1 in [Meyer (2018)](http://journals.sagepub.com/doi/abs/10.1177/2515245917747656)
 
 
     <!-- - Hand out table that summarizes repositories -->
@@ -425,8 +424,8 @@ kable(
 
 ### Reports
 
+- Institutional repositories
 - Preprint repositories (e.g., [PsyArXiv](https://psyarxiv.com/), [BioRxiv](https://www.biorxiv.org/), [PeerJ](https://peerj.com/preprints-search/)) `r recommendation`
-- Institutional repositories (less discoverable)
 
 <!-- https://nikokriegeskorte.org/2016/03/13/the-selfish-scientists-guide-to-preprint-posting/ -->
 
