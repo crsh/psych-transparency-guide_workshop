@@ -876,7 +876,7 @@ Exercise: Fork OSF repo and upload workshop files
 <!-- Johannes -->
 
 ---
-# Choose a repository
+# Sharing options
 
 ```{r sharing-option-ratings, echo = FALSE}
 sharing_options <- data.frame(
