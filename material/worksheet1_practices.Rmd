@@ -1,0 +1,73 @@
+---
+header-includes:
+  - \geometry{landscape}
+  - \usepackage{booktabs}
+  - \usepackage{tabularx}
+  - \usepackage{fancyhdr}
+  - \renewcommand{\headrulewidth}{0pt}
+  - \renewcommand{\familydefault}{\sfdefault}
+  - \usepackage{etoolbox}
+  - \usepackage{setspace}
+  - \AtBeginEnvironment{tabularx}{\doublespacing}
+  - \renewcommand{\footrulewidth}{0.4pt}
+
+classoption : a4paper
+output      : pdf_document
+---
+\pagestyle{fancy}
+\pagenumbering{gobble}
+
+\lhead{\Large \textbf{Useful research practices for my workflow}}
+\lfoot{\textit{Developing your personal workflow for transparent \& reproducible research}, SIPS 2019, Rotterdam, Netherlands}
+\rfoot{Frederik Aust \& Johannes Breuer}
+
+
+
+<!-- \begin{landscape} -->
+
+<!-- \paperwidth=\pdfpageheight -->
+<!-- \paperheight=\pdfpagewidth -->
+<!-- \pdfpageheight=\paperheight -->
+<!-- \pdfpagewidth=\paperwidth -->
+<!-- \headwidth=\textheight -->
+
+<!-- \begingroup  -->
+<!-- \vsize=\textwidth -->
+<!-- \hsize=\textheight -->
+
+\begin{table}
+\begin{tabularx}{\linewidth}{>{\hsize=0.7\hsize}X>{\hsize=0.9\hsize}X>{\hsize=1.2\hsize}X>{\hsize=1.2\hsize}X}
+\toprule
+ \textbf{Research product} & \textbf{Practice} & \textbf{Notes} & \textbf{Open questions} \\
+\hline
+  Protocols & & & \\
+  & & & \\
+  & & & \\
+  \midrule
+  Materials & & & \\
+  & & & \\
+  & & & \\
+  & & & \\
+  \midrule
+  Data \& metadata & & & \\
+  & & & \\
+  & & & \\
+  & & & \\
+  \midrule
+  Analysis procedure & & & \\
+  & & & \\
+  & & & \\
+  & & & \\
+  \midrule
+  Reports & & & \\
+  & & & \\
+  & & & \\
+  \midrule
+  Misc & & & \\
+  & & & \\
+\end{tabularx}
+\end{table}
+
+<!-- \endgroup -->
+
+<!-- \end{landscape} -->

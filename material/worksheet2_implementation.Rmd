@@ -1,0 +1,78 @@
+---
+header-includes:
+  - \geometry{landscape}
+  - \usepackage{booktabs}
+  - \usepackage{tabularx}
+  - \usepackage{fancyhdr}
+  - \renewcommand{\headrulewidth}{0pt}
+  - \renewcommand{\familydefault}{\sfdefault}
+  - \usepackage{etoolbox}
+  - \usepackage{setspace}
+  - \AtBeginEnvironment{tabularx}{\doublespacing}
+  - \renewcommand{\footrulewidth}{0.4pt}
+
+classoption : a4paper
+output      : pdf_document
+---
+\pagestyle{fancy}
+\pagenumbering{gobble}
+
+\lhead{\Large \textbf{Implementation plan for changes to my workflow}}
+\lfoot{\textit{Developing your personal workflow for transparent \& reproducible research}, SIPS 2019, Rotterdam, Netherlands}
+\rfoot{Frederik Aust \& Johannes Breuer}
+
+
+
+<!-- \begin{landscape} -->
+
+<!-- \paperwidth=\pdfpageheight -->
+<!-- \paperheight=\pdfpagewidth -->
+<!-- \pdfpageheight=\paperheight -->
+<!-- \pdfpagewidth=\paperwidth -->
+<!-- \headwidth=\textheight -->
+
+<!-- \begingroup  -->
+<!-- \vsize=\textwidth -->
+<!-- \hsize=\textheight -->
+
+\begin{table}
+\begin{tabularx}{\linewidth}{>{\hsize=0.25\hsize}cX>{\hsize=1.1\hsize}XX}
+\toprule
+ \textbf{Priority} & \textbf{(Transparent) research practice} & \textbf{Implementation} & \textbf{Prerequisites/Challenges} \\
+\hline
+  1 & & & \\
+  & & & \\
+  \midrule
+  2 & & & \\
+  & & & \\
+  \midrule
+  3 & & & \\
+  & & & \\
+  \midrule
+  4 & & & \\
+  & & & \\
+  \midrule
+  5 & & & \\
+  & & & \\
+  \midrule
+  6 & & & \\
+  & & & \\
+  \midrule
+  7 & & & \\
+  & & & \\
+  \midrule
+  8 & & & \\
+  & & & \\
+  \midrule
+  9 & & & \\
+  & & & \\
+  \midrule
+  10 & & & \\
+  & & & \\
+  \midrule
+\end{tabularx}
+\end{table}
+
+<!-- \endgroup -->
+
+<!-- \end{landscape} -->
