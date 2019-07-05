@@ -1,10 +1,10 @@
 ---
-title: "<img src = 'images/open.png' style = 'margin-bottom: 45px;'/><br />How to open up your research"
+title: "<img src = 'images/open.png' style = 'margin-bottom: 45px;'/><br />Developing your personal workflow for transparent & reproducible research"
 subtitle: "A practical primer on transparent research workflows"
 author: "Frederik Aust<br />Johannes Breuer<br /><br /><a href = 'https://creativecommons.org/licenses/by/4.0/'><img src = 'images/by.png' style = 'width: 10%;' /></a>"
 
-date    : "07.09.2018"
-location: "EASP Solid Science Training Workshop"
+date    : "09.07.2019"
+location: "SIPS 2019"
 
 output:
   xaringan::moon_reader:
@@ -51,7 +51,7 @@ MathJax.Hub.Config({
 
 - PhD student at the University of Cologne<br />(Prof. Dr. Christoph Stahl)
 - Founding memeber of [Cologne Open Science<br />working group](https://www.hf.uni-koeln.de/39711)
-- Author and contributor to several R packages<br> (e.g., [`afex`](https://cran.r-project.org/web/packages/afex/index.html), [`citr`](https://cran.r-project.org/web/packages/citr/index.html), [`papaja`](https://github.com/crsh/papaja), [`prereg`](https://cran.r-project.org/web/packages/prereg/index.html))
+- Author and contributor to several R packages<br> (e.g., [`afex`](https://cran.r-project.org/web/packages/afex/index.html), [`citr`](https://cran.r-project.org/web/packages/citr/index.html), [`papaja`](https://github.com/crsh/papaja), [`prereg`](https://cran.r-project.org/web/packages/prereg/index.html)), [`retractcheck`](https://cran.r-project.org/web/packages/retractcheck/index.html))
 
 <div class="reference"><a href="mailto:frederik.aust@uni-koeln.de">frederik.aust@uni-koeln.de</a>, <a href="https://twitter.com/frederikaust">@frederikaust</a></div>
 
@@ -76,6 +76,7 @@ MathJax.Hub.Config({
 
 - We want to make this an (inter)active workshop
     - Feel free to ask questions at any time
+    - Develop *your personal* workflow
 - Slides and material are available at
 
 .center[`https://tinyurl.com/y8dbs2fu`]
@@ -112,8 +113,8 @@ Klein, O., Hardwicke, T. E., Aust, F., Breuer, J., Danielsson, H., Hofelich Mohr
     - Choosing a repository
     - Specialized approaches
     - Licenses
---
-- How can you promote openness?
+<!-- -- -->
+<!-- - How can you promote openness? -->
 
 
 ???
@@ -127,25 +128,25 @@ class: inverse, middle, center
 # Why should you share?
 
 
----
-# Why should you share?
+<!-- --- -->
+<!-- # Why should you share? -->
 
-- It's just documenting your work
-    - Remember what you've done
+<!-- - It's just documenting your work -->
+<!--     - Remember what you've done -->
 
---
-> Your closest collaborator is you six months ago, but you don’t reply to emails.
+<!-- -- -->
+<!-- > Your closest collaborator is you six months ago, but you don’t reply to emails. -->
 
-> &mdash; Paul Wilson, University of Wisconsin Madison
+<!-- > &mdash; Paul Wilson, University of Wisconsin Madison -->
 
 
----
-# Why should you share?
+<!-- --- -->
+<!-- # Why should you share? -->
 
-- It's just documenting your work
-    - Remember what you've done
-    - Lab members can learn from each other
-    - Colleagues can scrutinize and build on your work
+<!-- - It's just documenting your work -->
+<!--     - Remember what you've done -->
+<!--     - Lab members can learn from each other -->
+<!--     - Colleagues can scrutinize and build on your work -->
 
 
 ---
@@ -160,66 +161,66 @@ class: inverse, middle, center
 You probably already drank the Kool-Aid
 
 
----
-# ~~Why should you share?~~
+<!-- --- -->
+<!-- # ~~Why should you share?~~ -->
 
-> Open Science is just science done right
+<!-- > Open Science is just science done right -->
 
-> &mdash;Jon Tennant, Imperial College London
+<!-- > &mdash;Jon Tennant, Imperial College London -->
 
-<br />
+<!-- <br /> -->
 
-# Why would you _not_ share?
-
-
-???
-Ask participants to discuss in small groups?
-
-
----
-# Why would you _not_ share?
-
-- Fear of being scooped
-
---
-    - Usually an unwarranted fear
-    - Share upon publication or with an embargo
---
-- Fear of being corrected
-
---
-    - Errors are inevitable and a normal part of science
-    - Promotes scientific self-correction
-    - Constructive self-correction can enhance researchers' standing ([Fetterman & Sassenberg, 2015](https://doi.org/10.1371/journal.pone.0143723))
-
----
-# Why would you _not_ share?
-
-- Personal data
-    - Get informed consent
-    - Pseudonymize data
-    - Employ access controls
-    - Share other research products
-
-
-???
-We will talk more about this
-
-
----
-# Why would you _not_ share?
-
-> .highlight[Although I was committed to open data, I was not implementing it [...] It was a pain] to document the data;  [...] to format the data;  [...] to contact the library personnel;  [...] to figure out which data were indeed published as part of which experiments. [...] .highlight[I had neither a routine nor any daily incentive to archive data] (p. 1063, [Rouder, 2016](https://doi.org/10.3758/s13428-015-0630-z))
-
-
---
 <!-- # Why would you _not_ share? -->
 
-- Time-consuming
-    - Take one step at a time ("baby steps")
-        - Iteratively improve your workflow
-    - Increases efficiency in the long-run
-    - Increases exposure and citations
+
+<!-- ??? -->
+<!-- Ask participants to discuss in small groups? -->
+
+
+<!-- --- -->
+<!-- # Why would you _not_ share? -->
+
+<!-- - Fear of being scooped -->
+
+<!-- -- -->
+<!--     - Usually an unwarranted fear -->
+<!--     - Share upon publication or with an embargo -->
+<!-- -- -->
+<!-- - Fear of being corrected -->
+
+<!-- -- -->
+<!--     - Errors are inevitable and a normal part of science -->
+<!--     - Promotes scientific self-correction -->
+<!--     - Constructive self-correction can enhance researchers' standing ([Fetterman & Sassenberg, 2015](https://doi.org/10.1371/journal.pone.0143723)) -->
+
+<!-- --- -->
+<!-- # Why would you _not_ share? -->
+
+<!-- - Personal data -->
+<!--     - Get informed consent -->
+<!--     - Pseudonymize data -->
+<!--     - Employ access controls -->
+<!--     - Share other research products -->
+
+
+<!-- ??? -->
+<!-- We will talk more about this -->
+
+
+<!-- --- -->
+<!-- # Why would you _not_ share? -->
+
+<!-- > .highlight[Although I was committed to open data, I was not implementing it [...] It was a pain] to document the data;  [...] to format the data;  [...] to contact the library personnel;  [...] to figure out which data were indeed published as part of which experiments. [...] .highlight[I had neither a routine nor any daily incentive to archive data] (p. 1063, [Rouder, 2016](https://doi.org/10.3758/s13428-015-0630-z)) -->
+
+
+<!-- -- -->
+<!-- <!-- # Why would you _not_ share? --> -->
+
+<!-- - Time-consuming -->
+<!--     - Take one step at a time ("baby steps") -->
+<!--         - Iteratively improve your workflow -->
+<!--     - Increases efficiency in the long-run -->
+<!--     - Increases exposure and citations -->
     <!-- - Helps to avoid fruitless avenues for future studies -->
     <!-- - Use (or create) templates & available tools -->
 
@@ -272,124 +273,124 @@ Amnesia: Ask a colleague who was not involved with the project
 <!--     - Compromise surely necessary -->
 
 
----
-class: inverse, middle, center
+<!-- --- -->
+<!-- class: inverse, middle, center -->
 
-# Example project
-
-
----
-# Example project
-
-### Research question
-
-- Can we judge a person's IQ from their face?
-
---
-
-### Study design
-
-- Photographs of students with known IQ scores
-
-.center[
-![:scale 10%](material/example-project/stimuli/CF0014_1100_NE.jpg)
-![:scale 10%](material/example-project/stimuli/CF0025_1100_NE.jpg)
-![:scale 10%](material/example-project/stimuli/CF00018_1100_NE.jpg)
-![:scale 10%](material/example-project/stimuli/CM0029_1100_NE.jpg)
-![:scale 10%](material/example-project/stimuli/CM0009_1100_NE.jpg)
-![:scale 10%](material/example-project/stimuli/CM0039_1100_NE.jpg)
-]
-
-- Ratings of IQ
-- Likert-scale ratings of attractiveness
-
-```{r example-elements}
-# example_citation <- '<div class="reference">Kleisner, K., Chvátalová, V., & Flegr, J. (2014). Perceived Intelligence Is Associated with Measured Intelligence in Men but Not Women. <i>PLoS ONE</i>, 9(3): e81237. doi: <a href="https://doi.org/10.1371/journal.pone.0081237">10.1371/journal.pone.0081237</a></div>'
-example_citation <- '<div class="reference">Stimulus images courtesy of Michael J. Tarr, Center for the Neural Basis of Cognition and Department of Psychology, Carnegie Mellon University, http://www.tarrlab.org/. Funding provided by NSF award 0339122. <a href = "https://creativecommons.org/licenses/by-nc-sa/3.0/">CC-BY-NC-SA 3.0</a></div>'
-
-# example_likert_scale <- '<table id="likert">
-#    <tr>
-#        <td><input id="radGuiltyStart" type="radio" name="Guilty" value="7" /></td>
-#        <td><input type="radio" name="Guilty" value="6" /></td>
-#        <td><input type="radio" name="Guilty" value="5" /></td>
-#        <td><input type="radio" name="Guilty" value="4" /></td>
-#        <td><input type="radio" name="Guilty" value="3" /></td>
-#        <td><input type="radio" name="Guilty" value="2" /></td>
-#        <td><input id="radGuiltyEnd" type="radio" name="Guilty" value="1" /></td>
-#    </tr>
-#    <tr>
-#        <td style = "background-color: white;"><small>Low</small></td>
-#        <td style = "background-color: white;"></td>
-#        <td style = "background-color: white;"></td>
-#        <td style = "background-color: white;"><small>Intelligence</small></td>
-#        <td style = "background-color: white;"></td>
-#        <td style = "background-color: white;"></td>
-#        <td style = "background-color: white;"><small>High</small></td>
-#    </tr>
-# </table>'
-
-example_likert_scale <- '<center>
-    <fieldset style = "width: 600px;">
-        <legend style = "padding: 6px;">What is this person\'s IQ?</legend>
-    
-        70 <input type="range" id="start" name="volume" min="70" max="130" step = "1" style = "width: 500px;"/> 130
-    </fieldset>
-    <br />
-    <fieldset style = "width: 600px;">
-        <legend style = "padding: 6px;">How attractive is this person?</legend>
-    
-        <table style = "width: 600px; border: none;">
-           <tr>
-               <td><small>Very unattractive</small></td>
-               <td><input type="radio" name="Guilty" value="6" /></td>
-               <td><input type="radio" name="Guilty" value="6" /></td>
-               <td><input type="radio" name="Guilty" value="5" /></td>
-               <td><input type="radio" name="Guilty" value="4" /></td>
-               <td><input type="radio" name="Guilty" value="3" /></td>
-               <td><input type="radio" name="Guilty" value="2" /></td>
-               <td><input id="radGuiltyEnd" type="radio" name="Guilty" value="1" /></td>
-               <td style = "text-align: right;"><small>Very attractive</small></td>
-           </tr>
-        </table>
-    </fieldset>
-</center>'
-```
+<!-- # Example project -->
 
 
----
-# Example project
+<!-- --- -->
+<!-- # Example project -->
 
-.center[![](material/example-project/stimuli/CF0007_1100_NE.jpg)]
+<!-- ### Research question -->
 
-`r example_likert_scale`
+<!-- - Can we judge a person's IQ from their face? -->
+
+<!-- -- -->
+
+<!-- ### Study design -->
+
+<!-- - Photographs of students with known IQ scores -->
+
+<!-- .center[ -->
+<!-- ![:scale 10%](material/example-project/stimuli/CF0014_1100_NE.jpg) -->
+<!-- ![:scale 10%](material/example-project/stimuli/CF0025_1100_NE.jpg) -->
+<!-- ![:scale 10%](material/example-project/stimuli/CF00018_1100_NE.jpg) -->
+<!-- ![:scale 10%](material/example-project/stimuli/CM0029_1100_NE.jpg) -->
+<!-- ![:scale 10%](material/example-project/stimuli/CM0009_1100_NE.jpg) -->
+<!-- ![:scale 10%](material/example-project/stimuli/CM0039_1100_NE.jpg) -->
+<!-- ] -->
+
+<!-- - Ratings of IQ -->
+<!-- - Likert-scale ratings of attractiveness -->
+
+<!-- ```{r example-elements} -->
+<!-- # example_citation <- '<div class="reference">Kleisner, K., Chvátalová, V., & Flegr, J. (2014). Perceived Intelligence Is Associated with Measured Intelligence in Men but Not Women. <i>PLoS ONE</i>, 9(3): e81237. doi: <a href="https://doi.org/10.1371/journal.pone.0081237">10.1371/journal.pone.0081237</a></div>' -->
+<!-- example_citation <- '<div class="reference">Stimulus images courtesy of Michael J. Tarr, Center for the Neural Basis of Cognition and Department of Psychology, Carnegie Mellon University, http://www.tarrlab.org/. Funding provided by NSF award 0339122. <a href = "https://creativecommons.org/licenses/by-nc-sa/3.0/">CC-BY-NC-SA 3.0</a></div>' -->
+
+<!-- # example_likert_scale <- '<table id="likert"> -->
+<!-- #    <tr> -->
+<!-- #        <td><input id="radGuiltyStart" type="radio" name="Guilty" value="7" /></td> -->
+<!-- #        <td><input type="radio" name="Guilty" value="6" /></td> -->
+<!-- #        <td><input type="radio" name="Guilty" value="5" /></td> -->
+<!-- #        <td><input type="radio" name="Guilty" value="4" /></td> -->
+<!-- #        <td><input type="radio" name="Guilty" value="3" /></td> -->
+<!-- #        <td><input type="radio" name="Guilty" value="2" /></td> -->
+<!-- #        <td><input id="radGuiltyEnd" type="radio" name="Guilty" value="1" /></td> -->
+<!-- #    </tr> -->
+<!-- #    <tr> -->
+<!-- #        <td style = "background-color: white;"><small>Low</small></td> -->
+<!-- #        <td style = "background-color: white;"></td> -->
+<!-- #        <td style = "background-color: white;"></td> -->
+<!-- #        <td style = "background-color: white;"><small>Intelligence</small></td> -->
+<!-- #        <td style = "background-color: white;"></td> -->
+<!-- #        <td style = "background-color: white;"></td> -->
+<!-- #        <td style = "background-color: white;"><small>High</small></td> -->
+<!-- #    </tr> -->
+<!-- # </table>' -->
+
+<!-- example_likert_scale <- '<center> -->
+<!--     <fieldset style = "width: 600px;"> -->
+<!--         <legend style = "padding: 6px;">What is this person\'s IQ?</legend> -->
+
+<!--         70 <input type="range" id="start" name="volume" min="70" max="130" step = "1" style = "width: 500px;"/> 130 -->
+<!--     </fieldset> -->
+<!--     <br /> -->
+<!--     <fieldset style = "width: 600px;"> -->
+<!--         <legend style = "padding: 6px;">How attractive is this person?</legend> -->
+
+<!--         <table style = "width: 600px; border: none;"> -->
+<!--            <tr> -->
+<!--                <td><small>Very unattractive</small></td> -->
+<!--                <td><input type="radio" name="Guilty" value="6" /></td> -->
+<!--                <td><input type="radio" name="Guilty" value="6" /></td> -->
+<!--                <td><input type="radio" name="Guilty" value="5" /></td> -->
+<!--                <td><input type="radio" name="Guilty" value="4" /></td> -->
+<!--                <td><input type="radio" name="Guilty" value="3" /></td> -->
+<!--                <td><input type="radio" name="Guilty" value="2" /></td> -->
+<!--                <td><input id="radGuiltyEnd" type="radio" name="Guilty" value="1" /></td> -->
+<!--                <td style = "text-align: right;"><small>Very attractive</small></td> -->
+<!--            </tr> -->
+<!--         </table> -->
+<!--     </fieldset> -->
+<!-- </center>' -->
+<!-- ``` -->
 
 
----
-# Example project
+<!-- --- -->
+<!-- # Example project -->
 
-.center[![](material/example-project/stimuli/CM0027_1101_NE.jpg)]
+<!-- .center[![](material/example-project/stimuli/CF0007_1100_NE.jpg)] -->
 
-`r example_likert_scale`
-
-
----
-# Example project
-
-.center[![](material/example-project/stimuli/CM0046_1100_NE.jpg)]
-
-`r example_likert_scale`
+<!-- `r example_likert_scale` -->
 
 
----
-# Example project
+<!-- --- -->
+<!-- # Example project -->
 
-.center[![](material/example-project/stimuli/CF0030_1100_NE.jpg)]
+<!-- .center[![](material/example-project/stimuli/CM0027_1101_NE.jpg)] -->
 
-`r example_likert_scale`
+<!-- `r example_likert_scale` -->
 
 
-???
-Exercise: Explore example project files
+<!-- --- -->
+<!-- # Example project -->
+
+<!-- .center[![](material/example-project/stimuli/CM0046_1100_NE.jpg)] -->
+
+<!-- `r example_likert_scale` -->
+
+
+<!-- --- -->
+<!-- # Example project -->
+
+<!-- .center[![](material/example-project/stimuli/CF0030_1100_NE.jpg)] -->
+
+<!-- `r example_likert_scale` -->
+
+
+<!-- ??? -->
+<!-- Exercise: Explore example project files -->
 
 
 ---
@@ -434,9 +435,9 @@ OBS recording: https://osf.io/eyfxs/
 
     - Questionnaires
     - Stimulus material
-    - Computer code to present stimuli and collect responses
+    - Experimental software to present stimuli and collect responses
     - Instructions for interaction with participants
-    - Scripts and instructions for confederates
+        - Scripts and instructions for confederates
 --
 - Mind intellectual property rights!
 
@@ -657,32 +658,32 @@ Show SPSS (on website) and R codebook
 
 <!-- Frederik -->
 
----
-.title-image[![:scale 70%](images/analysis.png)]
+<!-- --- -->
+<!-- .title-image[![:scale 70%](images/analysis.png)] -->
 
-# Standard operating procedures
+<!-- # Standard operating procedures -->
 
-- Define default practices ([Lin & Green, 2016](
-https://doi.org/10.1017/S1049096516000810))
---
+<!-- - Define default practices ([Lin & Green, 2016]( -->
+<!-- https://doi.org/10.1017/S1049096516000810)) -->
+<!-- -- -->
 
-- Study planning, e.g.,
-    - Sample size determination
---
-- Data analysis, e.g.,
-    - Statistical models
-        - Assumption tests
-        - Follow-up tests
-    - Exclusion criteria
-    - Outlier and dropout treatment
-    - Handling of missing values
-    - Corrections for multiple comparisons
+<!-- - Study planning, e.g., -->
+<!--     - Sample size determination -->
+<!-- -- -->
+<!-- - Data analysis, e.g., -->
+<!--     - Statistical models -->
+<!--         - Assumption tests -->
+<!--         - Follow-up tests -->
+<!--     - Exclusion criteria -->
+<!--     - Outlier and dropout treatment -->
+<!--     - Handling of missing values -->
+<!--     - Corrections for multiple comparisons -->
 
 
-???
-Simplifies authoring of preregistrations
+<!-- ??? -->
+<!-- Simplifies authoring of preregistrations -->
 
-Exercise: Let participants draft some SOP for data analysis
+<!-- Exercise: Let participants draft some SOP for data analysis -->
 
 
 ---
@@ -694,7 +695,7 @@ Exercise: Let participants draft some SOP for data analysis
     - Step-by-step documentation for non-scriptable software programs
 --
     - Analysis syntax
-        - Avoid "works on my machine" errors (WOMME)
+        - Avoid works-on-my-machine errors (WOMME)
             - Relative file paths or permanent online sources
             - Avoid spaces and special characters
             - Test on another computer
@@ -704,7 +705,7 @@ Exercise: Let participants draft some SOP for data analysis
 
 
 ???
-incl. data cleaning and transformation; see [supplementary material](http://psych-transparency-guide.uni-koeln.de/analytic-reproducibility.html#set-and-record-seeds-for-pseudorandom-number-generators) of Klein et al., 2018
+incl. data cleaning and transformation; show [supplementary material](http://psych-transparency-guide.uni-koeln.de/analytic-reproducibility.html#set-and-record-seeds-for-pseudorandom-number-generators) of Klein et al., 2018
 
 Demonstrate `papaja`!
 
@@ -750,6 +751,8 @@ Demonstrate `papaja`!
     - Mind journal policy (e.g., [SHERPA/RoMEO](http://www.sherpa.ac.uk/romeo/search.php))
 - Gold open access
     - Published article
+    - [Fair Open Access](https://www.fairopenaccess.org/)
+    - [Free Journal Network](https://freejournals.org/current-member-journals/)
 
 
 <!-- Johannes -->
@@ -776,7 +779,10 @@ class: inverse, middle, center
 - Have a _basic_ data management plan (DMP), ideally before starting a project
     - Create basic reusable DMP templates
     - Use online tools to get started (e.g., [ZPID DataWiz](https://datawiz.leibniz-psychology.org/DataWiz/?datawiz_locale=en), [DMPonline](https://dmponline.dcc.ac.uk/))
-    - Simplifies addressing legal and ethical issues
+    - Simplifies addressing legal and ethical issues (e.g., informed consent)
+- Consider sharing when choosing study materials
+    - Open source tools
+    - Material licenses
 
 
 ???
@@ -788,27 +794,27 @@ Examples: https://dmponline.dcc.ac.uk/public_plans
 
 - Timely archiving
     - Study protocol and materials
-    - Standard operating procedures
+    <!-- - Standard operating procedures -->
     - Analysis plan and scripts
 - Preregistration
 
 
 <!-- Frederik -->
 
----
-# During data collection
+<!-- --- -->
+<!-- # During data collection -->
 
-- Born-open data ([Rouder, 2016](https://doi.org/10.3758/s13428-015-0630-z))
-    - Automatically uploaded to a public repository
-    - Offsite backup
+<!-- - Born-open data ([Rouder, 2016](https://doi.org/10.3758/s13428-015-0630-z)) -->
+<!--     - Automatically uploaded to a public repository -->
+<!--     - Offsite backup -->
         <!-- - Reduces extra sharing efforts -->
-    - But: Protect participants' privacy!
+<!--     - But: Protect participants' privacy! -->
 
 
-???
-Tutorial: [Born-open data with cloud storage providers](http://psych-transparency-guide.uni-koeln.de/born-open-data.html)
+<!-- ??? -->
+<!-- Tutorial: [Born-open data with cloud storage providers](http://psych-transparency-guide.uni-koeln.de/born-open-data.html) -->
 
-Show https://github.com/methexp/rawdata
+<!-- Show https://github.com/methexp/rawdata -->
 
 
 ---
@@ -823,7 +829,7 @@ Show https://github.com/methexp/rawdata
 ---
 # Upon submission
 
-- Research report
+- Research report ("Preprint")
     - Fast dissemination of results (citation advantage, e.g., [Piwowar & Vision, 2013](https://peerj.com/articles/175/))
     - Public peer review
     - Establishes precedents
@@ -1109,76 +1115,76 @@ kable(
 
 <!-- Frederik -->
 
----
-class: inverse, middle, center
+<!-- --- -->
+<!-- class: inverse, middle, center -->
 
-# How can you promote research transparency?
-
-
----
-# How can you promote research transparency?
-
-- Lead by example
-    - Promote selfish reasons for transparency, e.g.,
-        - Remember what you've done
-        - Easily find your own data and materials
-        - More citations
-        - Opportunities for collaboration
-        - Confidence in your own findings
---
-    - Share materials with your collaborators
---
-    - Publish in journals that value openness
---
-    - [Commit to Research Transparency and Open Science](http://www.researchtransparency.org/)
+<!-- # How can you promote research transparency? -->
 
 
----
-# How can you promote research transparency?
+<!-- --- -->
+<!-- # How can you promote research transparency? -->
 
-- Incentivize sharing
-    - Cite colleagues when reusing their shared resources, e.g.,
-      - Open data and materials
-      - Open source software (developed by academics)
-      - Open course materials
---
-    - Promote openness during peer review (e.g., [PRO initiative](https://opennessinitiative.org/))
---
-    - Value openness in hiring committees (e.g., [job offers that mentioned open science](https://osf.io/7jbnt/))
-
-
----
-# How can you promote research transparency?
-
-- Teach your students and colleagues
-    - Transparent research practices in theses, e.g.,
-        - "Safe" transparency for capstone project (OSF group)
-        - Stage-1 registered report as non-empirical Bachelor's thesis
---
-    - Collate and share materials on transparent research practices
-    - Teach workshops
+<!-- - Lead by example -->
+<!--     - Promote selfish reasons for transparency, e.g., -->
+<!--         - Remember what you've done -->
+<!--         - Easily find your own data and materials -->
+<!--         - More citations -->
+<!--         - Opportunities for collaboration -->
+<!--         - Confidence in your own findings -->
+<!-- -- -->
+<!--     - Share materials with your collaborators -->
+<!-- -- -->
+<!--     - Publish in journals that value openness -->
+<!-- -- -->
+<!--     - [Commit to Research Transparency and Open Science](http://www.researchtransparency.org/) -->
 
 
----
-# How can you promote research transparency?
+<!-- --- -->
+<!-- # How can you promote research transparency? -->
 
-- Lobby for transparent research practices, e.g.,
-    - Advocate for registered reports at journals (e.g., [Registered Reports Now!](https://osf.io/3wct2/))
---
-- Be forgiving of your own and other's honest mistakes!
+<!-- - Incentivize sharing -->
+<!--     - Cite colleagues when reusing their shared resources, e.g., -->
+<!--       - Open data and materials -->
+<!--       - Open source software (developed by academics) -->
+<!--       - Open course materials -->
+<!-- -- -->
+<!--     - Promote openness during peer review (e.g., [PRO initiative](https://opennessinitiative.org/)) -->
+<!-- -- -->
+<!--     - Value openness in hiring committees (e.g., [job offers that mentioned open science](https://osf.io/7jbnt/)) -->
+
+
+<!-- --- -->
+<!-- # How can you promote research transparency? -->
+
+<!-- - Teach your students and colleagues -->
+<!--     - Transparent research practices in theses, e.g., -->
+<!--         - "Safe" transparency for capstone project (OSF group) -->
+<!--         - Stage-1 registered report as non-empirical Bachelor's thesis -->
+<!-- -- -->
+<!--     - Collate and share materials on transparent research practices -->
+<!--     - Teach workshops -->
+
+
+<!-- --- -->
+<!-- # How can you promote research transparency? -->
+
+<!-- - Lobby for transparent research practices, e.g., -->
+<!--     - Advocate for registered reports at journals (e.g., [Registered Reports Now!](https://osf.io/3wct2/)) -->
+<!-- -- -->
+<!-- - Be forgiving of your own and other's honest mistakes! -->
 
 
 <!-- Johannes -->
 
----
-# Learn more about transparent research practices
+<!-- --- -->
+<!-- # Learn more about transparent research practices -->
 
-- [Open Science Knowledge Base](https://how-to-open.science/)
-- [DataWiz Knowledge Base](https://datawizkb.leibniz-psychology.org/)
-- [FOSTER Open Science Courses](https://www.fosteropenscience.eu/courses)
-- [Center for Open Science Webinars](https://osf.io/qpxv2/)
-- Open Science Short Course at the [GESIS Summer School](https://training.gesis.org/?site=pDetails&child=full&pID=0xB455C10E4BA7451CBC729596CA4A2F4C)
-<!-- - other workshops/courses (e.g. by the [Leibniz Institute for Psychology Information](https://leibniz-psychology.org/en/)) -->
+<!-- - [Open Science Knowledge Base](https://how-to-open.science/) -->
+<!-- - [DataWiz Knowledge Base](https://datawizkb.leibniz-psychology.org/) -->
+<!-- - [FOSTER Open Science Courses](https://www.fosteropenscience.eu/courses) -->
+<!-- - [Center for Open Science Webinars](https://osf.io/qpxv2/) -->
+<!-- - Open Science Short Course at the [GESIS Summer School](https://training.gesis.org/?site=pDetails&child=full&pID=0xB455C10E4BA7451CBC729596CA4A2F4C) -->
+<!-- <!-- - other workshops/courses (e.g. by the [Leibniz Institute for Psychology Information](https://leibniz-psychology.org/en/)) --> -->
 
 
 ---
