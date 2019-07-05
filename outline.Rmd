@@ -11,7 +11,7 @@ abstract: |
   Researchers increasingly publish research materials, data and analysis scripts, publicly preregister studies, and share and discuss preprints.
   However, setting up a transparent research workflow involves a plethora of decisions that can be quite demanding.
   Fortunately, transparent research practices can be adopted piecemeal---each incremental step adds value for individual researchers and the credibility of psychological research.
- In the process, we will review the evolving ecosystem of open science tools and services. Participants will draft bespoke transparent, less error-prone, and more reproducible research workflows.
+  In the process, we will review the evolving ecosystem of open science tools and services. Participants will draft bespoke transparent, less error-prone, and more reproducible research workflows.
 
 output:
   bookdown::html_document2:
@@ -27,8 +27,6 @@ library("rmarkdown")
 
 license <- "[![](images/by-badge.png)](https://creativecommons.org/licenses/by/4.0/) Please link to [workshop GitHub repository](https://github.com/crsh/psych-transparency-guide_workshop/) and cite [Klein et al. (2018)](https://doi.org/10.1525/collabra.158)."
 ```
-
-`r license`
 
 ---
 

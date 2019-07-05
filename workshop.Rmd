@@ -308,57 +308,57 @@ Amnesia: Ask a colleague who was not involved with the project
 <!-- - Ratings of IQ -->
 <!-- - Likert-scale ratings of attractiveness -->
 
-<!-- ```{r example-elements} -->
-<!-- # example_citation <- '<div class="reference">Kleisner, K., Chvátalová, V., & Flegr, J. (2014). Perceived Intelligence Is Associated with Measured Intelligence in Men but Not Women. <i>PLoS ONE</i>, 9(3): e81237. doi: <a href="https://doi.org/10.1371/journal.pone.0081237">10.1371/journal.pone.0081237</a></div>' -->
-<!-- example_citation <- '<div class="reference">Stimulus images courtesy of Michael J. Tarr, Center for the Neural Basis of Cognition and Department of Psychology, Carnegie Mellon University, http://www.tarrlab.org/. Funding provided by NSF award 0339122. <a href = "https://creativecommons.org/licenses/by-nc-sa/3.0/">CC-BY-NC-SA 3.0</a></div>' -->
+```{r example-elements}
+# example_citation <- '<div class="reference">Kleisner, K., Chvátalová, V., & Flegr, J. (2014). Perceived Intelligence Is Associated with Measured Intelligence in Men but Not Women. <i>PLoS ONE</i>, 9(3): e81237. doi: <a href="https://doi.org/10.1371/journal.pone.0081237">10.1371/journal.pone.0081237</a></div>'
+example_citation <- '<div class="reference">Stimulus images courtesy of Michael J. Tarr, Center for the Neural Basis of Cognition and Department of Psychology, Carnegie Mellon University, http://www.tarrlab.org/. Funding provided by NSF award 0339122. <a href = "https://creativecommons.org/licenses/by-nc-sa/3.0/">CC-BY-NC-SA 3.0</a></div>'
 
-<!-- # example_likert_scale <- '<table id="likert"> -->
-<!-- #    <tr> -->
-<!-- #        <td><input id="radGuiltyStart" type="radio" name="Guilty" value="7" /></td> -->
-<!-- #        <td><input type="radio" name="Guilty" value="6" /></td> -->
-<!-- #        <td><input type="radio" name="Guilty" value="5" /></td> -->
-<!-- #        <td><input type="radio" name="Guilty" value="4" /></td> -->
-<!-- #        <td><input type="radio" name="Guilty" value="3" /></td> -->
-<!-- #        <td><input type="radio" name="Guilty" value="2" /></td> -->
-<!-- #        <td><input id="radGuiltyEnd" type="radio" name="Guilty" value="1" /></td> -->
-<!-- #    </tr> -->
-<!-- #    <tr> -->
-<!-- #        <td style = "background-color: white;"><small>Low</small></td> -->
-<!-- #        <td style = "background-color: white;"></td> -->
-<!-- #        <td style = "background-color: white;"></td> -->
-<!-- #        <td style = "background-color: white;"><small>Intelligence</small></td> -->
-<!-- #        <td style = "background-color: white;"></td> -->
-<!-- #        <td style = "background-color: white;"></td> -->
-<!-- #        <td style = "background-color: white;"><small>High</small></td> -->
-<!-- #    </tr> -->
-<!-- # </table>' -->
+# example_likert_scale <- '<table id="likert">
+#    <tr>
+#        <td><input id="radGuiltyStart" type="radio" name="Guilty" value="7" /></td>
+#        <td><input type="radio" name="Guilty" value="6" /></td>
+#        <td><input type="radio" name="Guilty" value="5" /></td>
+#        <td><input type="radio" name="Guilty" value="4" /></td>
+#        <td><input type="radio" name="Guilty" value="3" /></td>
+#        <td><input type="radio" name="Guilty" value="2" /></td>
+#        <td><input id="radGuiltyEnd" type="radio" name="Guilty" value="1" /></td>
+#    </tr>
+#    <tr>
+#        <td style = "background-color: white;"><small>Low</small></td>
+#        <td style = "background-color: white;"></td>
+#        <td style = "background-color: white;"></td>
+#        <td style = "background-color: white;"><small>Intelligence</small></td>
+#        <td style = "background-color: white;"></td>
+#        <td style = "background-color: white;"></td>
+#        <td style = "background-color: white;"><small>High</small></td>
+#    </tr>
+# </table>'
 
-<!-- example_likert_scale <- '<center> -->
-<!--     <fieldset style = "width: 600px;"> -->
-<!--         <legend style = "padding: 6px;">What is this person\'s IQ?</legend> -->
+example_likert_scale <- '<center>
+    <fieldset style = "width: 600px;">
+        <legend style = "padding: 6px;">What is this person\'s IQ?</legend>
 
-<!--         70 <input type="range" id="start" name="volume" min="70" max="130" step = "1" style = "width: 500px;"/> 130 -->
-<!--     </fieldset> -->
-<!--     <br /> -->
-<!--     <fieldset style = "width: 600px;"> -->
-<!--         <legend style = "padding: 6px;">How attractive is this person?</legend> -->
+        70 <input type="range" id="start" name="volume" min="70" max="130" step = "1" style = "width: 500px;"/> 130
+    </fieldset>
+    <br />
+    <fieldset style = "width: 600px;">
+        <legend style = "padding: 6px;">How attractive is this person?</legend>
 
-<!--         <table style = "width: 600px; border: none;"> -->
-<!--            <tr> -->
-<!--                <td><small>Very unattractive</small></td> -->
-<!--                <td><input type="radio" name="Guilty" value="6" /></td> -->
-<!--                <td><input type="radio" name="Guilty" value="6" /></td> -->
-<!--                <td><input type="radio" name="Guilty" value="5" /></td> -->
-<!--                <td><input type="radio" name="Guilty" value="4" /></td> -->
-<!--                <td><input type="radio" name="Guilty" value="3" /></td> -->
-<!--                <td><input type="radio" name="Guilty" value="2" /></td> -->
-<!--                <td><input id="radGuiltyEnd" type="radio" name="Guilty" value="1" /></td> -->
-<!--                <td style = "text-align: right;"><small>Very attractive</small></td> -->
-<!--            </tr> -->
-<!--         </table> -->
-<!--     </fieldset> -->
-<!-- </center>' -->
-<!-- ``` -->
+        <table style = "width: 600px; border: none;">
+           <tr>
+               <td><small>Very unattractive</small></td>
+               <td><input type="radio" name="Guilty" value="6" /></td>
+               <td><input type="radio" name="Guilty" value="6" /></td>
+               <td><input type="radio" name="Guilty" value="5" /></td>
+               <td><input type="radio" name="Guilty" value="4" /></td>
+               <td><input type="radio" name="Guilty" value="3" /></td>
+               <td><input type="radio" name="Guilty" value="2" /></td>
+               <td><input id="radGuiltyEnd" type="radio" name="Guilty" value="1" /></td>
+               <td style = "text-align: right;"><small>Very attractive</small></td>
+           </tr>
+        </table>
+    </fieldset>
+</center>'
+```
 
 
 <!-- --- -->
