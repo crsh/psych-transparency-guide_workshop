@@ -3,7 +3,7 @@ title: "<img src = 'images/open.png' style = 'margin-bottom: 45px;'/><br />Devel
 subtitle: "A practical primer on transparent research workflows"
 author: "Frederik Aust<br />Johannes Breuer<br /><br /><a href = 'https://creativecommons.org/licenses/by/4.0/'><img src = 'images/by.png' style = 'width: 10%;' /></a>"
 
-date    : "09.07.2019"
+date    : "June 9th, 2019"
 location: "SIPS 2019"
 
 output:
@@ -62,9 +62,13 @@ MathJax.Hub.Config({
 # About us
 ## Johannes Breuer
 
-- PhD in psychology, University of Cologne<br />(media psychology, Prof. Dr. Gary Bente)
+- PhD in psychology, University of Cologne<br />(media psychology)
+- senior researcher at [GESIS &ndash; Leibniz Institute for the Social Sciences](https://www.gesis.org/en/home/) (Data Archive for the Social Sciences)
 - Previously worked at different comm and psych departments
-- Now senior researcher at [GESIS &ndash; Leibniz Institute for the Social Sciences](https://www.gesis.org/en/home/) (Data Archive for the Social Sciences)
+- Research interests:
+    - Uses and effects of digital media
+    - Computational methods
+    - Data management & open science
 
 <div class="reference"><a href="mailto:johannes.breuer@gesis.org">johannes.breuer@gesis.org</a>, <a href="https://twitter.com/MattEagle09">@MattEagle09</a></div>
 
@@ -479,13 +483,18 @@ Mention informed consent templates
 
 - Raw data
     - As originally recorded (e.g., paper-pencil-questionnaires, CSV files, video recordings)
---
 - Processed data
     - As used for analyses (e.g., coded, digitized, merged)
---
     - Ideally "Tidy Data" ([Wickham, 2014 ](https://www.jstatsoft.org/index.php/jss/article/view/v059i10/v59i10.pdf))
+        1. Each **variable** is in a separate **column**.
+        2. Each **observation** is in a separate **row**.
+        3. Each **value** is in a separate **cell**.
+        4. Multiple tables should include a column that allows them to be linked.
 
-.center[![](images/gather.png)]
+<!-- .center[![](images/gather.png)] -->
+
+???
+https://www.tandfonline.com/doi/abs/10.1080/00031305.2017.1375987
 
 
 ---
@@ -498,13 +507,14 @@ Mention informed consent templates
 - Processed data
     - As used for analyses (e.g., coded, digitized, merged)
     - Ideally "Tidy Data" ([Wickham, 2014 ](https://www.jstatsoft.org/index.php/jss/article/view/v059i10/v59i10.pdf))
-        1. Each measured variable in one column
-        2. Different observation of the variables in different rows
-        3. Multiple tables should include a column that allows them to be linked
+
+.center[![](images/tidy_data.png)]
+Source: https://r4ds.had.co.nz/tidy-data.html
 
 
 ???
 https://www.tandfonline.com/doi/abs/10.1080/00031305.2017.1375987
+
 
 
 ---
@@ -517,7 +527,10 @@ https://www.tandfonline.com/doi/abs/10.1080/00031305.2017.1375987
 --
     - Designed to protect personal data
     - Data are personal if attributable to a specific person (using additional datasets if necessary)
+    - The EU offers a [Guide to GDPR compliance](https://gdpr.eu/)
 
+???
+NB: We are no lawyers, so everything we say in this section is our own interpretation and should be taken with a grain of salt. When in doubt, you should consult with a legal expert.
 
 ---
 .title-image[![:scale 70%](images/privacy.png)]
@@ -564,6 +577,7 @@ Search yandex.com for `https://github.com/crsh/psych-transparency-guide_workshop
 <!-- - Australian National Data Service: [Decision tree for sharing sensitive data](https://www.ands.org.au/__data/assets/pdf_file/0010/385309/sensitive-decision-tree.pdf) -->
 - Only collect the data you really need
 - Delete identifying information used for logistics as soon as possible (e.g., e-mail addresses)
+- Get informed consent and be as specific as possible about how you handle the data (e.g.: For what purpose do you collect the data? Who will have access to the data and how?)
 --
 
 - Assess risk of reidentification, e.g.,
@@ -582,13 +596,11 @@ Australian National Data Service: [Decision tree for sharing sensitive data](htt
 
 # Participant privacy
 
-- Control access to pseudonymized data
---
-
-- _Only share anonymized data publicly_, e.g.,
-    - Delete directly identifying information (e.g., full name, address, face, handwriting, date of birth)
---
-    - Mind combinations of indirect identifiers (e.g., ZIP code, gender, date of birth, [Sweeney, 2000](https://dataprivacylab.org/projects/identifiability/paper1.pdf))
+- Control access to sensitive data
+    - some repositories offer options for secure (onsite or remote) access
+<!-- - _Only share anonymized data publicly_, e.g., -->
+- Delete directly identifying information (e.g., full name, address, face, handwriting, date of birth)
+- Mind combinations of indirect identifiers (e.g., ZIP code, gender, date of birth, [Sweeney, 2000](https://dataprivacylab.org/projects/identifiability/paper1.pdf))
 
 .center[![:scale 35%](images/sweeney.png)]
 
@@ -625,8 +637,7 @@ Australian National Data Service: [Decision tree for sharing sensitive data](htt
     - Number of observations
     - Name and description of variables (incl. source of a measure, information about translation)
 --
-    - Units of measurement, coding of values, possible options or range
-    - Value(s) used for missing data
+    - Units of measurement, coding of values (incl. missings), possible options or range
     - How a variable was derived from other variables
     
 $$\mathrm{BMI} = \frac{m}{l^2}$$
@@ -634,6 +645,9 @@ $$\mathrm{BMI} = \frac{m}{l^2}$$
 ???
 Show simple codebook from example project: https://osf.io/rv7py/
 
+Metadata can be provided/available at study and variable level
+
+Some repositories use structured metadata formats (e.g., DDI which esp. common in the social sciences)
 
 ---
 .title-image[![:scale 70%](images/data.png)]
@@ -647,16 +661,20 @@ Show simple codebook from example project: https://osf.io/rv7py/
     - Analysis software (e.g., [R `codebook` package](https://cran.r-project.org/web/packages/codebook/index.html), [SPSS codebook function](https://libguides.library.kent.edu/SPSS/Codebooks), or [Stata codebook function](http://www.stata.com/manuals13/dcodebook.pdf))
     - Specialized software (e.g., [Nesstar](http://www.nesstar.com/software/publisher.html), [DataWiz](https://datawiz.leibniz-psychology.org/DataWiz/?datawiz_locale=en))
 --
-- If reuse value is high, consider standardized, machine-readable format (e.g., [DDI](https://www.ddialliance.org/))
+- If reuse value is high, consider a standardized, machine-readable format (e.g., [DDI](https://www.ddialliance.org/))
     - Some repositories provide implementation as a service
 
 ???
-Codebook app: https://opencpu2.psych.bio.uni-goettingen.de/ocpu/user/rarslan/library/codebook/www/
+Codebook app: https://rubenarslan.ocpu.io/codebook/www/
 
 Show SPSS (on website) and R codebook
 
+makeCodebook() function from dataMaid package
 
-<!-- Frederik -->
+codebook() function from the memisc package
+
+
+<!-- Frederik
 
 <!-- --- -->
 <!-- .title-image[![:scale 70%](images/analysis.png)] -->
@@ -685,6 +703,7 @@ Show SPSS (on website) and R codebook
 
 <!-- Exercise: Let participants draft some SOP for data analysis -->
 
+-->
 
 ---
 .title-image[![:scale 70%](images/analysis.png)]
@@ -921,7 +940,7 @@ kable(
 ---
 # Choose a repository
 
-- Choose a suitable publicly accessible repository
+- Recommendation: Choose a suitable publicly accessible repository that ideally...
 
 --
     1. Stores data in accordance with local legislation (e.g., [EU GDPR](http://www.eugdpr.org/))
@@ -940,7 +959,7 @@ kable(
 - How would you search for a suitable repository?
 
 
-<!-- Frederik -->
+<!-- Frederik
 
 ---
 .title-image[![:scale 70%](images/protocol.png)]
@@ -953,13 +972,10 @@ kable(
     - Video methods journal [JoVE Behavior](https://www.jove.com/)
     <!-- - however: relatively high publication costs (1200 - 4200 USD) -->
 
-
 ???
 Demonstration: showcase good preregistrations (https://osf.io/h9k8n/)
 
-Exercise: Write preregistration with https://aspredicted.org/ for example project
-
-
+<!--
 ---
 .title-image[![:scale 70%](images/software.png)]
 
@@ -990,7 +1006,6 @@ Demonstrate Pavlovia: https://pavlovia.org/explore
 
 <!-- https://nikokriegeskorte.org/2016/03/13/the-selfish-scientists-guide-to-preprint-posting/ -->
 
-
 ???
 PsyArXiv
 
@@ -1005,11 +1020,11 @@ PsyArXiv
 
 # Licenses
 
-- Licenses define conditions of access and reuse
-
---
-
-> .highlight[The selection, coordination, and arrangement of the database is subject to copyright if it is sufficiently original. [...] The data or other contents contained in the database are subject to copyright if they are sufficiently creative.] Original poems contained in a database would be protected by copyright, but purely factual data (such as gene names or city populations) would not. .highlight[Facts are not subject to copyright], nor are the ideas underlying copyrighted content ([Creative Commons, 2018](https://wiki.creativecommons.org/wiki/Data)).
+- Licenses define conditions of (re)use and (re)distribution
+    - specified by the data provider <!-- copyright holder? -->
+- Many repositories (also) offer different access categories
+- Access categories define who can access the data (and how)
+    - specified by data provider or repository <!-- copyright holder? -->
 
 
 ---
@@ -1017,7 +1032,6 @@ PsyArXiv
 
 # Licenses
 
-- Licenses define conditions of access and reuse
 - Factual information are usually *not* protected by copyright
     - For example, response times, mortality rates, currency values, the number of Twitter followers someone has
     - Database structures and compilations of data can be copyrightable
@@ -1031,7 +1045,15 @@ Applying a license to noncopyrightable work does little harm
 
 # Licenses
 
-- Copyright owners may assign licenses
+> .highlight[The selection, coordination, and arrangement of the database is subject to copyright if it is sufficiently original. [...] The data or other contents contained in the database are subject to copyright if they are sufficiently creative.] Original poems contained in a database would be protected by copyright, but purely factual data (such as gene names or city populations) would not. .highlight[Facts are not subject to copyright], nor are the ideas underlying copyrighted content ([Creative Commons, 2018](https://wiki.creativecommons.org/wiki/Data)).
+
+
+---
+.title-image[![:scale 70%](images/licenses.png)]
+
+# Licenses
+
+- Copyright holder may assign licenses
     - Standardized scales may be owned by publisher
     - Copyright to long verbatim free text responses may belong to participants
 --
@@ -1045,10 +1067,9 @@ Applying a license to noncopyrightable work does little harm
 
 - Public availability does not authorize to reuse
     - Always explicitly apply licenses
-    - Access categories vs. licenses
-        - Repositories may have different access categories (e.g., [GESIS DBK access categories](https://dbk.gesis.org/DBKSearch/LegendAC.htm))
+    
 --
-- Use easy-to-understand standard licenses (e.g., [Creative Commons](https://creativecommons.org/licenses/))
+- Use easy-to-understand stanard licenses (e.g., [Creative Commons](https://creativecommons.org/licenses/))
     - README: "All files in this repository are licensed under a Creative Commons Zero License (CC0 1.0)"
 --
 - Use most permissive license possible (e.g., CC0, CC-BY)
@@ -1059,7 +1080,7 @@ Applying a license to noncopyrightable work does little harm
 
 # Creative Commons Licenses
 
-- Modular license "building set"
+- Modular general purpose license "building set"
     - In practice, seven combinations are supported
 
 ```{r cc-license-modules, echo = FALSE}
@@ -1108,12 +1129,26 @@ kable(
 
 # Creative Commons Licenses
 
-- Modular license "building set"
+- Modular general purpose license "building set"
     - In practice, seven combinations are supported
 - Mind version numbers (e.g., CC-BY 4.0)
 
 
-<!-- Frederik -->
+---
+.title-image[![:scale 70%](images/licenses-cc.png)]
+
+# Specialized licenses
+
+- For data:
+    - [Open Data Commons](https://opendatacommons.org/licenses/index.html)
+
+- For software/code:
+    - [GNU General Public License](https://opensource.org/licenses/gpl-license)
+    - [MIT License](https://opensource.org/licenses/MIT)
+
+---
+
+<!-- Frederik 
 
 <!-- --- -->
 <!-- class: inverse, middle, center -->
@@ -1176,15 +1211,15 @@ kable(
 
 <!-- Johannes -->
 
-<!-- --- -->
-<!-- # Learn more about transparent research practices -->
+---
+# Learn more about transparent research practices
 
 <!-- - [Open Science Knowledge Base](https://how-to-open.science/) -->
 <!-- - [DataWiz Knowledge Base](https://datawizkb.leibniz-psychology.org/) -->
 <!-- - [FOSTER Open Science Courses](https://www.fosteropenscience.eu/courses) -->
 <!-- - [Center for Open Science Webinars](https://osf.io/qpxv2/) -->
-<!-- - Open Science Short Course at the [GESIS Summer School](https://training.gesis.org/?site=pDetails&child=full&pID=0xB455C10E4BA7451CBC729596CA4A2F4C) -->
-<!-- <!-- - other workshops/courses (e.g. by the [Leibniz Institute for Psychology Information](https://leibniz-psychology.org/en/)) --> -->
+<!-- - Data Sharing & FAIR Data Short Course at the [GESIS Summer School](https://training.gesis.org/?site=pDetails&child=full&pID=0xB455C10E4BA7451CBC729596CA4A2F4C&subID=0x46AC3A06211E4932A8FF77D60B2A6A30&lang=en_US) -->
+<!-- - other workshops/courses (e.g. by the [Leibniz Institute for Psychology Information](https://leibniz-psychology.org/en/)) -->
 
 
 ---

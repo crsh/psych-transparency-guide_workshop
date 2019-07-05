@@ -1,10 +1,10 @@
 ---
-title   : "A practical primer on transparent research workflows"
+title   : "Developing your personal workflow for transparent & reproducible research"
 subtitle: "Handout"
 author  : "Frederik Aust & Johannes Breuer"
 
-date    : "04.09.2018"
-location: "ESCON 2018, Cologne, Germany"
+date    : "June 9th, 2019"
+location: "SIPS 2019, Rotterdam, Netherlands"
 
 output:
   bookdown::html_document2:
@@ -36,28 +36,27 @@ license <- "[![](images/by-badge.png)](https://creativecommons.org/licenses/by/4
 
 > Open Science is just science done right <br /><br />&mdash;Jon Tennant, Imperial College London
 
+<!-- ## Why would you _not_ share? -->
 
-## Why would you _not_ share?
-
-- Fear of being scooped
-    - Usually an unwarranted fear
-    - Share upon publication or with an embargo
-- Fear of being corrected
-    - Errors are inevitable and a normal part of science
-    - Necessary for scientific self-correction
-    - Constructive self-correction can enhance researchers' standing ([Fetterman & Sassenberg, 2015](https://doi.org/10.1371/journal.pone.0143723))
-- Personal data
-    - Get informed consent
-    - Pseudonymize data
-    - Employ access controls
-    - Share other research products
-- Time-consuming
-    - Take one step at a time ("baby steps")
-    - Iteratively improve your workflow
-    - Increases efficiency in the long-run
-    - Increases exposure and citations
-    <!-- - Helps to avoid fruitless avenues for future studies -->
-    <!-- - Use (or create) templates & available tools -->
+<!-- - Fear of being scooped -->
+<!--     - Usually an unwarranted fear -->
+<!--     - Share upon publication or with an embargo -->
+<!-- - Fear of being corrected -->
+<!--     - Errors are inevitable and a normal part of science -->
+<!--     - Necessary for scientific self-correction -->
+<!--     - Constructive self-correction can enhance researchers' standing ([Fetterman & Sassenberg, 2015](https://doi.org/10.1371/journal.pone.0143723)) -->
+<!-- - Personal data -->
+<!--     - Get informed consent -->
+<!--     - Pseudonymize data -->
+<!--     - Employ access controls -->
+<!--     - Share other research products -->
+<!-- - Time-consuming -->
+<!--     - Take one step at a time ("baby steps") -->
+<!--     - Iteratively improve your workflow -->
+<!--     - Increases efficiency in the long-run -->
+<!--     - Increases exposure and citations -->
+<!--     <!-- - Helps to avoid fruitless avenues for future studies --> -->
+<!--     <!-- - Use (or create) templates & available tools --> -->
 
 > … until recently I was an open-data hypocrite. Although I was committed to open data, I was not implementing it in practice. … Some of it was a lack of effort. It was a pain to document the data; it was a pain to format the data; it was a pain to contact the library personnel; it was a pain to figure out which data were indeed published as part of which experiments. Some of it was forgetfulness. I had neither a routine nor any daily incentive to archive data (p. 1063, [Rouder, 2016](https://doi.org/10.3758/s13428-015-0630-z))
 
@@ -397,35 +396,33 @@ kable(
 <!-- or add "Citeability" to the above table? Citeability <- c("-", "--", "0", "++", "++") -->
 
 
-<!-- Frederik -->
+<!-- ## Specialized approaches -->
 
-## Specialized approaches
+<!-- ### Study protocol -->
 
-### Study protocol
+<!-- - (Embargoed) Public preregistration -->
+<!--     - [Supplementary material](http://psych-transparency-guide.uni-koeln.de/preregistration.html) of Klein et al. (2018) -->
+<!--     - COS: [How to preregister via the OSF](https://osf.io/2vu7m/) -->
+<!--     - [Example preregistrations](https://osf.io/h9k8n/)) -->
+<!--     <!-- - **Demonstration**: Show some preregistration websites, showcase good preregistrations (https://osf.io/h9k8n/) --> -->
+<!-- - [Registered reports](https://cos.io/rr/) `r recommendation` -->
+<!-- - Video methods journal [JoVE Behavior](https://www.jove.com/) -->
+<!--     <!-- - however: relatively high publication costs (1200 - 4200 USD) --> -->
 
-- (Embargoed) Public preregistration
-    - [Supplementary material](http://psych-transparency-guide.uni-koeln.de/preregistration.html) of Klein et al. (2018)
-    - COS: [How to preregister via the OSF](https://osf.io/2vu7m/)
-    - [Example preregistrations](https://osf.io/h9k8n/))
-    <!-- - **Demonstration**: Show some preregistration websites, showcase good preregistrations (https://osf.io/h9k8n/) -->
-- [Registered reports](https://cos.io/rr/) `r recommendation`
-- Video methods journal [JoVE Behavior](https://www.jove.com/)
-    <!-- - however: relatively high publication costs (1200 - 4200 USD) -->
+<!-- ### Analysis scripts and software -->
 
-### Analysis scripts and software
-
-- Hosted Version Control Systems (e.g., [GitHub](https://github.com/), [GitLab](https://about.gitlab.com/))
-- Cloud-based analysis platforms (e.g., [Code Ocean](https://codeocean.com/), [RStudio cloud](https://rstudio.cloud/), [Colaboratory](https://colab.research.google.com/))
-- Cloud-based experiment platforms (e.g., [Pavlovia](https://pavlovia.org/explore) for [PsychoPy](http://www.psychopy.org/), [jspsych](https://www.jspsych.org/), and [lab.js](https://lab.js.org/))
-- Container-based experiment platforms (e.g., [The Experiment Factory](https://expfactory.github.io/))
-- Usually no guarantee of long-term access
-    - Archive in public repository (e.g., [archive GitHub repository with Zenodo](https://guides.github.com/activities/citable-code/)) `r recommendation`
+<!-- - Hosted Version Control Systems (e.g., [GitHub](https://github.com/), [GitLab](https://about.gitlab.com/)) -->
+<!-- - Cloud-based analysis platforms (e.g., [Code Ocean](https://codeocean.com/), [RStudio cloud](https://rstudio.cloud/), [Colaboratory](https://colab.research.google.com/)) -->
+<!-- - Cloud-based experiment platforms (e.g., [Pavlovia](https://pavlovia.org/explore) for [PsychoPy](http://www.psychopy.org/), [jspsych](https://www.jspsych.org/), and [lab.js](https://lab.js.org/)) -->
+<!-- - Container-based experiment platforms (e.g., [The Experiment Factory](https://expfactory.github.io/)) -->
+<!-- - Usually no guarantee of long-term access -->
+<!--     - Archive in public repository (e.g., [archive GitHub repository with Zenodo](https://guides.github.com/activities/citable-code/)) `r recommendation` -->
 
 
-### Reports
+<!-- ### Reports -->
 
-- Institutional repositories
-- Preprint repositories (e.g., [PsyArXiv](https://psyarxiv.com/), [BioRxiv](https://www.biorxiv.org/), [PeerJ](https://peerj.com/preprints-search/)) `r recommendation`
+<!-- - Institutional repositories -->
+<!-- - Preprint repositories (e.g., [PsyArXiv](https://psyarxiv.com/), [BioRxiv](https://www.biorxiv.org/), [PeerJ](https://peerj.com/preprints-search/)) `r recommendation` -->
 
 <!-- https://nikokriegeskorte.org/2016/03/13/the-selfish-scientists-guide-to-preprint-posting/ -->
 
@@ -516,40 +513,36 @@ include_graphics("images/cc-license-spectrum.png")
 <!-- https://wiki.creativecommons.org/wiki/Data#Frequently_asked_questions_about_data_and_CC_licenses -->
 
 
-<!-- Frederik -->
+<!-- # How can you promote research transparency? -->
 
-# How can you promote research transparency?
+<!-- - Lead by example -->
+<!--     - Promote selfish reasons for transparency, e.g., -->
+<!--         - Remember what you've done -->
+<!--         - Easily find your own data and materials -->
+<!--         - More citations -->
+<!--         - Opportunities for collaboration -->
+<!--         - Confidence in your own findings -->
+<!--     - Share materials with your collaborators -->
+<!--     - Publish in journals that value openness -->
+<!--     - [Commit to Research Transparency and Open Science](http://www.researchtransparency.org/) -->
+<!-- - Incentivize sharing -->
+<!--     - Cite colleagues when reusing their shared resources, e.g., -->
+<!--       - Open data and materials -->
+<!--       - Open source software (developed by academics) -->
+<!--       - Open course materials -->
+<!--     - Promote openness during peer review (e.g., [PRO initiative](https://opennessinitiative.org/)) -->
+<!--     - Value openness in hiring committees (e.g., [job offers that mentioned open science](https://osf.io/7jbnt/)) -->
+<!-- - Teach your students and colleagues -->
+<!--     - [Cologne Open Science working group](https://www.hf.uni-koeln.de/39711) -->
+<!--         - Transparent research practices in theses (BSc, MSc, PhD) -->
+<!--             - "Safe" transparency for experimental tutorials (OSF group) -->
+<!--             - Stage-1 registered report as non-empirical Bachelor's thesis -->
+<!--     - Collate and share materials on transparent research practices -->
+<!--     - Teach workshops -->
+<!-- - Lobby for transparent research practices, e.g., -->
+<!--     - Advocate for registered reports at journals (e.g., [Registered Reports Now!](https://osf.io/3wct2/)) -->
+<!-- - Be forgiving of your own and other's honest mistakes! -->
 
-- Lead by example
-    - Promote selfish reasons for transparency, e.g.,
-        - Remember what you've done
-        - Easily find your own data and materials
-        - More citations
-        - Opportunities for collaboration
-        - Confidence in your own findings
-    - Share materials with your collaborators
-    - Publish in journals that value openness
-    - [Commit to Research Transparency and Open Science](http://www.researchtransparency.org/)
-- Incentivize sharing
-    - Cite colleagues when reusing their shared resources, e.g.,
-      - Open data and materials
-      - Open source software (developed by academics)
-      - Open course materials
-    - Promote openness during peer review (e.g., [PRO initiative](https://opennessinitiative.org/))
-    - Value openness in hiring committees (e.g., [job offers that mentioned open science](https://osf.io/7jbnt/))
-- Teach your students and colleagues
-    - [Cologne Open Science working group](https://www.hf.uni-koeln.de/39711)
-        - Transparent research practices in theses (BSc, MSc, PhD)
-            - "Safe" transparency for experimental tutorials (OSF group)
-            - Stage-1 registered report as non-empirical Bachelor's thesis
-    - Collate and share materials on transparent research practices
-    - Teach workshops
-- Lobby for transparent research practices, e.g.,
-    - Advocate for registered reports at journals (e.g., [Registered Reports Now!](https://osf.io/3wct2/))
-- Be forgiving of your own and other's honest mistakes!
-
-
-<!-- Johannes -->
 
 # Learn more about transparent research practices
 
@@ -557,7 +550,7 @@ include_graphics("images/cc-license-spectrum.png")
 - [DataWiz Knowledge Base](https://datawizkb.leibniz-psychology.org/)
 - [FOSTER Open Science Courses](https://www.fosteropenscience.eu/courses)
 - [Center for Open Science Webinars](https://osf.io/qpxv2/)
-- Open Science Short Course at the [GESIS Summer School](https://training.gesis.org/?site=pDetails&child=full&pID=0xB455C10E4BA7451CBC729596CA4A2F4C)
+- Data Sharing & FAIR Data Short Course at the [GESIS Summer School](https://training.gesis.org/?site=pDetails&child=full&pID=0xB455C10E4BA7451CBC729596CA4A2F4C&subID=0x46AC3A06211E4932A8FF77D60B2A6A30&lang=en_US)
 <!-- - other workshops/courses (e.g. by the [Leibniz Institute for Psychology Information](https://leibniz-psychology.org/en/)) -->
 
 

@@ -1,21 +1,17 @@
 ---
-title   : "A practical primer on transparent research workflows"
+title   : "Developing your personal workflow for transparent & reproducible research"
 subtitle: "Workshop outline"
 author  : "Frederik Aust & Johannes Breuer"
 
-date    : "04.09.2018"
-location: "ESCON 2018, Cologne, Germany"
+date    : "June 9th, 2019"
+location: "SIPS 2019, Rotterdam, Netherlands"
 
 abstract: |
-  Psychological science is facing a crisis of confidence fueled by concerns about replicability of empirical findings (e.g., Open Science Collaboration, 2015).
-  In response, psychologists have been reviewing how they do research and are leading many initiatives to improve replicability.
-  A fundamental element is greater transparency and intersubjective verifiability:
-  Researchers increasingly publish research materials, data and analysis scripts, publicly preregister their studies, and share and discuss preprints.
-  The evolving open science ecosystem provides a variety of tools and services to help researchers adopt transparent research practices.
-  However, setting up a transparent research workflow involves a plethora of decisions that can be off-putting.
-  Fortunately, transparent research practices can be adopted piecemeal---each incremental step adds positive value for individual researchers and the credibility of psychological research.
-  This active workshop will walk participants through the process of preparing and sharing their research products, including materials, data, analysis scripts, and study protocols.
-  It will address what, when, and how to share and help participants develop transparent, less error-prone, and more reproducible research workflows.
+  In response to the current crisis of confidence, psychologists have begun to push for greater transparency and intersubjective verifiability of their research.
+  Researchers increasingly publish research materials, data and analysis scripts, publicly preregister studies, and share and discuss preprints.
+  However, setting up a transparent research workflow involves a plethora of decisions that can be quite demanding.
+  Fortunately, transparent research practices can be adopted piecemeal---each incremental step adds value for individual researchers and the credibility of psychological research.
+ In the process, we will review the evolving ecosystem of open science tools and services. Participants will draft bespoke transparent, less error-prone, and more reproducible research workflows.
 
 output:
   bookdown::html_document2:
@@ -60,10 +56,7 @@ The active three-hour workshop will cover the following issues.
 4. How can you share?
     - Compilation of research products
     - Choosing a repository
-    - Specialized approaches
     - Licenses
-
-5. How you can promote openness?
 
 
 # Course materials
