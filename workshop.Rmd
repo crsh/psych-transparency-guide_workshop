@@ -785,11 +785,11 @@ class: inverse, middle, center
 ---
 # When can you share?
 
-> any time is better than never  (p. 4, [Klein et al., 2018](http://doi.org/10.1525/collabra.158)).
+> any time is better than never  (p. 4, [Klein et al., 2018](https://doi.org/10.1525/collabra.158)).
 
 .center[![:scale 85%](images/klein-et-al-figure-2.png)]
 
-<div class = "reference"><center>Reprinted from <a href = "http://doi.org/10.1525/collabra.158">Klein et al., 2018</a> (<a href="https://creativecommons.org/licenses/by/4.0/">CC-BY Attribution 4.0</a>)</center></div>
+<div class = "reference"><center>Reprinted from <a href = "https://doi.org/10.1525/collabra.158">Klein et al., 2018</a> (<a href="https://creativecommons.org/licenses/by/4.0/">CC-BY Attribution 4.0</a>)</center></div>
 
 
 ---
@@ -931,7 +931,7 @@ kable(
 # Choose a repository
 
 - Self-deposit vs. curated repositories
-- [FAIR Data Principles](https://www.force11.org/group/fairgroup/fairprinciples) ([Wilkinson et al., 2016](https://dx.doi.org/10.1038/sdata.2016.18))
+- [FAIR Data Principles](https://www.force11.org/group/fairgroup/fairprinciples) ([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18))
       1. _Findable_: Persistent identifiers; metadata; indexed
       2. _Accessible_: Retrievable by identifier; controlled access where necessary
       3. _Interoperable_: Standardized metadata; open, lightweight, and interoperable file formats (e.g., CSV, TSV, JSON, ODS)

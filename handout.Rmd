@@ -74,7 +74,7 @@ license <- "[![](images/by-badge.png)](https://creativecommons.org/licenses/by/4
     - Would I still understand this after losing my memory?
         <!-- - Ask a colleague who was not involved with the project -->
 
-> do not let the perfect be the enemy of the good. Share and document what you can, as it will provide a benefit compared with not sharing (p. 4, [Klein et al., 2018](http://doi.org/10.1525/collabra.158)).
+> do not let the perfect be the enemy of the good. Share and document what you can, as it will provide a benefit compared with not sharing (p. 4, [Klein et al., 2018](https://doi.org/10.1525/collabra.158)).
 
 <!-- - Reduces extra sharing efforts -->
 
@@ -85,7 +85,7 @@ license <- "[![](images/by-badge.png)](https://creativecommons.org/licenses/by/4
 
 # What can you share?
 
-```{r figure1, fig.cap = "Decision flowchart outlining important considerations when sharing research products (reprinted from [Klein et al., 2018](http://doi.org/10.1525/collabra.158), [CC-BY Attribution 4.0](https://creativecommons.org/licenses/by/4.0/))."}
+```{r figure1, fig.cap = "Decision flowchart outlining important considerations when sharing research products (reprinted from [Klein et al., 2018](https://doi.org/10.1525/collabra.158), [CC-BY Attribution 4.0](https://creativecommons.org/licenses/by/4.0/))."}
 include_graphics("images/klein-et-al-figure-1.png")
 ```
 
@@ -253,9 +253,9 @@ include_graphics("images/pre-post-print.png")
 
 # When can you share?
 
-> any time is better than never  (p. 4, [Klein et al., 2018](http://doi.org/10.1525/collabra.158)).
+> any time is better than never  (p. 4, [Klein et al., 2018](https://doi.org/10.1525/collabra.158)).
 
-```{r figure2, fig.cap = "Typical workflow indicating when to share research products at different stages of the research process (reprinted from [Klein et al., 2018](http://doi.org/10.1525/collabra.158), [CC-BY Attribution 4.0](https://creativecommons.org/licenses/by/4.0/))."}
+```{r figure2, fig.cap = "Typical workflow indicating when to share research products at different stages of the research process (reprinted from [Klein et al., 2018](https://doi.org/10.1525/collabra.158), [CC-BY Attribution 4.0](https://creativecommons.org/licenses/by/4.0/))."}
 include_graphics("images/klein-et-al-figure-2.png")
 ```
 
@@ -352,7 +352,7 @@ include_graphics("images/klein-et-al-figure-2.png")
 <!--     - Which features of a repository would you consider important (for your data)? -->
 <!--     - How would you search for a suitable repository? -->
 
-- [FAIR Data Principles](https://www.force11.org/group/fairgroup/fairprinciples) ([Wilkinson et al., 2016](https://dx.doi.org/10.1038/sdata.2016.18))
+- [FAIR Data Principles](https://www.force11.org/group/fairgroup/fairprinciples) ([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18))
       1. _Findable_: Persistent identifiers; metadata; indexed
       2. _Accessible_: Retrievable by identifier; controlled access where necessary
       3. _Interoperable_: Standardized metadata; open, lightweight, and interoperable file formats (e.g., CSV, TSV, JSON, ODS)
