@@ -1021,11 +1021,11 @@ kable(
 
 # Licenses
 
-- Licenses define conditions of (re)use and (re)distribution
-    - specified by copyright holder
+- Licenses define conditions of use and redistribution
+    - Specified by copyright holder
 - Many repositories (also) offer different access categories
 - Access categories define who can access the research prodcuts (and how)
-    - specified by copyright holder or repository
+    - Specified by copyright holder or repository
 
 
 ---
@@ -1140,10 +1140,9 @@ kable(
 
 # Specialized licenses
 
-- For data:
+- Data
     - [Open Data Commons](https://opendatacommons.org/licenses/index.html)
-
-- For software/code:
+- Software/code
     - [GNU General Public License](https://opensource.org/licenses/gpl-license)
     - [MIT License](https://opensource.org/licenses/MIT)
 

@@ -70,8 +70,8 @@ license <- "[![](images/by-badge.png)](https://creativecommons.org/licenses/by/4
     - Create and use templates
     - Automate what can be automated
 - Iteratively improve your workflow
-- Routinely perform _Amnesia test_
-    - Would I still understand this after losing my memory?
+<!-- - Routinely perform _Amnesia test_ -->
+<!--     - Would I still understand this after losing my memory? -->
         <!-- - Ask a colleague who was not involved with the project -->
 
 > do not let the perfect be the enemy of the good. Share and document what you can, as it will provide a benefit compared with not sharing (p. 4, [Klein et al., 2018](https://doi.org/10.1525/collabra.158)).
@@ -150,7 +150,7 @@ include_graphics("images/klein-et-al-figure-1.png")
         - Small population and rare traits
         - Dyadic data
         - Hierarchical data (e.g., small subsamples of students, co-workers)
-        - <!-- Self-identification??? TODO: How is this a problem/How would it be possible to prevent this? -->
+        <!-- - Self-identification??? TODO: How is this a problem/How would it be possible to prevent this? -->
         - _Motivated intruder test_ (e.g., jealous partner, nosy neighbor, envious co-worker, insurers, criminals)
     - Only share anonymized data publicly, e.g., `r recommendation`
         - Delete directly identifying information (e.g., full name, address, face, handwriting, date of birth, genetic information)
@@ -192,22 +192,22 @@ To ascertain whether means are reasonably likely to be used to identify the natu
     <!-- This documentation should describe the variables in each data file in both human- and machine-readable formats (e.g., csv, rather than docx or pdf). Ideally, codebooks are organized in such a way that each line represents one variable and each information relative to a variable represents a column. -->
 
 
-## Standard operating procedures
+<!-- ## Standard operating procedures -->
 
-- Define default practices ([Lin & Green, 2016](
-https://doi.org/10.1017/S1049096516000810))
-- Study planning, e.g.,
-    - Sample size determination
-- Data analysis, e.g.,
-    - Statistical models
-        - Assumption tests
-        - Follow-up tests
-    - Exclusion criteria
-    - Outlier and dropout treatment
-    - Handling of missing values
-    - Use of covariates
-    - Corrections for multiple comparisons
-- Example: [SOP for Green lab at Columbia](http://alexandercoppock.com/Green-Lab-SOP/Green_Lab_SOP.pdf)
+<!-- - Define default practices ([Lin & Green, 2016]( -->
+<!-- https://doi.org/10.1017/S1049096516000810)) -->
+<!-- - Study planning, e.g., -->
+<!--     - Sample size determination -->
+<!-- - Data analysis, e.g., -->
+<!--     - Statistical models -->
+<!--         - Assumption tests -->
+<!--         - Follow-up tests -->
+<!--     - Exclusion criteria -->
+<!--     - Outlier and dropout treatment -->
+<!--     - Handling of missing values -->
+<!--     - Use of covariates -->
+<!--     - Corrections for multiple comparisons -->
+<!-- - Example: [SOP for Green lab at Columbia](http://alexandercoppock.com/Green-Lab-SOP/Green_Lab_SOP.pdf) -->
 
 <!-- - Simplifies authoring of preregistrations -->
 
@@ -353,10 +353,10 @@ include_graphics("images/klein-et-al-figure-2.png")
 <!--     - How would you search for a suitable repository? -->
 
 - [FAIR Data Principles](https://www.force11.org/group/fairgroup/fairprinciples) ([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18))
-      1. _Findable_: Persistent identifiers; metadata; indexed
-      2. _Accessible_: Retrievable by identifier; controlled access where necessary
-      3. _Interoperable_: Standardized metadata; open, lightweight, and interoperable file formats (e.g., CSV, TSV, JSON, ODS)
-      4. _Reusable_: Documented; clear usage license
+    1. _Findable_: Persistent identifiers; metadata; indexed
+    2. _Accessible_: Retrievable by identifier; controlled access where necessary
+    3. _Interoperable_: Standardized metadata; open, lightweight, and interoperable file formats (e.g., CSV, TSV, JSON, ODS)
+    4. _Reusable_: Documented; clear usage license
 
 - Self-deposit (e.g., [OSF](https://osf.io/)) vs. curated repositories (e.g., [GESIS DBK](https://dbk.gesis.org/dbksearch/home.asp?db=e))
 - Resources comparing repositories
@@ -431,7 +431,8 @@ kable(
 
 ## Licenses
 
-- Licenses define conditions of access and reuse
+- Licenses define conditions of use and redistribution
+    - Specified by copyright holder
 - Factual information are usually *not* protected by copyright
     - For example, response times, mortality rates, currency values, the number of Twitter followers someone has
     - Database structures and compilations of data may be copyrightable
@@ -443,9 +444,16 @@ kable(
 - Public availability does not authorize to reuse
     - Access categories vs. licenses
     - Always explicitly apply licenses
-- Use easy-to-understand standard licenses (e.g., [Creative Commons](https://creativecommons.org/licenses/) `r recommendation`, [Open data commons](https://opendatacommons.org/licenses/))
+- Use easy-to-understand standard licenses
+    - General purpose licenses (e.g., [Creative Commons](https://creativecommons.org/licenses/) `r recommendation`, [Open data commons](https://opendatacommons.org/licenses/))
+    - Specialized licenses
+        - Data
+            - [Open Data Commons](https://opendatacommons.org/licenses/index.html)
+        - Software/code
+            - [GNU General Public     License](https://opensource.org/licenses/gpl-license)
+            - [MIT License](https://opensource.org/licenses/MIT)
     - For example, include a license statement in a text file ("All files in this repository are licensed under a Creative Commons Zero License (CC0 1.0)")
-- Repositories typically have different access categories (e.g., [GESIS DBK access categories](https://dbk.gesis.org/DBKSearch/LegendAC.htm))
+<!-- - Repositories typically have different access categories (e.g., [GESIS DBK access categories](https://dbk.gesis.org/DBKSearch/LegendAC.htm)) -->
         <!-- - Category 0: Released for everybody -->
         <!-- - Category A: Released for academic research and teaching -->
         <!-- - Category B: Released for academic research and teaching, if the results will not be published, otherwise permission required -->
