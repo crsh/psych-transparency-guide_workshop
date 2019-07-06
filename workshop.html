@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title> How to open up your research</title>
+    <title> Developing your personal workflow for transparent &amp; reproducible research</title>
     <meta charset="utf-8">
     <meta name="author" content="Frederik Aust Johannes Breuer" />
     <link href="libs/remark-css/default.css" rel="stylesheet" />
@@ -21,10 +21,10 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# <img src = 'images/open.png' style = 'margin-bottom: 45px;'/><br />How to open up your research
+# <img src = 'images/open.png' style = 'margin-bottom: 45px;'/><br />Developing your personal workflow for transparent &amp; reproducible research
 ## A practical primer on transparent research workflows
 ### Frederik Aust<br />Johannes Breuer<br /><br /><a href = 'https://creativecommons.org/licenses/by/4.0/'><img src = 'images/by.png' style = 'width: 10%;' /></a>
-### 07.09.2018
+### June 9th, 2019
 
 ---
 
@@ -35,7 +35,7 @@ layout: true
 
 &lt;div class="my-footer"&gt;
   &lt;div style="float: left;"&gt;&lt;span&gt;Frederik Aust &amp; Johannes Breuer&lt;/span&gt;&lt;/div&gt;
-  &lt;div style="float: right;"&gt;&lt;span&gt;EASP Solid Science Training Workshop, 07.09.2018&lt;/span&gt;&lt;/div&gt;
+  &lt;div style="float: right;"&gt;&lt;span&gt;SIPS 2019, June 9th, 2019&lt;/span&gt;&lt;/div&gt;
   &lt;div style="text-align: center;"&gt;&lt;span&gt;A practical primer on transparent research workflows&lt;/span&gt;&lt;/div&gt;
 &lt;/div&gt;
 
@@ -54,7 +54,7 @@ MathJax.Hub.Config({
 
 - PhD student at the University of Cologne&lt;br /&gt;(Prof. Dr. Christoph Stahl)
 - Founding memeber of [Cologne Open Science&lt;br /&gt;working group](https://www.hf.uni-koeln.de/39711)
-- Author and contributor to several R packages&lt;br&gt; (e.g., [`afex`](https://cran.r-project.org/web/packages/afex/index.html), [`citr`](https://cran.r-project.org/web/packages/citr/index.html), [`papaja`](https://github.com/crsh/papaja), [`prereg`](https://cran.r-project.org/web/packages/prereg/index.html))
+- Author and contributor to several R packages&lt;br&gt; (e.g., [`afex`](https://cran.r-project.org/web/packages/afex/index.html), [`citr`](https://cran.r-project.org/web/packages/citr/index.html), [`papaja`](https://github.com/crsh/papaja), [`prereg`](https://cran.r-project.org/web/packages/prereg/index.html), [`retractcheck`](https://cran.r-project.org/web/packages/retractcheck/index.html))
 
 &lt;div class="reference"&gt;&lt;a href="mailto:frederik.aust@uni-koeln.de"&gt;frederik.aust@uni-koeln.de&lt;/a&gt;, &lt;a href="https://twitter.com/frederikaust"&gt;@frederikaust&lt;/a&gt;&lt;/div&gt;
 
@@ -65,9 +65,13 @@ MathJax.Hub.Config({
 # About us
 ## Johannes Breuer
 
-- PhD in psychology, University of Cologne&lt;br /&gt;(media psychology, Prof. Dr. Gary Bente)
+- PhD in psychology, University of Cologne&lt;br /&gt;(media psychology)
+- senior researcher at [GESIS &amp;ndash; Leibniz Institute for the Social Sciences](https://www.gesis.org/en/home/) (Data Archive for the Social Sciences)
 - Previously worked at different comm and psych departments
-- Now senior researcher at [GESIS &amp;ndash; Leibniz Institute for the Social Sciences](https://www.gesis.org/en/home/) (Data Archive for the Social Sciences)
+- Research interests:
+    - Uses and effects of digital media
+    - Computational methods
+    - Data management &amp; open science
 
 &lt;div class="reference"&gt;&lt;a href="mailto:johannes.breuer@gesis.org"&gt;johannes.breuer@gesis.org&lt;/a&gt;, &lt;a href="https://twitter.com/MattEagle09"&gt;@MattEagle09&lt;/a&gt;&lt;/div&gt;
 
@@ -79,11 +83,12 @@ MathJax.Hub.Config({
 
 - We want to make this an (inter)active workshop
     - Feel free to ask questions at any time
+    - Develop *your personal* workflow
 - Slides and material are available at
 
 .center[`https://tinyurl.com/y8dbs2fu`]
 
-&lt;br /&gt;&lt;br /&gt;
+&lt;br /&gt;
 
 Workshop material is based on
 
@@ -115,8 +120,8 @@ Klein, O., Hardwicke, T. E., Aust, F., Breuer, J., Danielsson, H., Hofelich Mohr
     - Choosing a repository
     - Specialized approaches
     - Licenses
---
-- How can you promote openness?
+&lt;!-- -- --&gt;
+&lt;!-- - How can you promote openness? --&gt;
 
 
 ???
@@ -124,105 +129,105 @@ We try to make it an active workshop
 Questions?
 
 
----
-class: inverse, middle, center
+&lt;!-- --- --&gt;
+&lt;!-- class: inverse, middle, center --&gt;
 
-# Why should you share?
-
-
----
-# Why should you share?
-
-- It's just documenting your work
-    - Remember what you've done
-
---
-&gt; Your closest collaborator is you six months ago, but you don’t reply to emails.
-
-&gt; &amp;mdash; Paul Wilson, University of Wisconsin Madison
+&lt;!-- # Why should you share? --&gt;
 
 
----
-# Why should you share?
+&lt;!-- --- --&gt;
+&lt;!-- # Why should you share? --&gt;
 
-- It's just documenting your work
-    - Remember what you've done
-    - Lab members can learn from each other
-    - Colleagues can scrutinize and build on your work
+&lt;!-- - It's just documenting your work --&gt;
+&lt;!--     - Remember what you've done --&gt;
 
+&lt;!-- -- --&gt;
+&lt;!-- &gt; Your closest collaborator is you six months ago, but you don’t reply to emails. --&gt;
 
----
-# Why should you share?
-
-&gt; Open Science is just science done right
-
-&gt; &amp;mdash;Jon Tennant, Imperial College London
+&lt;!-- &gt; &amp;mdash; Paul Wilson, University of Wisconsin Madison --&gt;
 
 
-???
-You probably already drank the Kool-Aid
+&lt;!-- --- --&gt;
+&lt;!-- # Why should you share? --&gt;
+
+&lt;!-- - It's just documenting your work --&gt;
+&lt;!--     - Remember what you've done --&gt;
+&lt;!--     - Lab members can learn from each other --&gt;
+&lt;!--     - Colleagues can scrutinize and build on your work --&gt;
 
 
----
-# ~~Why should you share?~~
+&lt;!-- --- --&gt;
+&lt;!-- # Why should you share? --&gt;
 
-&gt; Open Science is just science done right
+&lt;!-- &gt; Open Science is just science done right --&gt;
 
-&gt; &amp;mdash;Jon Tennant, Imperial College London
-
-&lt;br /&gt;
-
-# Why would you _not_ share?
+&lt;!-- &gt; &amp;mdash;Jon Tennant, Imperial College London --&gt;
 
 
-???
-Ask participants to discuss in small groups?
+&lt;!-- ??? --&gt;
+&lt;!-- You probably already drank the Kool-Aid --&gt;
 
 
----
-# Why would you _not_ share?
+&lt;!-- --- --&gt;
+&lt;!-- # ~~Why should you share?~~ --&gt;
 
-- Fear of being scooped
+&lt;!-- &gt; Open Science is just science done right --&gt;
 
---
-    - Usually an unwarranted fear
-    - Share upon publication or with an embargo
---
-- Fear of being corrected
+&lt;!-- &gt; &amp;mdash;Jon Tennant, Imperial College London --&gt;
 
---
-    - Errors are inevitable and a normal part of science
-    - Promotes scientific self-correction
-    - Constructive self-correction can enhance researchers' standing ([Fetterman &amp; Sassenberg, 2015](https://doi.org/10.1371/journal.pone.0143723))
+&lt;!-- &lt;br /&gt; --&gt;
 
----
-# Why would you _not_ share?
-
-- Personal data
-    - Get informed consent
-    - Pseudonymize data
-    - Employ access controls
-    - Share other research products
-
-
-???
-We will talk more about this
-
-
----
-# Why would you _not_ share?
-
-&gt; .highlight[Although I was committed to open data, I was not implementing it [...] It was a pain] to document the data;  [...] to format the data;  [...] to contact the library personnel;  [...] to figure out which data were indeed published as part of which experiments. [...] .highlight[I had neither a routine nor any daily incentive to archive data] (p. 1063, [Rouder, 2016](https://doi.org/10.3758/s13428-015-0630-z))
-
-
---
 &lt;!-- # Why would you _not_ share? --&gt;
 
-- Time-consuming
-    - Take one step at a time ("baby steps")
-        - Iteratively improve your workflow
-    - Increases efficiency in the long-run
-    - Increases exposure and citations
+
+&lt;!-- ??? --&gt;
+&lt;!-- Ask participants to discuss in small groups? --&gt;
+
+
+&lt;!-- --- --&gt;
+&lt;!-- # Why would you _not_ share? --&gt;
+
+&lt;!-- - Fear of being scooped --&gt;
+
+&lt;!-- -- --&gt;
+&lt;!--     - Usually an unwarranted fear --&gt;
+&lt;!--     - Share upon publication or with an embargo --&gt;
+&lt;!-- -- --&gt;
+&lt;!-- - Fear of being corrected --&gt;
+
+&lt;!-- -- --&gt;
+&lt;!--     - Errors are inevitable and a normal part of science --&gt;
+&lt;!--     - Promotes scientific self-correction --&gt;
+&lt;!--     - Constructive self-correction can enhance researchers' standing ([Fetterman &amp; Sassenberg, 2015](https://doi.org/10.1371/journal.pone.0143723)) --&gt;
+
+&lt;!-- --- --&gt;
+&lt;!-- # Why would you _not_ share? --&gt;
+
+&lt;!-- - Personal data --&gt;
+&lt;!--     - Get informed consent --&gt;
+&lt;!--     - Pseudonymize data --&gt;
+&lt;!--     - Employ access controls --&gt;
+&lt;!--     - Share other research products --&gt;
+
+
+&lt;!-- ??? --&gt;
+&lt;!-- We will talk more about this --&gt;
+
+
+&lt;!-- --- --&gt;
+&lt;!-- # Why would you _not_ share? --&gt;
+
+&lt;!-- &gt; .highlight[Although I was committed to open data, I was not implementing it [...] It was a pain] to document the data;  [...] to format the data;  [...] to contact the library personnel;  [...] to figure out which data were indeed published as part of which experiments. [...] .highlight[I had neither a routine nor any daily incentive to archive data] (p. 1063, [Rouder, 2016](https://doi.org/10.3758/s13428-015-0630-z)) --&gt;
+
+
+&lt;!-- -- --&gt;
+&lt;!-- &lt;!-- # Why would you _not_ share? --&gt; --&gt;
+
+&lt;!-- - Time-consuming --&gt;
+&lt;!--     - Take one step at a time ("baby steps") --&gt;
+&lt;!--         - Iteratively improve your workflow --&gt;
+&lt;!--     - Increases efficiency in the long-run --&gt;
+&lt;!--     - Increases exposure and citations --&gt;
     &lt;!-- - Helps to avoid fruitless avenues for future studies --&gt;
     &lt;!-- - Use (or create) templates &amp; available tools --&gt;
 
@@ -230,11 +235,11 @@ We will talk more about this
 ---
 class: inverse, middle, center
 
-# &lt;img src = 'images/open.png' style = 'margin-bottom: 45px;'/&gt;&lt;br /&gt;How to open up your research
+# &lt;img src = 'images/open.png' style = 'margin-bottom: 45px;'/&gt;&lt;br /&gt;Developing your personal workflow for transparent &amp; reproducible research
 
 
 ---
-#  How to open up your research
+#  Developing your personal workflow for transparent &amp; reproducible research
 
 &gt; .highlight[do not let the perfect be the enemy of the good].
 Share and document what you can, as it will provide a benefit compared with not sharing (p. 4, Klein et al., 2018).
@@ -257,13 +262,13 @@ Share and document what you can, as it will provide a benefit compared with not 
 --
 - Make transparency a by-product of your workflow
     - Create and use templates
-    - Automate what can be automated
+    - If possible automate
 --
 - Iteratively improve your workflow
 
---
-- Routinely perform _Amnesia test_
-    - Would I still understand this after losing my memory?
+&lt;!-- -- --&gt;
+&lt;!-- - Routinely perform _Amnesia test_ --&gt;
+&lt;!--     - Would I still understand this after losing my memory? --&gt;
 
 ???
 Amnesia: Ask a colleague who was not involved with the project
@@ -275,55 +280,55 @@ Amnesia: Ask a colleague who was not involved with the project
 &lt;!--     - Compromise surely necessary --&gt;
 
 
----
-class: inverse, middle, center
+&lt;!-- --- --&gt;
+&lt;!-- class: inverse, middle, center --&gt;
 
-# Example project
-
-
----
-# Example project
-
-### Research question
-
-- Can we judge a person's IQ from their face?
-
---
-
-### Study design
-
-- Photographs of students with known IQ scores
-
-.center[
-![:scale 10%](material/example-project/stimuli/CF0014_1100_NE.jpg)
-![:scale 10%](material/example-project/stimuli/CF0025_1100_NE.jpg)
-![:scale 10%](material/example-project/stimuli/CF00018_1100_NE.jpg)
-![:scale 10%](material/example-project/stimuli/CM0029_1100_NE.jpg)
-![:scale 10%](material/example-project/stimuli/CM0009_1100_NE.jpg)
-![:scale 10%](material/example-project/stimuli/CM0039_1100_NE.jpg)
-]
-
-- Ratings of IQ
-- Likert-scale ratings of attractiveness
+&lt;!-- # Example project --&gt;
 
 
+&lt;!-- --- --&gt;
+&lt;!-- # Example project --&gt;
+
+&lt;!-- ### Research question --&gt;
+
+&lt;!-- - Can we judge a person's IQ from their face? --&gt;
+
+&lt;!-- -- --&gt;
+
+&lt;!-- ### Study design --&gt;
+
+&lt;!-- - Photographs of students with known IQ scores --&gt;
+
+&lt;!-- .center[ --&gt;
+&lt;!-- ![:scale 10%](material/example-project/stimuli/CF0014_1100_NE.jpg) --&gt;
+&lt;!-- ![:scale 10%](material/example-project/stimuli/CF0025_1100_NE.jpg) --&gt;
+&lt;!-- ![:scale 10%](material/example-project/stimuli/CF00018_1100_NE.jpg) --&gt;
+&lt;!-- ![:scale 10%](material/example-project/stimuli/CM0029_1100_NE.jpg) --&gt;
+&lt;!-- ![:scale 10%](material/example-project/stimuli/CM0009_1100_NE.jpg) --&gt;
+&lt;!-- ![:scale 10%](material/example-project/stimuli/CM0039_1100_NE.jpg) --&gt;
+&lt;!-- ] --&gt;
+
+&lt;!-- - Ratings of IQ --&gt;
+&lt;!-- - Likert-scale ratings of attractiveness --&gt;
 
 
----
-# Example project
 
-.center[![](material/example-project/stimuli/CF0007_1100_NE.jpg)]
 
-&lt;center&gt;
+&lt;!-- --- --&gt;
+&lt;!-- # Example project --&gt;
+
+&lt;!-- .center[![](material/example-project/stimuli/CF0007_1100_NE.jpg)] --&gt;
+
+&lt;!-- &lt;center&gt;
     &lt;fieldset style = "width: 600px;"&gt;
         &lt;legend style = "padding: 6px;"&gt;What is this person's IQ?&lt;/legend&gt;
-    
+
         70 &lt;input type="range" id="start" name="volume" min="70" max="130" step = "1" style = "width: 500px;"/&gt; 130
     &lt;/fieldset&gt;
     &lt;br /&gt;
     &lt;fieldset style = "width: 600px;"&gt;
         &lt;legend style = "padding: 6px;"&gt;How attractive is this person?&lt;/legend&gt;
-    
+
         &lt;table style = "width: 600px; border: none;"&gt;
            &lt;tr&gt;
                &lt;td&gt;&lt;small&gt;Very unattractive&lt;/small&gt;&lt;/td&gt;
@@ -338,24 +343,24 @@ class: inverse, middle, center
            &lt;/tr&gt;
         &lt;/table&gt;
     &lt;/fieldset&gt;
-&lt;/center&gt;
+&lt;/center&gt; --&gt;
 
 
----
-# Example project
+&lt;!-- --- --&gt;
+&lt;!-- # Example project --&gt;
 
-.center[![](material/example-project/stimuli/CM0027_1101_NE.jpg)]
+&lt;!-- .center[![](material/example-project/stimuli/CM0027_1101_NE.jpg)] --&gt;
 
-&lt;center&gt;
+&lt;!-- &lt;center&gt;
     &lt;fieldset style = "width: 600px;"&gt;
         &lt;legend style = "padding: 6px;"&gt;What is this person's IQ?&lt;/legend&gt;
-    
+
         70 &lt;input type="range" id="start" name="volume" min="70" max="130" step = "1" style = "width: 500px;"/&gt; 130
     &lt;/fieldset&gt;
     &lt;br /&gt;
     &lt;fieldset style = "width: 600px;"&gt;
         &lt;legend style = "padding: 6px;"&gt;How attractive is this person?&lt;/legend&gt;
-    
+
         &lt;table style = "width: 600px; border: none;"&gt;
            &lt;tr&gt;
                &lt;td&gt;&lt;small&gt;Very unattractive&lt;/small&gt;&lt;/td&gt;
@@ -370,24 +375,24 @@ class: inverse, middle, center
            &lt;/tr&gt;
         &lt;/table&gt;
     &lt;/fieldset&gt;
-&lt;/center&gt;
+&lt;/center&gt; --&gt;
 
 
----
-# Example project
+&lt;!-- --- --&gt;
+&lt;!-- # Example project --&gt;
 
-.center[![](material/example-project/stimuli/CM0046_1100_NE.jpg)]
+&lt;!-- .center[![](material/example-project/stimuli/CM0046_1100_NE.jpg)] --&gt;
 
-&lt;center&gt;
+&lt;!-- &lt;center&gt;
     &lt;fieldset style = "width: 600px;"&gt;
         &lt;legend style = "padding: 6px;"&gt;What is this person's IQ?&lt;/legend&gt;
-    
+
         70 &lt;input type="range" id="start" name="volume" min="70" max="130" step = "1" style = "width: 500px;"/&gt; 130
     &lt;/fieldset&gt;
     &lt;br /&gt;
     &lt;fieldset style = "width: 600px;"&gt;
         &lt;legend style = "padding: 6px;"&gt;How attractive is this person?&lt;/legend&gt;
-    
+
         &lt;table style = "width: 600px; border: none;"&gt;
            &lt;tr&gt;
                &lt;td&gt;&lt;small&gt;Very unattractive&lt;/small&gt;&lt;/td&gt;
@@ -402,24 +407,24 @@ class: inverse, middle, center
            &lt;/tr&gt;
         &lt;/table&gt;
     &lt;/fieldset&gt;
-&lt;/center&gt;
+&lt;/center&gt; --&gt;
 
 
----
-# Example project
+&lt;!-- --- --&gt;
+&lt;!-- # Example project --&gt;
 
-.center[![](material/example-project/stimuli/CF0030_1100_NE.jpg)]
+&lt;!-- .center[![](material/example-project/stimuli/CF0030_1100_NE.jpg)] --&gt;
 
-&lt;center&gt;
+&lt;!-- &lt;center&gt;
     &lt;fieldset style = "width: 600px;"&gt;
         &lt;legend style = "padding: 6px;"&gt;What is this person's IQ?&lt;/legend&gt;
-    
+
         70 &lt;input type="range" id="start" name="volume" min="70" max="130" step = "1" style = "width: 500px;"/&gt; 130
     &lt;/fieldset&gt;
     &lt;br /&gt;
     &lt;fieldset style = "width: 600px;"&gt;
         &lt;legend style = "padding: 6px;"&gt;How attractive is this person?&lt;/legend&gt;
-    
+
         &lt;table style = "width: 600px; border: none;"&gt;
            &lt;tr&gt;
                &lt;td&gt;&lt;small&gt;Very unattractive&lt;/small&gt;&lt;/td&gt;
@@ -434,11 +439,11 @@ class: inverse, middle, center
            &lt;/tr&gt;
         &lt;/table&gt;
     &lt;/fieldset&gt;
-&lt;/center&gt;
+&lt;/center&gt; --&gt;
 
 
-???
-Exercise: Explore example project files
+&lt;!-- ??? --&gt;
+&lt;!-- Exercise: Explore example project files --&gt;
 
 
 ---
@@ -483,9 +488,9 @@ OBS recording: https://osf.io/eyfxs/
 
     - Questionnaires
     - Stimulus material
-    - Computer code to present stimuli and collect responses
+    - Experimental software to present stimuli and collect responses
     - Instructions for interaction with participants
-    - Scripts and instructions for confederates
+        - Scripts and instructions for confederates
 --
 - Mind intellectual property rights!
 
@@ -527,13 +532,18 @@ Mention informed consent templates
 
 - Raw data
     - As originally recorded (e.g., paper-pencil-questionnaires, CSV files, video recordings)
---
 - Processed data
     - As used for analyses (e.g., coded, digitized, merged)
---
     - Ideally "Tidy Data" ([Wickham, 2014 ](https://www.jstatsoft.org/index.php/jss/article/view/v059i10/v59i10.pdf))
+        1. Each **variable** is in a separate **column**.
+        2. Each **observation** is in a separate **row**.
+        3. Each **value** is in a separate **cell**.
+        4. Multiple tables should include a column that allows them to be linked.
 
-.center[![](images/gather.png)]
+&lt;!-- .center[![](images/gather.png)] --&gt;
+
+???
+https://www.tandfonline.com/doi/abs/10.1080/00031305.2017.1375987
 
 
 ---
@@ -546,13 +556,14 @@ Mention informed consent templates
 - Processed data
     - As used for analyses (e.g., coded, digitized, merged)
     - Ideally "Tidy Data" ([Wickham, 2014 ](https://www.jstatsoft.org/index.php/jss/article/view/v059i10/v59i10.pdf))
-        1. Each measured variable in one column
-        2. Different observation of the variables in different rows
-        3. Multiple tables should include a column that allows them to be linked
+
+.center[![](images/tidy_data.png)]
+Source: https://r4ds.had.co.nz/tidy-data.html
 
 
 ???
 https://www.tandfonline.com/doi/abs/10.1080/00031305.2017.1375987
+
 
 
 ---
@@ -565,7 +576,10 @@ https://www.tandfonline.com/doi/abs/10.1080/00031305.2017.1375987
 --
     - Designed to protect personal data
     - Data are personal if attributable to a specific person (using additional datasets if necessary)
+    - The EU offers a [Guide to GDPR compliance](https://gdpr.eu/)
 
+???
+NB: We are no lawyers, so everything we say in this section is our own interpretation and should be taken with a grain of salt. When in doubt, you should consult with a legal expert.
 
 ---
 .title-image[![:scale 70%](images/privacy.png)]
@@ -583,8 +597,8 @@ https://www.tandfonline.com/doi/abs/10.1080/00031305.2017.1375987
 
 &lt;div style="font-size: 14px;"&gt;
 
-<div id="htmlwidget-4ebb44b7ad71559e9a47" style="width:700px;height:500px;" class="datatables html-widget"></div>
-<script type="application/json" data-for="htmlwidget-4ebb44b7ad71559e9a47">{"x":{"filter":"none","caption":"<caption>Raw data of participant 01<\/caption>","data":[[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],["2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13"],["09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32"],["Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male"],[26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26],["CF0001_1101_NE.jpg","CF00016_1100_NE.jpg","CF00017_1100_NE.jpg","CF00018_1100_NE.jpg","CF00019_1100_NE.jpg","CF0002_1100_NE.jpg","CF0003_1100_NE.jpg","CF0004_1100_NE.jpg","CF0005_1100_NE.jpg","CF0006_1100_NE.jpg","CF0007_1100_NE.jpg","CF0008_1100_NE.jpg","CF0009_1100_NE.jpg","CF0010_1100_NE.jpg","CF0011_1101_NE.jpg","CF0012_1110_NE.jpg","CF0013_1110_NE.jpg","CF0014_1100_NE.jpg","CF0015_1110_NE.jpg","CF0020_1100_NE.jpg","CF0021_1100_NE.jpg","CF0022_1100_NE.jpg","CF0023_1100_NE.jpg","CF0025_1100_NE.jpg","CF0026_1110_NE.jpg","CF0027_1110_NE.jpg","CF0028_1100_NE.jpg","CF0029_1100_NE.jpg","CF0030_1100_NE.jpg","CF0031_1100_NE.jpg","CF0032_1100_NE.jpg","CF0033_1100_NE.jpg","CF0034_1100_NE.jpg","CF0035_1100_NE.jpg","CF0035_1101_NE.jpg","CF0036_1100_NE.jpg","CF0037_1100_NE.jpg","CF0038_1110_NE.jpg","CF0039_1110_NE.jpg","CF0040_1110_NE.jpg","CF0041_1100_NE.jpg","CF0042_1100_NE.jpg","CF0043_1100_NE.jpg","CF0044_1100_NE.jpg","CF0045_1110_NE.jpg","CF0046_1100_NE.jpg","CF0048_1101_NE.jpg","CF0049_1100_NE.jpg","CF0050_1100_NE.jpg","CF0051_1100_NE.jpg","CF0052_1100_NE.jpg","CF0053_1100_NE.jpg","CF0054_1100_NE.jpg","CF0055_1100_NE.jpg","CF0056_1110_NE.jpg","CF0057_1100_NE.jpg","CF0058_1100_NE.jpg","CM0001_1100_NE.jpg","CM0002_1100_NE.jpg","CM0003_1101_NE.jpg","CM0004_1100_NE.jpg","CM0005_1100_NE.jpg","CM0006_1110_NE.jpg","CM0007_1100_NE.jpg","CM0008_1100_NE.jpg","CM0009_1100_NE.jpg","CM0010_1100_NE.jpg","CM0011_1100_NE.jpg","CM0012_1101_NE.jpg","CM0013_1111_NE.jpg","CM0014_1101_NE.jpg","CM0015_1100_NE.jpg","CM0016_1100_NE.jpg","CM0017_1100_NE.jpg","CM0018_1110_NE.jpg","CM0019_1110_NE.jpg","CM0020_1110_NE.jpg","CM0021_1100_NE.jpg","CM0021_1101_NE.jpg","CM0022_1110_NE.jpg","CM0023_1101_NE.jpg","CM0024_1110_NE.jpg","CM0025_1100_NE.jpg","CM0026_1100_NE.jpg","CM0027_1101_NE.jpg","CM0028_1100_NE.jpg","CM0029_1100_NE.jpg","CM0030_1100_NE.jpg","CM0031_1100_NE.jpg","CM0033_1100_NE.jpg","CM0034_1111_NE.jpg","CM0035_1100_NE.jpg","CM0037_1110_NE.jpg","CM0038_1100_NE.jpg","CM0039_1100_NE.jpg","CM0040_1100_NE.jpg","CM0041_1100_NE.jpg","CM0042_1100_NE.jpg","CM0043_1100_NE.jpg","CM0044_1100_NE.jpg","CM0045_1100_NE.jpg","CM0046_1100_NE.jpg","CM0047_1100_NE.jpg","CM0048_1100_NE.jpg","CM0050_1100_NE.jpg","CM0051_1100_NE.jpg"],["Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male"],[107,106,118,110,93,90,98,93,101,124,102,102,93,114,96,82,101,89,113,99,109,92,88,112,94,101,106,105,100,102,103,94,99,101,117,105,97,94,106,70,77,112,112,103,116,91,108,108,114,91,85,105,97,104,104,96,97,108,87,112,116,95,96,106,102,80,84,115,117,113,99,101,91,91,93,92,97,92,89,95,84,108,114,101,104,112,98,102,95,95,129,110,103,100,114,108,105,92,106,99,107,115,101,109,105,103],[107,130,118,104,107,95,94,93,71,110,82,105,93,114,94,82,80,119,107,91,109,108,100,112,74,103,95,105,100,102,103,94,99,101,126,105,97,70,82,70,70,112,104,103,116,75,108,108,128,91,85,105,97,104,104,80,97,108,87,112,101,120,114,126,102,106,84,115,117,130,99,101,91,91,93,92,110,92,89,95,84,108,130,101,96,113,87,115,95,95,121,110,125,114,114,108,105,91,106,99,107,106,101,109,104,110],[1,1,4,1,7,3,1,1,1,6,1,5,4,4,7,6,7,3,1,6,7,6,1,7,5,3,1,3,3,6,4,3,7,3,4,3,2,2,1,2,5,1,1,1,6,4,4,1,6,1,3,7,4,1,3,5,2,2,5,5,3,3,5,5,5,1,3,2,5,1,5,3,5,2,4,3,6,7,6,2,2,1,3,2,2,2,4,3,2,2,5,6,5,4,1,1,3,4,6,5,7,1,4,4,3,7]],"container":"<table class=\"compact hover order-column nowrap\">\n  <thead>\n    <tr>\n      <th>id<\/th>\n      <th>date<\/th>\n      <th>time<\/th>\n      <th>sex<\/th>\n      <th>age<\/th>\n      <th>stimulus<\/th>\n      <th>stimulus_gender<\/th>\n      <th>iq<\/th>\n      <th>perc_iq<\/th>\n      <th>perc_attr<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":20,"columnDefs":[{"className":"dt-right","targets":[0,4,7,8,9]}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[10,20,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-3c8bd253ea198b464663" style="width:700px;height:500px;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-3c8bd253ea198b464663">{"x":{"filter":"none","caption":"<caption>Raw data of participant 01<\/caption>","data":[[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],["2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13","2018-06-13"],["09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32","09:15:32"],["Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male"],[26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26,26],["CF0001_1101_NE.jpg","CF00016_1100_NE.jpg","CF00017_1100_NE.jpg","CF00018_1100_NE.jpg","CF00019_1100_NE.jpg","CF0002_1100_NE.jpg","CF0003_1100_NE.jpg","CF0004_1100_NE.jpg","CF0005_1100_NE.jpg","CF0006_1100_NE.jpg","CF0007_1100_NE.jpg","CF0008_1100_NE.jpg","CF0009_1100_NE.jpg","CF0010_1100_NE.jpg","CF0011_1101_NE.jpg","CF0012_1110_NE.jpg","CF0013_1110_NE.jpg","CF0014_1100_NE.jpg","CF0015_1110_NE.jpg","CF0020_1100_NE.jpg","CF0021_1100_NE.jpg","CF0022_1100_NE.jpg","CF0023_1100_NE.jpg","CF0025_1100_NE.jpg","CF0026_1110_NE.jpg","CF0027_1110_NE.jpg","CF0028_1100_NE.jpg","CF0029_1100_NE.jpg","CF0030_1100_NE.jpg","CF0031_1100_NE.jpg","CF0032_1100_NE.jpg","CF0033_1100_NE.jpg","CF0034_1100_NE.jpg","CF0035_1100_NE.jpg","CF0035_1101_NE.jpg","CF0036_1100_NE.jpg","CF0037_1100_NE.jpg","CF0038_1110_NE.jpg","CF0039_1110_NE.jpg","CF0040_1110_NE.jpg","CF0041_1100_NE.jpg","CF0042_1100_NE.jpg","CF0043_1100_NE.jpg","CF0044_1100_NE.jpg","CF0045_1110_NE.jpg","CF0046_1100_NE.jpg","CF0048_1101_NE.jpg","CF0049_1100_NE.jpg","CF0050_1100_NE.jpg","CF0051_1100_NE.jpg","CF0052_1100_NE.jpg","CF0053_1100_NE.jpg","CF0054_1100_NE.jpg","CF0055_1100_NE.jpg","CF0056_1110_NE.jpg","CF0057_1100_NE.jpg","CF0058_1100_NE.jpg","CM0001_1100_NE.jpg","CM0002_1100_NE.jpg","CM0003_1101_NE.jpg","CM0004_1100_NE.jpg","CM0005_1100_NE.jpg","CM0006_1110_NE.jpg","CM0007_1100_NE.jpg","CM0008_1100_NE.jpg","CM0009_1100_NE.jpg","CM0010_1100_NE.jpg","CM0011_1100_NE.jpg","CM0012_1101_NE.jpg","CM0013_1111_NE.jpg","CM0014_1101_NE.jpg","CM0015_1100_NE.jpg","CM0016_1100_NE.jpg","CM0017_1100_NE.jpg","CM0018_1110_NE.jpg","CM0019_1110_NE.jpg","CM0020_1110_NE.jpg","CM0021_1100_NE.jpg","CM0021_1101_NE.jpg","CM0022_1110_NE.jpg","CM0023_1101_NE.jpg","CM0024_1110_NE.jpg","CM0025_1100_NE.jpg","CM0026_1100_NE.jpg","CM0027_1101_NE.jpg","CM0028_1100_NE.jpg","CM0029_1100_NE.jpg","CM0030_1100_NE.jpg","CM0031_1100_NE.jpg","CM0033_1100_NE.jpg","CM0034_1111_NE.jpg","CM0035_1100_NE.jpg","CM0037_1110_NE.jpg","CM0038_1100_NE.jpg","CM0039_1100_NE.jpg","CM0040_1100_NE.jpg","CM0041_1100_NE.jpg","CM0042_1100_NE.jpg","CM0043_1100_NE.jpg","CM0044_1100_NE.jpg","CM0045_1100_NE.jpg","CM0046_1100_NE.jpg","CM0047_1100_NE.jpg","CM0048_1100_NE.jpg","CM0050_1100_NE.jpg","CM0051_1100_NE.jpg"],["Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Female","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male","Male"],[107,106,118,110,93,90,98,93,101,124,102,102,93,114,96,82,101,89,113,99,109,92,88,112,94,101,106,105,100,102,103,94,99,101,117,105,97,94,106,70,77,112,112,103,116,91,108,108,114,91,85,105,97,104,104,96,97,108,87,112,116,95,96,106,102,80,84,115,117,113,99,101,91,91,93,92,97,92,89,95,84,108,114,101,104,112,98,102,95,95,129,110,103,100,114,108,105,92,106,99,107,115,101,109,105,103],[107,130,118,104,107,95,94,93,71,110,82,105,93,114,94,82,80,119,107,91,109,108,100,112,74,103,95,105,100,102,103,94,99,101,126,105,97,70,82,70,70,112,104,103,116,75,108,108,128,91,85,105,97,104,104,80,97,108,87,112,101,120,114,126,102,106,84,115,117,130,99,101,91,91,93,92,110,92,89,95,84,108,130,101,96,113,87,115,95,95,121,110,125,114,114,108,105,91,106,99,107,106,101,109,104,110],[1,1,4,1,7,3,1,1,1,6,1,5,4,4,7,6,7,3,1,6,7,6,1,7,5,3,1,3,3,6,4,3,7,3,4,3,2,2,1,2,5,1,1,1,6,4,4,1,6,1,3,7,4,1,3,5,2,2,5,5,3,3,5,5,5,1,3,2,5,1,5,3,5,2,4,3,6,7,6,2,2,1,3,2,2,2,4,3,2,2,5,6,5,4,1,1,3,4,6,5,7,1,4,4,3,7]],"container":"<table class=\"compact hover order-column nowrap\">\n  <thead>\n    <tr>\n      <th>id<\/th>\n      <th>date<\/th>\n      <th>time<\/th>\n      <th>sex<\/th>\n      <th>age<\/th>\n      <th>stimulus<\/th>\n      <th>stimulus_gender<\/th>\n      <th>iq<\/th>\n      <th>perc_iq<\/th>\n      <th>perc_attr<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":20,"columnDefs":[{"className":"dt-right","targets":[0,4,7,8,9]}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[10,20,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 
 &lt;/div&gt;
 
@@ -603,6 +617,7 @@ Search yandex.com for `https://github.com/crsh/psych-transparency-guide_workshop
 &lt;!-- - Australian National Data Service: [Decision tree for sharing sensitive data](https://www.ands.org.au/__data/assets/pdf_file/0010/385309/sensitive-decision-tree.pdf) --&gt;
 - Only collect the data you really need
 - Delete identifying information used for logistics as soon as possible (e.g., e-mail addresses)
+- Get informed consent and be specific about how you handle the data (e.g., Who will have access to the data how and for what purpose?)
 --
 
 - Assess risk of reidentification, e.g.,
@@ -621,13 +636,11 @@ Australian National Data Service: [Decision tree for sharing sensitive data](htt
 
 # Participant privacy
 
-- Control access to pseudonymized data
---
-
-- _Only share anonymized data publicly_, e.g.,
-    - Delete directly identifying information (e.g., full name, address, face, handwriting, date of birth)
---
-    - Mind combinations of indirect identifiers (e.g., ZIP code, gender, date of birth, [Sweeney, 2000](https://dataprivacylab.org/projects/identifiability/paper1.pdf))
+- Control access to sensitive data
+    - some repositories offer options for secure (onsite or remote) access
+&lt;!-- - _Only share anonymized data publicly_, e.g., --&gt;
+- Delete directly identifying information (e.g., full name, address, face, handwriting, date of birth)
+- Mind combinations of indirect identifiers (e.g., ZIP code, gender, date of birth, [Sweeney, 2000](https://dataprivacylab.org/projects/identifiability/paper1.pdf))
 
 .center[![:scale 35%](images/sweeney.png)]
 
@@ -664,8 +677,7 @@ Australian National Data Service: [Decision tree for sharing sensitive data](htt
     - Number of observations
     - Name and description of variables (incl. source of a measure, information about translation)
 --
-    - Units of measurement, coding of values, possible options or range
-    - Value(s) used for missing data
+    - Units of measurement, coding of values (incl. missings), possible options or range
     - How a variable was derived from other variables
     
 `$$\mathrm{BMI} = \frac{m}{l^2}$$`
@@ -673,6 +685,9 @@ Australian National Data Service: [Decision tree for sharing sensitive data](htt
 ???
 Show simple codebook from example project: https://osf.io/rv7py/
 
+Metadata can be provided/available at study and variable level
+
+Some repositories use structured metadata formats (e.g., DDI which esp. common in the social sciences)
 
 ---
 .title-image[![:scale 70%](images/data.png)]
@@ -686,44 +701,49 @@ Show simple codebook from example project: https://osf.io/rv7py/
     - Analysis software (e.g., [R `codebook` package](https://cran.r-project.org/web/packages/codebook/index.html), [SPSS codebook function](https://libguides.library.kent.edu/SPSS/Codebooks), or [Stata codebook function](http://www.stata.com/manuals13/dcodebook.pdf))
     - Specialized software (e.g., [Nesstar](http://www.nesstar.com/software/publisher.html), [DataWiz](https://datawiz.leibniz-psychology.org/DataWiz/?datawiz_locale=en))
 --
-- If reuse value is high, consider standardized, machine-readable format (e.g., [DDI](https://www.ddialliance.org/))
+- If reuse value is high, consider a standardized, machine-readable format (e.g., [DDI](https://www.ddialliance.org/))
     - Some repositories provide implementation as a service
 
 ???
-Codebook app: https://opencpu2.psych.bio.uni-goettingen.de/ocpu/user/rarslan/library/codebook/www/
+Codebook app: https://rubenarslan.ocpu.io/codebook/www/
 
 Show SPSS (on website) and R codebook
 
+makeCodebook() function from dataMaid package
 
-&lt;!-- Frederik --&gt;
-
----
-.title-image[![:scale 70%](images/analysis.png)]
-
-# Standard operating procedures
-
-- Define default practices ([Lin &amp; Green, 2016](
-https://doi.org/10.1017/S1049096516000810))
---
-
-- Study planning, e.g.,
-    - Sample size determination
---
-- Data analysis, e.g.,
-    - Statistical models
-        - Assumption tests
-        - Follow-up tests
-    - Exclusion criteria
-    - Outlier and dropout treatment
-    - Handling of missing values
-    - Corrections for multiple comparisons
+codebook() function from the memisc package
 
 
-???
-Simplifies authoring of preregistrations
+&lt;!-- Frederik
 
-Exercise: Let participants draft some SOP for data analysis
+&lt;!-- --- --&gt;
+&lt;!-- .title-image[![:scale 70%](images/analysis.png)] --&gt;
 
+&lt;!-- # Standard operating procedures --&gt;
+
+&lt;!-- - Define default practices ([Lin &amp; Green, 2016]( --&gt;
+&lt;!-- https://doi.org/10.1017/S1049096516000810)) --&gt;
+&lt;!-- -- --&gt;
+
+&lt;!-- - Study planning, e.g., --&gt;
+&lt;!--     - Sample size determination --&gt;
+&lt;!-- -- --&gt;
+&lt;!-- - Data analysis, e.g., --&gt;
+&lt;!--     - Statistical models --&gt;
+&lt;!--         - Assumption tests --&gt;
+&lt;!--         - Follow-up tests --&gt;
+&lt;!--     - Exclusion criteria --&gt;
+&lt;!--     - Outlier and dropout treatment --&gt;
+&lt;!--     - Handling of missing values --&gt;
+&lt;!--     - Corrections for multiple comparisons --&gt;
+
+
+&lt;!-- ??? --&gt;
+&lt;!-- Simplifies authoring of preregistrations --&gt;
+
+&lt;!-- Exercise: Let participants draft some SOP for data analysis --&gt;
+
+--&gt;
 
 ---
 .title-image[![:scale 70%](images/analysis.png)]
@@ -734,7 +754,7 @@ Exercise: Let participants draft some SOP for data analysis
     - Step-by-step documentation for non-scriptable software programs
 --
     - Analysis syntax
-        - Avoid "works on my machine" errors (WOMME)
+        - Avoid works-on-my-machine errors (WOMME)
             - Relative file paths or permanent online sources
             - Avoid spaces and special characters
             - Test on another computer
@@ -744,7 +764,7 @@ Exercise: Let participants draft some SOP for data analysis
 
 
 ???
-incl. data cleaning and transformation; see [supplementary material](http://psych-transparency-guide.uni-koeln.de/analytic-reproducibility.html#set-and-record-seeds-for-pseudorandom-number-generators) of Klein et al., 2018
+incl. data cleaning and transformation; show [supplementary material](http://psych-transparency-guide.uni-koeln.de/analytic-reproducibility.html#set-and-record-seeds-for-pseudorandom-number-generators) of Klein et al., 2018
 
 Demonstrate `papaja`!
 
@@ -790,6 +810,8 @@ Demonstrate `papaja`!
     - Mind journal policy (e.g., [SHERPA/RoMEO](http://www.sherpa.ac.uk/romeo/search.php))
 - Gold open access
     - Published article
+    - [Fair Open Access](https://www.fairopenaccess.org/)
+    - [Free Journal Network](https://freejournals.org/current-member-journals/)
 
 
 &lt;!-- Johannes --&gt;
@@ -803,11 +825,11 @@ class: inverse, middle, center
 ---
 # When can you share?
 
-&gt; any time is better than never  (p. 4, [Klein et al., 2018](http://doi.org/10.1525/collabra.158)).
+&gt; any time is better than never  (p. 4, [Klein et al., 2018](https://doi.org/10.1525/collabra.158)).
 
 .center[![:scale 85%](images/klein-et-al-figure-2.png)]
 
-&lt;div class = "reference"&gt;&lt;center&gt;Reprinted from &lt;a href = "http://doi.org/10.1525/collabra.158"&gt;Klein et al., 2018&lt;/a&gt; (&lt;a href="https://creativecommons.org/licenses/by/4.0/"&gt;CC-BY Attribution 4.0&lt;/a&gt;)&lt;/center&gt;&lt;/div&gt;
+&lt;div class = "reference"&gt;&lt;center&gt;Reprinted from &lt;a href = "https://doi.org/10.1525/collabra.158"&gt;Klein et al., 2018&lt;/a&gt; (&lt;a href="https://creativecommons.org/licenses/by/4.0/"&gt;CC-BY Attribution 4.0&lt;/a&gt;)&lt;/center&gt;&lt;/div&gt;
 
 
 ---
@@ -816,7 +838,10 @@ class: inverse, middle, center
 - Have a _basic_ data management plan (DMP), ideally before starting a project
     - Create basic reusable DMP templates
     - Use online tools to get started (e.g., [ZPID DataWiz](https://datawiz.leibniz-psychology.org/DataWiz/?datawiz_locale=en), [DMPonline](https://dmponline.dcc.ac.uk/))
-    - Simplifies addressing legal and ethical issues
+    - Simplifies addressing legal and ethical issues (e.g., informed consent)
+- Consider sharing when choosing study materials
+    - Open source tools
+    - Material licenses
 
 
 ???
@@ -828,27 +853,27 @@ Examples: https://dmponline.dcc.ac.uk/public_plans
 
 - Timely archiving
     - Study protocol and materials
-    - Standard operating procedures
+    &lt;!-- - Standard operating procedures --&gt;
     - Analysis plan and scripts
 - Preregistration
 
 
 &lt;!-- Frederik --&gt;
 
----
-# During data collection
+&lt;!-- --- --&gt;
+&lt;!-- # During data collection --&gt;
 
-- Born-open data ([Rouder, 2016](https://doi.org/10.3758/s13428-015-0630-z))
-    - Automatically uploaded to a public repository
-    - Offsite backup
+&lt;!-- - Born-open data ([Rouder, 2016](https://doi.org/10.3758/s13428-015-0630-z)) --&gt;
+&lt;!--     - Automatically uploaded to a public repository --&gt;
+&lt;!--     - Offsite backup --&gt;
         &lt;!-- - Reduces extra sharing efforts --&gt;
-    - But: Protect participants' privacy!
+&lt;!--     - But: Protect participants' privacy! --&gt;
 
 
-???
-Tutorial: [Born-open data with cloud storage providers](http://psych-transparency-guide.uni-koeln.de/born-open-data.html)
+&lt;!-- ??? --&gt;
+&lt;!-- Tutorial: [Born-open data with cloud storage providers](http://psych-transparency-guide.uni-koeln.de/born-open-data.html) --&gt;
 
-Show https://github.com/methexp/rawdata
+&lt;!-- Show https://github.com/methexp/rawdata --&gt;
 
 
 ---
@@ -863,8 +888,9 @@ Show https://github.com/methexp/rawdata
 ---
 # Upon submission
 
-- Research report
-    - Fast dissemination of results (citation advantage, e.g., [Piwowar &amp; Vision, 2013](https://peerj.com/articles/175/))
+- Research report (i.e., "preprint")
+    - Fast dissemination of results
+        - Citation advantage (e.g., [Piwowar &amp; Vision, 2013](https://peerj.com/articles/175/))
     - Public peer review
     - Establishes precedents
 --
@@ -976,7 +1002,7 @@ Exercise: Fork OSF repo and upload workshop files
 # Choose a repository
 
 - Self-deposit vs. curated repositories
-- [FAIR Data Principles](https://www.force11.org/group/fairgroup/fairprinciples) ([Wilkinson et al., 2016](https://dx.doi.org/10.1038/sdata.2016.18))
+- [FAIR Data Principles](https://www.force11.org/group/fairgroup/fairprinciples) ([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18))
       1. _Findable_: Persistent identifiers; metadata; indexed
       2. _Accessible_: Retrievable by identifier; controlled access where necessary
       3. _Interoperable_: Standardized metadata; open, lightweight, and interoperable file formats (e.g., CSV, TSV, JSON, ODS)
@@ -985,7 +1011,7 @@ Exercise: Fork OSF repo and upload workshop files
 ---
 # Choose a repository
 
-- Choose a suitable publicly accessible repository
+- Recommendation: Choose a suitable publicly accessible repository that ideally...
 
 --
     1. Stores data in accordance with local legislation (e.g., [EU GDPR](http://www.eugdpr.org/))
@@ -1006,60 +1032,56 @@ Exercise: Fork OSF repo and upload workshop files
 
 &lt;!-- Frederik --&gt;
 
----
-.title-image[![:scale 70%](images/protocol.png)]
+&lt;!-- --- --&gt;
+&lt;!-- .title-image[![:scale 70%](images/protocol.png)] --&gt;
 
-# Specialized approaches
+&lt;!-- # Specialized approaches --&gt;
 
-- Study protocol
-    - (Embargoed) Public preregistration
-    - [Registered reports](https://cos.io/rr/)
-    - Video methods journal [JoVE Behavior](https://www.jove.com/)
+&lt;!-- - Study protocol --&gt;
+&lt;!--     - (Embargoed) Public preregistration --&gt;
+&lt;!--     - [Registered reports](https://cos.io/rr/) --&gt;
+&lt;!--     - Video methods journal [JoVE Behavior](https://www.jove.com/) --&gt;
     &lt;!-- - however: relatively high publication costs (1200 - 4200 USD) --&gt;
 
-
-???
-Demonstration: showcase good preregistrations (https://osf.io/h9k8n/)
-
-Exercise: Write preregistration with https://aspredicted.org/ for example project
+&lt;!-- ??? --&gt;
+&lt;!-- Demonstration: showcase good preregistrations (https://osf.io/h9k8n/) --&gt;
 
 
----
-.title-image[![:scale 70%](images/software.png)]
+&lt;!-- --- --&gt;
+&lt;!-- .title-image[![:scale 70%](images/software.png)] --&gt;
 
-# Specialized approaches
+&lt;!-- # Specialized approaches --&gt;
 
-- Analysis scripts and software
-    - Hosted Version Control Systems (e.g., [GitHub](https://github.com/))
-    - Cloud-based analysis platforms (e.g., [Code Ocean](https://codeocean.com/), [RStudio cloud](https://rstudio.cloud/), [Colaboratory](https://colab.research.google.com/))
-    - Cloud-based experiment platforms (e.g., [Pavlovia](https://pavlovia.org/explore)  for [PsychoPy](http://www.psychopy.org/), [jspsych](https://www.jspsych.org/), and [lab.js](https://lab.js.org/))
---
-    - Usually no guarantee of long-term access
-        - Additionally, archive in public repository
-
-
-???
-Demonstrate CodeOcean: https://codeocean.com/2018/06/13/contact-hypothesis-reevaluated/
-Demonstrate Pavlovia: https://pavlovia.org/explore
+&lt;!-- - Analysis scripts and software --&gt;
+&lt;!--     - Hosted Version Control Systems (e.g., [GitHub](https://github.com/)) --&gt;
+&lt;!--     - Cloud-based analysis platforms (e.g., [Code Ocean](https://codeocean.com/), [RStudio cloud](https://rstudio.cloud/), [Colaboratory](https://colab.research.google.com/)) --&gt;
+&lt;!--     - Cloud-based experiment platforms (e.g., [Pavlovia](https://pavlovia.org/explore)  for [PsychoPy](http://www.psychopy.org/), [jspsych](https://www.jspsych.org/), and [lab.js](https://lab.js.org/)) --&gt;
+&lt;!-- -- --&gt;
+&lt;!--     - Usually no guarantee of long-term access --&gt;
+&lt;!--         - Additionally, archive in public repository --&gt;
 
 
----
-.title-image[![:scale 70%](images/report.png)]
+&lt;!-- ??? --&gt;
+&lt;!-- Demonstrate CodeOcean: https://codeocean.com/2018/06/13/contact-hypothesis-reevaluated/ --&gt;
+&lt;!-- Demonstrate Pavlovia: https://pavlovia.org/explore --&gt;
 
-# Specialized approaches
 
-- Research reports
-    - Institutional repositories
-    - Preprint repositories (e.g., [PsyArXiv](https://psyarxiv.com/), [BioRxiv](https://www.biorxiv.org/), [PeerJ](https://peerj.com/preprints-search/))
+&lt;!-- --- --&gt;
+&lt;!-- .title-image[![:scale 70%](images/report.png)] --&gt;
+
+&lt;!-- # Specialized approaches --&gt;
+
+&lt;!-- - Research reports --&gt;
+&lt;!--     - Institutional repositories --&gt;
+&lt;!--     - Preprint repositories (e.g., [PsyArXiv](https://psyarxiv.com/), [BioRxiv](https://www.biorxiv.org/), [PeerJ](https://peerj.com/preprints-search/)) --&gt;
 
 &lt;!-- https://nikokriegeskorte.org/2016/03/13/the-selfish-scientists-guide-to-preprint-posting/ --&gt;
 
+&lt;!-- ??? --&gt;
+&lt;!-- PsyArXiv --&gt;
 
-???
-PsyArXiv
-
-- integrates with OSF
-- prefered repository of APA
+&lt;!-- - integrates with OSF --&gt;
+&lt;!-- - prefered repository of APA --&gt;
 
 
 &lt;!-- Johannes --&gt;
@@ -1069,11 +1091,11 @@ PsyArXiv
 
 # Licenses
 
-- Licenses define conditions of access and reuse
-
---
-
-&gt; .highlight[The selection, coordination, and arrangement of the database is subject to copyright if it is sufficiently original. [...] The data or other contents contained in the database are subject to copyright if they are sufficiently creative.] Original poems contained in a database would be protected by copyright, but purely factual data (such as gene names or city populations) would not. .highlight[Facts are not subject to copyright], nor are the ideas underlying copyrighted content ([Creative Commons, 2018](https://wiki.creativecommons.org/wiki/Data)).
+- Licenses define conditions of (re)use and (re)distribution
+    - specified by copyright holder
+- Many repositories (also) offer different access categories
+- Access categories define who can access the research prodcuts (and how)
+    - specified by copyright holder or repository
 
 
 ---
@@ -1081,7 +1103,6 @@ PsyArXiv
 
 # Licenses
 
-- Licenses define conditions of access and reuse
 - Factual information are usually *not* protected by copyright
     - For example, response times, mortality rates, currency values, the number of Twitter followers someone has
     - Database structures and compilations of data can be copyrightable
@@ -1095,7 +1116,15 @@ Applying a license to noncopyrightable work does little harm
 
 # Licenses
 
-- Copyright owners may assign licenses
+&gt; .highlight[The selection, coordination, and arrangement of the database is subject to copyright if it is sufficiently original. [...] The data or other contents contained in the database are subject to copyright if they are sufficiently creative.] Original poems contained in a database would be protected by copyright, but purely factual data (such as gene names or city populations) would not. .highlight[Facts are not subject to copyright], nor are the ideas underlying copyrighted content ([Creative Commons, 2018](https://wiki.creativecommons.org/wiki/Data)).
+
+
+---
+.title-image[![:scale 70%](images/licenses.png)]
+
+# Licenses
+
+- Copyright holder may assign licenses
     - Standardized scales may be owned by publisher
     - Copyright to long verbatim free text responses may belong to participants
 --
@@ -1109,10 +1138,9 @@ Applying a license to noncopyrightable work does little harm
 
 - Public availability does not authorize to reuse
     - Always explicitly apply licenses
-    - Access categories vs. licenses
-        - Repositories may have different access categories (e.g., [GESIS DBK access categories](https://dbk.gesis.org/DBKSearch/LegendAC.htm))
+    
 --
-- Use easy-to-understand standard licenses (e.g., [Creative Commons](https://creativecommons.org/licenses/))
+- Use easy-to-understand stanard licenses (e.g., [Creative Commons](https://creativecommons.org/licenses/))
     - README: "All files in this repository are licensed under a Creative Commons Zero License (CC0 1.0)"
 --
 - Use most permissive license possible (e.g., CC0, CC-BY)
@@ -1123,7 +1151,7 @@ Applying a license to noncopyrightable work does little harm
 
 # Creative Commons Licenses
 
-- Modular license "building set"
+- Modular general purpose license "building set"
     - In practice, seven combinations are supported
 
 &lt;table&gt;
@@ -1185,82 +1213,95 @@ Applying a license to noncopyrightable work does little harm
 
 # Creative Commons Licenses
 
-- Modular license "building set"
+- Modular general purpose license "building set"
     - In practice, seven combinations are supported
 - Mind version numbers (e.g., CC-BY 4.0)
 
 
+---
+.title-image[![:scale 70%](images/licenses-cc.png)]
+
+# Specialized licenses
+
+- For data:
+    - [Open Data Commons](https://opendatacommons.org/licenses/index.html)
+
+- For software/code:
+    - [GNU General Public License](https://opensource.org/licenses/gpl-license)
+    - [MIT License](https://opensource.org/licenses/MIT)
+
+
 &lt;!-- Frederik --&gt;
 
----
-class: inverse, middle, center
+&lt;!-- --- --&gt;
+&lt;!-- class: inverse, middle, center --&gt;
 
-# How can you promote research transparency?
-
-
----
-# How can you promote research transparency?
-
-- Lead by example
-    - Promote selfish reasons for transparency, e.g.,
-        - Remember what you've done
-        - Easily find your own data and materials
-        - More citations
-        - Opportunities for collaboration
-        - Confidence in your own findings
---
-    - Share materials with your collaborators
---
-    - Publish in journals that value openness
---
-    - [Commit to Research Transparency and Open Science](http://www.researchtransparency.org/)
+&lt;!-- # How can you promote research transparency? --&gt;
 
 
----
-# How can you promote research transparency?
+&lt;!-- --- --&gt;
+&lt;!-- # How can you promote research transparency? --&gt;
 
-- Incentivize sharing
-    - Cite colleagues when reusing their shared resources, e.g.,
-      - Open data and materials
-      - Open source software (developed by academics)
-      - Open course materials
---
-    - Promote openness during peer review (e.g., [PRO initiative](https://opennessinitiative.org/))
---
-    - Value openness in hiring committees (e.g., [job offers that mentioned open science](https://osf.io/7jbnt/))
-
-
----
-# How can you promote research transparency?
-
-- Teach your students and colleagues
-    - Transparent research practices in theses, e.g.,
-        - "Safe" transparency for capstone project (OSF group)
-        - Stage-1 registered report as non-empirical Bachelor's thesis
---
-    - Collate and share materials on transparent research practices
-    - Teach workshops
+&lt;!-- - Lead by example --&gt;
+&lt;!--     - Promote selfish reasons for transparency, e.g., --&gt;
+&lt;!--         - Remember what you've done --&gt;
+&lt;!--         - Easily find your own data and materials --&gt;
+&lt;!--         - More citations --&gt;
+&lt;!--         - Opportunities for collaboration --&gt;
+&lt;!--         - Confidence in your own findings --&gt;
+&lt;!-- -- --&gt;
+&lt;!--     - Share materials with your collaborators --&gt;
+&lt;!-- -- --&gt;
+&lt;!--     - Publish in journals that value openness --&gt;
+&lt;!-- -- --&gt;
+&lt;!--     - [Commit to Research Transparency and Open Science](http://www.researchtransparency.org/) --&gt;
 
 
----
-# How can you promote research transparency?
+&lt;!-- --- --&gt;
+&lt;!-- # How can you promote research transparency? --&gt;
 
-- Lobby for transparent research practices, e.g.,
-    - Advocate for registered reports at journals (e.g., [Registered Reports Now!](https://osf.io/3wct2/))
---
-- Be forgiving of your own and other's honest mistakes!
+&lt;!-- - Incentivize sharing --&gt;
+&lt;!--     - Cite colleagues when reusing their shared resources, e.g., --&gt;
+&lt;!--       - Open data and materials --&gt;
+&lt;!--       - Open source software (developed by academics) --&gt;
+&lt;!--       - Open course materials --&gt;
+&lt;!-- -- --&gt;
+&lt;!--     - Promote openness during peer review (e.g., [PRO initiative](https://opennessinitiative.org/)) --&gt;
+&lt;!-- -- --&gt;
+&lt;!--     - Value openness in hiring committees (e.g., [job offers that mentioned open science](https://osf.io/7jbnt/)) --&gt;
+
+
+&lt;!-- --- --&gt;
+&lt;!-- # How can you promote research transparency? --&gt;
+
+&lt;!-- - Teach your students and colleagues --&gt;
+&lt;!--     - Transparent research practices in theses, e.g., --&gt;
+&lt;!--         - "Safe" transparency for capstone project (OSF group) --&gt;
+&lt;!--         - Stage-1 registered report as non-empirical Bachelor's thesis --&gt;
+&lt;!-- -- --&gt;
+&lt;!--     - Collate and share materials on transparent research practices --&gt;
+&lt;!--     - Teach workshops --&gt;
+
+
+&lt;!-- --- --&gt;
+&lt;!-- # How can you promote research transparency? --&gt;
+
+&lt;!-- - Lobby for transparent research practices, e.g., --&gt;
+&lt;!--     - Advocate for registered reports at journals (e.g., [Registered Reports Now!](https://osf.io/3wct2/)) --&gt;
+&lt;!-- -- --&gt;
+&lt;!-- - Be forgiving of your own and other's honest mistakes! --&gt;
 
 
 &lt;!-- Johannes --&gt;
 
----
-# Learn more about transparent research practices
+&lt;!-- --- --&gt;
+&lt;!-- # Learn more about transparent research practices --&gt;
 
-- [Open Science Knowledge Base](https://how-to-open.science/)
-- [DataWiz Knowledge Base](https://datawizkb.leibniz-psychology.org/)
-- [FOSTER Open Science Courses](https://www.fosteropenscience.eu/courses)
-- [Center for Open Science Webinars](https://osf.io/qpxv2/)
-- Open Science Short Course at the [GESIS Summer School](https://training.gesis.org/?site=pDetails&amp;child=full&amp;pID=0xB455C10E4BA7451CBC729596CA4A2F4C)
+&lt;!-- - [Open Science Knowledge Base](https://how-to-open.science/) --&gt;
+&lt;!-- - [DataWiz Knowledge Base](https://datawizkb.leibniz-psychology.org/) --&gt;
+&lt;!-- - [FOSTER Open Science Courses](https://www.fosteropenscience.eu/courses) --&gt;
+&lt;!-- - [Center for Open Science Webinars](https://osf.io/qpxv2/) --&gt;
+&lt;!-- - Data Sharing &amp; FAIR Data Short Course at the [GESIS Summer School](https://training.gesis.org/?site=pDetails&amp;child=full&amp;pID=0xB455C10E4BA7451CBC729596CA4A2F4C&amp;subID=0x46AC3A06211E4932A8FF77D60B2A6A30&amp;lang=en_US) --&gt;
 &lt;!-- - other workshops/courses (e.g. by the [Leibniz Institute for Psychology Information](https://leibniz-psychology.org/en/)) --&gt;
 
 
