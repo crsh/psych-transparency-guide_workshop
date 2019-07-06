@@ -65,10 +65,6 @@ MathJax.Hub.Config({
 - PhD in psychology, University of Cologne<br />(media psychology)
 - senior researcher at [GESIS &ndash; Leibniz Institute for the Social Sciences](https://www.gesis.org/en/home/) (Data Archive for the Social Sciences)
 - Previously worked at different comm and psych departments
-- Research interests:
-    - Uses and effects of digital media
-    - Computational methods
-    - Data management & open science
 
 <div class="reference"><a href="mailto:johannes.breuer@gesis.org">johannes.breuer@gesis.org</a>, <a href="https://twitter.com/MattEagle09">@MattEagle09</a></div>
 
