@@ -64,7 +64,7 @@ MathJax.Hub.Config({
 
 - PhD in psychology, University of Cologne<br />(media psychology)
 - senior researcher at [GESIS &ndash; Leibniz Institute for the Social Sciences](https://www.gesis.org/en/home/) (Data Archive for the Social Sciences)
-- Previously worked at different comm and psych departments
+- Previously worked at different comm and psych departments & research projects investigating the use and effects of digital media
 
 <div class="reference"><a href="mailto:johannes.breuer@gesis.org">johannes.breuer@gesis.org</a>, <a href="https://twitter.com/MattEagle09">@MattEagle09</a></div>
 
@@ -111,7 +111,6 @@ Klein, O., Hardwicke, T. E., Aust, F., Breuer, J., Danielsson, H., Hofelich Mohr
 - _How_ can you share?
     - Compilation of research products
     - Choosing a repository
-    - Specialized approaches
     - Licenses
 <!-- -- -->
 <!-- - How can you promote openness? -->
@@ -539,11 +538,10 @@ NB: We are no lawyers, so everything we say in this section is our own interpret
 
 > .highlight[To ascertain whether means are reasonably likely to be used to identify the natural person, account should be taken of all objective factors, such as the costs of and the amount of time required for identification], taking into consideration the available technology at the time of the processing and technological developments. (Recital 26 EU GDPR)
 
+--- 
 
----
-
-<div style="font-size: 14px;">
-
+<!-- <div style="font-size: 14px;"> -->
+<!--
 ```{r exmaple-dataset}
 DT::datatable(
   read.csv("material/example-project/raw_data/perceived_iq_01.csv")
@@ -555,14 +553,15 @@ DT::datatable(
   , options = list(pageLength = 20)
 )
 ```
+-->
 
-</div>
+<!-- </div> -->
 
 
-???
-What's potentially problematic in this dataset?
+<!-- ??? -->
+<!-- What's potentially problematic in this dataset? -->
 
-Search yandex.com for `https://github.com/crsh/psych-transparency-guide_workshop/blob/master/material/example-project/stimuli/CF0002_1100_NE.jpg?raw=true`
+<!-- Search yandex.com for `https://github.com/crsh/psych-transparency-guide_workshop/blob/master/material/example-project/stimuli/CF0002_1100_NE.jpg?raw=true` -->
 
 
 ---
@@ -937,7 +936,7 @@ kable(
 ---
 # Choose a repository
 
-- Recommendation: Choose a suitable publicly accessible repository that ideally...
+- Recommendation: Choose a suitable publicly accessible repository that ideally (has)...
 
 --
     1. Stores data in accordance with local legislation (e.g., [EU GDPR](http://www.eugdpr.org/))
@@ -945,7 +944,7 @@ kable(
     3. Persistent and unique identifiers (e.g., DOI)
 --
     5. Features access controls (e.g., limit access to a specified set/type of users)
-    4. Supports systematic licensing (e.g., declare (no) legal restrictions on reuse)
+    4. Supports systematic licensing
     6. Supports structured metadata
 --
     7. Tracks reuse of shared products (e.g., citations, downloads)
