@@ -92,6 +92,8 @@ overflow: auto;
 margin-left: 2%;
 position: fixed;
 border: 1px solid #ccc;
+webkit-border-radius: 6px;
+moz-border-radius: 6px;
 border-radius: 6px;
 }
 
@@ -119,14 +121,9 @@ font-size: 12px;
 .tocify-subheader .tocify-subheader {
 text-indent: 30px;
 }
+
 .tocify-subheader .tocify-subheader .tocify-subheader {
 text-indent: 40px;
-}
-.tocify-subheader .tocify-subheader .tocify-subheader .tocify-subheader {
-text-indent: 50px;
-}
-.tocify-subheader .tocify-subheader .tocify-subheader .tocify-subheader .tocify-subheader {
-text-indent: 60px;
 }
 
 .tocify .tocify-item > a, .tocify .nav-list .nav-header {
@@ -530,13 +527,13 @@ float: none;
 
           item.append($("<a/>", {
 
-            "html": self.html()
+            "text": self.text()
 
           }));
 
         } else {
 
-          item.html(self.html());
+          item.text(self.text());
 
         }
 
@@ -1541,6 +1538,8 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -1634,7 +1633,7 @@ In the process, we will review the evolving ecosystem of open science tools and 
 <hr />
 <p>Workshop outline for <em>Developing your personal workflow for transparent &amp; reproducible research: Workshop outline</em>, SIPS 2019, Rotterdam, Netherlands, June 9th, 2019.</p>
 <p>Frederik Aust (<a href="mailto:frederik.aust@uni-koeln.de">frederik.aust@uni-koeln.de</a>, <a href="http://twitter.com/frederikaust">@frederikaust</a>); Johannes Breuer (<a href="mailto:johannes.breuer@gesis.org">johannes.breuer@gesis.org</a>, <a href="https://twitter.com/MattEagle09">@MattEagle09</a>)</p>
-<p><a href="https://creativecommons.org/licenses/by/4.0/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAAllBMVEUAAAD///+rsapERER3d3eIiIjMzMzu7u4iIiKUmZO6v7rKzsoODg4RERFVVVUNDQ0NDg0PEA8zMzNLTEtbXltmZmZydnF9gn2AgICPkI+ZmZmqqqq7u7vFxsXIzMgNDQwZGRkgICAhISEkJSMnKCcuMC4xMzE5Ozk7PTtBQkFCQkJDQ0Nna2eGhoaHh4ezuLLGysbd3d1wVGpAAAAAv0lEQVR42q2T2RKCMAxFk3QDBUEUF3Df9+X/f87WqTiMLwK906e2c3pv0gA4FzqVAZLRBYTdYoFP1O7WdPcB+oEoHmEbotaoIfCw+rqW0Cea9ZoBY4HSA6YYeBLZTmce2/raSxWBQ5ig10HOQ5XlyGOdeWrP3wurOhyAVKYrncRk5gHR/VE4/N/fj0OWhopnyKOywxpAigTmIaS6hskTz9tSDWsB90vHXfbntwJ4Wjv4h7otV8s7LppOiutZdqwXrQAI6Vlm1kYAAAAASUVORK5CYII=" /></a> Please link to <a href="https://github.com/crsh/psych-transparency-guide_workshop/">workshop GitHub repository</a> and cite <a href="https://doi.org/10.1525/collabra.158">Klein et al. (2018)</a>.</p>
+<p><a href="https://creativecommons.org/licenses/by/4.0/"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAAAPCAMAAABEF7i9AAAAllBMVEUAAAD///+rsapERER3d3eIiIjMzMzu7u4iIiKUmZO6v7rKzsoODg4RERFVVVUNDQ0NDg0PEA8zMzNLTEtbXltmZmZydnF9gn2AgICPkI+ZmZmqqqq7u7vFxsXIzMgNDQwZGRkgICAhISEkJSMnKCcuMC4xMzE5Ozk7PTtBQkFCQkJDQ0Nna2eGhoaHh4ezuLLGysbd3d1wVGpAAAAAv0lEQVR42q2T2RKCMAxFk3QDBUEUF3Df9+X/f87WqTiMLwK906e2c3pv0gA4FzqVAZLRBYTdYoFP1O7WdPcB+oEoHmEbotaoIfCw+rqW0Cea9ZoBY4HSA6YYeBLZTmce2/raSxWBQ5ig10HOQ5XlyGOdeWrP3wurOhyAVKYrncRk5gHR/VE4/N/fj0OWhopnyKOywxpAigTmIaS6hskTz9tSDWsB90vHXfbntwJ4Wjv4h7otV8s7LppOiutZdqwXrQAI6Vlm1kYAAAAASUVORK5CYII=" /></a> Please link to <a href="https://github.com/crsh/psych-transparency-guide_workshop/">workshop GitHub repository</a> and cite <a href="https://doi.org/10.1525/collabra.158">Klein et al. (2018)</a>.</p>
 </div>
 
 
