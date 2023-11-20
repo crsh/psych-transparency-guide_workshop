@@ -51,7 +51,7 @@ MathJax.Hub.Config({
 
 - PhD student at the University of Cologne<br />(Prof. Dr. Christoph Stahl)
 - Founding memeber of [Cologne Open Science<br />working group](https://www.hf.uni-koeln.de/39711)
-- Author and contributor to several R packages<br> (e.g., [`afex`](https://cran.r-project.org/web/packages/afex/index.html), [`citr`](https://cran.r-project.org/web/packages/citr/index.html), [`papaja`](https://github.com/crsh/papaja), [`prereg`](https://cran.r-project.org/web/packages/prereg/index.html)), [`retractcheck`](https://cran.r-project.org/web/packages/retractcheck/index.html))
+- Author and contributor to several R packages<br> (e.g., [`afex`](https://cran.r-project.org/web/packages/afex/index.html), [`citr`](https://cran.r-project.org/web/packages/citr/index.html), [`papaja`](https://github.com/crsh/papaja), [`prereg`](https://cran.r-project.org/web/packages/prereg/index.html), [`retractcheck`](https://cran.r-project.org/web/packages/retractcheck/index.html))
 
 <div class="reference"><a href="mailto:frederik.aust@uni-koeln.de">frederik.aust@uni-koeln.de</a>, <a href="https://twitter.com/frederikaust">@frederikaust</a></div>
 
@@ -64,11 +64,7 @@ MathJax.Hub.Config({
 
 - PhD in psychology, University of Cologne<br />(media psychology)
 - senior researcher at [GESIS &ndash; Leibniz Institute for the Social Sciences](https://www.gesis.org/en/home/) (Data Archive for the Social Sciences)
-- Previously worked at different comm and psych departments
-- Research interests:
-    - Uses and effects of digital media
-    - Computational methods
-    - Data management & open science
+- Previously worked at different comm and psych departments & research projects investigating the use and effects of digital media
 
 <div class="reference"><a href="mailto:johannes.breuer@gesis.org">johannes.breuer@gesis.org</a>, <a href="https://twitter.com/MattEagle09">@MattEagle09</a></div>
 
@@ -85,7 +81,7 @@ MathJax.Hub.Config({
 
 .center[`https://tinyurl.com/y8dbs2fu`]
 
-<br /><br />
+<br />
 
 Workshop material is based on
 
@@ -115,7 +111,6 @@ Klein, O., Hardwicke, T. E., Aust, F., Breuer, J., Danielsson, H., Hofelich Mohr
 - _How_ can you share?
     - Compilation of research products
     - Choosing a repository
-    - Specialized approaches
     - Licenses
 <!-- -- -->
 <!-- - How can you promote openness? -->
@@ -126,10 +121,10 @@ We try to make it an active workshop
 Questions?
 
 
----
-class: inverse, middle, center
+<!-- --- -->
+<!-- class: inverse, middle, center -->
 
-# Why should you share?
+<!-- # Why should you share? -->
 
 
 <!-- --- -->
@@ -153,16 +148,16 @@ class: inverse, middle, center
 <!--     - Colleagues can scrutinize and build on your work -->
 
 
----
-# Why should you share?
+<!-- --- -->
+<!-- # Why should you share? -->
 
-> Open Science is just science done right
+<!-- > Open Science is just science done right -->
 
-> &mdash;Jon Tennant, Imperial College London
+<!-- > &mdash;Jon Tennant, Imperial College London -->
 
 
-???
-You probably already drank the Kool-Aid
+<!-- ??? -->
+<!-- You probably already drank the Kool-Aid -->
 
 
 <!-- --- -->
@@ -259,13 +254,13 @@ Share and document what you can, as it will provide a benefit compared with not 
 --
 - Make transparency a by-product of your workflow
     - Create and use templates
-    - Automate what can be automated
+    - If possible automate
 --
 - Iteratively improve your workflow
 
---
-- Routinely perform _Amnesia test_
-    - Would I still understand this after losing my memory?
+<!-- -- -->
+<!-- - Routinely perform _Amnesia test_ -->
+<!--     - Would I still understand this after losing my memory? -->
 
 ???
 Amnesia: Ask a colleague who was not involved with the project
@@ -543,11 +538,10 @@ NB: We are no lawyers, so everything we say in this section is our own interpret
 
 > .highlight[To ascertain whether means are reasonably likely to be used to identify the natural person, account should be taken of all objective factors, such as the costs of and the amount of time required for identification], taking into consideration the available technology at the time of the processing and technological developments. (Recital 26 EU GDPR)
 
+--- 
 
----
-
-<div style="font-size: 14px;">
-
+<!-- <div style="font-size: 14px;"> -->
+<!--
 ```{r exmaple-dataset}
 DT::datatable(
   read.csv("material/example-project/raw_data/perceived_iq_01.csv")
@@ -559,14 +553,15 @@ DT::datatable(
   , options = list(pageLength = 20)
 )
 ```
+-->
 
-</div>
+<!-- </div> -->
 
 
-???
-What's potentially problematic in this dataset?
+<!-- ??? -->
+<!-- What's potentially problematic in this dataset? -->
 
-Search yandex.com for `https://github.com/crsh/psych-transparency-guide_workshop/blob/master/material/example-project/stimuli/CF0002_1100_NE.jpg?raw=true`
+<!-- Search yandex.com for `https://github.com/crsh/psych-transparency-guide_workshop/blob/master/material/example-project/stimuli/CF0002_1100_NE.jpg?raw=true` -->
 
 
 ---
@@ -577,7 +572,7 @@ Search yandex.com for `https://github.com/crsh/psych-transparency-guide_workshop
 <!-- - Australian National Data Service: [Decision tree for sharing sensitive data](https://www.ands.org.au/__data/assets/pdf_file/0010/385309/sensitive-decision-tree.pdf) -->
 - Only collect the data you really need
 - Delete identifying information used for logistics as soon as possible (e.g., e-mail addresses)
-- Get informed consent and be as specific as possible about how you handle the data (e.g.: For what purpose do you collect the data? Who will have access to the data and how?)
+- Get informed consent and be specific about how you handle the data (e.g., Who will have access to the data how and for what purpose?)
 --
 
 - Assess risk of reidentification, e.g.,
@@ -785,11 +780,11 @@ class: inverse, middle, center
 ---
 # When can you share?
 
-> any time is better than never  (p. 4, [Klein et al., 2018](http://doi.org/10.1525/collabra.158)).
+> any time is better than never  (p. 4, [Klein et al., 2018](https://doi.org/10.1525/collabra.158)).
 
 .center[![:scale 85%](images/klein-et-al-figure-2.png)]
 
-<div class = "reference"><center>Reprinted from <a href = "http://doi.org/10.1525/collabra.158">Klein et al., 2018</a> (<a href="https://creativecommons.org/licenses/by/4.0/">CC-BY Attribution 4.0</a>)</center></div>
+<div class = "reference"><center>Reprinted from <a href = "https://doi.org/10.1525/collabra.158">Klein et al., 2018</a> (<a href="https://creativecommons.org/licenses/by/4.0/">CC-BY Attribution 4.0</a>)</center></div>
 
 
 ---
@@ -848,8 +843,9 @@ Examples: https://dmponline.dcc.ac.uk/public_plans
 ---
 # Upon submission
 
-- Research report ("Preprint")
-    - Fast dissemination of results (citation advantage, e.g., [Piwowar & Vision, 2013](https://peerj.com/articles/175/))
+- Research report (i.e., "preprint")
+    - Fast dissemination of results
+        - Citation advantage (e.g., [Piwowar & Vision, 2013](https://peerj.com/articles/175/))
     - Public peer review
     - Establishes precedents
 --
@@ -931,7 +927,7 @@ kable(
 # Choose a repository
 
 - Self-deposit vs. curated repositories
-- [FAIR Data Principles](https://www.force11.org/group/fairgroup/fairprinciples) ([Wilkinson et al., 2016](https://dx.doi.org/10.1038/sdata.2016.18))
+- [FAIR Data Principles](https://www.force11.org/group/fairgroup/fairprinciples) ([Wilkinson et al., 2016](https://doi.org/10.1038/sdata.2016.18))
       1. _Findable_: Persistent identifiers; metadata; indexed
       2. _Accessible_: Retrievable by identifier; controlled access where necessary
       3. _Interoperable_: Standardized metadata; open, lightweight, and interoperable file formats (e.g., CSV, TSV, JSON, ODS)
@@ -940,7 +936,7 @@ kable(
 ---
 # Choose a repository
 
-- Recommendation: Choose a suitable publicly accessible repository that ideally...
+- Recommendation: Choose a suitable publicly accessible repository that ideally (has)...
 
 --
     1. Stores data in accordance with local legislation (e.g., [EU GDPR](http://www.eugdpr.org/))
@@ -948,7 +944,7 @@ kable(
     3. Persistent and unique identifiers (e.g., DOI)
 --
     5. Features access controls (e.g., limit access to a specified set/type of users)
-    4. Supports systematic licensing (e.g., declare (no) legal restrictions on reuse)
+    4. Supports systematic licensing
     6. Supports structured metadata
 --
     7. Tracks reuse of shared products (e.g., citations, downloads)
@@ -959,58 +955,58 @@ kable(
 - How would you search for a suitable repository?
 
 
-<!-- Frederik
+<!-- Frederik -->
 
----
-.title-image[![:scale 70%](images/protocol.png)]
+<!-- --- -->
+<!-- .title-image[![:scale 70%](images/protocol.png)] -->
 
-# Specialized approaches
+<!-- # Specialized approaches -->
 
-- Study protocol
-    - (Embargoed) Public preregistration
-    - [Registered reports](https://cos.io/rr/)
-    - Video methods journal [JoVE Behavior](https://www.jove.com/)
+<!-- - Study protocol -->
+<!--     - (Embargoed) Public preregistration -->
+<!--     - [Registered reports](https://cos.io/rr/) -->
+<!--     - Video methods journal [JoVE Behavior](https://www.jove.com/) -->
     <!-- - however: relatively high publication costs (1200 - 4200 USD) -->
 
-???
-Demonstration: showcase good preregistrations (https://osf.io/h9k8n/)
-
-<!--
----
-.title-image[![:scale 70%](images/software.png)]
-
-# Specialized approaches
-
-- Analysis scripts and software
-    - Hosted Version Control Systems (e.g., [GitHub](https://github.com/))
-    - Cloud-based analysis platforms (e.g., [Code Ocean](https://codeocean.com/), [RStudio cloud](https://rstudio.cloud/), [Colaboratory](https://colab.research.google.com/))
-    - Cloud-based experiment platforms (e.g., [Pavlovia](https://pavlovia.org/explore)  for [PsychoPy](http://www.psychopy.org/), [jspsych](https://www.jspsych.org/), and [lab.js](https://lab.js.org/))
---
-    - Usually no guarantee of long-term access
-        - Additionally, archive in public repository
+<!-- ??? -->
+<!-- Demonstration: showcase good preregistrations (https://osf.io/h9k8n/) -->
 
 
-???
-Demonstrate CodeOcean: https://codeocean.com/2018/06/13/contact-hypothesis-reevaluated/
-Demonstrate Pavlovia: https://pavlovia.org/explore
+<!-- --- -->
+<!-- .title-image[![:scale 70%](images/software.png)] -->
+
+<!-- # Specialized approaches -->
+
+<!-- - Analysis scripts and software -->
+<!--     - Hosted Version Control Systems (e.g., [GitHub](https://github.com/)) -->
+<!--     - Cloud-based analysis platforms (e.g., [Code Ocean](https://codeocean.com/), [RStudio cloud](https://rstudio.cloud/), [Colaboratory](https://colab.research.google.com/)) -->
+<!--     - Cloud-based experiment platforms (e.g., [Pavlovia](https://pavlovia.org/explore)  for [PsychoPy](http://www.psychopy.org/), [jspsych](https://www.jspsych.org/), and [lab.js](https://lab.js.org/)) -->
+<!-- -- -->
+<!--     - Usually no guarantee of long-term access -->
+<!--         - Additionally, archive in public repository -->
 
 
----
-.title-image[![:scale 70%](images/report.png)]
+<!-- ??? -->
+<!-- Demonstrate CodeOcean: https://codeocean.com/2018/06/13/contact-hypothesis-reevaluated/ -->
+<!-- Demonstrate Pavlovia: https://pavlovia.org/explore -->
 
-# Specialized approaches
 
-- Research reports
-    - Institutional repositories
-    - Preprint repositories (e.g., [PsyArXiv](https://psyarxiv.com/), [BioRxiv](https://www.biorxiv.org/), [PeerJ](https://peerj.com/preprints-search/))
+<!-- --- -->
+<!-- .title-image[![:scale 70%](images/report.png)] -->
+
+<!-- # Specialized approaches -->
+
+<!-- - Research reports -->
+<!--     - Institutional repositories -->
+<!--     - Preprint repositories (e.g., [PsyArXiv](https://psyarxiv.com/), [BioRxiv](https://www.biorxiv.org/), [PeerJ](https://peerj.com/preprints-search/)) -->
 
 <!-- https://nikokriegeskorte.org/2016/03/13/the-selfish-scientists-guide-to-preprint-posting/ -->
 
-???
-PsyArXiv
+<!-- ??? -->
+<!-- PsyArXiv -->
 
-- integrates with OSF
-- prefered repository of APA
+<!-- - integrates with OSF -->
+<!-- - prefered repository of APA -->
 
 
 <!-- Johannes -->
@@ -1020,11 +1016,11 @@ PsyArXiv
 
 # Licenses
 
-- Licenses define conditions of (re)use and (re)distribution
-    - specified by the data provider <!-- copyright holder? -->
+- Licenses define conditions of use and redistribution
+    - Specified by copyright holder
 - Many repositories (also) offer different access categories
-- Access categories define who can access the data (and how)
-    - specified by data provider or repository <!-- copyright holder? -->
+- Access categories define who can access the research prodcuts (and how)
+    - Specified by copyright holder or repository
 
 
 ---
@@ -1139,16 +1135,14 @@ kable(
 
 # Specialized licenses
 
-- For data:
+- Data
     - [Open Data Commons](https://opendatacommons.org/licenses/index.html)
-
-- For software/code:
+- Software/code
     - [GNU General Public License](https://opensource.org/licenses/gpl-license)
     - [MIT License](https://opensource.org/licenses/MIT)
 
----
 
-<!-- Frederik 
+<!-- Frederik -->
 
 <!-- --- -->
 <!-- class: inverse, middle, center -->
@@ -1211,8 +1205,8 @@ kable(
 
 <!-- Johannes -->
 
----
-# Learn more about transparent research practices
+<!-- --- -->
+<!-- # Learn more about transparent research practices -->
 
 <!-- - [Open Science Knowledge Base](https://how-to-open.science/) -->
 <!-- - [DataWiz Knowledge Base](https://datawizkb.leibniz-psychology.org/) -->
